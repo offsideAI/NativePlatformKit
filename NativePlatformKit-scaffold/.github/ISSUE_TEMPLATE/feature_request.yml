@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose a new component, token, or capability
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the proposal! For a new **component**, note that contributors follow
+        [docs/adding-a-component.md](../blob/main/docs/adding-a-component.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What are you trying to do that NPK doesn't support today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API / solution
+      description: Sketch the public API (Compose conventions, reads from NpkTheme).
+      placeholder: |
+        @Composable
+        fun NpkChip(onClick: () -> Unit, modifier: Modifier = Modifier, ...) { ... }
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Are you willing to contribute this?
+      options:
+        - "Yes, I'd like to implement it"
+        - "Maybe, with guidance"
+        - "No"
+    validations:
+      required: true

@@ -1,0 +1,37 @@
+# Built artifacts
+*.aar
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Gradle / build output
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+out/
+
+# Local configuration (machine-specific; never committed)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.cxx/
+
+# OS noise
+.DS_Store
+
+# Crash / profiling logs
+hs_err_pid*
+*.hprof
+
+# Publishing secrets (defence in depth — these must never be committed)
+secring.gpg
+*.gpg
+!.github/**/*.gpg
+keystore.properties

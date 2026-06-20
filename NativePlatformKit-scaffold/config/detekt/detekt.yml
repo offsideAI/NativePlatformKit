@@ -1,0 +1,60 @@
+# detekt configuration for NativePlatformKit.
+# Layered on top of detekt's default rules (buildUponDefaultConfig = true).
+# Tuned for an idiomatic Jetpack Compose codebase.
+
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+
+config:
+  validation: true
+  warningsAsErrors: false
+
+complexity:
+  LongParameterList:
+    # Design-token classes (e.g. NpkColors) and Compose component APIs legitimately take many
+    # parameters — Material's own ColorScheme has ~30. Keep the rule on but with realistic limits.
+    functionThreshold: 24
+    constructorThreshold: 24
+    ignoreDefaultParameters: true
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    active: false
+
+comments:
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    active: false
+  UndocumentedPublicProperty:
+    active: false
+
+naming:
+  FunctionNaming:
+    # @Composable functions are PascalCase by convention.
+    ignoreAnnotated: ['Composable']
+  TopLevelPropertyNaming:
+    active: true
+  MatchingDeclarationName:
+    active: false
+
+style:
+  MagicNumber:
+    # Design tokens use many literal dp/sp values by nature.
+    active: false
+  UnusedPrivateMember:
+    ignoreAnnotated: ['Preview', 'Composable']
+  FunctionOnlyReturningConstant:
+    active: false
+  ForbiddenComment:
+    active: false
+  NewLineAtEndOfFile:
+    active: true
+  MaxLineLength:
+    # Line length is a formatting concern owned by Spotless/ktlint (see .editorconfig), not a
+    # hard detekt gate; Compose/KDoc lines are frequently long and not always auto-wrappable.
+    active: false
+
+# NOTE: the detekt 'formatting' ruleset is intentionally NOT enabled — formatting is owned by
+# Spotless/ktlint. (Enabling it would require the io.gitlab.arturbosch.detekt:detekt-formatting
+# dependency on the detekt classpath.)

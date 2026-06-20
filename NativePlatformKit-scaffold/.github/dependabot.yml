@@ -1,0 +1,50 @@
+# Copyright 2026 The NativePlatformKit Authors. Licensed under the Apache License, Version 2.0.
+#
+# Dependency automation. Gradle updates respect the version catalog (gradle/libs.versions.toml).
+# NOTE: review carefully — bumping core-ktx/lifecycle/AGP/compileSdk together is coordinated
+# (see DECISIONS.md ADR-0004). Major AGP/SDK bumps should be done deliberately, not auto-merged.
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    labels: ["dependencies"]
+    commit-message:
+      prefix: "build"
+    groups:
+      androidx-compose:
+        patterns: ["androidx.compose*"]
+      androidx:
+        patterns: ["androidx.*"]
+        exclude-patterns: ["androidx.compose*"]
+      kotlin:
+        patterns: ["org.jetbrains.kotlin*", "org.jetbrains.dokka*"]
+      test-and-quality:
+        patterns:
+          - "*roborazzi*"
+          - "*robolectric*"
+          - "*detekt*"
+          - "*spotless*"
+          - "junit*"
+
+  # build-logic is a separate (composite) build with its own dependencies.
+  - package-ecosystem: gradle
+    directory: "/build-logic"
+    schedule:
+      interval: weekly
+      day: monday
+    labels: ["dependencies", "build-logic"]
+    commit-message:
+      prefix: "build"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    labels: ["dependencies", "ci"]
+    commit-message:
+      prefix: "ci"

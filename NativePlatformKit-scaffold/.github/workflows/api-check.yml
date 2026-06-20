@@ -1,0 +1,41 @@
+# Copyright 2026 The NativePlatformKit Authors. Licensed under the Apache License, Version 2.0.
+#
+# Guards the public binary API. Any change to the public surface must be accompanied by an updated
+# committed .api dump (run `./gradlew apiDump`), reviewed as part of the PR. See the SemVer policy
+# in CONTRIBUTING.md.
+name: API check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: api-check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  api-check:
+    name: Binary compatibility (apiCheck)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Validate public API against committed dump
+        run: ./gradlew apiCheck
+      - name: Hint on failure
+        if: ${{ failure() }}
+        run: |
+          echo "::error::Public API changed. If intentional, run './gradlew apiDump' and commit"
+          echo "::error::nativeplatformkit/api/nativeplatformkit.api, and review the SemVer impact."

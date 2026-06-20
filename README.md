@@ -1,2 +1,1 @@
 # NativePlatformKit
-NativePlatformKit

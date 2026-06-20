@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      A minimal host theme for the Compose-only catalog app. Actual styling comes from NpkTheme;
+      this only needs to provide a no-action-bar window available on the library's minSdk (24).
+    -->
+    <style name="Theme.NpkCatalog" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

@@ -1,0 +1,12 @@
+# Copyright 2026 The NativePlatformKit Authors. Licensed under the Apache License, Version 2.0.
+#
+# Default owners for everything in the repo. Owners are requested for review automatically.
+* @arunabhdas
+
+# Public API surface, theming contract, and build/release infra warrant extra scrutiny.
+/nativeplatformkit/api/                @arunabhdas
+/nativeplatformkit/src/main/kotlin/das/arunabh/nativeplatformkit/theme/  @arunabhdas
+/nativeplatformkit/src/main/kotlin/das/arunabh/nativeplatformkit/token/  @arunabhdas
+/build-logic/                          @arunabhdas
+/gradle/libs.versions.toml             @arunabhdas
+/.github/                              @arunabhdas

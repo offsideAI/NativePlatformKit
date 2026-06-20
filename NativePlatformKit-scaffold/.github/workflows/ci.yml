@@ -1,0 +1,127 @@
+# Copyright 2026 The NativePlatformKit Authors. Licensed under the Apache License, Version 2.0.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Cancel superseded runs on the same ref.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    name: Unit & Compose UI tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Run JVM unit + Compose UI tests
+        run: ./gradlew testDebugUnitTest
+      - name: Upload test reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: '**/build/reports/tests/**'
+
+  screenshot-tests:
+    name: Screenshot verification (Roborazzi)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Verify screenshots against committed references
+        run: ./gradlew :nativeplatformkit:verifyRoborazziDebug
+      - name: Upload screenshot diffs on failure
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot-diffs
+          path: '**/build/outputs/roborazzi/**'
+
+  static-analysis:
+    name: Spotless & detekt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Spotless (formatting + license headers)
+        run: ./gradlew spotlessCheck
+      - name: detekt (static analysis)
+        run: ./gradlew detekt
+      - name: Android Lint
+        run: ./gradlew lint
+      - name: Upload analysis reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-reports
+          path: |
+            **/build/reports/detekt/**
+            **/build/reports/lint-results-*.*
+
+  assemble:
+    name: Assemble release AAR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Assemble library AAR + demo app
+        run: ./gradlew :nativeplatformkit:assembleRelease :catalog:assembleDebug
+      - name: Upload AAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: nativeplatformkit-aar
+          path: nativeplatformkit/build/outputs/aar/*.aar
+
+  docs:
+    name: Dokka API docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Generate API documentation
+        run: ./gradlew dokkaGenerate
+      - name: Upload docs
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-docs
+          path: build/dokka/html/**

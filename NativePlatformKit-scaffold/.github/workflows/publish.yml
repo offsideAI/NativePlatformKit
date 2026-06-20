@@ -1,0 +1,55 @@
+# Copyright 2026 The NativePlatformKit Authors. Licensed under the Apache License, Version 2.0.
+#
+# Publishes a release to Maven Central (Central Portal) when a v* tag is pushed. The publish step is
+# gated on the full verification suite passing first. See docs/publishing.md for the required
+# secrets and the one-time setup.
+name: Publish
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify before publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Full verification (build, tests, lint, spotless, detekt, apiCheck)
+        run: ./gradlew build
+      - name: Verify screenshots
+        run: ./gradlew :nativeplatformkit:verifyRoborazziDebug
+
+  publish:
+    name: Publish to Maven Central (Central Portal)
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: maven-central # add required reviewers here for a manual approval gate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Publish (signed) to the Central Portal
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_IN_MEMORY_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_IN_MEMORY_KEY_PASSWORD }}
+        # Release deployments are created in the Portal but NOT auto-released; promote manually.
+        run: ./gradlew publishToMavenCentral --no-configuration-cache
