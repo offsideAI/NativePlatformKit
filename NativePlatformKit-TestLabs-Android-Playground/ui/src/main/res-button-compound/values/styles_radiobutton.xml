@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.RadioButtonStyle" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Offside.Redesign.RadioButtonStyle.Left" >
+        <item name="android:drawableLeft">@drawable/selector_button_compound_radio_bg_image</item>
+    </style>
+
+    <style name="Offside.Redesign.RadioButtonStyle.Right" >
+        <item name="android:drawableRight">@drawable/selector_button_compound_radio_bg_image</item>
+    </style>
+
+    <style name="Offside.Redesign.RadioButtonStyle.Top" >
+        <item name="android:drawableTop">@drawable/selector_button_compound_radio_bg_image</item>
+    </style>
+</resources>

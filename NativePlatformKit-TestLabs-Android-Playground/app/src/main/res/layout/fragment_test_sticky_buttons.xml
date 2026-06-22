@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_surface"
+    tools:context=".nav.TestStickyButtonsFragment">
+
+    <Spinner
+        android:id="@+id/layouts_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin.xxlarge"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.large"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin.xlarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin.small"
+        app:layout_constraintTop_toBottomOf="@id/layouts_spinner">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:layout_marginStart="@dimen/gutter.xsmall"
+            android:layout_marginEnd="@dimen/gutter.xsmall"
+            app:cardBackgroundColor="?offside_onPrimary">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/gutter.xsmall"
+                android:layout_marginVertical="@dimen/margin.xsmall"
+                android:text="@string/debug_ui_redesign_sample_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

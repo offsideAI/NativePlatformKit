@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="@string/color_generator_graph_label"
+    android:id="@+id/testlabs_color_generator_nav_graph"
+    app:startDestination="@id/testlabs_color_generator_nav_graph_start_destination"
+    app:route="@string/color_generator_graph_route"
+    >
+    <fragment
+        android:id="@+id/testlabs_color_generator_nav_graph_start_destination"
+        android:name="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorFormFragment"
+        android:label="@string/color_generator_destination_form_label"
+        app:route="@string/color_generator_form_route"
+        tools:layout="@layout/color_generator_form_fragment_layout"
+        >
+        <action
+            android:id="@+id/testlabs_color_generator_form_to_results"
+            app:destination="@id/testlabs_color_generator_nav_graph_results"
+            app:enterAnim="@anim/forward_animation"
+            app:exitAnim="@anim/backward_animation"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/testlabs_color_generator_nav_graph_results"
+        android:name="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorResultsFragment"
+        android:label="@string/color_generator_destination_results_label"
+        app:route="@string/color_generator_results_route"
+        tools:layout="@layout/color_generator_results_fragment_layout"
+        />
+</navigation>

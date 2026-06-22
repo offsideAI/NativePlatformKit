@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_bottom_sheet_flow_nav_graph"
+    app:startDestination="@id/testBottomSheetListFragment">
+    <fragment
+        android:id="@+id/testBottomSheetListFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetListFragment"
+        android:label="@string/debug_ui_redesign_bottomsheet_transfers">
+        <action
+            android:id="@+id/action_testBottomSheetListFragment_to_testBottomSheetDetailsFragment"
+            app:destination="@id/testBottomSheetDetailsFragment"
+            app:enterAnim="@anim/forward_animation"
+            app:exitAnim="@anim/backward_animation"
+            app:popEnterAnim="@anim/take_over_enter_animation"
+            app:popExitAnim="@anim/take_over_exit_animation"/>
+    </fragment>
+    <fragment
+        android:id="@+id/testBottomSheetDetailsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetDetailsFragment"
+        android:label="@string/debug_ui_redesign_bottomsheet_transfers" >
+    </fragment>
+
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_review_field_nav_graph_id"
+    android:label="@string/debug_ui_redesign_review_filed"
+    app:startDestination="@id/testReviewFiledTileFragment"
+    >
+    <fragment
+        android:id="@+id/testReviewFiledTileFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.review.TestRedesignReviewFieldTileFragment"
+        android:label="@string/debug_ui_redesign_review_filed"
+        tools:layout="@layout/fragment_test_redesign_review_field_tile" />
+
+</navigation>

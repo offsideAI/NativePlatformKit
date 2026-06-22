@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.PaymentAccountTile" parent="Offside.FontStyle" />
+
+    <style name="Offside.Redesign.PaymentAccountTile.DisplayName">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.AccountType">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:layout_marginTop">@dimen/padding.medium</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDue">
+        <item name="android:textColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDue.Label">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+        <item name="android:layout_marginTop">@dimen/padding.xxlarge</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDue.Value">
+        <item name="android:textAppearance">@style/Offside.Redesign.DisplayMediumTextStyle</item>
+        <item name="android:layout_marginTop">@dimen/padding.medium</item>
+        <item name="android:layout_marginStart">@dimen/padding.medium</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDueDate" parent="Offside.FontStyle" />
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDueDate.Label">
+        <item name="android:textAppearance">@style/Offside.Redesign.LabelSmallTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDueDate.Value">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="android:layout_marginStart">@dimen/padding.medium</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.LastPayment">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.PaymentDue.PaymentScheduleButton" parent="Offside.Redesign.Button.Micro.Alternate">
+        <item name="android:layout_marginTop">@dimen/padding.medium</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.Button.Primary" parent="Offside.Redesign.Button.Primary">
+        <item name="android:insetTop">@dimen/spacing.unset</item>
+        <item name="android:insetBottom">@dimen/spacing.unset</item>
+        <item name="android:layout_marginTop">@dimen/padding.xxlarge</item>
+        <item name="android:layout_marginStart">@dimen/padding.xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xlarge</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.Button.Secondary" parent="Offside.Redesign.Button.Secondary">
+        <item name="android:insetTop">@dimen/spacing.unset</item>
+        <item name="android:insetBottom">@dimen/spacing.unset</item>
+        <item name="android:layout_marginTop">@dimen/padding.large</item>
+        <item name="android:layout_marginStart">@dimen/padding.xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xlarge</item>
+    </style>
+
+    <style name="Offside.Redesign.PaymentAccountTile.Button.Tertiary" parent="Offside.Redesign.Button.Tertiary">
+        <item name="android:insetTop">@dimen/spacing.unset</item>
+        <item name="android:insetBottom">@dimen/spacing.unset</item>
+        <item name="android:layout_marginTop">@dimen/padding.large</item>
+        <item name="android:layout_marginStart">@dimen/padding.xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xlarge</item>
+    </style>
+</resources>

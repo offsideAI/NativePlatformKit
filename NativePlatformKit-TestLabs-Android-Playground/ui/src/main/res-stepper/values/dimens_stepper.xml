@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stepper_border_width">2dp</dimen>
+    <dimen name="stepper_line_vertical_margin">9dp</dimen>
+    <dimen name="stepper_line_width">50dp</dimen>
+</resources>

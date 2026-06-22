@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="2dp"
+    android:viewportWidth="50"
+    android:viewportHeight="2">
+
+    <path
+        android:name="line"
+        android:pathData="M0 0l0 0l0 0"
+        android:strokeWidth="3.5"
+        android:strokeColor="?attr/offside_secondary"
+        android:fillColor="?attr/offside_secondary" />
+
+</vector>

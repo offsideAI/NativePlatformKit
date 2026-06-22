@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_bottomsheet_title" translatable="false">BottomSheets</string>
+    <string name="debug_ui_redesign_bottomsheet_standard" translatable="false">Standard Bottom Sheet</string>
+    <string name="debug_ui_redesign_bottomsheet_persistent" translatable="false">Persistent Bottom Sheet</string>
+    <string name="debug_ui_redesign_bottomsheet_persistent_header" translatable="false">Persistent Bottom Sheet Header</string>
+    <string name="debug_ui_redesign_bottomsheet_persistent_sub_header" translatable="false">Persistent Bottom Sheet Sub Header</string>
+    <string name="debug_ui_redesign_bottomsheet_flow" translatable="false">Flow Bottom Sheet</string>
+    <string name="debug_ui_redesign_bottomsheet_transfers" translatable="false">Transfers</string>
+    <string name="debug_ui_redesign_bottomsheet_nearbyatms" translatable="false">Nearby ATM\'s</string>
+    <string name="debug_ui_redesign_min_amount_input" translatable="false">Minimum Due</string>
+    <string name="debug_ui_redesign_max_amount_input" translatable="false">Interest Amount</string>
+    <string name="debug_ui_redesign_continue_text" translatable="false">Continue</string>
+    <string name="debug_ui_redesign_accept_terms" translatable="false">Accept terms and conditions</string>
+    <string name="debug_ui_redesign_ok_text" translatable="false">OK</string>
+    <string name="debug_ui_redesign_edit_end_icon_content_description" translatable="false">Edit</string>
+</resources>

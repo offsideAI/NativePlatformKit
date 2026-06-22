@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Transfer.Activity.Title" parent="Offside.Redesign.BodyMediumTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+    </style>
+
+    <style name="Offside.Redesign.Transfer.Activity.SubText" parent="Offside.Redesign.LabelSmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.Transfer.Activity.Recurring" parent="Offside.Redesign.Icons.Actionable.Gray">
+        <item name="android:src">@drawable/ic_informative_recurring</item>
+    </style>
+
+</resources>

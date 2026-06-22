@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    Type Your Message: <input id="messageId" type="text" name="value" value=""><br><br>
+
+    Type Your Event: <input id="eventId" type="text" name="value" value=""><br><br>
+
+    <button onclick="sendDataToAndroid()">Send</button>
+
+    <script>
+        function sendDataToAndroid() {
+            var event = document.getElementById("eventId").value;
+            var message = document.getElementById("messageId").value;
+
+            Android.sendAndReceiveData(event, message);
+        }
+
+        function dataFromNative(message){
+            document.getElementById("receiveId").value = message;
+        }
+    </script>
+
+    <br><br><input id="receiveId" style="height:30px;width:500px;font-size:10pt;" type="text" value="">
+
+    </body>
+</html>

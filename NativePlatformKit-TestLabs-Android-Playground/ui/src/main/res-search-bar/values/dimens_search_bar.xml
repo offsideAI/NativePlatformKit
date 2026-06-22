@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="search.bar.height" type="dimen">@dimen/sys.spacing.72</item>
+</resources>

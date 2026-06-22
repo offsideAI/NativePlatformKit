@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/offside_transparent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/header_title"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin.medium"
+        android:textAppearance="@style/Offside.Redesign.DisplaySmallTextStyle"
+        android:textColor="?attr/offside_onSecondaryVariant"
+        android:drawableStart="@null"
+        android:drawableTint="?attr/offside_onSecondaryVariant"
+        app:layout_constraintBottom_toTopOf="@+id/sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Hi Charlie!"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin.medium"
+        android:layout_marginBottom="@dimen/margin.xsmall"
+        android:textAppearance="@style/Offside.Redesign.LabelSmallTextStyle"
+        android:textColor="?attr/offside_onSecondaryVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:text="Last Signed in on Dec 25, 2023 at 9:00 AM"
+        />
+
+    <FrameLayout
+        android:id="@+id/btn_sop_normal_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/padding.medium"
+        android:padding="@dimen/padding.large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toEndOf="@id/header_label_barrier">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sop_button"
+        style="@style/Offside.Redesign.Button.Micro.Blue.SopIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin.xxsmall"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toEndOf="@id/header_label_barrier"
+        tools:text="Reminders"
+        />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/header_label_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="header_title, sub_title"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/testlabs_ui_mode_system"
+        android:title="@string/debug_storage_preference_ui_mode_system"
+        />
+
+    <item
+        android:id="@+id/testlabs_ui_mode_light"
+        android:title="@string/debug_storage_preference_ui_mode_light"
+        />
+
+    <item
+        android:id="@+id/testlabs_ui_mode_dark"
+        android:title="@string/debug_storage_preference_ui_mode_dark"
+        />
+
+</menu>

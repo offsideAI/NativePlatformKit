@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.tile.paymentaccount.data.PaymentAccountTileData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/account_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:importantForAccessibility="yes"
+        android:paddingStart="@dimen/padding.xlarge"
+        android:paddingEnd="@dimen/padding.xsmall"
+        android:paddingBottom="@dimen/padding.xlarge"
+        android:paddingTop="@dimen/padding.xsmall">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/display_name"
+            style="@style/Offside.Redesign.PaymentAccountTile.DisplayName"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@{data.displayName}"
+            app:layout_constraintEnd_toStartOf="@+id/view_account_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@id/view_account_button"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/account_type"
+            style="@style/Offside.Redesign.PaymentAccountTile.AccountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.medium"
+            android:text="@{data.accountType}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display_name"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/view_account_button"
+            style="@style/Offside.Redesign.Button.Icon.Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:onClick="@{(v)-> data.viewAccount.onButtonClick(v)}"
+            android:text="@{data.viewAccount.label}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

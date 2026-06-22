@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Space tokens are used to broadly group the components together. The below values are in px
+    The ratio based on Pixel density factor
+    Medium Density - 1
+    High Density - 1.5
+    Extra High Density - 2.0
+    Low Density - 0.75
+    https://developer.android.com/training/multiscreen/screendensities#dips-pels
+
+    From the Invision the following is the multiplier identified with the token. Here the multiplier translates to Density factor above
+
+    The below identified tokens will be used across the Invision screens to layout the elements for a single screen and must be used appropriately.
+
+    If there is a need for a new generic token that does not fit in the below defined tokens, please add a new one keeping in mind the naming followed here. It is
+    very generic - margin, padding, gutter, etc.
+    For any component specific token, please define and include in your Component folders.
+    -->
+
+    <!--Margin Tokens -->
+    <item name="margin.xxsmall" format="float" type="dimen">@dimen/sys.spacing.08</item>
+    <item name="margin.xsmall" format="float" type="dimen">@dimen/sys.spacing.12</item>
+    <item name="margin.small" format="float" type="dimen">@dimen/sys.spacing.16</item>
+    <item name="margin.medium" format="float" type="dimen">@dimen/sys.spacing.20</item>
+    <item name="margin.large" format="float" type="dimen">@dimen/sys.spacing.24</item>
+    <item name="margin.xlarge" format="float" type="dimen">@dimen/sys.spacing.32</item>
+    <item name="margin.xxlarge" format="float" type="dimen">@dimen/sys.spacing.48</item>
+
+    <!--Padding tokens -->
+    <item name="padding.xsmall" format="float" type="dimen">@dimen/sys.spacing.04</item>
+    <item name="padding.small" format="float" type="dimen">@dimen/sys.spacing.06</item>
+    <item name="padding.medium" format="float" type="dimen">@dimen/sys.spacing.08</item>
+    <item name="padding.large" format="float" type="dimen">@dimen/sys.spacing.12</item>
+    <item name="padding.xlarge" format="float" type="dimen">@dimen/sys.spacing.14</item>
+    <item name="padding.xxlarge" format="float" type="dimen">@dimen/sys.spacing.16</item>
+
+    <!--Gutter Tokens -->
+    <item name="gutter.xsmall" format="float" type="dimen">@dimen/sys.spacing.14</item>
+    <item name="gutter.small" format="float" type="dimen">@dimen/sys.spacing.20</item>
+    <item name="gutter.large" format="float" type="dimen">@dimen/sys.spacing.40</item>
+    <item name="gutter.xlarge" format="float" type="dimen">@dimen/sys.spacing.56</item>
+    <item name="gutter.xxlarge" format="float" type="dimen">@dimen/sys.spacing.96</item>
+
+    <!-- Unset any Padding/Margins  -->
+    <item name="spacing.unset" format="float" type="dimen">@dimen/sys.spacing.00</item>
+
+    <!-- Dimension will be controlled by constraints
+         Source - https://developer.android.com/reference/android/support/constraint/ConstraintLayout.LayoutParams.html#MATCH_CONSTRAINT
+         -->
+    <item name="spacing.match_constraint" format="float" type="dimen">@dimen/sys.spacing.00</item>
+
+
+    <!-- SoP Background Layers -->
+    <item name="spacing.sop.background.layers.first" format="dimension" type="dimen">@dimen/spacing.unset</item>
+    <item name="spacing.sop.background.layers.second" format="dimension" type="dimen">@dimen/gutter.xxlarge</item>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/gutter.xsmall"
+    android:layout_marginTop="@dimen/margin.small"
+    android:background="@drawable/layout_border"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestIconLinkButtonFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding.xsmall"
+        android:text="@string/debug_ui_redesign_button_icon_with_link_label"
+        android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+        android:textColor="?attr/offside_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        style="@style/Offside.Redesign.SwitchToggleStyle"
+        android:id="@+id/enabled_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/padding.small"
+        android:text="@string/debug_ui_redesign_enabled_switch_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_textview" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/offside_onPrimary"
+        app:layout_constraintTop_toBottomOf="@id/enabled_switch">
+
+        <include
+            layout="@layout/test_button_icon_with_link_card_layout"
+            android:id="@+id/button_icon_with_link_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/margin.small"
+            android:layout_marginBottom="@dimen/margin.xxsmall" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/face_action"
+        style="@style/Offside.Redesign.Button.Biometric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debug_ui_redesign_biometric_button"
+        android:contentDescription="@string/biometric_action_content_description"
+        android:layout_marginTop="@dimen/margin.small"
+        app:backgroundTint="?attr/offside_scrim"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/biometric_action"
+        style="@style/Offside.Redesign.Button.Biometric"
+        app:icon="@drawable/ic_actionable_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debug_ui_redesign_fingerprint_action"
+        android:contentDescription="@string/debug_ui_redesign_fingerprint_action_content_description"
+        android:layout_marginTop="@dimen/margin.small"
+        app:backgroundTint="?attr/offside_scrim"
+        app:layout_constraintTop_toBottomOf="@+id/face_action"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:drawable="?attr/offside_secondaryVariant"
+        android:id="@+id/sop_background_layer_list_highest"
+        />
+
+    <item
+        android:drawable="?attr/offside_transparent"
+        android:id="@+id/sop_background_layer_list_lowest"
+        />
+
+</layer-list>

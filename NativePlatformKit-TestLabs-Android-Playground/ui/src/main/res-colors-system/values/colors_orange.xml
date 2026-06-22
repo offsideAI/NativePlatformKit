@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Orange Accent colors -->
+    <color name="sys.color.orange10">#3B1B02</color>
+    <color name="sys.color.orange20">#542703</color>
+    <color name="sys.color.orange30">#723403</color>
+    <color name="sys.color.orange40">#954504</color>
+    <color name="sys.color.orange50">#BD5805</color>
+    <color name="sys.color.orange60">#EF6A00</color>
+    <color name="sys.color.orange70">#FA994C</color>
+    <color name="sys.color.orange80">#FCC192</color>
+    <color name="sys.color.orange90">#FDE0C9</color>
+    <color name="sys.color.orange95">#FCF1E8</color>
+</resources>

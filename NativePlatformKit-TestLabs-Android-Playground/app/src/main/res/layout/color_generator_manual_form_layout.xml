@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorViewModel"
+            />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase"
+            android:id="@+id/color_generator_input_layout_red"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gutter.xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/color_generator_input_layout_green"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                style="@style/Offside.Redesign.InputField.EditTextBase.EmptyWhite"
+                android:id="@+id/color_generator_input_red_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/color_generator_input_red"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="@={viewModel.redInt}"
+                app:simpleItems="@array/color_generator_values"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase"
+            android:id="@+id/color_generator_input_layout_green"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gutter.xsmall"
+            app:layout_constraintStart_toEndOf="@id/color_generator_input_layout_red"
+            app:layout_constraintEnd_toStartOf="@id/color_generator_input_layout_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                style="@style/Offside.Redesign.InputField.EditTextBase.EmptyWhite"
+                android:id="@+id/color_generator_input_green_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/color_generator_input_green"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="@={viewModel.greenInt}"
+                app:simpleItems="@array/color_generator_values"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase"
+            android:id="@+id/color_generator_input_layout_blue"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gutter.xsmall"
+            app:layout_constraintStart_toEndOf="@id/color_generator_input_layout_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                style="@style/Offside.Redesign.InputField.EditTextBase.EmptyWhite"
+                android:id="@+id/color_generator_input_blue_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/color_generator_input_blue"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="@={viewModel.blueInt}"
+                app:simpleItems="@array/color_generator_values"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

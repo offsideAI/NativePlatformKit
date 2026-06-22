@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.ListItem.Label" parent="Offside.Redesign.TitleMediumTextStyle">
+        <item name="android:textColor">@color/selector_list_item_label</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Label.Emphasized" parent="Offside.Redesign.TitleLargeTextStyle">
+        <item name="android:textColor">@color/selector_list_item_label</item>
+        <item name="android:layout_marginBottom">@dimen/padding.xxlarge</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Description" parent="Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Icon" parent="Theme.Material3.DayNight">
+        <item name="android:tint">@color/selector_list_item_icon</item>
+        <item name="layout_constraintWidth_percent">@dimen/list.item.small.icon.size.percentage</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xxsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Badge" parent="Offside.Redesign.Badge.Custom">
+        <item name="android:layout_marginEnd">@dimen/padding.xxlarge</item>
+        <item name="layout_constraintWidth_percent">@dimen/size.percentage.small</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xxsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Icon.CaretIcon">
+        <item name="android:rotation">-90</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Status" parent="Offside.Redesign.BodyMediumTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:layout_marginEnd">@dimen/padding.medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.Checkbox" parent="Offside.Redesign.CheckboxStyle.Left">
+        <item name="android:background">?attr/offside_transparent</item>
+        <item name="android:minWidth">@dimen/spacing.unset</item>
+        <item name="android:minHeight">@dimen/spacing.unset</item>
+        <item name="android:drawablePadding">@dimen/padding.large</item>
+        <item name="android:paddingStart">@dimen/padding.xxlarge</item>
+        <item name="android:paddingEnd">@dimen/padding.xxlarge</item>
+        <item name="android:paddingTop">@dimen/padding.xxlarge</item>
+        <item name="android:paddingBottom">@dimen/padding.xxlarge</item>
+        <item name="android:lineSpacingExtra">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.RadioButton" parent="Offside.Redesign.RadioButtonStyle.Left">
+        <item name="android:background">?attr/offside_transparent</item>
+        <item name="android:minWidth">@dimen/spacing.unset</item>
+        <item name="android:minHeight">@dimen/spacing.unset</item>
+        <item name="android:drawablePadding">@dimen/padding.large</item>
+        <item name="android:paddingStart">@dimen/padding.xxlarge</item>
+        <item name="android:paddingEnd">@dimen/padding.xxlarge</item>
+        <item name="android:paddingTop">@dimen/padding.xxlarge</item>
+        <item name="android:paddingBottom">@dimen/padding.xxlarge</item>
+        <item name="android:lineSpacingExtra">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.CompoundButton.PrimaryText" parent="Offside.Redesign.BodyLargeTextStyle">
+        <item name="android:textColor">@color/selector_list_item_label</item>
+    </style>
+
+    <style name="Offside.Redesign.ListItem.CompoundButton.Description" parent="Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">@color/selector_list_item_label</item>
+        <item name="android:paddingTop">@dimen/padding.medium</item>
+    </style>
+
+
+    <style name="Offside.Redesign.ListItem.Switch" parent="Offside.Redesign.SwitchToggleStyle">
+        <item name="android:paddingStart">@dimen/padding.xxlarge</item>
+        <item name="android:paddingEnd">@dimen/padding.large</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+        <item name="android:textColor">@color/selector_list_item_label</item>
+        <item name="android:paddingTop">@dimen/padding.xxlarge</item>
+        <item name="android:paddingBottom">@dimen/padding.xxlarge</item>
+    </style>
+</resources>

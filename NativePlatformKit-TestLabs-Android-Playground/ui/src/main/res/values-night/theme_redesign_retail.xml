@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+
+        Defines application-wide theme customizations for Dark Mode.
+
+        Color Roles defined here are based off of Material Design Specifications in
+        https://m3.material.io/styles/color/roles#f94f9708-5ec9-4526-968c-577e9ea78036
+
+
+        For component specific style customizations refer to styles.xml.
+
+        Although either XML file may contain any style definition, it is by convention that themes_retail.xml
+        provide application-wide definitions and styles.xml provide component specific definitions.
+        http://developer.android.com/guide/topics/ui/themes.html#PlatformStyles
+
+        Material Design for Pre-Lollipop Devices
+        http://android-developers.blogspot.com/2014/10/appcompat-v21-material-design-for-pre.html
+    -->
+    <style name="Theme.Offside.Base.Retail" parent="Theme.Offside.Base">
+        <item name="offside_sop_background_drawable">@drawable/sop_background_image_retail</item>
+        <item name="offside_sop_background_layer_padding_first">
+            @dimen/spacing.sop.background.layers.first
+        </item>
+        <item name="offside_sop_background_layer_padding_second">
+            @dimen/spacing.sop.background.layers.second
+        </item>
+        <item name="offside_primary">@color/sys.color.blue70</item>
+        <item name="offside_onPrimary">@color/sys.color.neutral0</item>
+        <item name="offside_primaryContainer">@color/sys.color.blue20</item>
+        <item name="offside_onPrimaryContainer">@color/sys.color.neutral90</item>
+        <item name="offside_primaryVariant">@color/sys.color.blue90</item>
+
+        <item name="offside_secondary">@color/sys.color.blue80</item>
+        <item name="offside_onSecondary">@color/sys.color.neutral0</item>
+        <item name="offside_secondaryVariant">@color/sys.color.neutral0</item>
+        <item name="offside_onSecondaryVariant">@color/sys.color.neutral100</item>
+        <item name="offside_secondaryContainer">@color/sys.color.neutral100</item>
+        <item name="offside_onSecondaryContainer">@color/sys.color.neutral100</item>
+
+
+        <item name="offside_tertiary">@color/sys.color.green60</item>
+        <item name="offside_onTertiary">@color/sys.color.neutral0</item>
+        <item name="offside_tertiaryContainer">@color/sys.color.yellow10</item>
+        <item name="offside_onTertiaryContainer">@color/sys.color.neutral90</item>
+        <item name="offside_tertiaryContainerVariant">@color/sys.color.green20</item>
+
+        <item name="offside_error">@color/sys.color.red60</item>
+        <item name="offside_onError">@color/sys.color.neutral0</item>
+        <item name="offside_errorContainer">@color/sys.color.red20</item>
+        <item name="offside_onErrorContainer">@color/sys.color.neutral90</item>
+
+        <item name="offside_accent">@color/sys.color.orange60</item>
+        <item name="offside_surface">@color/sys.color.neutral0</item>
+        <item name="offside_onSurface">@color/sys.color.neutral98</item>
+        <item name="offside_onSurfaceVariantLow">@color/sys.color.neutral80</item>
+        <item name="offside_onSurfaceVariantMedium">@color/sys.color.neutral90</item>
+        <item name="offside_surfaceContainer">@color/sys.color.neutral10</item>
+        <item name="offside_surfaceContainerLow">@color/sys.color.neutral30</item>
+        <item name="offside_surfaceContainerLowest">@color/sys.color.neutral20</item>
+        <item name="offside_surfaceContainerHigh">@color/sys.color.neutral60</item>
+        <item name="offside_inverseSurface">@color/sys.color.neutral95</item>
+        <item name="offside_inverseOnSurface">@color/sys.color.neutral10</item>
+        <item name="offside_inversePrimary">@color/sys.color.blue40</item>
+        <item name="offside_inversePrimaryVariant">@color/sys.color.blue50</item>
+
+        <item name="offside_outline">@color/sys.color.neutral20</item>
+        <item name="offside_outlineVariant">@color/sys.color.neutral40</item>
+
+        <item name="offside_shadow">@color/sys.color.neutral0</item>
+        <item name="offside_scrim">@color/sys.color.neutral0</item>
+        <item name="offside_transparent">@color/sys.color.transparent</item>
+
+        <item name="offside_ecommerceBrandColor">@color/sys.color.neutral100</item>
+        <item name="offside_pazeBrandColor">@color/sys.color.neutral100</item>
+
+        <item name="offside_primaryStatic">@color/sys.color.blue40</item>
+        <item name="offside_secondaryStatic">@color/sys.color.blue30</item>
+        <item name="offside_primaryVariantStatic">@color/sys.color.blue20</item>
+        <item name="offside_onSurfaceVariantLowStatic">@color/sys.color.neutral40</item>
+        <item name="offside_chartsLime">@color/sys.color.lime60</item>
+
+        <item name="android:windowBackground">@color/sys.color.neutral0</item>
+        <item name="android:navigationBarColor">?attr/offside_secondaryVariant</item>
+
+        <!-- Custom Offside Styles -->
+        <item name="snackbarStyle">@style/Offside.Redesign.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Offside.Redesign.Button.TextButton.Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/Offside.Redesign.Snackbar.TextView</item>
+        <item name="offside_overlayTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="materialCalendarTheme">@style/Offside.Redesign.MaterialCalendar</item>
+        <item name="badgeStyle">@style/Offside.Redesign.Badge.Notification</item>
+    </style>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardTileItem_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/offside_surfaceContainerLowest"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:importantForAccessibility="yes"
+    android:padding="@dimen/padding.large"
+    >
+
+    <ai.offside.mobile.android.component.ui.asyncimage.AsyncImage
+        android:id="@+id/tile_art_image"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="@dimen/spacing.match_constraint"
+        android:importantForAccessibility="no"
+        app:placeholderImageSrc="@drawable/ic_decorative_card_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/size.ratio.xsmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="@dimen/size.percentage.medium"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tile_primary_Info"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin.small"
+        android:maxLines="@integer/card_worksheet_title_max_line"
+        android:textAppearance="@style/Offside.Redesign.TitleSmallTextStyle"
+        android:textColor="?attr/offside_onSurface"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toTopOf="@+id/tile_supplementary_Info"
+        app:layout_constraintStart_toEndOf="@+id/tile_art_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tile_art_image"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tile_supplementary_Info"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding.xsmall"
+        android:textAppearance="@style/Offside.Redesign.LabelSmallTextStyle"
+        android:textColor="?attr/offside_onSurfaceVariantLow"
+        app:layout_constraintBottom_toTopOf="@+id/tile_secondary_Info"
+        app:layout_constraintStart_toStartOf="@+id/tile_primary_Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tile_primary_Info"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tile_secondary_Info"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding.medium"
+        android:textAppearance="@style/Offside.Redesign.TitleSmallTextStyle"
+        android:textColor="?attr/offside_onSurfaceVariantLow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tile_art_image"
+        app:layout_constraintStart_toStartOf="@+id/tile_primary_Info"
+        app:layout_constraintTop_toBottomOf="@+id/tile_supplementary_Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

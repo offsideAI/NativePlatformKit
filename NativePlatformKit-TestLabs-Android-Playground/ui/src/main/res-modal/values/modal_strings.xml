@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="primary_action_label" translatable="false">Primary Action</string>
+    <string name="secondary_action_label" translatable="false">Secondary Action</string>
+    <string name="tertiary_action_label" translatable="false">Tertiary Action</string>
+</resources>

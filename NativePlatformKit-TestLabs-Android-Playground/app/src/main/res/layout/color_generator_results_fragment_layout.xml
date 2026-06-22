@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorViewModel"
+            />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="@dimen/gutter.xxlarge"
+        >
+
+        <include
+            android:id="@+id/color_generator_form_controls_include"
+            layout="@layout/color_generator_form_controls_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_output_source_include"
+            bind:viewModel="@={viewModel}"
+            />
+
+        <include
+            android:id="@+id/color_generator_output_source_include"
+            layout="@layout/color_generator_provided_color_list_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin.small"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_form_controls_include"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_output_recycler_view"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/color_generator_output_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_output_source_include"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:itemCount="9"
+            tools:listitem="@layout/color_generator_generated_color_list_item_layout"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!--
+            Defines application-wide theme customizations.
+
+            Color Roles defined here are based off of Material Design Specifications in
+            https://m3.material.io/styles/color/roles#f94f9708-5ec9-4526-968c-577e9ea78036
+
+
+            For component specific style customizations refer to styles.xml.
+
+            Although either XML file may contain any style definition, it is by convention that themes_retail.xml
+            provide application-wide definitions and styles.xml provide component specific definitions.
+            http://developer.android.com/guide/topics/ui/themes.html#PlatformStyles
+
+            Material Design for Pre-Lollipop Devices
+            http://android-developers.blogspot.com/2014/10/appcompat-v21-material-design-for-pre.html
+        -->
+        <style name="Theme.Offside.Base" parent="Theme.Material3.DayNight.NoActionBar">
+            <item name="android:windowBackground">?attr/offside_surface</item>
+            <item name="colorPrimary">?attr/offside_primary</item>
+            <item name="colorPrimaryDark">?attr/offside_secondary</item>
+            <item name="colorOnSurface">?attr/offside_onSurface</item>
+            <item name="colorAccent">?attr/offside_accent</item>
+            <item name="android:colorAccent">?attr/offside_accent</item>
+            <item name="colorPrimaryVariant">?attr/offside_inverseSurface</item>
+
+            <item name="colorOnPrimary">?attr/offside_onPrimary</item>
+
+            <item name="colorPrimaryContainer">?attr/offside_primaryContainer</item>
+            <item name="colorOnPrimaryContainer">?attr/offside_onPrimaryContainer</item>
+            <item name="colorSecondary">?attr/offside_secondary</item>
+            <item name="colorOnSecondary">?attr/offside_onSecondary</item>
+
+            <item name="colorSecondaryContainer">?attr/offside_secondaryVariant</item>
+            <item name="colorOnSecondaryContainer">?attr/offside_onSecondaryVariant</item>
+
+            <item name="colorTertiary">?attr/offside_tertiary</item>
+            <item name="colorOnTertiary">?attr/offside_onTertiary</item>
+            <item name="colorTertiaryContainer">?attr/offside_tertiaryContainer</item>
+            <item name="colorOnTertiaryContainer">?attr/offside_onTertiaryContainer</item>
+
+            <item name="colorErrorContainer">?attr/offside_errorContainer</item>
+            <item name="colorOnError">?attr/offside_onError</item>
+            <item name="colorOnErrorContainer">?attr/offside_onErrorContainer</item>
+
+            <item name="android:colorBackground">?attr/offside_surface</item>
+            <item name="colorOnBackground">?attr/offside_onSurface</item>
+
+            <item name="colorSurface">?attr/offside_surface</item>
+            <item name="colorOutline">?attr/offside_outline</item>
+            <item name="colorOutlineVariant">?attr/offside_outlineVariant</item>
+            <item name="colorOnSurfaceInverse">?attr/offside_inverseOnSurface</item>
+            <item name="colorSurfaceInverse">?attr/offside_inverseSurface</item>
+
+            <item name="android:windowLightStatusBar">false</item>
+
+        </style>
+</resources>

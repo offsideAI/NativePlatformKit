@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_buttons_nav_graph_id"
+    app:startDestination="@id/testUIRedesignButtonMainPageFragment">
+    <fragment
+        android:id="@+id/testUIRedesignButtonMainPageFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignButtonMainPageFragment"
+        android:label="@string/debug_ui_redesign_tab_buttons"
+        tools:layout="@layout/fragment_test_ui_redesign_button_main_page">
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testPrimaryButtonsFragment"
+            app:destination="@id/testPrimaryButtonsFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testUIRedesignMainPageFragment"
+            app:destination="@id/testUIRedesignMainPageFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testSecondaryAndTertiaryButtonFragment"
+            app:destination="@id/testSecondaryAndTertiaryButtonFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testMicroButtonsFragment"
+            app:destination="@id/testMicroButtonsFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testUIRedesignJumboButtonsFragment"
+            app:destination="@id/testUIRedesignJumboButtonsFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testCompoundButtonsFragmentFragment"
+            app:destination="@id/testCompoundButtonsFragmentFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testStickyButtonsFragment"
+            app:destination="@id/testStickyButtonsFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testGroupedCheckBoxesFragment"
+            app:destination="@id/testGroupedCheckBoxesFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testIconLinkButtonFragment"
+            app:destination="@id/testIconLinkButtonFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignButtonMainPageFragment_to_testTakeoverStickyButtonFragment"
+            app:destination="@id/testTakeoverStickyButtonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testPrimaryButtonsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestPrimaryButtonsFragment"
+        android:label="@string/debug_ui_redesign_primary_button"
+        tools:layout="@layout/fragment_test_primary_buttons">
+        <action
+            android:id="@+id/action_testPrimaryButtonsFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testUIRedesignJumboButtonsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignJumboButtonsFragment"
+        android:label="@string/debug_ui_redesign_jumbo_buttons_label"
+        tools:layout="@layout/fragment_test_jumbo_buttons">
+        <action
+            android:id="@+id/action_testUIRedesignJumboButtonsFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testMicroButtonsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestMicroButtonsFragment"
+        android:label="@string/debug_ui_redesign_micro_buttons_label"
+        tools:layout="@layout/fragment_test_micro_buttons">
+        <action
+            android:id="@+id/action_testMicroButtonsFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testSecondaryAndTertiaryButtonFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestSecondaryAndTertiaryButtonFragment"
+        android:label="@string/debug_ui_redesign_secondary_tertiary_button_label"
+        tools:layout="@layout/fragment_test_secondary_and_tertiary_button">
+        <action
+            android:id="@+id/action_testSecondaryAndTertiaryButtonFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testCompoundButtonsFragmentFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestCompoundButtonsFragmentFragment"
+        android:label="@string/debug_ui_redesign_compound_button_label"
+        tools:layout="@layout/fragment_test_compound_buttons">
+        <action
+            android:id="@+id/action_testCompoundButtonsFragmentFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testStickyButtonsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestStickyButtonsFragment"
+        android:label="@string/debug_ui_redesign_sticky_button_label"
+        tools:layout="@layout/fragment_test_sticky_buttons">
+        <action
+            android:id="@+id/action_testStickyButtonsFragment_to_testUIRedesignButtonMainPageFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testIconLinkButtonFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestIconLinkButtonFragment"
+        android:label="@string/debug_ui_redesign_button_icon_with_link_label"
+        tools:layout="@layout/fragment_test_icon_link_button">
+        <action
+            android:id="@+id/action_testGroupedCheckboxFragment_to_testIconLinkButtonFragment"
+            app:destination="@id/testUIRedesignButtonMainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testTakeoverStickyButtonFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.buttons.TestTakeoverStickyButtonsMainFragment"
+        android:label="@string/debug_ui_redesign_takeover_sticky_buttons_label"
+        tools:layout="@layout/fragment_test_ui_redesign_main_page">
+    </fragment>
+</navigation>

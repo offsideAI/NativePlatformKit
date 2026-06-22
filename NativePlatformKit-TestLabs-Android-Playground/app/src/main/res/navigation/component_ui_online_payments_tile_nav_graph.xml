@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_online_payments_nav_graph_id"
+    app:startDestination="@id/testOnlinePaymentsTileFragment">
+
+    <fragment
+        android:id="@+id/testOnlinePaymentsTileFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.online_payments.TestUIRedesignOnlinePaymentsFragment"
+        android:label="@string/debug_ui_redesign_tab_online_payments_tile"
+        tools:layout="@layout/fragment_test_ui_redesign_online_payments_tiles" />
+
+</navigation>

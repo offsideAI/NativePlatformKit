@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M4.191,18.406L11.878,18.406C12.295,19.017 12.83,19.552 13.448,19.977C13.34,19.99 13.226,20 13.111,20L4.222,20C2.995,20 2,19.047 2,17.875L2,5.125C2,3.951 2.995,3 4.222,3L9.969,3C10.559,3 11.122,3.224 11.538,3.623L14.684,6.629C15.101,7.028 15.333,7.565 15.333,8.13L15.333,9.594C14.736,9.757 14.174,10.003 13.667,10.321L13.667,8.313L10.889,8.313C10.274,8.313 9.778,7.838 9.778,7.25L9.778,4.594L4.222,4.594C3.915,4.594 3.667,4.831 3.667,5.125L3.667,17.875C3.667,18.167 3.915,18.406 4.222,18.406L4.191,18.406Z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/offside_primary"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M5.537,9.46L9.177,9.46A0.68,0.68 0,0 1,9.857 10.14L9.857,10.14A0.68,0.68 0,0 1,9.177 10.82L5.537,10.82A0.68,0.68 0,0 1,4.857 10.14L4.857,10.14A0.68,0.68 0,0 1,5.537 9.46z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/offside_primary"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M5.537,11.84L9.177,11.84A0.68,0.68 0,0 1,9.857 12.52L9.857,12.52A0.68,0.68 0,0 1,9.177 13.2L5.537,13.2A0.68,0.68 0,0 1,4.857 12.52L4.857,12.52A0.68,0.68 0,0 1,5.537 11.84z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/offside_primary"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M5.537,14.22L7.749,14.22A0.68,0.68 0,0 1,8.429 14.9L8.429,14.9A0.68,0.68 0,0 1,7.749 15.58L5.537,15.58A0.68,0.68 0,0 1,4.857 14.9L4.857,14.9A0.68,0.68 0,0 1,5.537 14.22z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/offside_primary"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M17,10.438C19.76,10.438 22,12.579 22,15.219C22,17.858 19.76,20 17,20C14.24,20 11.969,17.858 11.969,15.219C11.969,12.579 14.24,10.438 17,10.438ZM16.966,12.773C15.593,12.773 14.748,13.694 14.748,15.184C14.748,16.67 15.576,17.55 16.983,17.55C18.113,17.55 18.912,17.006 19.092,16.147L17.958,16.147C17.828,16.45 17.498,16.62 17.016,16.62C16.38,16.62 15.978,16.197 15.962,15.516L15.962,15.454L19.13,15.454L19.13,15.084C19.13,13.632 18.326,12.773 16.966,12.773ZM16.97,13.698C17.539,13.698 17.908,14.076 17.933,14.682L15.966,14.682C16.008,14.088 16.405,13.698 16.97,13.698Z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/offside_primary"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"/>
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Carousel.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="android:background">?attr/offside_surfaceContainerLowest</item>
+        <item name="tabBackground">@drawable/selector_carousel_tab_background</item>
+        <item name="tabIndicatorHeight">@dimen/spacing.unset</item>
+        <item name="tabPaddingStart">@dimen/padding.small</item>
+        <item name="tabGravity">center</item>
+    </style>
+
+</resources>

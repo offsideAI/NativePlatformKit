@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Success Accent Colors -->
+    <color name="sys.color.green10">#042A04</color>
+    <color name="sys.color.green20">#073C07</color>
+    <color name="sys.color.green30">#115011</color>
+    <color name="sys.color.green40">#1F6B1F</color>
+    <color name="sys.color.green50">#2D862D</color>
+    <color name="sys.color.green60">#40A540</color>
+    <color name="sys.color.green70">#68C468</color>
+    <color name="sys.color.green80">#9FDB9F</color>
+    <color name="sys.color.green90">#D3EED3</color>
+    <color name="sys.color.green95">#EAF6EA</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_badge_success" translatable="false">Success</string>
+    <string name="info_badge_warning" translatable="false">Warning</string>
+    <string name="info_badge_checkmark" translatable="false">Checkmark</string>
+</resources>

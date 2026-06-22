@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="color_generator_value_title_0" translatable="false">0</string>
+    <string name="color_generator_value_title_1" translatable="false">1</string>
+    <string name="color_generator_value_title_2" translatable="false">2</string>
+    <string name="color_generator_value_title_3" translatable="false">3</string>
+    <string name="color_generator_value_title_4" translatable="false">4</string>
+    <string name="color_generator_value_title_5" translatable="false">5</string>
+    <string name="color_generator_value_title_6" translatable="false">6</string>
+    <string name="color_generator_value_title_7" translatable="false">7</string>
+    <string name="color_generator_value_title_8" translatable="false">8</string>
+    <string name="color_generator_value_title_9" translatable="false">9</string>
+    <string name="color_generator_value_title_10" translatable="false">10</string>
+    <string name="color_generator_value_title_11" translatable="false">11</string>
+    <string name="color_generator_value_title_12" translatable="false">12</string>
+    <string name="color_generator_value_title_13" translatable="false">13</string>
+    <string name="color_generator_value_title_14" translatable="false">14</string>
+    <string name="color_generator_value_title_15" translatable="false">15</string>
+    <string name="color_generator_value_title_16" translatable="false">16</string>
+    <string name="color_generator_value_title_17" translatable="false">17</string>
+    <string name="color_generator_value_title_18" translatable="false">18</string>
+    <string name="color_generator_value_title_19" translatable="false">19</string>
+    <string name="color_generator_value_title_20" translatable="false">20</string>
+    <string name="color_generator_value_title_21" translatable="false">21</string>
+    <string name="color_generator_value_title_22" translatable="false">22</string>
+    <string name="color_generator_value_title_23" translatable="false">23</string>
+    <string name="color_generator_value_title_24" translatable="false">24</string>
+    <string name="color_generator_value_title_25" translatable="false">25</string>
+    <string name="color_generator_value_title_26" translatable="false">26</string>
+    <string name="color_generator_value_title_27" translatable="false">27</string>
+    <string name="color_generator_value_title_28" translatable="false">28</string>
+    <string name="color_generator_value_title_29" translatable="false">29</string>
+    <string name="color_generator_value_title_30" translatable="false">30</string>
+    <string name="color_generator_value_title_31" translatable="false">31</string>
+    <string name="color_generator_value_title_32" translatable="false">32</string>
+    <string name="color_generator_value_title_33" translatable="false">33</string>
+    <string name="color_generator_value_title_34" translatable="false">34</string>
+    <string name="color_generator_value_title_35" translatable="false">35</string>
+    <string name="color_generator_value_title_36" translatable="false">36</string>
+    <string name="color_generator_value_title_37" translatable="false">37</string>
+    <string name="color_generator_value_title_38" translatable="false">38</string>
+    <string name="color_generator_value_title_39" translatable="false">39</string>
+    <string name="color_generator_value_title_40" translatable="false">40</string>
+    <string name="color_generator_value_title_41" translatable="false">41</string>
+    <string name="color_generator_value_title_42" translatable="false">42</string>
+    <string name="color_generator_value_title_43" translatable="false">43</string>
+    <string name="color_generator_value_title_44" translatable="false">44</string>
+    <string name="color_generator_value_title_45" translatable="false">45</string>
+    <string name="color_generator_value_title_46" translatable="false">46</string>
+    <string name="color_generator_value_title_47" translatable="false">47</string>
+    <string name="color_generator_value_title_48" translatable="false">48</string>
+    <string name="color_generator_value_title_49" translatable="false">49</string>
+    <string name="color_generator_value_title_50" translatable="false">50</string>
+    <string name="color_generator_value_title_51" translatable="false">51</string>
+    <string name="color_generator_value_title_52" translatable="false">52</string>
+    <string name="color_generator_value_title_53" translatable="false">53</string>
+    <string name="color_generator_value_title_54" translatable="false">54</string>
+    <string name="color_generator_value_title_55" translatable="false">55</string>
+    <string name="color_generator_value_title_56" translatable="false">56</string>
+    <string name="color_generator_value_title_57" translatable="false">57</string>
+    <string name="color_generator_value_title_58" translatable="false">58</string>
+    <string name="color_generator_value_title_59" translatable="false">59</string>
+    <string name="color_generator_value_title_60" translatable="false">60</string>
+    <string name="color_generator_value_title_61" translatable="false">61</string>
+    <string name="color_generator_value_title_62" translatable="false">62</string>
+    <string name="color_generator_value_title_63" translatable="false">63</string>
+    <string name="color_generator_value_title_64" translatable="false">64</string>
+    <string name="color_generator_value_title_65" translatable="false">65</string>
+    <string name="color_generator_value_title_66" translatable="false">66</string>
+    <string name="color_generator_value_title_67" translatable="false">67</string>
+    <string name="color_generator_value_title_68" translatable="false">68</string>
+    <string name="color_generator_value_title_69" translatable="false">69</string>
+    <string name="color_generator_value_title_70" translatable="false">70</string>
+    <string name="color_generator_value_title_71" translatable="false">71</string>
+    <string name="color_generator_value_title_72" translatable="false">72</string>
+    <string name="color_generator_value_title_73" translatable="false">73</string>
+    <string name="color_generator_value_title_74" translatable="false">74</string>
+    <string name="color_generator_value_title_75" translatable="false">75</string>
+    <string name="color_generator_value_title_76" translatable="false">76</string>
+    <string name="color_generator_value_title_77" translatable="false">77</string>
+    <string name="color_generator_value_title_78" translatable="false">78</string>
+    <string name="color_generator_value_title_79" translatable="false">79</string>
+    <string name="color_generator_value_title_80" translatable="false">80</string>
+    <string name="color_generator_value_title_81" translatable="false">81</string>
+    <string name="color_generator_value_title_82" translatable="false">82</string>
+    <string name="color_generator_value_title_83" translatable="false">83</string>
+    <string name="color_generator_value_title_84" translatable="false">84</string>
+    <string name="color_generator_value_title_85" translatable="false">85</string>
+    <string name="color_generator_value_title_86" translatable="false">86</string>
+    <string name="color_generator_value_title_87" translatable="false">87</string>
+    <string name="color_generator_value_title_88" translatable="false">88</string>
+    <string name="color_generator_value_title_89" translatable="false">89</string>
+    <string name="color_generator_value_title_90" translatable="false">90</string>
+    <string name="color_generator_value_title_91" translatable="false">91</string>
+    <string name="color_generator_value_title_92" translatable="false">92</string>
+    <string name="color_generator_value_title_93" translatable="false">93</string>
+    <string name="color_generator_value_title_94" translatable="false">94</string>
+    <string name="color_generator_value_title_95" translatable="false">95</string>
+    <string name="color_generator_value_title_96" translatable="false">96</string>
+    <string name="color_generator_value_title_97" translatable="false">97</string>
+    <string name="color_generator_value_title_98" translatable="false">98</string>
+    <string name="color_generator_value_title_99" translatable="false">99</string>
+    <string name="color_generator_value_title_100" translatable="false">100</string>
+    <string name="color_generator_value_title_101" translatable="false">101</string>
+    <string name="color_generator_value_title_102" translatable="false">102</string>
+    <string name="color_generator_value_title_103" translatable="false">103</string>
+    <string name="color_generator_value_title_104" translatable="false">104</string>
+    <string name="color_generator_value_title_105" translatable="false">105</string>
+    <string name="color_generator_value_title_106" translatable="false">106</string>
+    <string name="color_generator_value_title_107" translatable="false">107</string>
+    <string name="color_generator_value_title_108" translatable="false">108</string>
+    <string name="color_generator_value_title_109" translatable="false">109</string>
+    <string name="color_generator_value_title_110" translatable="false">110</string>
+    <string name="color_generator_value_title_111" translatable="false">111</string>
+    <string name="color_generator_value_title_112" translatable="false">112</string>
+    <string name="color_generator_value_title_113" translatable="false">113</string>
+    <string name="color_generator_value_title_114" translatable="false">114</string>
+    <string name="color_generator_value_title_115" translatable="false">115</string>
+    <string name="color_generator_value_title_116" translatable="false">116</string>
+    <string name="color_generator_value_title_117" translatable="false">117</string>
+    <string name="color_generator_value_title_118" translatable="false">118</string>
+    <string name="color_generator_value_title_119" translatable="false">119</string>
+    <string name="color_generator_value_title_120" translatable="false">120</string>
+    <string name="color_generator_value_title_121" translatable="false">121</string>
+    <string name="color_generator_value_title_122" translatable="false">122</string>
+    <string name="color_generator_value_title_123" translatable="false">123</string>
+    <string name="color_generator_value_title_124" translatable="false">124</string>
+    <string name="color_generator_value_title_125" translatable="false">125</string>
+    <string name="color_generator_value_title_126" translatable="false">126</string>
+    <string name="color_generator_value_title_127" translatable="false">127</string>
+    <string name="color_generator_value_title_128" translatable="false">128</string>
+    <string name="color_generator_value_title_129" translatable="false">129</string>
+    <string name="color_generator_value_title_130" translatable="false">130</string>
+    <string name="color_generator_value_title_131" translatable="false">131</string>
+    <string name="color_generator_value_title_132" translatable="false">132</string>
+    <string name="color_generator_value_title_133" translatable="false">133</string>
+    <string name="color_generator_value_title_134" translatable="false">134</string>
+    <string name="color_generator_value_title_135" translatable="false">135</string>
+    <string name="color_generator_value_title_136" translatable="false">136</string>
+    <string name="color_generator_value_title_137" translatable="false">137</string>
+    <string name="color_generator_value_title_138" translatable="false">138</string>
+    <string name="color_generator_value_title_139" translatable="false">139</string>
+    <string name="color_generator_value_title_140" translatable="false">140</string>
+    <string name="color_generator_value_title_141" translatable="false">141</string>
+    <string name="color_generator_value_title_142" translatable="false">142</string>
+    <string name="color_generator_value_title_143" translatable="false">143</string>
+    <string name="color_generator_value_title_144" translatable="false">144</string>
+    <string name="color_generator_value_title_145" translatable="false">145</string>
+    <string name="color_generator_value_title_146" translatable="false">146</string>
+    <string name="color_generator_value_title_147" translatable="false">147</string>
+    <string name="color_generator_value_title_148" translatable="false">148</string>
+    <string name="color_generator_value_title_149" translatable="false">149</string>
+    <string name="color_generator_value_title_150" translatable="false">150</string>
+    <string name="color_generator_value_title_151" translatable="false">151</string>
+    <string name="color_generator_value_title_152" translatable="false">152</string>
+    <string name="color_generator_value_title_153" translatable="false">153</string>
+    <string name="color_generator_value_title_154" translatable="false">154</string>
+    <string name="color_generator_value_title_155" translatable="false">155</string>
+    <string name="color_generator_value_title_156" translatable="false">156</string>
+    <string name="color_generator_value_title_157" translatable="false">157</string>
+    <string name="color_generator_value_title_158" translatable="false">158</string>
+    <string name="color_generator_value_title_159" translatable="false">159</string>
+    <string name="color_generator_value_title_160" translatable="false">160</string>
+    <string name="color_generator_value_title_161" translatable="false">161</string>
+    <string name="color_generator_value_title_162" translatable="false">162</string>
+    <string name="color_generator_value_title_163" translatable="false">163</string>
+    <string name="color_generator_value_title_164" translatable="false">164</string>
+    <string name="color_generator_value_title_165" translatable="false">165</string>
+    <string name="color_generator_value_title_166" translatable="false">166</string>
+    <string name="color_generator_value_title_167" translatable="false">167</string>
+    <string name="color_generator_value_title_168" translatable="false">168</string>
+    <string name="color_generator_value_title_169" translatable="false">169</string>
+    <string name="color_generator_value_title_170" translatable="false">170</string>
+    <string name="color_generator_value_title_171" translatable="false">171</string>
+    <string name="color_generator_value_title_172" translatable="false">172</string>
+    <string name="color_generator_value_title_173" translatable="false">173</string>
+    <string name="color_generator_value_title_174" translatable="false">174</string>
+    <string name="color_generator_value_title_175" translatable="false">175</string>
+    <string name="color_generator_value_title_176" translatable="false">176</string>
+    <string name="color_generator_value_title_177" translatable="false">177</string>
+    <string name="color_generator_value_title_178" translatable="false">178</string>
+    <string name="color_generator_value_title_179" translatable="false">179</string>
+    <string name="color_generator_value_title_180" translatable="false">180</string>
+    <string name="color_generator_value_title_181" translatable="false">181</string>
+    <string name="color_generator_value_title_182" translatable="false">182</string>
+    <string name="color_generator_value_title_183" translatable="false">183</string>
+    <string name="color_generator_value_title_184" translatable="false">184</string>
+    <string name="color_generator_value_title_185" translatable="false">185</string>
+    <string name="color_generator_value_title_186" translatable="false">186</string>
+    <string name="color_generator_value_title_187" translatable="false">187</string>
+    <string name="color_generator_value_title_188" translatable="false">188</string>
+    <string name="color_generator_value_title_189" translatable="false">189</string>
+    <string name="color_generator_value_title_190" translatable="false">190</string>
+    <string name="color_generator_value_title_191" translatable="false">191</string>
+    <string name="color_generator_value_title_192" translatable="false">192</string>
+    <string name="color_generator_value_title_193" translatable="false">193</string>
+    <string name="color_generator_value_title_194" translatable="false">194</string>
+    <string name="color_generator_value_title_195" translatable="false">195</string>
+    <string name="color_generator_value_title_196" translatable="false">196</string>
+    <string name="color_generator_value_title_197" translatable="false">197</string>
+    <string name="color_generator_value_title_198" translatable="false">198</string>
+    <string name="color_generator_value_title_199" translatable="false">199</string>
+    <string name="color_generator_value_title_200" translatable="false">200</string>
+    <string name="color_generator_value_title_201" translatable="false">201</string>
+    <string name="color_generator_value_title_202" translatable="false">202</string>
+    <string name="color_generator_value_title_203" translatable="false">203</string>
+    <string name="color_generator_value_title_204" translatable="false">204</string>
+    <string name="color_generator_value_title_205" translatable="false">205</string>
+    <string name="color_generator_value_title_206" translatable="false">206</string>
+    <string name="color_generator_value_title_207" translatable="false">207</string>
+    <string name="color_generator_value_title_208" translatable="false">208</string>
+    <string name="color_generator_value_title_209" translatable="false">209</string>
+    <string name="color_generator_value_title_210" translatable="false">210</string>
+    <string name="color_generator_value_title_211" translatable="false">211</string>
+    <string name="color_generator_value_title_212" translatable="false">212</string>
+    <string name="color_generator_value_title_213" translatable="false">213</string>
+    <string name="color_generator_value_title_214" translatable="false">214</string>
+    <string name="color_generator_value_title_215" translatable="false">215</string>
+    <string name="color_generator_value_title_216" translatable="false">216</string>
+    <string name="color_generator_value_title_217" translatable="false">217</string>
+    <string name="color_generator_value_title_218" translatable="false">218</string>
+    <string name="color_generator_value_title_219" translatable="false">219</string>
+    <string name="color_generator_value_title_220" translatable="false">220</string>
+    <string name="color_generator_value_title_221" translatable="false">221</string>
+    <string name="color_generator_value_title_222" translatable="false">222</string>
+    <string name="color_generator_value_title_223" translatable="false">223</string>
+    <string name="color_generator_value_title_224" translatable="false">224</string>
+    <string name="color_generator_value_title_225" translatable="false">225</string>
+    <string name="color_generator_value_title_226" translatable="false">226</string>
+    <string name="color_generator_value_title_227" translatable="false">227</string>
+    <string name="color_generator_value_title_228" translatable="false">228</string>
+    <string name="color_generator_value_title_229" translatable="false">229</string>
+    <string name="color_generator_value_title_230" translatable="false">230</string>
+    <string name="color_generator_value_title_231" translatable="false">231</string>
+    <string name="color_generator_value_title_232" translatable="false">232</string>
+    <string name="color_generator_value_title_233" translatable="false">233</string>
+    <string name="color_generator_value_title_234" translatable="false">234</string>
+    <string name="color_generator_value_title_235" translatable="false">235</string>
+    <string name="color_generator_value_title_236" translatable="false">236</string>
+    <string name="color_generator_value_title_237" translatable="false">237</string>
+    <string name="color_generator_value_title_238" translatable="false">238</string>
+    <string name="color_generator_value_title_239" translatable="false">239</string>
+    <string name="color_generator_value_title_240" translatable="false">240</string>
+    <string name="color_generator_value_title_241" translatable="false">241</string>
+    <string name="color_generator_value_title_242" translatable="false">242</string>
+    <string name="color_generator_value_title_243" translatable="false">243</string>
+    <string name="color_generator_value_title_244" translatable="false">244</string>
+    <string name="color_generator_value_title_245" translatable="false">245</string>
+    <string name="color_generator_value_title_246" translatable="false">246</string>
+    <string name="color_generator_value_title_247" translatable="false">247</string>
+    <string name="color_generator_value_title_248" translatable="false">248</string>
+    <string name="color_generator_value_title_249" translatable="false">249</string>
+    <string name="color_generator_value_title_250" translatable="false">250</string>
+    <string name="color_generator_value_title_251" translatable="false">251</string>
+    <string name="color_generator_value_title_252" translatable="false">252</string>
+    <string name="color_generator_value_title_253" translatable="false">253</string>
+    <string name="color_generator_value_title_254" translatable="false">254</string>
+    <string name="color_generator_value_title_255" translatable="false">255</string>
+
+    <string name="color_generator_color_label_provided" translatable="false">Provided Color</string>
+    <string name="color_generator_color_label_generated" translatable="false">Generated Color %s</string>
+
+    <string-array name="color_generator_values" translatable="false">
+        <item>@string/color_generator_value_title_0</item>
+        <item>@string/color_generator_value_title_1</item>
+        <item>@string/color_generator_value_title_2</item>
+        <item>@string/color_generator_value_title_3</item>
+        <item>@string/color_generator_value_title_4</item>
+        <item>@string/color_generator_value_title_5</item>
+        <item>@string/color_generator_value_title_6</item>
+        <item>@string/color_generator_value_title_7</item>
+        <item>@string/color_generator_value_title_8</item>
+        <item>@string/color_generator_value_title_9</item>
+        <item>@string/color_generator_value_title_10</item>
+        <item>@string/color_generator_value_title_11</item>
+        <item>@string/color_generator_value_title_12</item>
+        <item>@string/color_generator_value_title_13</item>
+        <item>@string/color_generator_value_title_14</item>
+        <item>@string/color_generator_value_title_15</item>
+        <item>@string/color_generator_value_title_16</item>
+        <item>@string/color_generator_value_title_17</item>
+        <item>@string/color_generator_value_title_18</item>
+        <item>@string/color_generator_value_title_19</item>
+        <item>@string/color_generator_value_title_20</item>
+        <item>@string/color_generator_value_title_21</item>
+        <item>@string/color_generator_value_title_22</item>
+        <item>@string/color_generator_value_title_23</item>
+        <item>@string/color_generator_value_title_24</item>
+        <item>@string/color_generator_value_title_25</item>
+        <item>@string/color_generator_value_title_26</item>
+        <item>@string/color_generator_value_title_27</item>
+        <item>@string/color_generator_value_title_28</item>
+        <item>@string/color_generator_value_title_29</item>
+        <item>@string/color_generator_value_title_30</item>
+        <item>@string/color_generator_value_title_31</item>
+        <item>@string/color_generator_value_title_32</item>
+        <item>@string/color_generator_value_title_33</item>
+        <item>@string/color_generator_value_title_34</item>
+        <item>@string/color_generator_value_title_35</item>
+        <item>@string/color_generator_value_title_36</item>
+        <item>@string/color_generator_value_title_37</item>
+        <item>@string/color_generator_value_title_38</item>
+        <item>@string/color_generator_value_title_39</item>
+        <item>@string/color_generator_value_title_40</item>
+        <item>@string/color_generator_value_title_41</item>
+        <item>@string/color_generator_value_title_42</item>
+        <item>@string/color_generator_value_title_43</item>
+        <item>@string/color_generator_value_title_44</item>
+        <item>@string/color_generator_value_title_45</item>
+        <item>@string/color_generator_value_title_46</item>
+        <item>@string/color_generator_value_title_47</item>
+        <item>@string/color_generator_value_title_48</item>
+        <item>@string/color_generator_value_title_49</item>
+        <item>@string/color_generator_value_title_50</item>
+        <item>@string/color_generator_value_title_51</item>
+        <item>@string/color_generator_value_title_52</item>
+        <item>@string/color_generator_value_title_53</item>
+        <item>@string/color_generator_value_title_54</item>
+        <item>@string/color_generator_value_title_55</item>
+        <item>@string/color_generator_value_title_56</item>
+        <item>@string/color_generator_value_title_57</item>
+        <item>@string/color_generator_value_title_58</item>
+        <item>@string/color_generator_value_title_59</item>
+        <item>@string/color_generator_value_title_60</item>
+        <item>@string/color_generator_value_title_61</item>
+        <item>@string/color_generator_value_title_62</item>
+        <item>@string/color_generator_value_title_63</item>
+        <item>@string/color_generator_value_title_64</item>
+        <item>@string/color_generator_value_title_65</item>
+        <item>@string/color_generator_value_title_66</item>
+        <item>@string/color_generator_value_title_67</item>
+        <item>@string/color_generator_value_title_68</item>
+        <item>@string/color_generator_value_title_69</item>
+        <item>@string/color_generator_value_title_70</item>
+        <item>@string/color_generator_value_title_71</item>
+        <item>@string/color_generator_value_title_72</item>
+        <item>@string/color_generator_value_title_73</item>
+        <item>@string/color_generator_value_title_74</item>
+        <item>@string/color_generator_value_title_75</item>
+        <item>@string/color_generator_value_title_76</item>
+        <item>@string/color_generator_value_title_77</item>
+        <item>@string/color_generator_value_title_78</item>
+        <item>@string/color_generator_value_title_79</item>
+        <item>@string/color_generator_value_title_80</item>
+        <item>@string/color_generator_value_title_81</item>
+        <item>@string/color_generator_value_title_82</item>
+        <item>@string/color_generator_value_title_83</item>
+        <item>@string/color_generator_value_title_84</item>
+        <item>@string/color_generator_value_title_85</item>
+        <item>@string/color_generator_value_title_86</item>
+        <item>@string/color_generator_value_title_87</item>
+        <item>@string/color_generator_value_title_88</item>
+        <item>@string/color_generator_value_title_89</item>
+        <item>@string/color_generator_value_title_90</item>
+        <item>@string/color_generator_value_title_91</item>
+        <item>@string/color_generator_value_title_92</item>
+        <item>@string/color_generator_value_title_93</item>
+        <item>@string/color_generator_value_title_94</item>
+        <item>@string/color_generator_value_title_95</item>
+        <item>@string/color_generator_value_title_96</item>
+        <item>@string/color_generator_value_title_97</item>
+        <item>@string/color_generator_value_title_98</item>
+        <item>@string/color_generator_value_title_99</item>
+        <item>@string/color_generator_value_title_100</item>
+        <item>@string/color_generator_value_title_101</item>
+        <item>@string/color_generator_value_title_102</item>
+        <item>@string/color_generator_value_title_103</item>
+        <item>@string/color_generator_value_title_104</item>
+        <item>@string/color_generator_value_title_105</item>
+        <item>@string/color_generator_value_title_106</item>
+        <item>@string/color_generator_value_title_107</item>
+        <item>@string/color_generator_value_title_108</item>
+        <item>@string/color_generator_value_title_109</item>
+        <item>@string/color_generator_value_title_110</item>
+        <item>@string/color_generator_value_title_111</item>
+        <item>@string/color_generator_value_title_112</item>
+        <item>@string/color_generator_value_title_113</item>
+        <item>@string/color_generator_value_title_114</item>
+        <item>@string/color_generator_value_title_115</item>
+        <item>@string/color_generator_value_title_116</item>
+        <item>@string/color_generator_value_title_117</item>
+        <item>@string/color_generator_value_title_118</item>
+        <item>@string/color_generator_value_title_119</item>
+        <item>@string/color_generator_value_title_120</item>
+        <item>@string/color_generator_value_title_121</item>
+        <item>@string/color_generator_value_title_122</item>
+        <item>@string/color_generator_value_title_123</item>
+        <item>@string/color_generator_value_title_124</item>
+        <item>@string/color_generator_value_title_125</item>
+        <item>@string/color_generator_value_title_126</item>
+        <item>@string/color_generator_value_title_127</item>
+        <item>@string/color_generator_value_title_128</item>
+        <item>@string/color_generator_value_title_129</item>
+        <item>@string/color_generator_value_title_130</item>
+        <item>@string/color_generator_value_title_131</item>
+        <item>@string/color_generator_value_title_132</item>
+        <item>@string/color_generator_value_title_133</item>
+        <item>@string/color_generator_value_title_134</item>
+        <item>@string/color_generator_value_title_135</item>
+        <item>@string/color_generator_value_title_136</item>
+        <item>@string/color_generator_value_title_137</item>
+        <item>@string/color_generator_value_title_138</item>
+        <item>@string/color_generator_value_title_139</item>
+        <item>@string/color_generator_value_title_140</item>
+        <item>@string/color_generator_value_title_141</item>
+        <item>@string/color_generator_value_title_142</item>
+        <item>@string/color_generator_value_title_143</item>
+        <item>@string/color_generator_value_title_144</item>
+        <item>@string/color_generator_value_title_145</item>
+        <item>@string/color_generator_value_title_146</item>
+        <item>@string/color_generator_value_title_147</item>
+        <item>@string/color_generator_value_title_148</item>
+        <item>@string/color_generator_value_title_149</item>
+        <item>@string/color_generator_value_title_150</item>
+        <item>@string/color_generator_value_title_151</item>
+        <item>@string/color_generator_value_title_152</item>
+        <item>@string/color_generator_value_title_153</item>
+        <item>@string/color_generator_value_title_154</item>
+        <item>@string/color_generator_value_title_155</item>
+        <item>@string/color_generator_value_title_156</item>
+        <item>@string/color_generator_value_title_157</item>
+        <item>@string/color_generator_value_title_158</item>
+        <item>@string/color_generator_value_title_159</item>
+        <item>@string/color_generator_value_title_160</item>
+        <item>@string/color_generator_value_title_161</item>
+        <item>@string/color_generator_value_title_162</item>
+        <item>@string/color_generator_value_title_163</item>
+        <item>@string/color_generator_value_title_164</item>
+        <item>@string/color_generator_value_title_165</item>
+        <item>@string/color_generator_value_title_166</item>
+        <item>@string/color_generator_value_title_167</item>
+        <item>@string/color_generator_value_title_168</item>
+        <item>@string/color_generator_value_title_169</item>
+        <item>@string/color_generator_value_title_170</item>
+        <item>@string/color_generator_value_title_171</item>
+        <item>@string/color_generator_value_title_172</item>
+        <item>@string/color_generator_value_title_173</item>
+        <item>@string/color_generator_value_title_174</item>
+        <item>@string/color_generator_value_title_175</item>
+        <item>@string/color_generator_value_title_176</item>
+        <item>@string/color_generator_value_title_177</item>
+        <item>@string/color_generator_value_title_178</item>
+        <item>@string/color_generator_value_title_179</item>
+        <item>@string/color_generator_value_title_180</item>
+        <item>@string/color_generator_value_title_181</item>
+        <item>@string/color_generator_value_title_182</item>
+        <item>@string/color_generator_value_title_183</item>
+        <item>@string/color_generator_value_title_184</item>
+        <item>@string/color_generator_value_title_185</item>
+        <item>@string/color_generator_value_title_186</item>
+        <item>@string/color_generator_value_title_187</item>
+        <item>@string/color_generator_value_title_188</item>
+        <item>@string/color_generator_value_title_189</item>
+        <item>@string/color_generator_value_title_190</item>
+        <item>@string/color_generator_value_title_191</item>
+        <item>@string/color_generator_value_title_192</item>
+        <item>@string/color_generator_value_title_193</item>
+        <item>@string/color_generator_value_title_194</item>
+        <item>@string/color_generator_value_title_195</item>
+        <item>@string/color_generator_value_title_196</item>
+        <item>@string/color_generator_value_title_197</item>
+        <item>@string/color_generator_value_title_198</item>
+        <item>@string/color_generator_value_title_199</item>
+        <item>@string/color_generator_value_title_200</item>
+        <item>@string/color_generator_value_title_201</item>
+        <item>@string/color_generator_value_title_202</item>
+        <item>@string/color_generator_value_title_203</item>
+        <item>@string/color_generator_value_title_204</item>
+        <item>@string/color_generator_value_title_205</item>
+        <item>@string/color_generator_value_title_206</item>
+        <item>@string/color_generator_value_title_207</item>
+        <item>@string/color_generator_value_title_208</item>
+        <item>@string/color_generator_value_title_209</item>
+        <item>@string/color_generator_value_title_210</item>
+        <item>@string/color_generator_value_title_211</item>
+        <item>@string/color_generator_value_title_212</item>
+        <item>@string/color_generator_value_title_213</item>
+        <item>@string/color_generator_value_title_214</item>
+        <item>@string/color_generator_value_title_215</item>
+        <item>@string/color_generator_value_title_216</item>
+        <item>@string/color_generator_value_title_217</item>
+        <item>@string/color_generator_value_title_218</item>
+        <item>@string/color_generator_value_title_219</item>
+        <item>@string/color_generator_value_title_220</item>
+        <item>@string/color_generator_value_title_221</item>
+        <item>@string/color_generator_value_title_222</item>
+        <item>@string/color_generator_value_title_223</item>
+        <item>@string/color_generator_value_title_224</item>
+        <item>@string/color_generator_value_title_225</item>
+        <item>@string/color_generator_value_title_226</item>
+        <item>@string/color_generator_value_title_227</item>
+        <item>@string/color_generator_value_title_228</item>
+        <item>@string/color_generator_value_title_229</item>
+        <item>@string/color_generator_value_title_230</item>
+        <item>@string/color_generator_value_title_231</item>
+        <item>@string/color_generator_value_title_232</item>
+        <item>@string/color_generator_value_title_233</item>
+        <item>@string/color_generator_value_title_234</item>
+        <item>@string/color_generator_value_title_235</item>
+        <item>@string/color_generator_value_title_236</item>
+        <item>@string/color_generator_value_title_237</item>
+        <item>@string/color_generator_value_title_238</item>
+        <item>@string/color_generator_value_title_239</item>
+        <item>@string/color_generator_value_title_240</item>
+        <item>@string/color_generator_value_title_241</item>
+        <item>@string/color_generator_value_title_242</item>
+        <item>@string/color_generator_value_title_243</item>
+        <item>@string/color_generator_value_title_244</item>
+        <item>@string/color_generator_value_title_245</item>
+        <item>@string/color_generator_value_title_246</item>
+        <item>@string/color_generator_value_title_247</item>
+        <item>@string/color_generator_value_title_248</item>
+        <item>@string/color_generator_value_title_249</item>
+        <item>@string/color_generator_value_title_250</item>
+        <item>@string/color_generator_value_title_251</item>
+        <item>@string/color_generator_value_title_252</item>
+        <item>@string/color_generator_value_title_253</item>
+        <item>@string/color_generator_value_title_254</item>
+        <item>@string/color_generator_value_title_255</item>
+    </string-array>
+</resources>

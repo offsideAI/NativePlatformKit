@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expand_collapse_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin.large"
+    android:clickable="true"
+    android:focusable="true"
+    android:importantForAccessibility="yes">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/expand_collapse_textview"
+        style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/gutter.small"
+        android:paddingEnd="@dimen/padding.small"
+        app:layout_constraintBottom_toBottomOf="@id/expand_collapse_icon"
+        app:layout_constraintEnd_toStartOf="@id/expand_collapse_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/expand_collapse_icon"
+        tools:text="Placeholder Title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expand_collapse_icon"
+        style="@style/Offside.Redesign.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:importantForAccessibility="no"
+        android:background="?attr/offside_transparent"
+        android:minHeight="@dimen/spacing.unset"
+        android:minWidth="@dimen/spacing.unset"
+        android:insetLeft="@dimen/spacing.unset"
+        android:insetRight="@dimen/spacing.unset"
+        android:insetTop="@dimen/spacing.unset"
+        android:insetBottom="@dimen/spacing.unset"
+        app:iconSize="@dimen/sys.spacing.24"
+        app:icon="@drawable/ic_actionable_expansion_elements_expand"
+        app:iconTint="@color/selector_expand_collapse_icon_tint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/expand_collapse_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

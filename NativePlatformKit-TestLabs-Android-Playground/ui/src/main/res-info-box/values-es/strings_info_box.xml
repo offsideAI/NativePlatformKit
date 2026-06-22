@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_box_accessibility_icon_label_information">Información importante</string>
+    <string name="info_box_accessibility_icon_label_warning">Aviso</string>
+    <string name="info_box_accessibility_icon_label_success">Éxito</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Container" parent="Widget.Material3.CardView.Filled">
+        <item name="layout_constraintWidth_percent">@dimen/container_width_percentage</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">?attr/offside_surfaceContainer</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="Offside.Redesign.Container.Filled" parent="Offside.Redesign.Container">
+        <item name="layout_constraintWidth_percent">1.00</item>
+    </style>
+
+    <style name="Offside.Redesign.Container.Standard" parent="Offside.Redesign.Container">
+        <item name="cardElevation">@dimen/offside.redesign.elevation.surface.raised</item>
+    </style>
+
+    <style name="Offside.Redesign.Container.Standard.Filled" parent="Offside.Redesign.Container.Filled">
+        <item name="cardElevation">@dimen/offside.redesign.elevation.surface.raised</item>
+    </style>
+
+    <style name="Offside.Redesign.Container.Elevated" parent="Offside.Redesign.Container">
+        <item name="cardElevation">@dimen/offside.redesign.elevation.surface.emphasized</item>
+    </style>
+
+    <style name="Offside.Redesign.Container.Elevated.Filled" parent="Offside.Redesign.Container.Filled">
+        <item name="cardElevation">@dimen/offside.redesign.elevation.surface.emphasized</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.ListAction" parent="Offside.Redesign.BodyMediumTextStyle">
+        <item name="android:textColor">@color/selector_icons_actionable_background</item>
+        <item name="android:drawableTint">@color/selector_icons_actionable_background</item>
+        <item name="android:paddingTop">@dimen/padding.large</item>
+        <item name="android:paddingBottom">@dimen/padding.large</item>
+        <item name="android:drawablePadding">@dimen/padding.xsmall</item>
+    </style>
+
+</resources>

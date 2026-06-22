@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Accent Colors -->
+    <color name="sys.color.paze">#0F42F8</color>
+    <color name="sys.color.ecommerce">#6D1ED4</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_container_nav_graph"
+    app:startDestination="@id/testUiRedesignContainerFragment">
+
+    <fragment
+        android:id="@+id/testUiRedesignContainerFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignContainerFragment"
+        android:label="@string/debug_ui_redesign_container_title"
+        tools:layout="@layout/fragment_test_container" />
+
+
+</navigation>

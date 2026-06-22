@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="slider_layout_parent" type="id"/>
+    <item name="left_swipe_menu_button" type="id"/>
+    <item name="main_content" type="id"/>
+    <item name="right_swipe_menu_left_button" type="id"/>
+    <item name="right_swipe_menu_middle_button" type="id"/>
+    <item name="right_swipe_menu_right_button" type="id"/>
+</resources>

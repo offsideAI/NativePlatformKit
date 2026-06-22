@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.modal.model.ModalDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/modal_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.small"
+            android:importantForAccessibility="no"
+            android:visibility="@{data.modalIconVisibility}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/modal_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.medium"
+            android:layout_marginTop="@dimen/margin.small"
+            android:text="@{data.modalTitle}"
+            android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            android:gravity="center_horizontal"
+            android:accessibilityHeading="true"
+            app:layout_constraintTop_toBottomOf="@+id/modal_icon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/modal_supplementary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.medium"
+            android:paddingTop="@dimen/padding.xsmall"
+            android:text="@{data.modalSupplementary}"
+            android:textAppearance="@style/Offside.Redesign.BodyMediumTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:visibility="@{data.modalSupplementaryVisibility}"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/modal_title"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

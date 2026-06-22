@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_bottom_sheet_standard_nav_graph"
+    app:startDestination="@id/testBottomSheetDetailsFragment">
+    <fragment
+        android:id="@+id/testBottomSheetDetailsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetDetailsFragment"
+        android:label="@string/debug_ui_redesign_accept_terms">
+        <argument
+            android:name="subTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Terms of use" />
+    </fragment>
+</navigation>

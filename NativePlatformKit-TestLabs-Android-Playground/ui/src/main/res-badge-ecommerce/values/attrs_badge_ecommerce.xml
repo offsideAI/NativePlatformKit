@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EcommerceBadge">
+        <attr name="ecommerceDisplayState" format="enum">
+            <enum name="small_registered_business_icon" value="0" />
+            <enum name="large_registered_business_icon" value="1" />
+            <enum name="small_registered_person_icon" value="2" />
+            <enum name="large_registered_person_icon" value="3" />
+            <enum name="small_unregistered_business_icon" value="4" />
+            <enum name="large_unregistered_business_icon" value="5" />
+            <enum name="small_unregistered_person_icon" value="6" />
+            <enum name="large_unregistered_person_icon" value="7" />
+            <enum name="small_selected_icon" value="8" />
+            <enum name="large_selected_icon" value="9" />
+        </attr>
+        <attr name="ecommerceInitials" format="string" />
+        <attr name="ecommerceFontSize" format="dimension" />
+        <attr name="badgeBackgroundColor" format="reference|color" />
+    </declare-styleable>
+
+</resources>

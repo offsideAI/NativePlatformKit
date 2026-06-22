@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/offside_surface">
+    <data>
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.helper.testlabs.nav.EcommerceIconData" />
+    </data>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gutter.xsmall"
+        android:layout_marginRight="@dimen/gutter.xsmall"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gutter.xsmall"
+        android:layout_marginRight="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/gutter.xsmall"
+        android:orientation="horizontal">
+
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/ecommerce_small_registered_business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ecommerceDisplayState="small_registered_business_icon" />
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/ecommerce_small_unregistered_business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ecommerceDisplayState="small_unregistered_business_icon" />
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/ecommerce_small_registered_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ecommerceInitials="MM"
+            app:ecommerceFontSize="@dimen/type.body.large.font.size"
+            app:ecommerceDisplayState="small_registered_person_icon" />
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/ecommerce_small_unregistered_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ecommerceInitials="MM"
+            app:ecommerceFontSize="@dimen/type.body.large.font.size"
+            app:ecommerceDisplayState="small_unregistered_person_icon" />
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/small_selected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ecommerceDisplayState="small_selected_icon" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/gutter.xsmall"
+            android:layout_marginRight="@dimen/gutter.xsmall"
+            android:layout_marginTop="@dimen/gutter.xsmall"
+            android:orientation="horizontal">
+
+            <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+                android:id="@+id/large_registered_business"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ecommerceDisplayState="large_registered_business_icon" />
+            <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+                android:id="@+id/large_unregistered_business"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ecommerceDisplayState="large_unregistered_business_icon" />
+            <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+                android:id="@+id/large_registered_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ecommerceInitials="MM"
+                app:ecommerceFontSize="@dimen/type.display.medium.font.size"
+                app:ecommerceDisplayState="large_registered_person_icon" />
+            <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+                android:id="@+id/large_unregistered_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ecommerceInitials="MM"
+                app:ecommerceFontSize="@dimen/type.display.medium.font.size"
+                app:ecommerceDisplayState="large_unregistered_person_icon" />
+            <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+                android:id="@+id/large_selected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ecommerceDisplayState="large_selected_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

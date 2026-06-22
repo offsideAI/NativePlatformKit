@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="online_payments_Secondary_ebill_button_text" >Mark As Resolved</string>
+    <string name="online_payments_Secondary_reminder_button_text">Ignorar</string>
+    <string name="online_payments_Secondary_request_button_text">Decline Request</string>
+    <string name="online_payments_primary_button_text">Pagar</string>
+    <string name="online_payments_edit_button_text">Editar</string>
+</resources>

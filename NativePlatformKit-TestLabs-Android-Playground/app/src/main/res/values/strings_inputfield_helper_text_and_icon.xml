@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_input_field_hint_AC1" translatable="false">AC1, MBF 2280, Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_filled_AC2_text" translatable="false">AC2, MBF 2280, Filled Input Field</string>
+    <string name="debug_ui_redesign_input_field_inactive_unfilled_AC3_hint" translatable="false">AC3, MBF 2280, Disabled Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_filled_AC4_text" translatable="false">AC4, MBF 2280, Filled Input Field</string>
+    <string name="debug_ui_redesign_input_field_error_AC5_text" translatable="false">AC5, MBF 2280, Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_error_AC6_text" translatable="false">AC6, MBF 2280, Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_error_hint" translatable="false">Error Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_error" translatable="false">Error Input Field</string>
+    <string name="debug_ui_redesign_input_field_error_description" translatable="false">Error Description</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.EcommerceBadge" parent="Widget.Material3.Badge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>/>
+    </style>
+
+    <style name="Offside.Redesign.EcommerceBadge.transparent">
+        <item name="badgeBackgroundColor">?attr/offside_transparent</item>
+    </style>
+
+    <style name="Offside.Redesign.EcommerceBadge.SmallRegisteredBusinessStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.LargeRegisteredBusinessStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_large_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.SmallRegisteredPersonStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_person_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.LargeRegisteredPersonStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_large_person_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.SmallUnregisteredBusinessStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.LargeUnegisteredBusinessStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.SmallUnregisteredPersonStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.LargeUnegisteredPersonStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.SmallSelectedStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_selected_split_blue</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceBadge.LargeSelectedStyle">
+        <item name="android:src">@drawable/ic_feature_ecommerce_large_selected_split_blue</item>
+    </style>
+</resources>

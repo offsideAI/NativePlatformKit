@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardWorksheetTile">
+        <attr name="artUrl" format="string" />
+        <attr name="cardTitle" format="string" />
+        <attr name="cardTitleSuffix" format="string" />
+        <attr name="cardSupplementary" format="string" />
+        <attr name="cardSecondary" format="string" />
+        <attr name="cardSupplementaryDescription" format="string" />
+        <attr name="cardSecondaryDescription" format="string" />
+    </declare-styleable>
+</resources>

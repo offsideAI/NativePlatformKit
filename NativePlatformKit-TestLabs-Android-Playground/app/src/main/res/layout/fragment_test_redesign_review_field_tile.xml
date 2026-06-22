@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_surfaceContainerLowest"
+    tools:context=".nav.review.TestRedesignReviewFieldTileFragment"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin.small"
+            android:background="?attr/offside_surfaceContainer"
+            android:orientation="vertical"
+            >
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/simple_review_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleLabel="@string/review_label"
+                app:titleValue="@string/review_value"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/info_review_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleLabel="@string/review_label"
+                app:titleSupplementary="@string/review_supplementary"
+                app:titleValue="@string/review_value"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/editable_review_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleActionContentDescription="@string/review_action_content_description"
+                app:titleActionIcon="@drawable/ic_actionable_edit"
+                app:titleLabel="@string/review_label"
+                app:titleValue="@string/review_value"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/review_field_with_icon_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleActionContentDescription="@string/review_more_info_content_description"
+                app:titleActionIcon="@drawable/ic_actionable_question"
+                app:titleActionIconTint="?attr/offside_onSurface"
+                app:titleLabel="@string/review_label_with_icon"
+                app:titleValue="@string/review_value_with_icon"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/review_field_with_icon_label_wrapped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleActionContentDescription="@string/review_more_info_content_description"
+                app:titleActionIcon="@drawable/ic_actionable_question"
+                app:titleActionIconTint="?attr/offside_onSurface"
+                app:titleLabel="@string/review_label_wrapping"
+                app:titleValue="@string/review_value_with_icon"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/review_field_with_icon_value_wrapped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleActionContentDescription="@string/review_more_info_content_description"
+                app:titleActionIcon="@drawable/ic_actionable_question"
+                app:titleActionIconTint="?attr/offside_onSurface"
+                app:titleLabel="@string/review_label_with_icon"
+                app:titleValue="@string/review_value_wrapping"
+                />
+
+            <ai.offside.mobile.android.component.ui.tile.reviewfield.ReviewFieldTile
+                android:id="@+id/review_field_with_icon_label_and_value_wrapped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin.medium"
+                app:titleActionContentDescription="@string/review_more_info_content_description"
+                app:titleActionIcon="@drawable/ic_actionable_question"
+                app:titleActionIconTint="?attr/offside_onSurface"
+                app:titleLabel="@string/review_label_wrapping"
+                app:titleValue="@string/review_value_wrapping"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

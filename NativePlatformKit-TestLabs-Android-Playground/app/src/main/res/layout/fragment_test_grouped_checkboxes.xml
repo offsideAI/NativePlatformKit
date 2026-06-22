@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/margin.medium"
+    android:layout_marginTop="@dimen/margin.medium"
+    android:layout_marginEnd="@dimen/margin.medium"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestGroupedCheckboxFragment">
+
+    <LinearLayout
+        android:id="@+id/grouped_checkbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin.medium"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/margin.medium"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox1"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_sample_text_deposit_cash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox2"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_sample_text_withdraw_cash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox3"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_sample_text_cash_a_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox4"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_sample_text_deposit_a_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox5"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/debug_ui_redesign_sample_text_get_a_cashiers_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

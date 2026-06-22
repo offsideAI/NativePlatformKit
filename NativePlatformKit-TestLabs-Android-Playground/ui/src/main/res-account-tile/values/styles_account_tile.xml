@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.AccountTile.DisplayName" parent="Offside.Redesign.TitleMediumTextStyle">
+        <item name="android:textColor">?attr/offside_primary</item>
+        <item name="layout_constraintWidth_percent">0.4</item>
+        <item name="android:maxLines">@integer/account.tile.widget.display.name.max.lines</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.Balance" parent="Offside.Redesign.DisplaySmallTextStyle">
+        <item name="android:layout_marginEnd">@dimen/padding.medium</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.MoreButton" parent="Offside.Redesign.Button.IconButton">
+        <item name="icon">@drawable/ic_actionable_dots_more</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="iconGravity">top</item>
+        <item name="rippleColor">?attr/offside_transparent</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.PrimaryButton" parent="Offside.Redesign.Button.Micro.Blue">
+        <item name="android:layout_marginTop">@dimen/padding.large</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.AlternateButton" parent="Offside.Redesign.Button.Micro.Alternate">
+        <item name="android:layout_marginTop">@dimen/padding.large</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.BodyText" parent="Offside.Redesign.LabelSmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.BodyText.BalanceLabel">
+        <item name="android:layout_marginTop">@dimen/padding.small</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginEnd">@dimen/padding.medium</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.PaymentDue" parent="Offside.Redesign.LabelMediumTextStyle">
+        <item name="android:drawablePadding">@dimen/padding.xsmall</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:drawableTint">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.PaymentOverdue" parent="Offside.Redesign.TitleSmallTextStyle">
+        <item name="android:drawablePadding">@dimen/padding.xsmall</item>
+        <item name="android:textColor">?attr/offside_error</item>
+        <item name="android:drawableTint">?attr/offside_error</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.InvestmentChange" parent="Offside.Redesign.BodyMediumTextStyle"/>
+
+    <style name="Offside.Redesign.AccountTile.Investment.Value" parent="Offside.Redesign.BodyMediumTextStyle">
+        <item name="android:layout_marginTop">@dimen/padding.medium</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:layout_marginEnd">@dimen/padding.medium</item>
+    </style>
+
+    <style name="Offside.Redesign.AccountTile.LearnMoreText" parent="Offside.Redesign.LabelSmallTextStyle">
+        <item name="android:textColor">?attr/offside_primary</item>
+        <item name="android:layout_marginTop">@dimen/padding.xsmall</item>
+    </style>
+</resources>

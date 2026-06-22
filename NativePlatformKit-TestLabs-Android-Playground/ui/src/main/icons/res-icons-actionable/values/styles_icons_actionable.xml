@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Icons" />
+
+    <style name="Offside.Redesign.Icons.Actionable">
+        <item name="tint">@color/selector_icons_actionable_background</item>
+    </style>
+
+    <style name="Offside.Redesign.Icons.Actionable.Gray">
+        <item name="tint">@color/selector_icons_actionable_gray_background</item>
+    </style>
+
+</resources>

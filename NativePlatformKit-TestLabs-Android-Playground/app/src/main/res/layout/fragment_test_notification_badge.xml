@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding.medium">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/badge_title_segment"
+        style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.medium"
+        android:layout_marginBottom="@dimen/padding.medium"
+        android:text="@string/debug_ui_redesign_badge_for_segment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ai.offside.mobile.android.component.ui.segment.TabBarLayout
+        android:id="@+id/tab_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.medium"
+        android:importantForAccessibility="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badge_title_segment">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_navigation_cards_selector"
+            android:text="@string/debug_ui_redesign_menu_cards_label" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_navigation_rewards_selector"
+            android:text="@string/debug_ui_redesign_menu_rewards_label" />
+    </ai.offside.mobile.android.component.ui.segment.TabBarLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/badge_title_button"
+        style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding.medium"
+        android:importantForAccessibility="yes"
+        android:text="@string/debug_ui_redesign_badge_for_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_bar_layout" />
+
+    <FrameLayout
+        android:id="@+id/btn_sop_normal_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/padding.medium"
+        android:padding="@dimen/padding.large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badge_title_button">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sop_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/debug_ui_redesign_micro_buttons_sop_label"
+            android:importantForAccessibility="yes"
+            android:text="@string/debug_ui_redesign_micro_buttons_sop_label" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/badge_title_image"
+        style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.medium"
+        android:layout_marginBottom="@dimen/padding.medium"
+        android:text="@string/debug_ui_redesign_badge_for_image"
+        android:importantForAccessibility="yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sop_normal_background" />
+
+    <FrameLayout
+        android:id="@+id/btn_profile_icon_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding.medium"
+        android:padding="@dimen/padding.xlarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badge_title_image">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/debug_ui_redesign_profile_bar_label"
+            app:srcCompat="@drawable/ic_actionable_header_profile" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/notification_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/badge_notification_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

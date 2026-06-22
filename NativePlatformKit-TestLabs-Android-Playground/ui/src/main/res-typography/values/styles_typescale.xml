@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    textColorPrimary : Headline, Large, Title, Subhead, Body1 (shown), Button, Menu, Action bar.
+    textColorSecondary : Caption (shown), Medium, action bar subtitle, etc.
+    textColorTertiary : Not generally used (set to textColorSecondary in material themes).
+    textColorLink : links/href attributes
+    -->
+    <style name="Offside.FontStyle">
+       <item name="fontStyle">normal</item>
+    </style>
+
+    <style name="Offside.Redesign.DisplayLargeTextStyle"  parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.display.large.font.size</item>
+        <item name="fontWeight">@dimen/type.display.large.font.weight</item>
+        <item name="lineHeight">@dimen/type.display.large.line.height</item>
+    </style>
+
+    <style name="Offside.Redesign.DisplayMediumTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.display.medium.font.size</item>
+        <item name="fontWeight">@dimen/type.display.medium.font.weight</item>
+        <item name="lineHeight">@dimen/type.display.medium.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.DisplaySmallTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.display.small.font.size</item>
+        <item name="fontWeight">@dimen/type.display.small.font.weight</item>
+        <item name="lineHeight">@dimen/type.display.small.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.HeadlineLargeTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.headline.large.font.size</item>
+        <item name="fontWeight">@dimen/type.headline.large.font.weight</item>
+        <item name="lineHeight">@dimen/type.headline.large.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.HeadlineMediumTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.headline.medium.font.size</item>
+        <item name="fontWeight">@dimen/type.headline.medium.font.weight</item>
+        <item name="lineHeight">@dimen/type.headline.medium.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.HeadlineSmallTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.headline.small.font.size</item>
+        <item name="fontWeight">@dimen/type.headline.small.font.weight</item>
+        <item name="lineHeight">@dimen/type.headline.small.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.TitleLargeTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.title.large.font.size</item>
+        <item name="fontWeight">@dimen/type.title.large.font.weight</item>
+        <item name="lineHeight">@dimen/type.title.large.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.TitleMediumTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.title.medium.font.size</item>
+        <item name="fontWeight">@dimen/type.title.medium.font.weight</item>
+        <item name="lineHeight">@dimen/type.title.medium.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.TitleSmallTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.title.small.font.size</item>
+        <item name="fontWeight">@dimen/type.title.small.font.weight</item>
+        <item name="lineHeight">@dimen/type.title.small.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.BodyLargeTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.body.large.font.size</item>
+        <item name="fontWeight">@dimen/type.body.large.font.weight</item>
+        <item name="lineHeight">@dimen/type.body.large.line.height</item>
+    </style>
+
+    <style name="Offside.Redesign.BodyMediumTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.body.medium.font.size</item>
+        <item name="fontWeight">@dimen/type.body.medium.font.weight</item>
+        <item name="lineHeight">@dimen/type.body.medium.line.height</item>
+    </style>
+    <style name="Offside.Redesign.BodySmallTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.body.small.font.size</item>
+        <item name="fontWeight">@dimen/type.body.small.font.weight</item>
+        <item name="lineHeight">@dimen/type.body.small.line.height</item>
+    </style>
+
+    <style name="Offside.Redesign.LabelLargeTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.label.large.font.size</item>
+        <item name="fontWeight">@dimen/type.label.large.font.weight</item>
+        <item name="lineHeight">@dimen/type.label.large.line.height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Offside.Redesign.LabelMediumTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.label.medium.font.size</item>
+        <item name="fontWeight">@dimen/type.label.medium.font.weight</item>
+        <item name="lineHeight">@dimen/type.label.medium.line.height</item>
+    </style>
+
+    <style name="Offside.Redesign.LabelSmallTextStyle" parent="Offside.FontStyle">
+        <item name="android:textSize">@dimen/type.label.small.font.size</item>
+        <item name="fontWeight">@dimen/type.label.small.font.weight</item>
+        <item name="lineHeight">@dimen/type.label.small.line.height</item>
+    </style>
+</resources>

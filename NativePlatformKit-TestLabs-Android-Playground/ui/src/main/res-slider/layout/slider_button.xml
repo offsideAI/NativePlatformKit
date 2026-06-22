@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="buttonData"
+            type="ai.offside.mobile.android.component.ui.slider.data.SliderButtonData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="yes"
+        android:paddingHorizontal="@dimen/padding.xsmall">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/slider_button_icon"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:src="@drawable/ic_decorative_placeholder_regular"
+            app:layout_constraintBottom_toTopOf="@id/slider_button_label"
+            app:layout_constraintDimensionRatio="@dimen/size.ratio.xxsmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintHeight_max="@dimen/sys.spacing.24"
+            app:layout_constraintWidth_percent="@dimen/slider.button.buttonIconWidthPercentage"
+            app:tint="?attr/offside_onSecondaryVariant"
+            app:sliderButtonDrawable="@{buttonData.icon}"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/slider_button_label"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.small"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@{buttonData.label}"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSecondaryVariant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_button_icon"
+            app:layout_constraintVertical_chainStyle="packed"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

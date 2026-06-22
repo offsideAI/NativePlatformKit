@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:progressBackgroundTint">?attr/offside_accent</item>
+        <item name="android:indeterminate">true</item>
+        <item name="indicatorColor">?attr/offside_accent</item>
+        <item name="indicatorSize">@dimen/dialog_indicator_size_token</item>
+        <item name="trackColor">?attr/offside_surface</item>
+        <item name="trackThickness">@dimen/padding.small</item>
+    </style>
+</resources>

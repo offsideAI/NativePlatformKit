@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_list_item_bottom_sheet_nav_graph_id"
+    app:startDestination="@id/testListItemBottomSheetFragment">
+    <fragment
+        android:id="@+id/testListItemBottomSheetFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.listitem.TestBottomSheetListItemFragment"
+        android:label="Bottom Sheet List Item Test">
+    </fragment>
+</navigation>

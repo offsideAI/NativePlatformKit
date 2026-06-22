@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/checkbox_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin.medium"
+    android:layout_marginStart="@dimen/margin.medium"
+    android:layout_marginEnd="@dimen/margin.medium"
+    android:orientation="vertical"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestCompoundButtonsFragmentFragment">
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/debug_ui_redesign_enabled" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox2"
+            android:enabled="false"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox1"
+            android:text="@string/debug_ui_redesign_disabled" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/checkbox3"
+            android:checked="true"
+            android:enabled="false"
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkbox2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/debug_ui_redesign_disabled_selected" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:checkedButton="@+id/one"
+            android:layoutDirection="ltr"
+            android:id="@+id/radio_grp1"
+            app:layout_constraintTop_toBottomOf="@id/checkbox3"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal">
+
+            <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                style ="@style/Offside.Redesign.RadioButtonStyle.Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one"
+                android:checked="true"
+                android:layout_marginEnd="@dimen/margin.xxsmall"
+                android:text = "@string/debug_ui_redesign_radiob1"/>
+
+            <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                style="@style/Offside.Redesign.RadioButtonStyle.Left"
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin.xxlarge"
+                android:text="@string/debug_ui_redesign_radiob2"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/three"
+            android:id="@+id/radio_grp2"
+            android:layout_gravity="start"
+            android:layoutDirection="ltr"
+            app:layout_constraintTop_toBottomOf="@id/radio_grp1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal">
+
+            <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                style="@style/Offside.Redesign.RadioButtonStyle.Left"
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:checked="false"
+                android:text="@string/debug_ui_redesign_radiob3"/>
+
+            <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                style="@style/Offside.Redesign.RadioButtonStyle.Left"
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:checked="true"
+                android:layout_marginStart="@dimen/margin.xxlarge"
+                android:text="@string/debug_ui_redesign_radiob4"/>
+
+        </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_grp2">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/toggle_btn_active"
+            style="@style/Offside.Redesign.SwitchToggleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.medium"
+            android:text="@string/debug_ui_redesign_enabled" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/toggle_btn_disabled"
+            style="@style/Offside.Redesign.SwitchToggleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.medium"
+            android:enabled="false"
+            android:text="@string/debug_ui_redesign_disabled" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/toggle_btn_disabled_selected"
+            style="@style/Offside.Redesign.SwitchToggleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.medium"
+            android:checked="true"
+            android:enabled="false"
+            android:text="@string/debug_ui_redesign_disabled_selected" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

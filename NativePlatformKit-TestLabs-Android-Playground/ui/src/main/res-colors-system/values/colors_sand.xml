@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name="sys.color.sand10">#28221F</color>
+    <color name="sys.color.sand20">#39312D</color>
+    <color name="sys.color.sand30">#51433D</color>
+    <color name="sys.color.sand40">#6C5951</color>
+    <color name="sys.color.sand50">#897167</color>
+    <color name="sys.color.sand60">#A38E85</color>
+    <color name="sys.color.sand70">#BDAEA8</color>
+    <color name="sys.color.sand80">#D5CCC8</color>
+    <color name="sys.color.sand90">#E5E0DE</color>
+    <color name="sys.color.sand95">#F4F2F1</color>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardTileItem_root"
+    style="@style/Offside.Redesign.CardTile.BoxSquareStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ai.offside.mobile.android.component.ui.asyncimage.AsyncImage
+            android:id="@+id/card_tile_art_image"
+            style="@style/Offside.Redesign.CardTile.CardArtImageStyle"
+            android:layout_alignParentTop="true"
+            app:placeholderImageSrc="@drawable/ic_decorative_card_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_tile_check_barrier"
+            app:layout_constraintEnd_toStartOf="@+id/card_tile_primary_Info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/card_tile_check_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="card_tile_select_radioButton,card_tile_select_checkBox" />
+
+        <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+            android:id="@+id/card_tile_select_radioButton"
+            style="@style/Offside.Redesign.RadioButtonStyle.Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/spacing.unset"
+            android:importantForAccessibility="no"
+            android:paddingStart="@dimen/padding.large"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            android:id="@+id/card_tile_select_checkBox"
+            style="@style/Offside.Redesign.CheckboxStyle.Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/spacing.unset"
+            android:importantForAccessibility="no"
+            android:paddingStart="@dimen/padding.large"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/card_tile_primary_Info"
+            style="@style/Offside.Redesign.CardTile.Title.PrimaryLargeText"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/card_tile_secondary_Info"
+            app:layout_constraintEnd_toStartOf="@+id/action_status_parent"
+            app:layout_constraintHorizontal_bias="@dimen/card_tile_text_horizontal_bias"
+            app:layout_constraintStart_toEndOf="@+id/card_tile_art_image"
+            app:layout_constraintTop_toTopOf="@+id/card_tile_art_image"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/card_tile_secondary_Info"
+            style="@style/Offside.Redesign.CardTile.Title.SecondarySmallText"
+            android:visibility="gone"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/card_tile_art_image"
+            app:layout_constraintEnd_toStartOf="@+id/action_status_parent"
+            app:layout_constraintHorizontal_bias="@dimen/card_tile_text_horizontal_bias"
+            app:layout_constraintStart_toStartOf="@+id/card_tile_primary_Info"
+            app:layout_constraintTop_toBottomOf="@+id/card_tile_primary_Info" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/action_status_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/spacing.unset"
+            android:paddingEnd="@dimen/padding.medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/card_tile_action_button"
+                style="@style/Offside.Redesign.Button.Micro.Blue"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/card_tile_add_card_action_label"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/card_tile_link_status"
+                style="@style/Offside.Redesign.CardTile.LinkStatus"
+                android:text="@string/card_tile_link_status_label"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/card_tile_view_action_image"
+                style="@style/Offside.Redesign.CardTile.ActionableCaretImageStyle"
+                android:layout_toEndOf="@+id/card_tile_link_status"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_tile_link_status"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/card_tile_divider"
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_marginStart="@dimen/padding.xxlarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

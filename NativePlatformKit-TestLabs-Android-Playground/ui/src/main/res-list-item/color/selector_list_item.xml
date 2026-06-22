@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:color="?attr/offside_surfaceContainerLowest"
+        android:state_enabled="false"
+        />
+    <item
+        android:color="?attr/offside_surfaceContainerLowest"
+        android:state_pressed="true"
+        />
+    <item
+        android:color="?attr/offside_transparent"
+        />
+</selector>

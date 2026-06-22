@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_account_tile_nav_graph_id"
+    app:startDestination="@id/testAccountTileDemoMainFragment">
+
+    <fragment
+        android:id="@+id/testAccountTileDemoMainFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.account.TestUIRedesignAccountTileMainPageFragment"
+        android:label="@string/debug_ui_redesign_tab_account_tile"
+        tools:layout="@layout/fragment_test_ui_redesign_main_page">
+        <action
+            android:id="@+id/action_testUIRedesignAccountTileMainPageFragment_to_testUIRedesignAccountTileFragment"
+            app:destination="@id/testAccountTileDemoFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignAccountTileMainPageFragment_to_testUIRedesignOffsidePaymentAccountTileFragment"
+            app:destination="@id/testOffsidePaymentAccountTileDemoFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignAccountTileMainPageFragment_to_testEcommerceWalletToolSetFragment"
+            app:destination="@id/testEcommerceWalletToolSetDemoFragment" />
+        <action
+            android:id="@+id/action_testAccountTileDemoMainFragment_to_testDepositAccountTileDemoFragment"
+            app:destination="@id/testDepositAccountTileDemoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/testAccountTileDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.account.TestUIRedesignAccountTileFragment"
+        android:label="@string/debug_ui_redesign_tab_account_tile"
+        android:tag="@string/debug_ui_redesign_tab_account_tile"
+        tools:layout="@layout/fragment_test_account_tile" />
+
+    <fragment
+        android:id="@+id/testOffsidePaymentAccountTileDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.account.TestUIRedesignOffsidePaymentAccountTileFragment"
+        android:label="@string/debug_ui_redesign_tab_offside_payments_account_tile"
+        tools:layout="@layout/fragment_test_offside_payment_account_tile" />
+
+    <fragment
+        android:id="@+id/testEcommerceWalletToolSetDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.account.TestEcommerceWalletToolSetFragment"
+        android:label="@string/redesign_tv_tool_set"
+        tools:layout="@layout/fragment_test_ecommerce_wallet_tool_set" />
+
+    <fragment
+        android:id="@+id/testDepositAccountTileDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.deposit.TestUIDepositActivityTile"
+        android:label="@string/debug_ui_redesign_tab_deposit_activity_tile"
+        tools:layout="@layout/fragment_deposit_activity_tile" />
+
+</navigation>

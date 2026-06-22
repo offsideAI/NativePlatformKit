@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:importantForAccessibility="yes"
+    android:background="@drawable/ic_view_background_ripple"
+    >
+
+    <FrameLayout
+        android:id="@+id/badge_icon_container"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="@dimen/spacing.match_constraint"
+        android:layout_margin="@dimen/margin.small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tile_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/size.ratio.xxsmall"
+        app:layout_constraintWidth_percent="@dimen/feature_tile_constraint_width_percent"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tile_title"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/spacing.unset"
+        android:paddingEnd="@dimen/padding.xxlarge"
+        android:textAppearance="@style/Offside.Redesign.TitleLargeTextStyle"
+        android:textColor="?attr/offside_onSurfaceVariantMedium"
+        app:layout_constraintBottom_toTopOf="@+id/supplementary_info"
+        app:layout_constraintEnd_toStartOf="@+id/more_menu"
+        app:layout_constraintStart_toEndOf="@+id/badge_icon_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/supplementary_info"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding.xsmall"
+        android:paddingStart="@dimen/spacing.unset"
+        android:paddingEnd="@dimen/padding.xxlarge"
+        android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+        android:textColor="?attr/offside_onSurfaceVariantLow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more_menu"
+        app:layout_constraintStart_toStartOf="@+id/tile_title"
+        app:layout_constraintTop_toBottomOf="@+id/tile_title"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/more_menu"
+        style="@style/Offside.Redesign.FeatureTile.MoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="@dimen/margin.xsmall"
+        android:paddingHorizontal="@dimen/spacing.unset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/caret_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/caret_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin.xsmall"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_actionable_dots_more"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/tile_divider"
+        android:layout_width="@dimen/spacing.match_constraint"
+        style="@style/Offside.Redesign.Divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tile_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

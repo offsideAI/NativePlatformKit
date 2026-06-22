@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Holds the Color Attributes for the Redesign Project -->
+   <declare-styleable name="BaseThemeAttributes">
+      <!-- Primary Color - Most Prominent color used for Buttons and Icons -->
+      <attr name="offside_primary" format="reference|color" />
+      <!-- Text/Icon Color - Most Prominent color on Primary Surface -->
+      <attr name="offside_onPrimary" format="reference|color" />
+      <!-- Blue Info box Background color -->
+      <attr name="offside_primaryContainer" format="reference|color" />
+      <!-- Icon tint on Blue Info box  -->
+      <attr name="offside_onPrimaryContainer" format="reference|color" />
+      <!-- Color of Profile, Help and Sign Out Icons in the SoP Header -->
+      <attr name="offside_primaryVariant" format="reference|color" />
+      <!-- Pressed Primary state CTA -->
+      <attr name="offside_secondary" format="reference|color" />
+      <!-- Text and Icon color on Secondary  -->
+      <attr name="offside_onSecondary" format="reference|color" />
+      <!-- Bottom Navigation , Scrolled Title bar background color -->
+      <attr name="offside_secondaryVariant" format="reference|color" />
+      <!-- Text and Icon color on secondary variant -->
+      <attr name="offside_onSecondaryVariant" format="reference|color" />
+      <!-- White overlay Primary and SoP Button Background -->
+      <attr name="offside_secondaryContainer" format="reference|color" />
+      <!-- Text and Icon colors on White overlay buttons and SoP buttons -->
+      <attr name="offside_onSecondaryContainer" format="reference|color" />
+      <!-- Success Icon color -->
+      <attr name="offside_tertiary" format="reference|color" />
+      <!-- Icon and Text colors on Tertiary -->
+      <attr name="offside_onTertiary" format="reference|color" />
+      <!-- Yellow Info Boxes Background Color -->
+      <attr name="offside_tertiaryContainer" format="reference|color" />
+      <!-- Icon Color in the Yellow InfoBox -->
+      <attr name="offside_onTertiaryContainer" format="reference|color" />
+       <!-- Background Color in the Green InfoBox -->
+       <attr name="offside_tertiaryContainerVariant" format="reference|color" />
+      <!-- Warning Icon color and Error state Text Colors and Background-->
+      <attr name="offside_error" format="reference|color" />
+      <!-- Text and Icon color on Error background -->
+      <attr name="offside_onError" format="reference|color" />
+      <!--Red Info Boxes -Background color -->
+      <attr name="offside_errorContainer" format="reference|color" />
+      <!-- Icon color in the Red Info Boxes -->
+      <attr name="offside_onErrorContainer" format="reference|color" />
+      <!-- Color used for Logo, Carousel Dots- will remain same in both Light and Dark Mode -->
+      <attr name="offside_accent" format="reference|color" />
+      <!-- Background color of App, Takeover headers Background color -->
+      <attr name="offside_surface" format="reference|color" />
+      <!-- Most Prominent Text color on surface -->
+      <attr name="offside_onSurface" format="reference|color" />
+      <!-- Second most Prominent Text color on surface -->
+      <attr name="offside_onSurfaceVariantLow" format="reference|color" />
+      <!-- Third most Prominent Text color on surface -->
+      <attr name="offside_onSurfaceVariantMedium" format="reference|color" />
+      <!-- Background color of Tiles, Modals and Bottom Sheets -->
+      <attr name="offside_surfaceContainer" format="reference|color" />
+      <!-- Gray Infobox Background color, Icon badges, Disabled Input field background color-->
+      <attr name="offside_surfaceContainerLowest" format="reference|color" />
+      <!-- Pressed state Background color of Micro Alternate Button -->
+      <attr name="offside_surfaceContainerLow" format="reference|color" />
+      <!-- SoP color(for Prisms) and Icon colors (for disabled or missing icons) -->
+      <attr name="offside_surfaceContainerHigh" format="reference|color" />
+      <!-- Snackbar Background color -->
+      <attr name="offside_inverseSurface" format="reference|color" />
+      <!-- Snackbar Text Color -->
+      <attr name="offside_inverseOnSurface" format="reference|color" />
+      <!-- Snackbar Text Button Background color -->
+      <attr name="offside_inversePrimary" format="reference|color" />
+      <!-- Used in graphic assets like Ecommerce Wallet tool icons and P &T icons -->
+      <attr name="offside_inversePrimaryVariant" format="reference|color" />
+      <!-- Divider Color -->
+      <attr name="offside_outline" format="reference|color" />
+      <!-- Disabled background border colors for RadioButton and Checkboxes -->
+      <attr name="offside_outlineVariant" format="reference|color" />
+      <!-- Shadow color -->
+      <attr name="offside_shadow" format="reference|color" />
+      <!-- Scrim Color -->
+      <attr name="offside_scrim" format="reference|color" />
+      <!-- Transparent shade -->
+      <attr name="offside_transparent" format="reference|color" />
+      <!-- Ecommerce Brand Color -->
+      <attr name="offside_ecommerceBrandColor" format="reference|color" />
+      <!-- Paze Brand Color -->
+      <attr name="offside_pazeBrandColor" format="reference|color" />
+      <!-- Slider First Button Color -->
+      <attr name="offside_primaryStatic" format="reference|color" />
+      <!-- Slider Second Button Color -->
+      <attr name="offside_secondaryStatic" format="reference|color" />
+      <!-- Slider Third Button Color -->
+      <attr name="offside_primaryVariantStatic" format="reference|color" />
+      <!-- Left Slider Color -->
+      <attr name="offside_onSurfaceVariantLowStatic" format="reference|color" />
+      <!-- Lime used for Charts -->
+      <attr name="offside_chartsLime" format="reference|color" />
+   </declare-styleable>
+</resources>

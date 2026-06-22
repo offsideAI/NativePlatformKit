@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CardTile">
+        <attr name="displayState" format="enum">
+            <enum name="single_line_card_tile" value="0" />
+            <enum name="card_tile_with_button" value="1" />
+            <enum name="card_tile_with_status" value="2" />
+            <enum name="two_line_card_tile" value="3" />
+            <enum name="card_tile_with_checkbox" value="4" />
+            <enum name="card_tile_with_radio_button" value="5" />
+            <enum name="card_tile_review" value="6" />
+            <enum name="card_tile_with_checkbox_wrapping_text" value="7" />
+            <enum name="card_tile_with_radio_button_wrapping_text" value="8" />
+        </attr>
+        <attr name="cardBoxRadius" format="reference|dimension" />
+        <attr name="cardBoxBackgroundColor" format="reference|color" />
+        <attr name="cardBoxShowDividers" format="boolean" />
+        <attr name="tileInfoTextColor" format="reference|color" />
+    </declare-styleable>
+
+</resources>

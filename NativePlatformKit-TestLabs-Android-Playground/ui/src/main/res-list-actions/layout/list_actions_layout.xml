@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="listActionsData"
+            type="ai.offside.mobile.android.component.ui.listactions.ListActionsDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_actions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_view_background_ripple"
+        android:descendantFocusability="blocksDescendants"
+        android:onClick="@{v -> listActionsData.onClick()}">
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.Divider"
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:background="?attr/offside_outline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.ListAction"
+            android:id="@+id/view_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@{listActionsData.leftDrawable != 0 ? ContextCompat.getDrawable(context, listActionsData.leftDrawable) : null}"
+            android:drawableEnd="@{listActionsData.rightDrawable != 0 ? ContextCompat.getDrawable(context, listActionsData.rightDrawable) : null}"
+            android:gravity="center_vertical"
+            android:text="@{listActionsData.actionText}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

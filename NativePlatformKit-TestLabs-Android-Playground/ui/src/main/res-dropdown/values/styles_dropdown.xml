@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Dropdown" />
+
+    <style name="Offside.Redesign.Dropdown.TextLayoutBase" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:background">@color/selector_dropdown_background</item>
+        <item name="hintTextAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:textColorHint">?attr/offside_onSurfaceVariantLow</item>
+        <item name="boxStrokeWidthFocused">@dimen/spacing.unset</item>
+        <item name="boxStrokeWidth">@dimen/spacing.unset</item>
+        <item name="android:paddingStart">@dimen/padding.xlarge</item>
+        <item name="android:paddingEnd">@dimen/padding.large</item>
+        <item name="android:paddingTop">@dimen/padding.small</item>
+        <item name="android:paddingBottom">@dimen/padding.xxlarge</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/ic_actionable_bottom_sheet_arrow</item>
+        <item name="endIconTint">@color/selector_dropdown_icon</item>
+        <item name="endIconCheckable">false</item>
+        <item name="endIconMinSize">@dimen/sys.spacing.24</item>
+    </style>
+
+
+    <style name="Offside.Redesign.Dropdown.PrimaryTextView" parent = "Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:paddingStart">@dimen/spacing.unset</item>
+        <item name="android:paddingLeft">@dimen/spacing.unset</item>
+        <item name="android:paddingRight">@dimen/padding.xsmall</item>
+        <item name="android:paddingBottom">@dimen/spacing.unset</item>
+        <item name="android:background">?attr/offside_transparent</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodyLargeTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurface</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <style name="Offside.Redesign.Dropdown.SecondaryTextView" parent = "Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Offside.Redesign.Dropdown.TertiaryTextView" parent = "Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Offside.Redesign.Dropdown.TextLayoutBase.Divider" parent="Offside.Redesign.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/padding.xlarge</item>
+    </style>
+</resources>

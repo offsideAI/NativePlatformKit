@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_feature_based_icons_label" translatable="false">Feature Based Icons</string>
+    <string name="debug_ui_redesign_ecommerce_selected_split_icon_label" translatable="false">Ecommerce Selected Split decorative</string>
+    <string name="debug_ui_redesign_ecommerce_person_icon_label" translatable="false">Ecommerce Contact Badge Person decorative</string>
+    <string name="debug_ui_redesign_ecommerce_business_icon_label" translatable="false">Ecommerce Contact Badge Business decorative</string>
+    <string name="debug_ui_redesign_payment_send_icon_label" translatable="false">Ecommerce Payment Send decorative</string>
+    <string name="debug_ui_redesign_payment_request_icon_label" translatable="false">Ecommerce Payment Request decorative</string>
+    <string name="debug_ui_redesign_ecommerce_badge_icon_label" translatable="false">Ecommerce Badge decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_calendar_icon_label" translatable="false">Ecommerce Wallet Calendar decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_money_bar_icon_label" translatable="false">Ecommerce Wallet Money Bar decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_cash_mode_icon_label" translatable="false">Ecommerce Wallet Cash Mode decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_spending_and_budgets_icon_label" translatable="false">Ecommerce Wallet Spending and Budgets decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_saving_rules_icon_label" translatable="false">Ecommerce Wallet Saving Rules decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_save_now_icon_label" translatable="false">Ecommerce Wallet Save Now decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_saving_goals_icon_label" translatable="false">Ecommerce Wallet Saving Goals decorative</string>
+    <string name="debug_ui_redesign_online_payments_icon_label" translatable="false">Online Payments decorative</string>
+    <string name="debug_ui_redesign_offside_advances_icon_label" translatable="false">Advances decorative</string>
+    <string name="debug_ui_redesign_offside_transfers_icon_label" translatable="false">Transfers decorative</string>
+    <string name="debug_ui_redesign_external_transfers_icon_label" translatable="false">External Transfers decorative</string>
+    <string name="debug_ui_redesign_domestic_wires_icon_label" translatable="false">Domestic Wires decorative</string>
+    <string name="debug_ui_redesign_international_transfers_icon_label" translatable="false">International Transfers decorative</string>
+    <string name="debug_ui_redesign_ecommerce_wallet_account_tools_icon_label" translatable="false">Ecommerce Wallet Tools decorative</string>
+    <string name="debug_ui_redesign_offside_payments_icon_label" translatable="false">Payments decorative</string>
+    <string name="debug_ui_redesign_ecommerce_logo_icon_label" translatable="false">Ecommerce Logo decorative</string>
+    <string name="debug_ui_redesign_paze_logo_icon_label" translatable="false">Paze Logo decorative</string>
+</resources>

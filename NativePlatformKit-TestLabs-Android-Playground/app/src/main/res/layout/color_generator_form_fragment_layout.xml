@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="viewModel"
+            type="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorViewModel"
+            />
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            style="@style/Offside.Redesign.SwitchToggleStyle"
+            android:id="@+id/color_generator_form_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_form_toggle_label"
+            android:layout_marginVertical="@dimen/margin.medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/color_generator_form_includes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_form_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_results_button"
+            app:constraint_referenced_ids="color_generator_manual_form_include,color_generator_selector_form_include"
+            />
+
+        <include
+            android:id="@+id/color_generator_selector_form_include"
+            layout="@layout/color_generator_selector_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{colorGeneratorFormToggle.checked ? View.GONE : View.VISIBLE}"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_form_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_results_button"
+            bind:viewModel="@={viewModel}"
+            tools:visibility="visible"
+            />
+
+        <include
+            android:id="@+id/color_generator_manual_form_include"
+            layout="@layout/color_generator_manual_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{colorGeneratorFormToggle.checked ? View.VISIBLE : View.GONE}"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_form_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_results_button"
+            bind:viewModel="@={viewModel}"
+            tools:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Offside.Redesign.Button.Primary.Jumbo"
+            android:id="@+id/color_generator_results_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_results_button"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_form_includes"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

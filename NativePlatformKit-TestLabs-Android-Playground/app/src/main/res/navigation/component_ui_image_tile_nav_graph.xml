@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_image_tile_nav_graph_id"
+    app:startDestination="@id/testUIRedesignImageTileDemoFragment">
+    <fragment
+        android:id="@+id/testUIRedesignImageTileDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.TestUIRedesignImageTileDemoFragment"
+        android:label="@string/debug_ui_redesign_card_tile_component"
+        tools:layout="@layout/fragment_test_ui_redesign_image_tile_demo" />
+
+</navigation>

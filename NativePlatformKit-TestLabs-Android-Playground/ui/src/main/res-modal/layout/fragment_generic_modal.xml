@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="modalData"
+            type="ai.offside.mobile.android.component.ui.modal.model.ModalDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/offside_surfaceContainer"
+        android:paddingVertical="@dimen/padding.xxlarge">
+
+        <include
+            android:id="@+id/header_container_fade_out"
+            layout="@layout/modal_header_with_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:data="@{modalData}"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/header_container_fade_in"
+            layout="@layout/modal_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:data="@{modalData}"
+            app:layout_constraintTop_toBottomOf="@+id/header_container_fade_out" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toTopOf="@+id/checkbox"
+            app:layout_constraintTop_toBottomOf="@+id/header_container_fade_in"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/modal_sub_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin.medium"
+                    android:layout_marginTop="@dimen/margin.medium"
+                    android:scrollbars="vertical"
+                    android:text="@{modalData.modalSubHeader}"
+                    android:textAppearance="@style/Offside.Redesign.TitleMediumTextStyle"
+                    android:textColor="?attr/offside_onSurfaceVariantMedium"
+                    android:visibility="@{modalData.modalSubHeaderVisibility}"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/modal_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin.medium"
+                    android:layout_marginTop="@dimen/margin.medium"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ai.offside.mobile.android.component.ui.a11y.CheckBoxA11y
+            style="@style/Offside.Redesign.CheckboxStyle.Left"
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/spacing.unset"
+            android:minHeight="@dimen/spacing.unset"
+            android:drawablePadding="@dimen/padding.medium"
+            android:textAppearance="@style/Offside.Redesign.HeadlineSmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:text="@{modalData.checkboxDataModel.checkboxLabel}"
+            android:visibility="@{modalData.checkboxModalVisibility}"
+            android:layout_marginHorizontal="@dimen/margin.medium"
+            app:layout_goneMarginBottom="@dimen/margin.small"
+            app:layout_constraintBottom_toTopOf="@+id/checkbox_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/checkbox_label"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xxlarge"
+            android:paddingStart="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:layout_marginEnd="@dimen/margin.medium"
+            android:scrollbars="vertical"
+            android:visibility="@{modalData.checkboxModalVisibility}"
+            android:text="@{modalData.checkboxDataModel.checkboxDescription}"
+            android:textAppearance="@style/Offside.Redesign.LabelMediumTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:layout_marginBottom="@dimen/margin.small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/primary_action" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/primary_action"
+            style="@style/Offside.Redesign.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.small"
+            android:layout_marginBottom="@dimen/margin.xxsmall"
+            android:text="@string/primary_action_label"
+            app:layout_constraintBottom_toTopOf="@+id/secondary_action"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/secondary_action"
+            style="@style/Offside.Redesign.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.small"
+            android:layout_marginBottom="@dimen/margin.xxsmall"
+            android:text="@string/secondary_action_label"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tertiary_action"
+            tools:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tertiary_action"
+            style="@style/Offside.Redesign.Button.Tertiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.small"
+            android:text="@string/tertiary_action_label"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

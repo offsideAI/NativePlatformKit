@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.listitem.data.ListItemData.ListItemWithSwitch" />
+
+        <variable
+            name="dividerVisibility"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_button"
+            style="@style/Offside.Redesign.ListItem.Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{(view, checked) -> data.onToggle(view,checked)}"
+            android:text="@{data.label}"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Placeholder Text" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding.xxlarge"
+            android:visibility="@{dividerVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switch_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

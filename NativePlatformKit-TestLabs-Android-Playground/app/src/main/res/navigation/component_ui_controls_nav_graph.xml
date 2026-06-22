@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_controls_nav_graph_id"
+    app:startDestination="@id/testUIRedesignControlsFragment">
+    <fragment
+        android:id="@+id/testUIRedesignControlsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.controls.TestUIRedesignControlsFragment"
+        android:label="@string/debug_ui_redesign_controls_label">
+        <action
+            android:id="@+id/action_testUIRedesignControlsFragment_to_testUIRedesignMainPageFragment"
+            app:destination="@id/testUIRedesignMainPageFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignControlsFragment_to_testUIRedesignSegmentBarFragment"
+            app:destination="@id/testUIRedesignSegmentBarFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignControlsFragment_to_testUIRedesignProfileAndSettingsBarFragment"
+            app:destination="@id/testUIRedesignProfileAndSettingsBarFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignControlsFragment_to_testUIRedesignSearchBarElevatedFragment"
+            app:destination="@id/testUIRedesignSearchBarElevatedFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignControlsFragment_to_testUIRedesignSearchBarStandardFragment"
+            app:destination="@id/testUIRedesignSearchBarStandardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testUIRedesignSegmentBarFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.controls.TestUIRedesignSegmentBarFragment"
+        android:label="@string/debug_ui_redesign_segment_bar_label"
+        tools:layout="@layout/fragment_test_ui_redesign_segment_bar">
+        <action
+            android:id="@+id/action_testUIRedesignSegmentBarFragment_to_testUIRedesignControlsFragment"
+            app:destination="@id/testUIRedesignControlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testUIRedesignProfileAndSettingsBarFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.controls.TestUIRedesignProfileAndSettingsBarFragment"
+        android:label="@string/debug_ui_redesign_profile_bar_label"
+        tools:layout="@layout/fragment_test_ui_redesign_profile_and_settings_bar">
+        <action
+            android:id="@+id/action_testUIRedesignProfileAndSettingsBarFragment_to_testUIRedesignControlsFragment"
+            app:destination="@id/testUIRedesignControlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testUIRedesignSearchBarStandardFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.controls.TestUIRedesignSearchBarStandardFragment"
+        android:label="@string/debug_ui_redesign_search_bar_standard"
+        tools:layout="@layout/fragment_test_ui_redesign_search_bar_standard">
+        <action
+            android:id="@+id/action_testUIRedesignSearchBarFragment_to_testUIRedesignControlsFragment"
+            app:destination="@id/testUIRedesignControlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testUIRedesignSearchBarElevatedFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.controls.TestUIRedesignSearchBarElevatedFragment"
+        android:label="@string/debug_ui_redesign_search_bar_elevated" >
+        <action
+            android:id="@+id/action_testUIRedesignSearchBarElevatedFragment_to_testUIRedesignControlsFragment"
+            app:destination="@id/testUIRedesignControlsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="card_tile_add_card_action_label" translatable="false">Add Card</string>
+    <string name="card_tile_link_status_label" translatable="false">Link Status</string>
+    <string name="card_tile_select_content_description_two_str" translatable="false">%s, %s </string>
+    <string name="card_tile_select_content_description_three_str" translatable="false">%s, %s, %s </string>
+    <string name="card_tile_role_desc_checkbox" translatable="false">Checkbox</string>
+    <string name="card_tile_role_desc_radio_button" translatable="false">Radio Button</string>
+    <string name="card_tile_role_desc_button" translatable="false">Button</string>
+    <string name="card_tile_checkbox_custom_action_desc" translatable="false">toggle</string>
+    <string name="card_tile_checkbox_state_checked" translatable="false">Checked</string>
+    <string name="card_tile_checkbox_state_not_checked" translatable="false">Not checked</string>
+    <string name="card_tile_radio_button_custom_action_desc_select" translatable="false">select</string>
+    <string name="card_tile_radio_button_custom_action_desc_activate" translatable="false">activate</string>
+    <string name="card_tile_radio_button_state_selected" translatable="false">Selected</string>
+    <string name="card_tile_radio_button_state_not_selected" translatable="false">Not selected</string>
+    <string name="card_tile_default_action_label" translatable="false">activate</string>
+    <string name="card_ending_in_des" translatable="false">Account ending in %s </string>
+</resources>

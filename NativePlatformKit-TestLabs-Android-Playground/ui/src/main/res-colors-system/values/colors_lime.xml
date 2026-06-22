@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sys.color.lime10">#1A2806</color>
+    <color name="sys.color.lime20">#233905</color>
+    <color name="sys.color.lime30">#334D0F</color>
+    <color name="sys.color.lime40">#41660F</color>
+    <color name="sys.color.lime50">#57801E</color>
+    <color name="sys.color.lime60">#71A031</color>
+    <color name="sys.color.lime70">#8EBF4A</color>
+    <color name="sys.color.lime80">#AEDB70</color>
+    <color name="sys.color.lime90">#D6F0B2</color>
+    <color name="sys.color.lime95">#EAF7D9</color>
+</resources>

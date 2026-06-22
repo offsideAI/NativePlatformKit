@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBase.Amount" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:background">@color/selector_amount_input_field_background</item>
+        <item name="hintTextColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:textColorHint">?attr/offside_onSurfaceVariantLow</item>
+        <item name="placeholderText">@string/amount_input_default_text</item>
+        <item name="placeholderTextAppearance">@style/Offside.Redesign.DisplayLargeTextStyle</item>
+        <item name="placeholderTextColor">?attr/offside_onSurface</item>
+        <item name="android:paddingTop">@dimen/padding.xxlarge</item>
+        <item name="android:paddingStart">@dimen/padding.xlarge</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:paddingBottom">@dimen/padding.xlarge</item>
+        <item name="helperTextTextAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="helperTextTextColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="endIconCheckable">false</item>
+        <item name="cursorColor">?attr/offside_accent</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextColor">?attr/offside_error</item>
+        <item name="boxStrokeErrorColor">?attr/offside_error</item>
+        <item name="cursorErrorColor">?attr/offside_accent</item>
+        <item name="materialThemeOverlay">@style/Offside.Redesign.InputField.TextLayoutBaseThemeOverlay</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBase.Amount.Active" parent="Offside.Redesign.InputField.TextLayoutBase.Amount">
+        <item name="endIconDrawable">@drawable/ic_actionable_clear</item>
+        <item name="endIconCheckable">false</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconTint">@null</item>
+        <item name="endIconTintMode">multiply</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBaseThemeOverlay" parent="ThemeOverlay.Material3.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">?attr/offside_accent</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox">
+        <item name="boxStrokeWidth">@dimen/spacing.unset</item>
+        <item name="boxStrokeWidthFocused">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBase.Amount.ToolTip">
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/ic_actionable_question</item>
+        <item name="endIconContentDescription">@string/amount_input_field_tool_tip_icon_a11y_description</item>
+        <item name="boxStrokeWidth">@dimen/spacing.unset</item>
+        <item name="boxStrokeWidthFocused">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.TextLayoutBase.Amount.DropDownBox">
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/selector_amount_input_field_dropdown_icon_color</item>
+        <item name="endIconDrawable">@drawable/ic_actionable_bottom_sheet_arrow</item>
+        <item name="boxStrokeWidth">@dimen/spacing.unset</item>
+        <item name="boxStrokeWidthFocused">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.EditTextBase.Amount" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.DisplayLargeTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurface</item>
+        <item name="android:paddingStart">@dimen/spacing.unset</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:paddingLeft">@dimen/spacing.unset</item>
+        <item name="android:paddingRight">@dimen/spacing.unset</item>
+        <item name="android:background">?attr/offside_transparent</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.EditTextBase.Amount.DropDown">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.SubInfoTextStyle.Amount" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding.medium</item>
+        <item name="android:paddingRight">@dimen/padding.large</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.ErrorTextStyle.Amount" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding.medium</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:textColor">?attr/offside_error</item>
+    </style>
+
+    <!--Use this style when we have to use our own TextView to show error message;
+        1] 0sp textSize to get rid of excess height of TextInputLayout when we set empty error message to TextInputLayout
+        2] Use textColor in errorTextAppearance style, with that we don't have to set / remove hint color in error scenario
+      -->
+    <style name="Offside.Redesign.InputField.ErrorTextAppearance.Amount" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/type.label.text.size.unset</item>
+        <item name="android:textColor">?attr/offside_error</item>
+    </style>
+
+    <style name="Offside.Redesign.InputField.DividerStyle.Amount" parent="Offside.Redesign.Divider">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>

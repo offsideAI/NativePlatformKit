@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This provides the styles to Buttons used in the Redesign App
+    Primary Button
+    Secondary Button
+    Tertiary Button
+    Jumbo Button
+    Links
+    Following color Attributes are defined in the themes_retail_redesign.xml to paint the
+    Button background and Text colors
+       colorPrimary
+       colorOnPrimary
+       colorSurface -
+       colorControlNormal - The color applied to icons/controls in their normal state.
+       colorControlActivated - The color applied to icons/controls in their activated state (e.g. checked).
+    -->
+    <style name="Offside.Redesign.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Primary">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="backgroundTint">@color/selector_button_primary_background</item>
+        <item name="rippleColor">?attr/offside_secondary</item>
+        <item name="android:textColor">@color/selector_button_primary_text_color</item>
+        <item name="android:paddingTop">@dimen/padding.large</item>
+        <item name="android:paddingBottom">@dimen/padding.large</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Primary.WhiteOverlay">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="backgroundTint">@color/selector_button_primary_white_overlay_background_ripple</item>
+        <item name="rippleColor">@color/selector_button_primary_white_overlay_background_ripple</item>
+        <item name="android:textColor">@color/selector_button_primary_overlay_text_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="strokeColor">@color/selector_button_secondary_stroke_color</item>
+        <item name="android:textColor">@color/selector_button_secondary_text_color</item>
+        <item name="backgroundTint">@color/selector_button_secondary_background</item>
+        <item name="android:paddingTop">@dimen/padding.large</item>
+        <item name="android:paddingBottom">@dimen/padding.large</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Micro" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleSmallTextStyle</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minWidth">@dimen/button.micro.min_width</item>
+        <item name="android:paddingTop">@dimen/padding.small</item>
+        <item name="android:paddingBottom">@dimen/padding.small</item>
+        <item name="android:paddingStart">@dimen/padding.large</item>
+        <item name="android:paddingEnd">@dimen/padding.large</item>
+        <item name="android:minHeight">@dimen/spacing.unset</item>
+    </style>
+
+    <!-- Micro Alternate(Gray Background) button with min Width set as per Design Guidelines -->
+    <style name="Offside.Redesign.Button.Micro.Alternate">
+        <item name="rippleColor">?attr/offside_surfaceContainerLow</item>
+        <item name="backgroundTint">@color/selector_button_micro_alternate_background</item>
+        <item name="android:textColor">@color/selector_button_micro_alternate_text_icon_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Micro.Alternate.Icon">
+        <item name="iconEndPadding">@dimen/padding.xsmall</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/selector_button_micro_alternate_text_icon_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Micro.Blue">
+        <item name="backgroundTint">@color/selector_button_primary_background</item>
+        <item name="rippleColor">?attr/offside_secondary</item>
+        <item name="android:textColor">@color/selector_button_primary_text_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Micro.Blue.Icon">
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/selector_button_micro_primary_icon_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Micro.Blue.SopIcon">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleSmallTextStyle</item>
+        <item name="backgroundTint">@color/selector_button_micro_sop_white_overlay_background_ripple</item>
+        <item name="rippleColor">@color/selector_button_micro_sop_white_overlay_background_ripple</item>
+        <item name="iconTint">@color/selector_button_micro_sop_icon_color</item>
+        <item name="android:textColor">@color/selector_button_primary_overlay_text_color</item>
+        <item name="android:paddingLeft">@dimen/padding.medium</item>
+        <item name="android:paddingRight">@dimen/padding.large</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconEndPadding">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Tertiary" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="android:textColor">@color/selector_button_tertiary_text_color</item>
+        <item name="android:padding">@dimen/padding.large</item>
+        <item name="rippleColor">@color/selector_button_tertiary_background</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Primary.Jumbo">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineLargeTextStyle</item>
+        <item name="android:textColor">@color/selector_button_primary_text_color</item>
+        <item name="android:paddingLeft">@dimen/padding.xxlarge</item>
+        <item name="android:paddingRight">@dimen/padding.xxlarge</item>
+        <item name="android:paddingTop">@dimen/padding.xxlarge</item>
+        <item name="android:paddingBottom">@dimen/padding.xxlarge</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Primary.Jumbo.Icon">
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">@dimen/button.jumbo.icon.size</item>
+        <item name="iconTint">@color/selector_button_micro_primary_icon_color</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Text" />
+    <style name="Offside.Redesign.Button.TextLink" />
+
+    <style name="Offside.Redesign.Button.Icon.Link" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineMediumTextStyle</item>
+        <item name="android:textColor">@color/selector_button_icon_with_link_color</item>
+        <item name="iconTint">@color/selector_button_icon_with_link_color</item>
+        <item name="iconEndPadding">@dimen/padding.xsmall</item>
+        <item name="backgroundTint">?attr/offside_transparent</item>
+        <item name="iconGravity">textStart</item>
+        <item name="singleLine">true</item>
+        <item name="rippleColor">@color/selector_button_icon_with_link_background</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.IconButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconGravity">textStart</item>
+        <item name="android:padding">@dimen/spacing.unset</item>
+        <item name="iconPadding">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.Button.Biometric" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+        <item name="icon">@drawable/ic_actionable_face</item>
+        <item name="iconTint">?attr/offside_onSecondaryVariant</item>
+        <item name="android:textColor">?attr/offside_onSecondaryVariant</item>
+        <item name="iconGravity">textStart</item>
+        <item name="cornerRadius">@dimen/spacing.unset</item>
+        <item name="android:minHeight">@dimen/spacing.unset</item>
+        <item name="iconEndPadding">@dimen/padding.medium</item>
+        <item name="android:paddingTop">@dimen/spacing.unset</item>
+        <item name="android:paddingLeft">@dimen/spacing.unset</item>
+        <item name="android:paddingBottom">@dimen/spacing.unset</item>
+        <item name="iconSize">@dimen/button.biometric.icon.size</item>
+        <item name="android:paddingRight">@dimen/padding.medium</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

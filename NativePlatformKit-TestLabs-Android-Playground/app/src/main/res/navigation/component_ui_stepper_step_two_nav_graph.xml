@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_stepper_step_two_nav_graph"
+    android:label="@string/debug_ui_redesign_stepper_step_two_fragment_text"
+    app:startDestination="@id/testUIRedesignStepperStepTwoFragment">
+
+    <fragment
+        android:id="@+id/testUIRedesignStepperStepTwoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.stepper.TestUiRedesignStepperStepTwoFragment"
+        android:label="@string/debug_ui_redesign_stepper_step_two_fragment_text"
+        tools:layout="@layout/fragment_test_ui_redesign_stepper_step_two_fragment">
+        <action
+            android:id="@+id/action_testUIRedesignStepperStepTwoFragment_to_testUIRedesignStepperStepThreeFragment"
+            app:destination="@id/component_ui_stepper_step_three_nav_graph" />
+    </fragment>
+
+</navigation>

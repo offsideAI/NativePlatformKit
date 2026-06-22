@@ -1,0 +1,123 @@
+# Public version catalog for the standalone UI testlabs.
+# Versions mirror those used by the original mbl-massmarket-android monorepo
+# so the copied source compiles against the same AndroidX/Material APIs.
+[versions]
+agp = "8.5.2"
+kotlin = "1.9.23"
+
+# AndroidX
+core = "1.13.1"
+core-splashscreen = "1.0.1"
+appcompat = "1.7.0"
+browser = "1.8.0"
+cardview = "1.0.0"
+constraintlayout = "2.1.4"
+coordinatorlayout = "1.2.0"
+customview = "1.1.0"
+customview-poolingcontainer = "1.0.0"
+gridlayout = "1.0.0"
+recyclerview = "1.3.2"
+recyclerview-selection = "1.1.0"
+vectordrawable = "1.2.0"
+viewpager2 = "1.1.0"
+webkit = "1.11.0"
+activity = "1.9.0"
+fragment = "1.8.1"
+savedstate = "1.2.1"
+navigation = "2.7.7"
+lifecycle = "2.8.3"
+annotation = "1.8.0"
+annotation-experimental = "1.4.1"
+startup = "1.1.1"
+
+# Third-party
+material = "1.12.0"
+picasso = "2.8"
+shimmer = "0.5.0"
+timber = "5.0.1"
+
+[libraries]
+# AndroidX core
+androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "core-splashscreen" }
+# AndroidX widgets
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat-resources", version.ref = "appcompat" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+androidx-customview = { group = "androidx.customview", name = "customview", version.ref = "customview" }
+androidx-customview-poolingcontainer = { group = "androidx.customview", name = "customview-poolingcontainer", version.ref = "customview-poolingcontainer" }
+androidx-gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "gridlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-recyclerview-selection = { group = "androidx.recyclerview", name = "recyclerview-selection", version.ref = "recyclerview-selection" }
+androidx-vectordrawable = { group = "androidx.vectordrawable", name = "vectordrawable", version.ref = "vectordrawable" }
+androidx-vectordrawable-animated = { group = "androidx.vectordrawable", name = "vectordrawable-animated", version.ref = "vectordrawable" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "webkit" }
+# AndroidX components
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+androidx-savedstate = { group = "androidx.savedstate", name = "savedstate", version.ref = "savedstate" }
+# AndroidX navigation
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigation" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+# AndroidX lifecycle
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+# AndroidX util
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-annotation-experimental = { group = "androidx.annotation", name = "annotation-experimental", version.ref = "annotation-experimental" }
+androidx-startup = { group = "androidx.startup", name = "startup-runtime", version.ref = "startup" }
+# Third-party
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
+shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+
+[bundles]
+androidx-widgets = [
+    "androidx-appcompat", "androidx-appcompat-resources",
+    "androidx-browser",
+    "androidx-cardview",
+    "androidx-constraintlayout", "androidx-coordinatorlayout",
+    "androidx-customview", "androidx-customview-poolingcontainer",
+    "androidx-gridlayout",
+    "androidx-recyclerview", "androidx-recyclerview-selection",
+    "androidx-vectordrawable", "androidx-vectordrawable-animated",
+    "androidx-viewpager2",
+    "androidx-webkit",
+]
+androidx-components = [
+    "androidx-fragment", "androidx-fragment-ktx",
+    "androidx-activity",
+    "androidx-savedstate",
+]
+androidx-navigation = [
+    "androidx-navigation-fragment", "androidx-navigation-fragment-ktx",
+    "androidx-navigation-ui", "androidx-navigation-ui-ktx",
+]
+androidx-lifecycle = [
+    "androidx-lifecycle-runtime", "androidx-lifecycle-runtime-ktx",
+    "androidx-lifecycle-viewmodel", "androidx-lifecycle-viewmodel-ktx",
+    "androidx-lifecycle-livedata", "androidx-lifecycle-livedata-ktx",
+    "androidx-lifecycle-process",
+    "androidx-lifecycle-viewmodel-savedstate",
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# parcelize is applied by bare id in modules (it ships with kotlin-android, already on the classpath)

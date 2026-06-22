@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="account.tile.widget.left.width.percentage" format="float" type="dimen">0.4</item>
+    <item name="account.tile.widget.right.width.percentage" format="float" type="dimen">0.6</item>
+
+    <item name="account.tile.widget.display.name.max.lines" format="integer" type="integer">3</item>
+</resources>

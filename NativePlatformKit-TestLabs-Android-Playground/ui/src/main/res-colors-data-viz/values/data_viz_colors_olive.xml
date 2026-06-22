@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.olive90">#E6EBC7</color>
+    <color name="color.data_viz.olive80">#D2DA9A</color>
+    <color name="color.data_viz.olive70">#BCC969</color>
+    <color name="color.data_viz.olive60">#A7B54A</color>
+    <color name="color.data_viz.olive50">#8B9B31</color>
+    <color name="color.data_viz.olive40">#758128</color>
+    <color name="color.data_viz.olive30">#5F6920</color>
+    <color name="color.data_viz.olive20">#4A5219</color>
+</resources>

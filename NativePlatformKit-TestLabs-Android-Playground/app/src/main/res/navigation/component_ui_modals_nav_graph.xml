@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_modals_nav_graph_id"
+    app:startDestination="@id/testUIRedesignModelsFragment">
+
+    <fragment
+        android:id="@+id/testUIRedesignModelsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignModalMainPageFragment"
+        android:label="@string/debug_ui_redesign_tab_modals"
+        tools:layout="@layout/fragment_test_ui_redesign_main_page">
+        <action
+            android:id="@+id/action_testUIRedesignModelFragment_to_testUIRedesignSnackbarFragment"
+            app:destination="@id/testUIRedesignSnackbarFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignModelFragment_to_testUIRedesignModalFragment"
+            app:destination="@id/testUIRedesignModalDemoFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignModelFragment_to_testUIRedesignCalendarDemoFragment"
+            app:destination="@id/testUIRedesignCalendarDemoFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignModelFragment_to_componentUiBottomSheetNavGraph"
+            app:destination="@id/component_ui_bottom_sheet_nav_graph" />
+        <action
+            android:id="@+id/action_testUIRedesignModelsFragment_to_testUIRedesignLoadingDialogFragment"
+            app:destination="@id/testUIRedesignLoadingDialogFragment" />
+
+        <action
+            android:id="@+id/action_testUIRedesignModelFragment_to_testUIRedesignOsComponentFragment"
+            app:destination="@id/testUIRedesignOsComponentDemoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/testUIRedesignSnackbarFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignSnackBarDemoFragment"
+        android:label="@string/debug_ui_redesign_tab_modals"
+        tools:layout="@layout/fragment_redesign_snack_bar_demo" />
+
+    <fragment
+        android:id="@+id/testUIRedesignModalDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignModalFragment"
+        android:label="@string/debug_ui_redesign_tab_modals"
+        tools:layout="@layout/fragment_test_ui_redesign_main_page" />
+
+    <fragment
+        android:id="@+id/testUIRedesignCalendarDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignCalendarDemoFragment"
+        android:label="@string/debug_ui_redesign_tab_calendar"
+        tools:layout="@layout/fragment_redesign_ui_calendar_demo" />
+
+    <fragment
+        android:id="@+id/testUIRedesignLoadingDialogFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignLoadingDialogFragment"
+        android:label="@string/debug_ui_redesign_loading_dialog_title"
+        tools:layout="@layout/fragment_test_ui_redesign_loading" />
+
+    <include app:graph="@navigation/component_ui_bottom_sheet_nav_graph"/>
+
+
+    <fragment
+        android:id="@+id/testUIRedesignOsComponentDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.TestUIRedesignOsComponentDemoFragment"
+        android:label="@string/os_component_label"
+        tools:layout="@layout/fragment_redesign_os_component_demo" />
+</navigation>

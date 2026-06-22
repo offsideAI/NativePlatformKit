@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dialog_indicator_size_token" type="dimen">@dimen/sys.spacing.56</item>
+</resources>

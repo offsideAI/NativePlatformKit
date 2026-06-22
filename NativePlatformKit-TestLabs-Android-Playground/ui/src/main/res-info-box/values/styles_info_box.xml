@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.InfoBox" parent="Widget.Material3.CardView.Filled">
+        <item name="layout_constraintWidth_percent">@dimen/info_box_width_percentage</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.Icon">
+        <item name="android:tint">?attr/offside_onPrimaryContainer</item>
+        <item name="android:paddingTop">@dimen/padding.medium</item>
+        <item name="android:paddingBottom">@dimen/padding.large</item>
+        <item name="android:paddingEnd">@dimen/padding.xsmall</item>
+        <item name="contentPaddingRight">@dimen/spacing.unset</item>
+        <item name="contentPaddingLeft">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.Title" parent="Offside.Redesign.TitleSmallTextStyle">
+        <item name="android:paddingStart">@dimen/padding.xsmall</item>
+        <item name="android:paddingBottom">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.Description" parent="Offside.Redesign.BodySmallTextStyle">
+        <item name="android:paddingStart">@dimen/padding.xsmall</item>
+        <item name="android:textColorLink">?attr/offside_primary</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle">
+        <item name="drawable">@drawable/ic_informative_information</item>
+        <item name="drawableTint">?attr/offside_onPrimaryContainer</item>
+        <item name="textViewColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="drawableContentDescription">
+            @string/info_box_accessibility_icon_label_information
+        </item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Blue">
+        <item name="backgroundColor">?attr/offside_primaryContainer</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Grey">
+        <item name="backgroundColor">?attr/offside_surfaceContainerLowest</item>
+        <item name="textViewColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Grey.Transparent">
+        <item name="backgroundColor">?attr/offside_transparent</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Yellow">
+        <item name="backgroundColor">?attr/offside_tertiaryContainer</item>
+        <item name="drawable">@drawable/ic_informative_warning_regular</item>
+        <item name="drawableTint">?attr/offside_onTertiaryContainer</item>
+        <item name="drawableContentDescription">@string/info_box_accessibility_icon_label_warning</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Red">
+        <item name="backgroundColor">?attr/offside_errorContainer</item>
+        <item name="drawable">@drawable/ic_informative_warning_regular</item>
+        <item name="drawableTint">?attr/offside_onErrorContainer</item>
+        <item name="drawableContentDescription">@string/info_box_accessibility_icon_label_warning</item>
+    </style>
+
+    <style name="Offside.Redesign.InfoBox.StateStyle.Green">
+        <item name="backgroundColor">?attr/offside_tertiaryContainerVariant</item>
+        <item name="drawable">@drawable/ic_decorative_success</item>
+        <item name="drawableTint">?attr/offside_tertiary</item>
+        <item name="drawableContentDescription">@string/info_box_accessibility_icon_label_success</item>
+    </style>
+</resources>

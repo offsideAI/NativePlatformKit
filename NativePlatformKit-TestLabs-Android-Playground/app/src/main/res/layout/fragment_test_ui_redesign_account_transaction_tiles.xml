@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Offside.Redesign.Container.Standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin.xsmall" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/account_transactions_date_label_tile"
+                android:id="@+id/transaction_tile_date_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/transaction_tile_non_ecommerce_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_date_label" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/transaction_tile_ecommerce_wallet_green_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_non_ecommerce_wallet" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/transaction_tile_ecommerce_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_ecommerce_wallet_green_amount" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/transaction_tile_pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_ecommerce_wallet" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/transaction_tile_lending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_pending" />
+
+            <include
+                layout="@layout/account_transactions_date_label_tile"
+                android:id="@+id/deposit_transaction_tile_date_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_tile_lending" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/deposit_transaction_tile_green_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deposit_transaction_tile_date_label" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/deposit_transaction_tile_with_category_ecommerce_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deposit_transaction_tile_green_amount" />
+
+            <ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionTile
+                android:id="@+id/deposit_transaction_tile_with_no_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deposit_transaction_tile_with_category_ecommerce_wallet" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

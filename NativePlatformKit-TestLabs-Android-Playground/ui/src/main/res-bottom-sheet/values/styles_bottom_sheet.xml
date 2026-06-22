@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Offside.Redesign.BottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Offside.Redesign.BottomSheetStyle</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheetStyle" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">?attr/offside_surfaceContainer</item>
+        <item name="android:elevation">@dimen/offside.redesign.elevation.surface.emphasized</item>
+        <item name="shapeAppearanceOverlay">@style/Offside.Redesign.BottomSheetStyle.ShapeAppearance
+        </item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheetStyle.ShapeAppearance" parent="@style/ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/offside.redesign.shape.regular</item>
+        <item name="cornerSizeTopRight">@dimen/offside.redesign.shape.regular</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.Peak" parent="Offside.Redesign.BottomSheetStyle">
+        <item name="behavior_hideable">false</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.DragHandle" parent="Widget.Material3.BottomSheet.DragHandle">
+        <item name="android:paddingTop">@dimen/padding.small</item>
+        <item name="tint">?attr/offside_outlineVariant</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.ShowList.Button" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">?attr/offside_primary</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleSmallTextStyle</item>
+        <item name="android:padding">@dimen/padding.medium</item>
+        <item name="rippleColor">@color/selector_button_tertiary_background</item>
+    </style>
+
+
+    <style name="Offside.Redesign.BottomSheet.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">@dimen/gutter.small</item>
+        <item name="android:layout_marginStart">@dimen/gutter.small</item>
+        <item name="android:layout_marginLeft">@dimen/gutter.small</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.HeadlineLargeTextStyle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.SubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">@dimen/margin.xxsmall</item>
+        <item name="android:layout_marginStart">@dimen/gutter.small</item>
+        <item name="android:layout_marginLeft">@dimen/gutter.small</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodyMediumTextStyle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.CloseIcon" parent="Offside.Redesign.BottomSheet.ShowList.Button">
+        <item name="icon">@drawable/ic_actionable_header_close</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="android:gravity">end</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="android:padding">@dimen/gutter.small</item>
+    </style>
+
+    <style name="Offside.Redesign.BottomSheet.BackIcon" parent="Widget.Material3.Button.IconButton">
+        <item name="icon">@drawable/ic_actionable_header_back_arrow</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="android:padding">@dimen/gutter.small</item>
+        <item name="drawableContentDescription">
+            @string/a11y_bottom_sheet_back_button
+        </item>
+    </style>
+
+</resources>

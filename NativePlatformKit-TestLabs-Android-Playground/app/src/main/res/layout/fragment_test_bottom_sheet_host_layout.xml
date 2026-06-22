@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountInputFieldLayout"
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_min_amount_input"
+        android:labelFor="@+id/amountInputField"
+        android:orientation="vertical"
+        app:endIconContentDescription="@string/debug_ui_redesign_edit_end_icon_content_description"
+        app:endIconDrawable="@drawable/ic_actionable_edit"
+        app:layout_constraintBottom_toTopOf="@+id/amountInputFieldSubTextLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountInputField"
+            style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/amountInputFieldLayout_divider"
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountInputFieldSubTextLayout"
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_max_amount_input"
+        android:labelFor="@+id/amountInputFieldSubtext"
+        android:orientation="vertical"
+        app:endIconContentDescription="@string/debug_ui_redesign_edit_end_icon_content_description"
+        app:endIconDrawable="@drawable/ic_actionable_edit"
+        app:layout_constraintBottom_toTopOf="@+id/amountInputFieldDropdownLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountInputFieldSubtext"
+            style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/amountInputFieldSubtextInfo"
+            style="@style/Offside.Redesign.InputField.SubInfoTextStyle.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_decorative_information"
+            android:drawablePadding="@dimen/padding.xsmall"
+            android:importantForAccessibility="yes"
+            android:text="@string/debug_ui_redesign_amount_input_subtext" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/amountInputFieldSubText_divider"
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountInputFieldDropdownLayout"
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_amount_input_hint"
+        android:labelFor="@+id/amountInputFieldDropdown"
+        android:orientation="vertical"
+        app:endIconContentDescription="@string/debug_ui_redesign_dropdown_end_icon_content_description"
+        app:endIconDrawable="@drawable/ic_actionable_bottom_sheet_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldSubTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountInputFieldDropdown"
+            style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:importantForAccessibility="no"
+            android:text="@string/debug_ui_redesign_amount_input_default_text" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/amountInputFieldDropdown_divider"
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/Offside.Redesign.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        android:layout_marginBottom="@dimen/margin.xxlarge"
+        android:text="@string/debug_ui_redesign_continue_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldDropdownLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

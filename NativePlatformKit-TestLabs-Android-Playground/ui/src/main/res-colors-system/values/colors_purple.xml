@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sys.color.purple10">#46073B</color>
+    <color name="sys.color.purple20">#600B52</color>
+    <color name="sys.color.purple30">#7C186B</color>
+    <color name="sys.color.purple40">#9B3189</color>
+    <color name="sys.color.purple50">#B946A6</color>
+    <color name="sys.color.purple60">#D071C0</color>
+    <color name="sys.color.purple70">#D99BCF</color>
+    <color name="sys.color.purple80">#E5C2DF</color>
+    <color name="sys.color.purple90">#F3E2F0</color>
+    <color name="sys.color.purple95">#F8F1F7</color>
+</resources>

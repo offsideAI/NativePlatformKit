@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorModel"
+            />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/sys.color.azurite30"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/color_generator_list_item_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sys.spacing.48"
+            android:background="@{model.mutatedColorDrawable}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:background="@color/sys.color.azurite30"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.LabelSmallTextStyle"
+            android:id="@+id/color_generator_list_item_rgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/offside.redesign.elevation.surface.raised"
+            android:paddingHorizontal="@dimen/padding.xsmall"
+            android:background="?attr/offside_surface"
+            android:textColor="?attr/offside_onSurface"
+            android:layout_marginEnd="@dimen/margin.xxsmall"
+            android:layout_marginBottom="@dimen/margin.xxsmall"
+            android:text="@{model.rgbMutatedString}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_list_item_hsl"
+            tools:text="ARGB: #FF001122"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.LabelSmallTextStyle"
+            android:id="@+id/color_generator_list_item_hsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/offside.redesign.elevation.surface.raised"
+            android:paddingHorizontal="@dimen/padding.xsmall"
+            android:background="?attr/offside_surface"
+            android:textColor="?attr/offside_onSurface"
+            android:layout_marginEnd="@dimen/margin.xxsmall"
+            android:layout_marginBottom="@dimen/margin.xxsmall"
+            android:text="@{model.mutatedHsl.display}"
+            app:layout_constraintEnd_toEndOf="@id/color_generator_list_item_image_view"
+            app:layout_constraintBottom_toBottomOf="@id/color_generator_list_item_image_view"
+            tools:text="Hue 123, Saturation 0.4, Lightness 0.8"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.LabelSmallTextStyle"
+            android:id="@+id/color_generator_list_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/offside.redesign.elevation.surface.raised"
+            android:paddingHorizontal="@dimen/padding.xsmall"
+            android:background="?attr/offside_surface"
+            android:textColor="?attr/offside_onSurface"
+            android:layout_marginStart="@dimen/margin.xxsmall"
+            android:layout_marginBottom="@dimen/margin.xxsmall"
+            app:layout_constraintBottom_toBottomOf="@id/color_generator_list_item_image_view"
+            app:layout_constraintStart_toStartOf="@id/color_generator_list_item_image_view"
+            tools:text="@string/color_generator_color_label_generated"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

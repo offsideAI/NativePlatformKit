@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.listitem.data.ListItemData.ListItemWithButton" />
+
+        <variable
+            name="dividerVisibility"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selector_list_item"
+        android:paddingStart="@dimen/padding.xlarge">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label"
+            style="@style/Offside.Redesign.TitleMediumTextStyle"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin.medium"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:text="@{data.label}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Placeholder Text" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="primary_button, alternate_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/primary_button"
+            style="@style/Offside.Redesign.Button.Micro.Blue.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding.large"
+            android:onClick="@{(v) -> data.onClick(v)}"
+            android:text="@{data.buttonLabel}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Placeholder Text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alternate_button"
+            style="@style/Offside.Redesign.Button.Micro.Alternate.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding.large"
+            android:onClick="@{(v) -> data.onClick(v)}"
+            android:text="@{data.buttonLabel}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Placeholder Text" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:visibility="@{dividerVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

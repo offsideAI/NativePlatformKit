@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_transfer_activity_tiles_nav_graph"
+    app:startDestination="@id/testUIRedesignTransferActivityTilesFragment">
+
+    <fragment
+        android:id="@+id/testUIRedesignTransferActivityTilesFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.tile.transfer.TestUIRedesignTransferActivityTilesFragment"
+        android:label="@string/debug_ui_redesign_transfer_transaction_tiles_label"
+        tools:layout="@layout/fragment_test_ui_redesign_transfer_activity_tiles"/>
+
+</navigation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bottom_sheet_bundle_key_start_destination_args" translatable="false">startDestinationArgs</string>
+    <string name="bottom_sheet_bundle_key_title" translatable="false">title</string>
+    <string name="bottom_sheet_bundle_key_sub_title" translatable="false">subTitle</string>
+</resources>

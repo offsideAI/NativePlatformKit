@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PeakBottomSheetFragment">
+        <attr name="peek_bottom_sheet_fragment_title" format="string|reference"/>
+        <attr name="peek_bottom_sheet_fragment_sub_title" format="string|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin.xsmall"
+        app:cardBackgroundColor="?attr/offside_onPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_scheduled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_completed" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_ebill_late"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_scheduled" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_ebill_ontime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_ebill_late" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_reminder_late"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_ebill_ontime" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_reminder_ontime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_reminder_late" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_request_late"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_reminder_ontime" />
+
+            <ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTile
+                android:id="@+id/online_payments_payment_request_ontime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin.large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_payments_payment_request_late"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.core.widget.NestedScrollView>

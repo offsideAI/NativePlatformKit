@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------------------
+# NativePlatformKit-TestLabs-Android-Playground — project .gitignore
+# Layered on top of the repo-root .gitignore. Standard Android Studio / Gradle.
+# ---------------------------------------------------------------------------
+
+# --- Gradle ---
+.gradle/
+build/
+# Keep the committed wrapper so the project builds from a clone.
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# --- Android / build outputs ---
+local.properties
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+*.class
+captures/
+.externalNativeBuild/
+.cxx/
+release/
+output.json
+
+# --- Signing / secrets (never commit) ---
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.gpg
+
+# --- Kotlin / KSP ---
+.kotlin/
+
+# --- IntelliJ IDEA / Android Studio ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+*.hprof
+
+# --- OS noise ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# --- Logs / crash dumps ---
+*.log
+hs_err_pid*

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_tile_no_min_payment_due">No Min. Payment Due</string>
+    <string name="account_tile_payment_overdue" >Payment Overdue</string>
+    <string name="account_tile_ending_in_des" >Account ending in %s </string>
+</resources>

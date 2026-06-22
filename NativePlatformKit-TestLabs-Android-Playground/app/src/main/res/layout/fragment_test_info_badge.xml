@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding.medium">
+
+    <ai.offside.mobile.android.component.ui.badges.InfoBadge
+        android:id="@+id/success_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        app:infoBadgeType="SUCCESS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ai.offside.mobile.android.component.ui.badges.InfoBadge
+        android:id="@+id/warning_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.xlarge"
+        android:importantForAccessibility="yes"
+        app:infoBadgeType="WARNING"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success_badge" />
+
+    <ai.offside.mobile.android.component.ui.badges.InfoBadge
+        android:id="@+id/checkmark_badge"
+        style="@style/Offside.Redesign.Badge.Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.xlarge"
+        android:importantForAccessibility="yes"
+        app:infoBadgeType="CHECKMARK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_badge" />
+
+    <ai.offside.mobile.android.component.ui.badges.InfoBadge
+        android:id="@+id/custom_badge"
+        style="@style/Offside.Redesign.Badge.Custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding.xlarge"
+        android:importantForAccessibility="yes"
+        app:infoBadgeIcon="@drawable/ic_decorative_group_regular"
+        app:infoBadgeContentDescription="@string/debug_ui_redesign_badge_custom"
+        app:infoBadgeType="CUSTOM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkmark_badge" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

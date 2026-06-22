@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="amountBottomSheetViewModel"
+            type="ai.offside.mobile.android.helper.testlabs.nav.inputfield.AmountBottomSheetViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="ai.offside.mobile.android.helper.testlabs.nav.inputfield.AmountInputFieldBottomSheetFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/offside_onPrimary">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_title_amount_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin.medium"
+                android:layout_marginTop="@dimen/margin.medium"
+                android:text="@string/debug_ui_redesign_amount_bottom_sheet_title"
+                android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+                android:textColor="?attr/offside_onSurface"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bottom_sheet_close_button_amount_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin.medium"
+                android:layout_marginEnd="@dimen/margin.medium"
+                android:contentDescription="@string/debug_ui_redesign_close_modal_icon_content_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_actionable_header_close" />
+
+            <RadioGroup
+                android:id="@+id/bottom_sheet_amount_options_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin.medium"
+                android:layout_marginTop="@dimen/margin.medium"
+                android:layout_marginEnd="@dimen/margin.medium"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_title_amount_input">
+
+                <RelativeLayout
+                    android:id="@+id/amount_option1_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:amountOptionAccessibilityDelegate="@{amountOption1RadioButton}">
+
+                    <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                        style="@style/Offside.Redesign.RadioButtonStyle.Top"
+                        android:id="@+id/amount_option1_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin.xxsmall"
+                        android:gravity="top"
+                        android:importantForAccessibility="no"
+                        android:tag="@{amountBottomSheetViewModel.amountDetailsLiveData.get(0)}" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option1_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/amount_option1_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.getAmountFormatted(amountBottomSheetViewModel.amountDetailsLiveData.get(0).amount)}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineMediumTextStyle"
+                        android:textColor="?attr/offside_onSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option1_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amount_option1_value"
+                        android:layout_toEndOf="@+id/amount_option1_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.amountDetailsLiveData.get(0).label}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineSmallTextStyle"
+                        android:textColor="?attr/offside_onSurfaceVariantMedium"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/amount_option2_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin.medium"
+                    app:amountOptionAccessibilityDelegate="@{amountOption2RadioButton}">
+
+                    <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                        android:id="@+id/amount_option2_radioButton"
+                        style="@style/Offside.Redesign.RadioButtonStyle.Top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin.xxsmall"
+                        android:gravity="top"
+                        android:importantForAccessibility="no"
+                        android:tag="@{amountBottomSheetViewModel.amountDetailsLiveData.get(1)}" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option2_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/amount_option2_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.getAmountFormatted(amountBottomSheetViewModel.amountDetailsLiveData.get(1).amount)}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineMediumTextStyle"
+                        android:textColor="?attr/offside_onSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option2_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amount_option2_value"
+                        android:layout_toEndOf="@+id/amount_option2_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.amountDetailsLiveData.get(1).label}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineSmallTextStyle"
+                        android:textColor="?attr/offside_onSurfaceVariantMedium"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/amount_option3_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin.medium"
+                    app:amountOptionAccessibilityDelegate="@{amountOption3RadioButton}">
+
+                    <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                        android:id="@+id/amount_option3_radioButton"
+                        style="@style/Offside.Redesign.RadioButtonStyle.Top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin.xxsmall"
+                        android:gravity="top"
+                        android:importantForAccessibility="no"
+                        android:tag="@{amountBottomSheetViewModel.amountDetailsLiveData.get(2)}" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option3_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/amount_option3_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.getAmountFormatted(amountBottomSheetViewModel.amountDetailsLiveData.get(2).amount)}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineMediumTextStyle"
+                        android:textColor="?attr/offside_onSurface"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option3_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amount_option3_value"
+                        android:layout_toEndOf="@+id/amount_option3_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.amountDetailsLiveData.get(2).label}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineSmallTextStyle"
+                        android:textColor="?attr/offside_onSurfaceVariantMedium"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/amount_option4_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin.medium"
+                    app:amountOptionAccessibilityDelegate="@{amountOption4RadioButton}">
+
+                    <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+                        android:id="@+id/amount_option4_radioButton"
+                        style="@style/Offside.Redesign.RadioButtonStyle.Top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin.xxsmall"
+                        android:gravity="top"
+                        android:importantForAccessibility="no"
+                        android:tag="@{amountBottomSheetViewModel.amountDetailsLiveData.get(3)}" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_option4_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/amount_option4_radioButton"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{amountBottomSheetViewModel.amountDetailsLiveData.get(3).label}"
+                        android:textAppearance="@style/Offside.Redesign.HeadlineMediumTextStyle"
+                        android:textColor="?attr/offside_onSurface"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bottom_sheet_other_amount_layout"
+                style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin.medium"
+                android:hint="@string/debug_ui_redesign_amount_input_hint"
+                android:labelFor="@+id/amountInputFieldErrorState"
+                android:visibility="gone"
+                app:endIconContentDescription="@string/debug_ui_redesign_clear_end_icon_content_description"
+                app:endIconMode="clear_text"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_amount_options_radio_group">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/other_amount_edit_text"
+                    style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bottom_sheet_amount_modal_okay_button"
+                style="@style/Offside.Redesign.Button.Primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin.medium"
+                android:enabled="false"
+                android:text="@string/debug_ui_redesign_okay_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_other_amount_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

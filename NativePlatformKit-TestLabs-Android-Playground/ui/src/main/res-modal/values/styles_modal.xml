@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Offside Dialog theme to override the width -->
+    <style name="Offside.Redesign.Dialog.Modal" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowMinWidthMajor">80%</item>
+        <item name="windowMinWidthMinor">80%</item>
+        <item name="dialogCornerRadius">@dimen/offside.redesign.shape.regular</item>
+    </style>
+</resources>

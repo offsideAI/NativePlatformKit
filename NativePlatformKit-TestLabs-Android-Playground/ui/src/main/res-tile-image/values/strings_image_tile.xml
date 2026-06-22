@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String used in accessibility content description -->
+    <string name="card_title_content_description_format" translatable="false">Card %s ending %s</string>
+    <string name="label_for_content_description_format" translatable="false">%s for %s</string>
+</resources>

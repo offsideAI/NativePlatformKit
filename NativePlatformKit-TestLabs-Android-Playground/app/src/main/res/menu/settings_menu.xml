@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/component_ui_settings_nav_graph_id"
+        android:icon="@drawable/ic_decorative_settings_regular"
+        android:title="@string/menu_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@id/testlabs_color_generator_nav_graph"
+        android:contentDescription="@string/color_generator_graph_label"
+        android:icon="@drawable/ic_actionable_edit_thin"
+        android:title="@string/color_generator_destination_form_label"
+        app:iconTint="?attr/offside_onSecondaryContainer"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_item_more"
+        android:contentDescription="@string/debug_ui_redesign_menu_more_label"
+        android:icon="@drawable/ic_actionable_dots_more"
+        android:visible="false"
+        android:title="@string/debug_ui_redesign_menu_more_label"
+        app:iconTint="?attr/offside_onSecondaryContainer"
+        app:showAsAction="ifRoom" />
+</menu>

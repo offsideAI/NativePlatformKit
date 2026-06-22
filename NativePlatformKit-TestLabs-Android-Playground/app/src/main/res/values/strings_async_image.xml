@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="redesign_header_async_image_loading" translatable="false">Async Image Loading</string>
+    <string name="async_url" translatable="false">https://www.offside.com/content/dam/offside-com/images/personal/DebitCard/MobileWallet/NKU_DC_Rounded.png</string>
+    <string name="async_url1" translatable="false">https://www.offside.com/content/dam/offside-com/images/personal/DebitCard/MobileWallet/PittsburghPirates_DC2_Rounded.png</string>
+    <string name="async_error_url" translatable="false">https://content.offsidemc.com/live/offside/onlinebanking/CreditCard/cardimg/MobileWallet/Points_Consumer_CC2_Rounded_error-3.png</string>
+</resources>

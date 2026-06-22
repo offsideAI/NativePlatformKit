@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="review_label" translatable="false">Review Label</string>
+    <string name="review_value" translatable="false">Value</string>
+    <string name="review_supplementary" translatable="false">Secondary Information</string>
+    <string name="review_action_content_description" translatable="false">Edit </string>
+    <string name="review_more_info_content_description" translatable="false">More Information about </string>
+
+    <string name="review_label_with_icon" translatable="false">Review Label</string>
+    <string name="review_value_with_icon" translatable="false">Review Value</string>
+    <string name="review_label_wrapping" translatable="false">This is an example of label wrapping</string>
+    <string name="review_value_wrapping" translatable="false">This is an example of review value wrapping</string>
+    <string name="review_edit_action_clicked" translatable="false">Edit Action Clicked</string>
+    <string name="review_tool_tip_clicked" translatable="false">Tool Tip Clicked</string>
+</resources>

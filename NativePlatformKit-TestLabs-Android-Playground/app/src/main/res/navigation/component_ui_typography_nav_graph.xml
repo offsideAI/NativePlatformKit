@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_typography_nav_graph_id"
+    app:startDestination="@id/testUIRedesignTypographyDemoFragment">
+    <fragment
+        android:id="@+id/testUIRedesignTypographyDemoFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignTypographyFragment"
+        android:label="@string/debug_ui_redesign_typography_title"
+        tools:layout="@layout/test_redesign_typography">
+        <action
+            android:id="@+id/action_testUIRedesignTypographyDemoFragment_to_testUIRedesignMainPageFragment"
+            app:destination="@id/testUIRedesignMainPageFragment"
+            app:popUpTo="@id/testUIRedesignMainPageFragment" />
+    </fragment>
+</navigation>

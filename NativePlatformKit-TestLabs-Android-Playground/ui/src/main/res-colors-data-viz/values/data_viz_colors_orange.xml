@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.orange90">#FDE0C9</color>
+    <color name="color.data_viz.orange80">#FCC192</color>
+    <color name="color.data_viz.orange70">#FA994C</color>
+    <color name="color.data_viz.orange60">#EF6A00</color>
+    <color name="color.data_viz.orange50">#BD5805</color>
+    <color name="color.data_viz.orange40">#954504</color>
+    <color name="color.data_viz.orange30">#723403</color>
+    <color name="color.data_viz.orange20">#542703</color>
+</resources>

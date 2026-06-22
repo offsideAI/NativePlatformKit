@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_transfer_activity_text" translatable="false">%s %s %s %s %s %s</string>
+    <string name="a11y_empty_string" translatable="false"/>
+</resources>

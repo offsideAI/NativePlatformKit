@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_view_url" translatable="false">https://www.offside.com/</string>
+    <string name="web_view_menu_exit">Close Web View</string>
+    <string name="component_ui_web_view_nav_graph_label" translatable="false">Test WebView</string>
+    <string name="component_ui_web_view_nav_graph_destination_label" translatable="false">Test WebView</string>
+</resources>

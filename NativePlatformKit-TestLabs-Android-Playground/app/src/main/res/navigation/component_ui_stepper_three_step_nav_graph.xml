@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_stepper_three_step_nav_graph"
+    app:startDestination="@id/component_ui_stepper_step_one_nav_graph">
+
+    <include app:graph="@navigation/component_ui_stepper_step_one_nav_graph" />
+    <include app:graph="@navigation/component_ui_stepper_step_two_nav_graph" />
+    <include app:graph="@navigation/component_ui_stepper_step_three_nav_graph" />
+    <include app:graph="@navigation/component_ui_stepper_step_completed_nav_graph" />
+
+</navigation>

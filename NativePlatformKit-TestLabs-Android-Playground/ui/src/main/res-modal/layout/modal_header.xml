@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.modal.model.ModalDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/modal_title_sticky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.medium"
+            android:text="@{data.modalTitle}"
+            android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            android:gravity="center_horizontal"
+            android:accessibilityHeading="true"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/modal_supplementary_sticky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin.medium"
+            android:paddingTop="@dimen/padding.xsmall"
+            android:text="@{data.modalSupplementary}"
+            android:textAppearance="@style/Offside.Redesign.BodyMediumTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:visibility="@{data.modalSupplementaryVisibility}"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/modal_title_sticky"
+            tools:visibility="visible" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:background="?attr/offside_outline"
+            app:layout_constraintTop_toBottomOf="@+id/modal_supplementary_sticky" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

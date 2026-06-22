@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tile image display size -->
+    <item name="size.percentage.small" format="float" type="dimen">0.14</item>
+    <item name="size.percentage.medium" format="float" type="dimen">0.22</item>
+    <item name="size.percentage.large" format="float" type="dimen">0.35</item>
+
+    <!-- Tile image display ratio size -->
+    <item name="size.ratio.xxsmall" format="string" type="dimen">1:1</item>
+    <item name="size.ratio.xsmall" format="string" type="dimen">3:2</item>
+    <item name="size.ratio.medium" format="string" type="dimen">2:1</item>
+</resources>

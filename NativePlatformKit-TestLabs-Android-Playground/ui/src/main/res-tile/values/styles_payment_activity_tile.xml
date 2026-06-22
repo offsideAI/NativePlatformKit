@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.Tile"/>
+    <style name="Offside.Redesign.Tile.PaymentActivity" parent="Offside.Redesign.Tile"></style>
+</resources>

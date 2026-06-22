@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+    <item android:left="@dimen/padding.xsmall" android:right="@dimen/padding.xsmall"
+        android:top="@dimen/padding.xsmall" android:bottom="@dimen/padding.xsmall">
+        <shape>
+            <solid android:color="?attr/offside_onPrimary" />
+            <corners android:radius="@dimen/margin.xlarge" />
+        </shape>
+    </item>
+
+</layer-list>

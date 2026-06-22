@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_loading_dialog_title" translatable="false">Loading Dialog</string>
+    <string name="debug_ui_redesign_loading" translatable="false">Loading …</string>
+    <string name="debug_ui_redesign_show_loading" translatable="false">Show Loading</string>
+</resources>

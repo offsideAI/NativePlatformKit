@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.helper.testlabs.nav.CardWorkSheetData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/margin.small">
+
+        <ai.offside.mobile.android.component.ui.tile.cardworksheet.CardWorksheetTile
+            android:id="@+id/simple_card_worksheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:artUrl="@string/async_url"
+            app:cardSupplementary="@string/card_worksheet_card_number"
+            app:cardTitle="@string/card_worksheet_card_name_no_ellipse"
+            />
+
+        <ai.offside.mobile.android.component.ui.tile.cardworksheet.CardWorksheetTile
+            android:id="@+id/full_card_worksheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.small"
+            app:artUrl="@string/async_url"
+            app:cardSecondary="@{data.secondaryInfo}"
+            app:cardSupplementary="@{data.supplementary}"
+            app:cardTitle="@{data.cardName}"
+            app:cardTitleSuffix="@{data.suffix}"
+            />
+    </LinearLayout>
+</layout>

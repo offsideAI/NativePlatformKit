@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_actionable_icons_label" translatable="false">Actionable Icons</string>
+    <string name="debug_ui_redesign_bottom_sheet_icon_label" translatable="false">Bottom Sheet Arrow decorative</string>
+    <string name="debug_ui_redesign_caret_icon_label" translatable="false">Caret icon decorative</string>
+    <string name="debug_ui_redesign_calendar_icon_label" translatable="false">Calendar icon</string>
+    <string name="debug_ui_redesign_calendar_icon_decorative_label" translatable="false">Calendar icon decorative</string>
+    <string name="debug_ui_redesign_calendar_content_description" translatable="false">Open Calendar</string>
+    <string name="debug_ui_redesign_grip_lines_label" translatable="false">Grip lines</string>
+    <string name="debug_ui_redesign_grip_lines_decorative_label" translatable="false">Grip lines decorative</string>
+    <string name="debug_ui_redesign_grip_lines_content_description" translatable="false">Reorder</string>
+    <string name="debug_ui_redesign_dots_more_label" translatable="false">Dots more</string>
+    <string name="debug_ui_redesign_dots_more_decorative_label" translatable="false">Dots more decorative</string>
+    <string name="debug_ui_redesign_dots_more_content_description" translatable="false">More options for %s</string>
+    <string name="debug_ui_redesign_clear_icon_label" translatable="false">Input field label</string>
+    <string name="debug_ui_redesign_clear_icon_decorative_label" translatable="false">Input field label decorative</string>
+    <string name="debug_ui_redesign_clear_icon_content_description" translatable="false">Clear %s</string>
+    <string name="debug_ui_redesign_question_icon_label" translatable="false">Question icon</string>
+    <string name="debug_ui_redesign_question_icon_content_description" translatable="false">More information about %s</string>
+    <string name="debug_ui_redesign_copy_paste_icon_label" translatable="false">Copy/Paste icon</string>
+    <string name="debug_ui_redesign_copy_paste_icon_content_description" translatable="false">Copy to clipboard</string>
+    <string name="debug_ui_redesign_share_icon_label" translatable="false">Share icon</string>
+    <string name="debug_ui_redesign_share_icon_content_description" translatable="false">Share</string>
+    <string name="debug_ui_redesign_search_icon_label" translatable="false">Search icon</string>
+    <string name="debug_ui_redesign_search_icon_content_description" translatable="false">Search</string>
+    <string name="debug_ui_redesign_locator_icon_label" translatable="false">Locator icon</string>
+    <string name="debug_ui_redesign_locator_icon_content_description" translatable="false">Re-center map</string>
+    <string name="debug_ui_redesign_trash_icon_label" translatable="false">Trash icon</string>
+    <string name="debug_ui_redesign_trash_icon_content_description" translatable="false">Delete</string>
+    <string name="debug_ui_redesign_edit_icon_label" translatable="false">First Name</string>
+    <string name="debug_ui_redesign_edit_thin_icon_label" translatable="false">Last Name</string>
+    <string name="debug_ui_redesign_edit_icon_content_description" translatable="false">Edit %s</string>
+    <string name="debug_ui_redesign_edit_icon_decorative_label" translatable="false">Edit icon decorative</string>
+    <string name="debug_ui_redesign_close_icon_label" translatable="false">Close icon</string>
+    <string name="debug_ui_redesign_close_icon_content_description" translatable="false">Close</string>
+    <string name="debug_ui_redesign_back_arrow_label" translatable="false">Back arrow</string>
+    <string name="debug_ui_redesign_back_arrow_content_description" translatable="false">Navigate up</string>
+    <string name="debug_ui_redesign_actionable_icons_button_role" translatable="false">Button</string>
+    <string name="debug_ui_redesign_show_hide_icon_label" translatable="false">Password</string>
+    <string name="debug_ui_redesign_show_icon_content_description" translatable="false">Show %s</string>
+    <string name="debug_ui_redesign_hide_icon_content_description" translatable="false">Hide %s</string>
+    <string name="debug_ui_redesign_pin_unpin_icon_label" translatable="false">Pin/Unpin icon</string>
+    <string name="debug_ui_redesign_pin_unpin_decorative_icon_label" translatable="false">Pin/Unpin icon decorative</string>
+    <string name="debug_ui_redesign_pin_icon_content_description" translatable="false">Pin</string>
+    <string name="debug_ui_redesign_unpin_icon_content_description" translatable="false">Unpin</string>
+    <string name="debug_ui_redesign_fingerprint_action" translatable="false">Fingerprint</string>
+    <string name="debug_ui_redesign_fingerprint_action_content_description" translatable="false">Use Touch ID</string>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.inputfield.TestUIRedesignAmountInputFieldFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin.small"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox"
+            android:id="@+id/amountInputFieldLayout"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            android:hint="@string/debug_ui_redesign_amount_input_hint"
+            android:labelFor="@+id/amountInputField"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/amountInputFieldToolTipLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+                android:id="@+id/amountInputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.divider.MaterialDivider
+                style="@style/Offside.Redesign.InputField.DividerStyle.Amount"
+                android:id="@+id/amountInputFieldLayout_divider" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.ToolTip"
+            android:id="@+id/amountInputFieldToolTipLayout"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            android:hint="@string/debug_ui_redesign_amount_input_hint"
+            android:labelFor="@+id/amountInputFieldToolTipText"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/amountInputFieldDropdownLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputFieldLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+                android:id="@+id/amountInputFieldToolTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.divider.MaterialDivider
+                style="@style/Offside.Redesign.InputField.DividerStyle.Amount"
+                android:id="@+id/amountInputFieldSubText_divider" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.DropDownBox"
+            android:id="@+id/amountInputFieldDropdownLayout"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:hint="@string/debug_ui_redesign_amount_input_hint"
+            android:labelFor="@+id/amountInputFieldDropdown"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/amountInputFieldErrorStateLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputFieldToolTipLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Offside.Redesign.InputField.EditTextBase.Amount.DropDown"
+                android:id="@+id/amountInputFieldDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/debug_ui_redesign_amount_input_default_text" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/Offside.Redesign.InputField.SubInfoTextStyle.Amount"
+                android:id="@+id/amountInputFieldDropdownSecondaryInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/debug_ui_redesign_amount_input_helper_text" />
+
+            <com.google.android.material.divider.MaterialDivider
+                style="@style/Offside.Redesign.InputField.DividerStyle.Amount"
+                android:id="@+id/amountInputFieldDropdown_divider" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.CustomDividerBox"
+            android:id="@+id/amountInputFieldErrorStateLayout"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin.xsmall"
+            android:hint="@string/debug_ui_redesign_amount_input_hint"
+            android:labelFor="@+id/amountInputFieldErrorState"
+            android:orientation="vertical"
+            app:errorTextAppearance="@style/Offside.Redesign.InputField.ErrorTextAppearance.Amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputFieldDropdownLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+                android:id="@+id/amountInputFieldErrorState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/Offside.Redesign.InputField.ErrorTextStyle.Amount"
+                android:id="@+id/amountInputFieldErrorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="yes"
+                android:paddingTop="@dimen/padding.medium"
+                android:visibility="gone" />
+
+            <com.google.android.material.divider.MaterialDivider
+                style="@style/Offside.Redesign.InputField.DividerStyle.Amount"
+                android:id="@+id/amountInputFieldErrorState_divider" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Offside.Redesign.InputField.TextLayoutBase.Amount.Active"
+            android:id="@+id/amountInputFieldActiveLayout"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            android:hint="@string/debug_ui_redesign_amount_input_hint"
+            android:labelFor="@+id/amountInputActiveField"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputFieldErrorStateLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Offside.Redesign.InputField.EditTextBase.Amount"
+                android:id="@+id/amountInputActiveField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount"
+            android:id="@+id/amountInputActiveFieldLayout_divider"
+            app:layout_constraintTop_toBottomOf="@id/amountInputFieldActiveLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <include
+            layout="@layout/test_amount_input_field_disabled"
+            android:id="@+id/amountInputFieldsDisabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputActiveFieldLayout_divider"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

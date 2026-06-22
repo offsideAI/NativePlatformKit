@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_tile_nav_graph_id"
+    app:startDestination="@id/testUIRedesignCardTileFragment">
+    <fragment
+        android:id="@+id/testUIRedesignCardTileFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignCardTileFragment"
+        android:label="@string/debug_ui_redesign_card_specific_input_field_label"
+        tools:layout="@layout/fragment_test_card_tile" />
+</navigation>

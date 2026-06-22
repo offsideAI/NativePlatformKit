@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignTypographyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/debug_ui_redesign_type_display"
+            android:textAppearance="@style/Offside.Redesign.DisplayLargeTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_display"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.DisplayMediumTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_display"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.DisplaySmallTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/debug_ui_redesign_type_headline"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_headline"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.HeadlineMediumTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_headline"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.HeadlineSmallTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/debug_ui_redesign_type_title"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.TitleLargeTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_title"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.TitleMediumTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_title"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.TitleSmallTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/debug_ui_redesign_type_body"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_body"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.BodyMediumTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_body"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/debug_ui_redesign_type_label"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.LabelLargeTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_label"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.LabelMediumTextStyle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/debug_ui_redesign_type_label"
+            android:textColor="?attr/offside_onSurface"
+            android:textAppearance="@style/Offside.Redesign.LabelSmallTextStyle" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

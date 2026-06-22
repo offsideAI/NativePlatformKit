@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_surfaceContainerLowest"
+    tools:context=".nav.tile.TestUIRedesignImageTileDemoFragment">
+    <LinearLayout android:layout_margin="@dimen/margin.small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_simple"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile With Info Text"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_info"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile With Button"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile With Link Action"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_icon_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile With List Action"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_list"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Tile With Overlay"
+            android:layout_marginTop="@dimen/margin.small"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <ai.offside.mobile.android.component.ui.imagetile.ImageTile
+            android:id="@+id/card_image_tile_overlay"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin.large"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

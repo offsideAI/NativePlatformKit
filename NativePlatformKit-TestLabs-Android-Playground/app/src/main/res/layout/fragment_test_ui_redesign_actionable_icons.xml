@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/padding.xlarge">
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/bottom_sheet_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/caret_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_gray_layout"
+            android:id="@+id/grip_lines_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/caret_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_gray_layout"
+            android:id="@+id/grip_lines_icon_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grip_lines_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_gray_layout"
+            android:id="@+id/dots_more_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grip_lines_icon_decorative_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_gray_layout"
+            android:id="@+id/dots__more_icon_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dots_more_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/clear_icon_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dots__more_icon_decorative_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/clear_icon_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear_icon_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/question_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear_icon_decorative_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/calendar_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/calendar_icon_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/copy_paste_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_icon_decorative_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/share_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/copy_paste_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/search_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/share_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/locator_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/trash_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locator_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/edit_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trash_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/edit_icon_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/edit_thin_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_icon_decorative_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/close_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_thin_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/back_arrow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/close_icon_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/password_toggle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_arrow_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_non_decorative_layout"
+            android:id="@+id/pin_unpin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_toggle_layout" />
+
+        <include
+            layout="@layout/test_actionable_icons_decorative_layout"
+            android:id="@+id/pin_unpin_decorative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pin_unpin_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<!--     <item -->
+<!--         android:drawable="?attr/offside_sop_background_drawable" -->
+<!--         android:id="@+id/sop_background_layer_list_drawable" -->
+<!--         /> -->
+    <item
+        android:drawable="?attr/offside_transparent"
+        android:top="?attr/offside_sop_background_layer_padding_first"
+        android:id="@+id/sop_background_layer_list_lowest"
+        />
+    <item
+        android:drawable="?attr/offside_surface"
+        android:top="?attr/offside_sop_background_layer_padding_second"
+        android:id="@+id/sop_background_layer_list_highest"
+        />
+</layer-list>

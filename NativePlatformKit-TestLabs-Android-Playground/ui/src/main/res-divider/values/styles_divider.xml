@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dev to use com.google.android.material.divider.MaterialDivider with this style-->
+    <style name="Offside.Redesign.Divider" parent="Widget.Material3.MaterialDivider">
+        <item name="dividerColor">?attr/offside_outline</item>
+        <item name="android:layout_height">@dimen/offside_redesign_divider_height</item>
+    </style>
+</resources>

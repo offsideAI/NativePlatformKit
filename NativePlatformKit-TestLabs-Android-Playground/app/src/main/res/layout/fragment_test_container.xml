@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="titleContainerDataModel"
+            type="ai.offside.mobile.android.helper.testlabs.nav.TitleContainerData" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding.xxlarge"
+            android:importantForAccessibility="no">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/container_standard"
+                style="@style/Offside.Redesign.Container.Standard"
+                android:layout_marginVertical="@dimen/margin.xxlarge"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/container_standard_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin.medium"
+                    android:text="@string/debug_ui_redesign_container_standard_text"
+                    android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+                    android:textColor="?attr/offside_onSurface" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/container_elevated"
+                style="@style/Offside.Redesign.Container.Elevated"
+                android:layout_marginVertical="@dimen/margin.xxlarge"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_standard">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/container_elevated_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin.medium"
+                    android:text="@string/debug_ui_redesign_container_elevated_text"
+                    android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+                    android:textColor="?attr/offside_onSurface" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/title_container_standard"
+                style="@style/Offside.Redesign.Container.Standard"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin.xxlarge"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_elevated">
+
+                <ai.offside.mobile.android.component.ui.tile.titlecontainer.TitleContainerWithIcon
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:containerIcon="@{titleContainerDataModel.iconInt}"
+                    app:containerTitle="@{titleContainerDataModel.title}" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <include
+                android:id="@+id/progress_bar_layout"
+                layout="@layout/fragment_test_progress_bar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

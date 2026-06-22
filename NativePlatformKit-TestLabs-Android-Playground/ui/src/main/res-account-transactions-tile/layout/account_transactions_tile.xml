@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="java.math.BigDecimal" />
+        <import type="android.graphics.Typeface" />
+
+        <variable
+            name="tileData"
+            type="ai.offside.mobile.android.component.ui.tile.accounttransactions.AccountTransactionsTileDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transaction_tile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/ic_view_background_ripple"
+        android:onClick="@{v -> tileData.onClick(tileData)}">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/transaction_tile_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.small"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:tint="?attr/offside_onSurface"
+            android:visibility="@{tileData.depositIconVisibility}"
+            android:src="@drawable/ic_informative_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_description"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.TransactionTile.Description"
+            android:id="@+id/transaction_description"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginEnd="@dimen/margin.medium"
+            android:layout_marginTop="@dimen/margin.small"
+            android:text="@{tileData.description}"
+            app:layoutMarginDependingOnVisibility="@{tileData.depositIconVisibility}"
+            android:typeface="@{Typeface.defaultFromStyle(tileData.isPendingTransaction ? Typeface.ITALIC : Typeface.NORMAL) }"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_amount"
+            app:layout_constraintStart_toEndOf="@+id/transaction_tile_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/transaction_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{tileData.spaceVisibility}"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_description" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.TransactionTile.RunningAmount"
+            android:id="@+id/transaction_category"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/margin.medium"
+            android:text="@{tileData.category}"
+            android:visibility="@{tileData.categoryVisibility}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_running_balance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_bottom_space" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.TransactionTile.Description"
+            android:id="@+id/transaction_amount"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:layout_marginTop="@dimen/margin.small"
+            android:gravity="end"
+            android:textColor="@{tileData.amountTextColor}"
+            android:typeface="@{Typeface.defaultFromStyle(tileData.isPendingTransaction ? Typeface.ITALIC : Typeface.NORMAL)}"
+            app:amountText="@{tileData.amount}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_caret"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/Offside.Redesign.Icons.Actionable"
+            android:id="@+id/transaction_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.large"
+            android:src="@drawable/ic_actionable_caret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.TransactionTile.RunningAmount"
+            android:id="@+id/transaction_running_balance"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.medium"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:visibility="@{tileData.runningBalanceVisibility}"
+            android:gravity="end"
+            app:amountText="@{tileData.runningBalance}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_caret"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_amount" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="transaction_category,transaction_running_balance" />
+
+        <Space
+            android:id="@+id/tile_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.Divider"
+            android:id="@+id/transaction_tile_divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:visibility="@{tileData.dividerVisibility}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tile_bottom_space" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

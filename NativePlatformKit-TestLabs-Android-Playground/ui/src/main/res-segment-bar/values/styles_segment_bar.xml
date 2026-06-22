@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.SegmentedBar" parent="Widget.Material3.TabLayout">
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="tabRippleColor">@null</item>
+    </style>
+
+    <style name="Offside.Redesign.SegmentedBar.Gray" >
+        <item name="tabSelectedTextAppearance">@style/Offside.Redesign.HeadlineSmallTextStyle</item>
+        <item name="tabSelectedTextColor">?attr/offside_onSurface</item>
+        <item name="tabTextAppearance">@style/Offside.Redesign.TitleSmallTextStyle</item>
+        <item name="tabTextColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:background">@drawable/selector_segment_bar_background</item>
+        <item name="tabBackground">@drawable/selector_segment_bar_background</item>
+        <item name="tabIndicator">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin.xlarge</item>
+        <item name="android:layout_marginStart">@dimen/gutter.xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/gutter.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.SegmentedBar.Gray.Tile">
+        <item name="android:layout_marginStart">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/margin.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.SegmentedBar.Custom">
+        <item name="android:background">@drawable/segment_bar_custom_background_image</item>
+        <item name="tabBackground">@drawable/segment_bar_custom_background_image</item>
+        <item name="tabIndicator">@drawable/segment_bar_tab_indicator</item>
+        <item name="tabPaddingTop">@dimen/padding.xxlarge</item>
+        <item name="tabPaddingBottom">@dimen/padding.large</item>
+        <item name="tabIconTint">@null</item>
+        <item name="tabPaddingStart">@dimen/spacing.unset</item>
+        <item name="tabPaddingEnd">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.SegmentedBar.Custom.TabItem">
+        <item name="android:layout">@layout/design_layout_tab_icon_custom_without_divider</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Offside.Redesign.SegmentedBar.Custom.TabItem.Divider">
+        <item name="android:layout">@layout/design_layout_tab_icon_custom_with_divider</item>
+    </style>
+
+    <style name="Offside.Redesign.CustomTab.TextStyle" parent="Offside.FontStyle">
+        <item name="android:textColor">@color/selector_segment_bar_profile_settings_text_color</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+    </style>
+</resources>

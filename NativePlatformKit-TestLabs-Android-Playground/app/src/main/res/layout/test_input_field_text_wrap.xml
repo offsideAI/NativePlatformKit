@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Offside.Redesign.InputField.LayoutContainerWhite"
+    android:id="@+id/inputFieldLayoutTextWrap_Container"
+    android:paddingStart="@dimen/padding.xlarge"
+    android:paddingEnd="@dimen/spacing.unset"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding.xsmall">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active"
+        android:id="@+id/inputLayout_TextWrapField"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_text_wrap_hint"
+        android:labelFor="@+id/inputEditText_TextWrapField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Offside.Redesign.InputField.EditTextBase.Active.MultiLine"
+            android:id="@+id/inputEditText_TextWrapField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active.Counter"
+        android:id="@+id/inputLayout_TextWrapWithCountField"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_text_wrap_hint"
+        app:counterMaxLength="255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout_TextWrapField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Offside.Redesign.InputField.EditTextBase.Active.MultiLine"
+            android:id="@+id/inputEditText_TextWrapWithCountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

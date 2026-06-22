@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Toolbar">
+        <attr name="titleTextAppearance" format="reference"/>
+        <attr name="titleTextColor" format="color" />
+        <attr name="toolbarBackground" format="reference"/>
+        <attr name="navigationIcon" />
+        <attr name="navigationIconTint" />
+        <attr name="navigationContentDescription" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingToolbarLayoutStyle">
+        <attr name="collapsedTitleTextColor" format="color"/>
+        <attr name="collapsedTitleTextAppearance" format="reference"/>
+        <attr name="titleEnabled" format="boolean" />
+        <attr name="android:layout_height" format="dimension"/>
+    </declare-styleable>
+
+</resources>

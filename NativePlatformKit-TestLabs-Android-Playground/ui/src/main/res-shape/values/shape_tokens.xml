@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Links to Material Site
+
+   Material Shape Tokens -  https://m3.material.io/styles/shape/shape-scale-tokens
+   DSM Shape Tokens - https://offside.invisionapp.com/dsm/offside/offside-mobile-2023/nav/62010412bbaaab75d0231be3/folder/6553928f993b737775882ed4?version=65d8bea3029f651f5871a8b1&mode=preview
+
+   Component Shape Guidelines - followed as in here - https://m3.material.io/styles/shape/shape-scale-tokens#b09934f1-1b0f-4ce4-ade6-4a1f138add6c
+
+   -->
+
+    <item name="offside.redesign.shape.xsmall" type="dimen">5dp</item>
+    <item name="offside.redesign.shape.small" type="dimen">12dp</item>
+    <item name="offside.redesign.shape.regular" type="dimen">15dp</item>
+
+</resources>

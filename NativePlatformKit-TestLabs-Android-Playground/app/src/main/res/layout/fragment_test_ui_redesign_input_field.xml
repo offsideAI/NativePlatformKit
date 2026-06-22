@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_outlineVariant"
+    android:paddingBottom="@dimen/padding.xxlarge">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin.medium">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/required_field_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_input_field_required_text"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/input_field_active_state_layout"
+            layout="@layout/test_input_field_active_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/required_field_label" />
+
+        <include
+            android:id="@+id/input_field_error_state_layout"
+            layout="@layout/test_input_field_error_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_active_state_layout" />
+
+        <include
+            android:id="@+id/input_field_hidden_state_layout"
+            layout="@layout/test_input_field_hidden_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_error_state_layout" />
+
+        <include
+            android:id="@+id/input_field_inactive_state_layout"
+            layout="@layout/test_input_field_inactive_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_hidden_state_layout" />
+
+        <include
+            android:id="@+id/input_field_text_wrap_layout"
+            layout="@layout/test_input_field_text_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_inactive_state_layout" />
+
+        <include
+            android:id="@+id/input_field_with_icon_layout"
+            layout="@layout/test_input_field_with_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_text_wrap_layout" />
+
+        <include
+            android:id="@+id/inputField_empty_white_layout"
+            layout="@layout/test_input_field_empty_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_with_icon_layout" />
+
+        <include
+            android:id="@+id/input_field_last_layout"
+            layout="@layout/test_input_field_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputField_empty_white_layout" />
+
+        <include
+            android:id="@+id/input_field_counter_layout"
+            layout="@layout/test_input_field_text_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_last_layout" />
+
+        <include
+            android:id="@+id/inputfield_helper_text_and_icon_active"
+            layout="@layout/layout_inputfield_helper_text_and_icon_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_counter_layout" />
+
+        <include
+            android:id="@+id/inputfield_helper_text_and_icon_disabled"
+            layout="@layout/layout_inputfield_helper_text_and_icon_disabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputfield_helper_text_and_icon_active" />
+
+        <include
+            android:id="@+id/inputfield_helper_text_and_icon_error_state_one"
+            layout="@layout/layout_inputfield_helper_text_and_icon_error_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputfield_helper_text_and_icon_disabled" />
+
+        <include
+            android:id="@+id/inputfield_helper_text_and_icon_error_state_two"
+            layout="@layout/layout_inputfield_helper_text_and_icon_error_state_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            android:layout_marginBottom="@dimen/margin.medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputfield_helper_text_and_icon_error_state_one" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

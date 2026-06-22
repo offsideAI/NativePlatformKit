@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_item_account"
+        android:contentDescription="@string/debug_ui_redesign_menu_account_label"
+        android:icon="@drawable/ic_navigation_home_selector"
+        android:title="@string/debug_ui_redesign_menu_account_label" />
+    <item
+        android:id="@+id/menu_item_rewards"
+        android:contentDescription="@string/debug_ui_redesign_menu_rewards_label"
+        android:icon="@drawable/ic_navigation_rewards_selector"
+        android:title="@string/debug_ui_redesign_menu_rewards_label" />
+
+    <item
+        android:id="@+id/menu_item_cards"
+        android:contentDescription="@string/debug_ui_redesign_menu_cards_label"
+        android:icon="@drawable/ic_navigation_cards_selector"
+        android:title="@string/debug_ui_redesign_menu_cards_label" />
+    <item
+        android:id="@+id/menu_item_ecommerce"
+        android:contentDescription="@string/debug_ui_redesign_menu_ecommerce_label"
+        android:icon="@drawable/ic_navigation_ecommerce_selector"
+        android:title="@string/debug_ui_redesign_menu_ecommerce_label" />
+</menu>

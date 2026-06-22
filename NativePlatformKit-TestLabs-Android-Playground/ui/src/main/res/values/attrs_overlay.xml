@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="offside_overlayTheme" format="reference"/>
+
+    <!-- SoP Background Drawable -->
+    <attr name="offside_sop_background_drawable" format="reference" />
+
+    <!-- SoP Layering -->
+    <attr name="offside_sop_background_layer_padding_first" format="dimension" />
+    <attr name="offside_sop_background_layer_padding_second" format="dimension" />
+
+    <style name="Offside.Redesign.SoP">
+        <item name="android:background">@drawable/sop_background_layer_list</item>
+    </style>
+</resources>

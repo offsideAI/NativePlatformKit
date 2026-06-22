@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="ai.offside.mobile.android.helper.testlabs.color.generator.ColorGeneratorViewModel"
+            />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gutter.small"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+            android:id="@+id/color_generator_selector_family_label"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_selector_family_empty"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/color_generator_selector_family"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_selector_color_label"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Offside.Redesign.Button.Primary"
+            android:id="@+id/color_generator_selector_family"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_selector_family_empty"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/color_generator_selector_family_label"
+            app:layout_constraintBottom_toTopOf="@id/color_generator_selector_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.HeadlineMediumTextStyle"
+            android:id="@+id/color_generator_selector_color_label"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_selector_color_empty"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_selector_family_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/color_generator_selector_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Offside.Redesign.Button.Primary"
+            android:id="@+id/color_generator_selector_color"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@string/color_generator_selector_color_empty"
+            android:enabled="false"
+            app:layout_constraintTop_toBottomOf="@id/color_generator_selector_family"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/color_generator_selector_color_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

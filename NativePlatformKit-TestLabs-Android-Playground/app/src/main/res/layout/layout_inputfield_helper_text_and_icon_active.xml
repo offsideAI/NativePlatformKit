@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inputFieldLayoutLast_Container"
+    style="@style/Offside.Redesign.InputField.LayoutContainerWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/padding.xlarge"
+    android:paddingEnd="@dimen/spacing.unset">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputFieldLayout"
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active.Helper"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_hint_AC1"
+        android:labelFor="@+id/inputEditText_ActiveField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/helperInputFieldSubtext"
+            style="@style/Offside.Redesign.InputField.EditTextBase.Active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/inputFieldHelperText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.small"
+            android:drawableStart="@drawable/ic_informative_information"
+            android:gravity="center_vertical"
+            android:importantForAccessibility="yes"
+            android:text="@string/debug_ui_redesign_amount_input_subtext"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/helper_divider"
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledInputFieldLayout"
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active.Helper"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_hint"
+        android:labelFor="@+id/inputEditText_FilledField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFieldLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/filledHelperInputFieldSubtext"
+            style="@style/Offside.Redesign.InputField.EditTextBase.Active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/debug_ui_redesign_input_field_filled_AC2_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/filledInputFieldHelperText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin.small"
+            android:drawableStart="@drawable/ic_informative_information"
+            android:gravity="center_vertical"
+            android:importantForAccessibility="yes"
+            android:text="@string/debug_ui_redesign_amount_input_subtext"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/filledHelper_divider"
+            style="@style/Offside.Redesign.InputField.DividerStyle.Amount" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

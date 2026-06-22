@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_dropdown_nav_graph"
+    app:startDestination="@id/dropdownMainPageFragment">
+
+    <fragment
+        android:id="@+id/dropdownMainPageFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignDropdownMainPageFragment"
+        android:label="Dropdown Components"
+        tools:layout="@layout/fragment_test_dropdown_main_page">
+        <action
+            android:id="@+id/action_testUIRedesignDropdownMainPageFragment_to_testUIRedesignDropdownFragment"
+            app:destination="@id/testDropdownFragment" />
+        <action
+            android:id="@+id/action_testUIRedesignDropdownMainPageFragment_to_testUIRedesignExpandCollapseFragment"
+            app:destination="@id/testExpandCollapseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/testDropdownFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.dropdown.TestUIRedesignDropdownFragment"
+        android:label="Dropdown"
+        tools:layout="@layout/fragment_test_dropdown_layout"/>
+
+    <fragment
+        android:id="@+id/testExpandCollapseFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignExpandCollapseGroupFragment"
+        android:label="Expand/Collapse Group"
+        tools:layout="@layout/fragment_test_expand_collapse_group"/>
+</navigation>

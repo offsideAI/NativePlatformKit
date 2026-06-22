@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sys.color.aqua10">#012737</color>
+    <color name="sys.color.aqua20">#04374E</color>
+    <color name="sys.color.aqua30">#034A68</color>
+    <color name="sys.color.aqua40">#09648B</color>
+    <color name="sys.color.aqua50">#0C7CAC</color>
+    <color name="sys.color.aqua60">#239DD1</color>
+    <color name="sys.color.aqua70">#55BBE7</color>
+    <color name="sys.color.aqua80">#9AD5EF</color>
+    <color name="sys.color.aqua90">#D0EBF6</color>
+    <color name="sys.color.aqua95">#EAF5FA</color>
+</resources>

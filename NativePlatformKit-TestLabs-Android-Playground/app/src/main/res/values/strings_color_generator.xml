@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="color_generator_graph_route" translatable="false">
+        offside-testlabs://testlabs/color/generator/micro-ui
+    </string>
+    <string name="color_generator_form_route" translatable="false">
+        offside-testlabs://testlabs/color/generator/micro-ui/form
+    </string>
+    <string name="color_generator_results_route" translatable="false">
+        offside-testlabs://testlabs/color/generator/micro-ui/results
+    </string>
+    <string name="color_generator_graph_label">
+        Color Generator Graph
+    </string>
+    <string name="color_generator_destination_form_label">
+        Color Generator Form
+    </string>
+    <string name="color_generator_destination_results_label">
+        Color Generator Results
+    </string>
+    <string name="color_generator_submit">
+        Submit Color Values
+    </string>
+    <string name="color_generator_results_button">
+        See Results
+    </string>
+    <string name="color_generator_form_toggle_label">
+        Enable manual entry
+    </string>
+    <string name="color_generator_dark_colors_switch">
+        Reverse Ramp
+    </string>
+    <string name="color_generator_input_red">
+        Red Value
+    </string>
+    <string name="color_generator_input_green">
+        Green Value
+    </string>
+    <string name="color_generator_input_blue">
+        Blue Value
+    </string>
+    <string name="color_generator_selector_family_empty">
+        Select Family
+    </string>
+    <string name="color_generator_selector_family_selected">
+        Family %s
+    </string>
+    <string name="color_generator_selector_color_empty">
+        Select Color
+    </string>
+    <string name="color_generator_selector_color_selected">
+        %s %s
+    </string>
+</resources>

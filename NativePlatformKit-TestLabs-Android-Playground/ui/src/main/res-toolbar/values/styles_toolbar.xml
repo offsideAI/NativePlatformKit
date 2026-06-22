@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="android:contentInsetEnd">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="Offside.Redesign.ToolBar.Landing" parent="Widget.Material3.Toolbar">
+        <item name="toolbarBackground">?attr/offside_transparent</item>
+        <item name="titleCentered">true</item>
+        <item name="itemIconPadding">@dimen/spacing.unset</item>
+        <item name="titleTextAppearance">@style/Offside.Redesign.TitleLargeTextStyle</item>
+        <item name="titleTextColor">?attr/offside_onSecondaryVariant</item>
+        <item name="navigationIcon">@drawable/ic_actionable_header_profile</item>
+        <item name="android:paddingStart">@dimen/gutter.small</item>
+        <item name="android:paddingEnd">@dimen/gutter.small</item>
+    </style>
+
+    <style name="Offside.Redesign.ToolBar.Secondary" parent="Widget.Material3.Toolbar">
+        <item name="toolbarBackground">?attr/offside_transparent</item>
+        <item name="titleTextAppearance">@style/Offside.Redesign.TitleLargeTextStyle</item>
+        <item name="titleTextColor">?attr/offside_onSecondaryVariant</item>
+        <item name="titleMarginStart">@dimen/gutter.small</item>
+        <item name="titleMarginTop">@dimen/gutter.small</item>
+        <item name="navigationIcon">@drawable/ic_actionable_header_back_arrow</item>
+        <item name="navigationIconTint">?attr/offside_onSecondaryVariant</item>
+        <item name="android:paddingStart">@dimen/gutter.small</item>
+        <item name="android:paddingEnd">@dimen/gutter.small</item>
+        <item name="collapsedTitleTextAppearance">@style/Offside.Redesign.TitleLargeTextStyle</item>
+        <item name="collapsedTitleTextColor">?attr/offside_onSecondaryVariant</item>
+        <item name="collapsedTitleGravity">center</item>
+    </style>
+
+    <style name="Offside.Redesign.ToolBar.TakeOver" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/Offside.Redesign.TitleLargeTextStyle</item>
+        <item name="titleTextColor">?attr/offside_onSurface</item>
+        <item name="titleMarginStart">@dimen/gutter.small</item>
+        <item name="titleMarginTop">@dimen/gutter.small</item>
+        <item name="navigationIcon">@drawable/ic_actionable_header_back_arrow</item>
+        <item name="navigationIconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="android:paddingStart">@dimen/gutter.small</item>
+        <item name="android:paddingEnd">@dimen/gutter.small</item>
+        <item name="toolbarBackground">?attr/offside_surface</item>
+    </style>
+
+    <style name="CollapsingToolbarLayout.Takeover" parent="Widget.Material3.CollapsingToolbar">
+        <item name="collapsedTitleGravity">center</item>
+        <item name="itemIconPadding">@dimen/spacing.unset</item>
+        <item name="layout_scrollFlags">noScroll</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CollapsingToolbarLayout.SOP" parent="Widget.Material3.CollapsingToolbar">
+        <item name="collapsedTitleGravity">center</item>
+        <item name="itemIconPadding">@dimen/spacing.unset</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+        <item name="titleEnabled">false</item>
+        <item name="collapsedTitleTextAppearance">@style/Offside.Redesign.TitleLargeTextStyle</item>
+        <item name="collapsedTitleTextColor">?attr/offside_onSecondaryVariant</item>
+        <item name="android:layout_height">@dimen/gutter.xxlarge</item>
+    </style>
+
+    <style name="ToolbarThemeOverlay_Toolbar" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="android:colorControlNormal">?attr/offside_onSecondaryVariant</item>
+  </style>
+</resources>

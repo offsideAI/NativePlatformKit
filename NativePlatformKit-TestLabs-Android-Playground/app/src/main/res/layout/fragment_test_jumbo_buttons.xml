@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/gutter.xsmall"
+    android:layout_marginTop="@dimen/margin.small"
+    android:layout_marginEnd="@dimen/gutter.xsmall"
+    android:background="@drawable/layout_border"
+    android:orientation="vertical"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignJumboButtonsFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding.xsmall"
+        android:text="@string/debug_ui_redesign_jumbo_buttons_label"
+        android:textAppearance="@style/Offside.Redesign.HeadlineLargeTextStyle"
+        android:textColor="?attr/offside_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/enabled_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/debug_ui_redesign_enabled_switch_label"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_textview" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin.xxsmall"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enabled_switch">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sys.spacing.96"
+            android:backgroundTint="?attr/offside_onPrimary">
+
+            <include
+                android:id="@+id/jumbo_buttons_layout_icon"
+                layout="@layout/test_jumbo_button_card_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginHorizontal="@dimen/padding.xlarge" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sys.spacing.96"
+            android:backgroundTint="?attr/offside_onPrimary">
+
+            <include
+                android:id="@+id/jumbo_buttons_layout"
+                layout="@layout/test_jumbo_button_card_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginHorizontal="@dimen/padding.xlarge" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sys.spacing.96"
+            android:backgroundTint="?attr/offside_onPrimary">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_jumbo_full"
+                style="@style/Offside.Redesign.Button.Primary.Jumbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="@dimen/padding.xlarge"
+                android:enabled="false"
+                android:text="@string/debug_ui_redesign_micro_buttons_payment_text" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sys.spacing.96"
+            android:backgroundTint="?attr/offside_onPrimary">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_jumbo_full_icon"
+                style="@style/Offside.Redesign.Button.Primary.Jumbo.Icon"
+                app:icon="@drawable/ic_decorative_make_payment_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="@dimen/padding.xlarge"
+                android:enabled="false"
+                android:text="@string/debug_ui_redesign_micro_buttons_payment_text" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

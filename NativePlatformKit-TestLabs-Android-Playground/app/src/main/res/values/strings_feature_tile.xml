@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_feature_tile_header" translatable="false">Feature Tile</string>
+    <string name="feature_tile_title" translatable="false">Mega List Item</string>
+    <string name="feature_tile_supplementary_one_line" translatable="false">One Line Description</string>
+    <string name="feature_tile_supplementary" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </string>
+    <integer name="feature_tile_badge_count" translatable="false">5</integer>
+</resources>

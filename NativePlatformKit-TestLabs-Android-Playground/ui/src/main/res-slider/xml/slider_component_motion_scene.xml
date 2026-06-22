@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/left_swipe"
+        motion:constraintSetEnd="@id/right_reveal_end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="250">
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+
+    <Transition
+        android:id="@+id/right_swipe"
+        motion:constraintSetEnd="@+id/left_reveal_end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="250">
+        <OnSwipe motion:dragDirection="dragRight" />
+    </Transition>
+
+    <Transition
+        android:id="@+id/right_long_swipe"
+        motion:constraintSetEnd="@id/left_trigger_end"
+        motion:constraintSetStart="@id/left_reveal_end">
+        <OnSwipe motion:dragDirection="dragRight"/>
+    </Transition>
+
+    <Transition
+        android:id="@+id/left_long_swipe"
+        motion:constraintSetEnd="@id/right_trigger_end"
+        motion:constraintSetStart="@id/right_reveal_end">
+        <OnSwipe motion:dragDirection="dragLeft"/>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/left_swipe_menu_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_left_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_middle_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_right_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/right_reveal_end">
+        <Constraint
+            android:id="@id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintEnd_toStartOf="@id/right_swipe_menu_left_button"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_left_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/right_swipe_menu_middle_button"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_middle_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/right_swipe_menu_right_button"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_right_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/left_reveal_end">
+        <Constraint
+            android:id="@id/left_swipe_menu_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toEndOf="@id/left_swipe_menu_button"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/left_trigger_end">
+        <Constraint
+            android:id="@id/left_swipe_menu_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toEndOf="@id/left_swipe_menu_button"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/right_trigger_end">
+        <Constraint
+            android:id="@id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintEnd_toStartOf="@id/right_swipe_menu_right_button"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+        <Constraint
+            android:id="@id/right_swipe_menu_right_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintWidth_default="percent"
+            motion:layout_constraintWidth_percent="1"
+            motion:visibilityMode="ignore" />
+    </ConstraintSet>
+</MotionScene>

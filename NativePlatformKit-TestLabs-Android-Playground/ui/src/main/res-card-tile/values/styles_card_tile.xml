@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.CardTile" />
+
+    <style name="Offside.Redesign.CardTile.Title">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/spacing.unset</item>
+        <item name="android:paddingEnd">@dimen/padding.large</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.Title.PrimarySmallText">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleSmallTextStyle</item>
+        <item name="tileInfoTextColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.Title.PrimaryMediumText">
+        <item name="android:textAppearance">@style/Offside.Redesign.TitleMediumTextStyle</item>
+        <item name="tileInfoTextColor">?attr/offside_onSurfaceVariantMedium</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.Title.PrimaryLargeText">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodyLargeTextStyle</item>
+        <item name="tileInfoTextColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.Title.SecondarySmallText">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="tileInfoTextColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:paddingTop">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.LinkStatus">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodyMediumTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.BoxSquareStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">yes</item>
+        <item name="android:focusable">true</item>
+        <item name="cardBackgroundColor">?offside_transparent</item>
+        <item name="cardCornerRadius">@dimen/spacing.unset</item>
+        <item name="cardMaxElevation">@dimen/spacing.unset</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardElevation">@dimen/spacing.unset</item>
+        <item name="strokeColor">?attr/offside_surfaceContainer</item>
+        <item name="strokeWidth">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.BoxSquareStyle.White">
+        <item name="cardBoxBackgroundColor">?attr/offside_surfaceContainer</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.CardArtImageStyle">
+        <item name="android:layout_marginStart">@dimen/padding.xlarge</item>
+        <item name="android:layout_marginTop">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/margin.xsmall</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xsmall</item>
+        <item name="layout_constraintWidth_percent">@dimen/size.percentage.small</item>
+    </style>
+
+    <style name="Offside.Redesign.CardTile.ActionableCaretImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_actionable_caret</item>
+    </style>
+</resources>

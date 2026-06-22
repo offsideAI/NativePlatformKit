@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_surfaceContainerLowest"
+    android:orientation="vertical">
+
+    <ai.offside.mobile.android.component.ui.tile.deposit.DepositActivityTile
+        android:id="@+id/simple_deposit_activity_tile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding.xsmall" />
+
+    <ai.offside.mobile.android.component.ui.tile.deposit.DepositActivityTile
+        android:id="@+id/simple_deposit_activity_tile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding.xsmall" />
+
+
+    <ai.offside.mobile.android.component.ui.tile.deposit.DepositActivityTile
+        android:id="@+id/simple_deposit_activity_tile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding.xsmall" />
+
+</LinearLayout>

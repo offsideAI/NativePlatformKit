@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding.large">
+
+        <ai.offside.mobile.android.component.ui.dropdown.Dropdown
+            android:id="@+id/dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding.xxlarge" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Offside.Redesign.Button.Primary"
+            android:id="@+id/set_invactive_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding.xxlarge"
+            android:text="@string/debug_ui_redesign_dropdown_set_active_text" />
+
+    </LinearLayout>
+
+</ScrollView>

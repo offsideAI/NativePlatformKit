@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/review_container"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:background="?attr/offside_surfaceContainer"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/margin.small"
+        android:importantForAccessibility="yes"
+        app:layout_constraintEnd_toStartOf="@+id/tile_action_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/review_label"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Offside.Redesign.BodyMediumTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            app:layout_constraintEnd_toStartOf="@+id/review_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/review_value"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/review_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            android:textAppearance="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/review_value"
+            app:layout_constraintTop_toBottomOf="@+id/review_value"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tile_action_button"
+        style="@style/Offside.Redesign.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin.xxsmall"
+        android:layout_marginTop="@dimen/margin.xsmall"
+        android:visibility="gone"
+        app:iconGravity="top"
+        app:icon="@drawable/ic_actionable_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/review_container"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        style="@style/Offside.Redesign.Divider"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_marginTop="@dimen/margin.small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/review_container"
+        app:layout_constraintTop_toBottomOf="@+id/review_container"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

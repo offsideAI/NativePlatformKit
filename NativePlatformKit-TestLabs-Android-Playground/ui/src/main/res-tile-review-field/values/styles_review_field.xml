@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReviewFieldTile">
+        <attr name="titleLabel" format="string" />
+        <attr name="titleValue" format="string" />
+        <attr name="titleSupplementary" format="string" />
+        <attr name="titleActionIcon" format="reference" />
+        <attr name="titleActionIconTint" format="reference|color" />
+        <attr name="titleActionContentDescription" format="string" />
+    </declare-styleable>
+</resources>

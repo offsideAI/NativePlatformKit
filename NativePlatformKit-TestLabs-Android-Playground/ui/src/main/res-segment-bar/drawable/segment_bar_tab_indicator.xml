@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:end="@dimen/margin.small"
+        android:start="@dimen/margin.small">
+        <shape android:shape="rectangle">
+            <!-- Color is assigned programmatically with the value of "tabIndicatorColor". -->
+            <size android:height="@dimen/m3_comp_primary_navigation_tab_active_indicator_height"/>
+        </shape>
+    </item>
+</layer-list>

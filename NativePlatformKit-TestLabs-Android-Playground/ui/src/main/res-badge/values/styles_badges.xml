@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.Badge.Notification" parent="Widget.Material3.Badge">
+        <item name="backgroundColor">?attr/offside_error</item>
+        <item name="badgeTextColor">?attr/offside_onSecondaryContainer</item>
+    </style>
+
+    <style name="Offside.Redesign.Badge.Custom" parent="Widget.Material3.Badge">
+        <item name="android:background">@drawable/grey_circle_background</item>
+    </style>
+</resources>

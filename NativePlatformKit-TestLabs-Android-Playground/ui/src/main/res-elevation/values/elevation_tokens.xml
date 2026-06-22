@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Links -
+    DSM - https://offside.invisionapp.com/dsm/offside/offside-mobile-2023/nav/62010412bbaaab75d0231be3/folder/654bc530db98c2b6a2a49b13?version=65d8bea3029f651f5871a8b1&mode=preview
+    Material - https://m3.material.io/styles/elevation/tokens#de5fa6de-e1a4-4f00-b760-dc3dd8b863eb
+
+    The DSM Elevation Tokens map 1:1 to Material Elevation tokens.
+    Component Elevation Guidelines - followed as in here - https://m3.material.io/styles/elevation/tokens#7f8c10e0-6d56-4d9f-9525-9ca875758b20
+
+    0dp ->  Assist Chip (Flat)
+            Carousel Item
+            Filled Button
+            Filled Tonal Button
+            Filled Card
+            Filter Chip (Flat)
+            Full Screen Dialog
+            List Item
+            Input Chip
+            Navigation Rail
+            Primary Navigation Tabs
+            Secondary Navigation Tabs
+            Outlined Card
+            Side Sheet (Docked)
+            Slider (Track)
+            Suggestion Chip (Flat)
+            Top App Bar
+
+     1dp -> Assist Chip (Elevated)
+            Banner
+            Bottom Sheet (Modal)
+            Elevated Button
+            Elevated Card
+            Extended FAB (Lowered)
+            FAB (Lowered)
+            Filter Chip (Elevated)
+            Navigation Drawer (Modal)
+            Side Sheet (Modal)
+            Slider (Handle)
+            Suggestion Chip (Elevated)
+
+     3dp -> Autocomplete Menu
+            Bottom App Bar
+            Dropdown Menu
+            Menu
+            Navigation Bar
+            Select Menu
+            Rich Tooltip
+            Top App Bar (Scrolled)
+
+     6dp -> FAB
+            Extended FAB
+            Modal Date Picker
+            Docked Date Picker
+            Modal Date Input
+            Dialog
+            Search Bar
+            Search View
+            Time Picker
+            Time Input
+
+     8dp, 12dp -> Currently not assigned in Material 3
+    -->
+    <item name="offside.redesign.elevation.surface.sunken" type="dimen">0dp</item>
+    <item name="offside.redesign.elevation.surface.default" type="dimen">1dp</item>
+    <item name="offside.redesign.elevation.surface.raised" type="dimen">3dp</item>
+    <item name="offside.redesign.elevation.surface.emphasized" type="dimen">6dp</item>
+    <item name="offside.redesign.elevation.surface.navigation" type="dimen">8dp</item>
+
+</resources>

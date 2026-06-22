@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button.micro.min_width" format="float" type="dimen">@dimen/sys.spacing.96</item>
+    <item name="button.jumbo.icon.size" format="float" type="dimen">@dimen/sys.spacing.28</item>
+    <item name="button.biometric.icon.size" format="float" type="dimen">@dimen/sys.spacing.24</item>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Red Error Accent colors -->
+    <color name="sys.color.red10">#500202</color>
+    <color name="sys.color.red20">#6E0202</color>
+    <color name="sys.color.red30">#910303</color>
+    <color name="sys.color.red40">#BA1212</color>
+    <color name="sys.color.red50">#DA2F2F</color>
+    <color name="sys.color.red60">#F55C5C</color>
+    <color name="sys.color.red70">#F79797</color>
+    <color name="sys.color.red80">#F9BEBE</color>
+    <color name="sys.color.red90">#FBDFDF</color>
+    <color name="sys.color.red95">#FBEFEF</color>
+</resources>

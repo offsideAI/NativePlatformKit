@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Offside.Redesign.InputField.LayoutContainerWhite"
+    android:id="@+id/inputFieldLayoutTwo_Container"
+    android:paddingStart="@dimen/padding.xlarge"
+    android:paddingEnd="@dimen/spacing.unset"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active.Icon"
+        android:id="@+id/inputLayout_WithIconField"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_hint"
+        android:labelFor="@+id/inputEditText_WithIconField"
+        app:endIconContentDescription="@string/debug_ui_redesign_input_field_calendar_icon_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Offside.Redesign.InputField.EditTextBase.Inactive"
+            android:id="@+id/inputEditText_WithIconField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Offside.Redesign.InputField.TextLayoutBase.Active.Icon"
+        android:id="@+id/inputLayout_WithIconFilledField"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_input_field_hint"
+        android:labelFor="@+id/inputLayout_WithIconFilledField"
+        app:endIconContentDescription="@string/debug_ui_redesign_input_field_calendar_icon_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout_WithIconField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Offside.Redesign.InputField.EditTextBase.Inactive"
+            android:id="@+id/inputEditText_WithIconFilledField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

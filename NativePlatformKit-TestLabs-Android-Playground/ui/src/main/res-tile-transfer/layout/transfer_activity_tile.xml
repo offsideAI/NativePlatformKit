@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="java.math.BigDecimal" />
+
+        <variable
+            name="transferTileData"
+            type="ai.offside.mobile.android.component.ui.tile.transfer.TransferActivityTileDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transfer_activity_tile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@{transferTileData.getTileContentDescription(context)}"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@drawable/ic_view_background_ripple"
+        android:onClick="@{v -> transferTileData.onClick(v, transferTileData)}">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.Transfer.Activity.Title"
+            android:id="@+id/transaction_toAccount"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginEnd="@dimen/margin.medium"
+            android:layout_marginTop="@dimen/margin.small"
+            android:text="@{transferTileData.toAccount}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_recurring_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/transaction_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{transferTileData.spaceVisibility}"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_toAccount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.Transfer.Activity.SubText"
+            android:id="@+id/transaction_fromAccount"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/margin.medium"
+            android:text="@{transferTileData.fromAccount}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_bottom_space" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/Offside.Redesign.Transfer.Activity.Recurring"
+            android:id="@+id/transaction_recurring_icon"
+            android:layout_width="@dimen/margin.small"
+            android:layout_height="@dimen/margin.small"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:visibility="@{transferTileData.recurringIconVisibility}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_amount"
+            app:layout_constraintTop_toTopOf="@+id/transaction_amount"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_amount"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.Transfer.Activity.Title"
+            android:id="@+id/transaction_amount"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:layout_marginTop="@dimen/margin.small"
+            android:gravity="end"
+            app:amountText="@{transferTileData.amount}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_caret"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            style="@style/Offside.Redesign.Icons.Actionable"
+            android:id="@+id/transaction_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.large"
+            android:src="@drawable/ic_actionable_caret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.Transfer.Activity.SubText"
+            android:id="@+id/transaction_status"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.medium"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:visibility="@{transferTileData.statusVisibility}"
+            android:gravity="end"
+            android:text="@{transferTileData.status}"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_caret"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_amount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Offside.Redesign.Transfer.Activity.SubText"
+            android:id="@+id/transaction_date"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:visibility="@{transferTileData.dateVisibility}"
+            android:gravity="end"
+            android:text="@{transferTileData.date}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_fromAccount" />
+
+        <Space
+            android:id="@+id/tile_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_date" />
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.Divider"
+            android:id="@+id/transaction_tile_divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:visibility="@{transferTileData.dividerVisibility}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tile_bottom_space" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

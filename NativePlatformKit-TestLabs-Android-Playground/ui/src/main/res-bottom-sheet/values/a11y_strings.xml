@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_bottom_sheet_state_expand" translatable="false">Expand</string>
+    <string name="a11y_bottom_sheet_state_collapse" translatable="false">Collapse</string>
+    <string name="a11y_bottom_sheet_close_button" translatable="false">Close</string>
+    <string name="a11y_bottom_sheet_back_button" translatable="false">Back</string>
+    <string name="a11y_bottom_sheet_show_list_text" translatable="false">Show List</string>
+    <string name="a11y_bottom_sheet_hide_list_text" translatable="false">Hide List</string>
+</resources>

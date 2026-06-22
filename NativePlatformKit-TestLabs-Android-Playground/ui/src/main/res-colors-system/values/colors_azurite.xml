@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sys.color.azurite10">#001744</color>
+    <color name="sys.color.azurite20">#172C55</color>
+    <color name="sys.color.azurite30">#334569</color>
+    <color name="sys.color.azurite40">#485C84</color>
+    <color name="sys.color.azurite50">#647596</color>
+    <color name="sys.color.azurite60">#808BA2</color>
+    <color name="sys.color.azurite70">#AAB1C0</color>
+    <color name="sys.color.azurite80">#C8CCD5</color>
+    <color name="sys.color.azurite90">#E5E7EB</color>
+    <color name="sys.color.azurite95">#F1F2F4</color>
+</resources>

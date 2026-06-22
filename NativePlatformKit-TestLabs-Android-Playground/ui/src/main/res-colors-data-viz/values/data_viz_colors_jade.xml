@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.jade90">#CDEEE8</color>
+    <color name="color.data_viz.jade80">#A0D8CD</color>
+    <color name="color.data_viz.jade70">#74C3B3</color>
+    <color name="color.data_viz.jade60">#47AD99</color>
+    <color name="color.data_viz.jade50">#1B987F</color>
+    <color name="color.data_viz.jade40">#17836D</color>
+    <color name="color.data_viz.jade30">#136F5D</color>
+    <color name="color.data_viz.jade20">#105B4C</color>
+</resources>

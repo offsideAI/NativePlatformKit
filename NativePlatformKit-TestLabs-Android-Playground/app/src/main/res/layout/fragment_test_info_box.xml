@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="ai.offside.mobile.android.component.ui.infobox.InfoBoxState" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/sys.color.yellow90"
+            android:orientation="vertical"
+            android:padding="@dimen/padding.large">
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.INFORMATION_BLUE}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.INFORMATION_BLUE}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INFORMATION_BLUE}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INFORMATION_BLUE}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.INFORMATION_GREY}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.INFORMATION_GREY}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INFORMATION_GREY}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INFORMATION_GREY}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.SUCCESS_GREEN}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.SUCCESS_GREEN}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.SUCCESS_GREEN}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.SUCCESS_GREEN}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.WARNING_YELLOW}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.WARNING_YELLOW}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.WARNING_YELLOW}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.WARNING_YELLOW}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.WARNING_RED}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:state="@{InfoBoxState.WARNING_RED}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.WARNING_RED}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.WARNING_RED}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.FULL_WIDTH}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.NO_CONTAINER}" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/info_box_23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding.xxlarge"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INLINE}" />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

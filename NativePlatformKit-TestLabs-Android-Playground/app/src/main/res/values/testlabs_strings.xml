@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="testlabs_launcher_icon_label" translatable="false">
+        Test Labs
+    </string>
+</resources>

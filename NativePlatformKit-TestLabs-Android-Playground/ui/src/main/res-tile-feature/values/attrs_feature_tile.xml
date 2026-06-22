@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FeatureTile">
+        <attr name="primaryIcon" format="reference" />
+        <attr name="secondaryIcon" format="reference" />
+        <attr name="tileTitle" format="string" />
+        <attr name="tileSupplementary" format="string" />
+        <attr name="tileBadgeCount" format="integer" />
+        <attr name="tileDivider" format="boolean" />
+    </declare-styleable>
+</resources>

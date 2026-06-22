@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recovered from the dropped component.ui debug source set; referenced by ui_mode_menu.xml. -->
+<resources>
+    <string name="debug_storage_preference_ui_mode_system" translatable="false">SYSTEM</string>
+    <string name="debug_storage_preference_ui_mode_light" translatable="false">LIGHT</string>
+    <string name="debug_storage_preference_ui_mode_dark" translatable="false">DARK</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignThemeFragment">
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/app_theme_switch"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin.small"
+        android:checked="false"
+        android:text="@string/debug_ui_redesign_private_bank_theme_label"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/private_bank_divider"
+        style="@style/Offside.Redesign.Divider"
+        android:layout_width="@dimen/spacing.match_constraint"
+        app:layout_constraintEnd_toEndOf="@+id/app_theme_switch"
+        app:layout_constraintStart_toStartOf="@+id/app_theme_switch"
+        app:layout_constraintTop_toBottomOf="@+id/app_theme_switch" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dark_theme_switch"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_theme_switch"
+        tools:text="@string/debug_ui_redesign_dark_theme_label"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dark_theme_divider"
+        style="@style/Offside.Redesign.Divider"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/dark_theme_switch"
+        app:layout_constraintStart_toStartOf="@+id/dark_theme_switch"
+        app:layout_constraintTop_toBottomOf="@+id/dark_theme_switch" />
+</androidx.constraintlayout.widget.ConstraintLayout>

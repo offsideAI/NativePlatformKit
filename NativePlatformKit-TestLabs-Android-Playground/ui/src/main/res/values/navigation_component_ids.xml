@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="navigation_host_activity_toolbar" type="id" />
+    <item name="navigation_host_activity_app_bar_layout" type="id" />
+    <item name="navigation_host_activity_fragment_container_view" type="id" />
+    <item name="navigation_host_activity_bottom_navigation_view" type="id" />
+    <item name="navigation_host_activity_bottom_navigation_view_include" type="id" />
+</resources>

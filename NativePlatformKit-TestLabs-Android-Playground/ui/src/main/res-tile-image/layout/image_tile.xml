@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="ai.offside.mobile.android.component.ui.infobox.InfoBoxState" />
+
+        <import type="ai.offside.mobile.android.component.ui.imagetile.ImageTileState" />
+
+        <variable
+            name="imageTile"
+            type="ai.offside.mobile.android.component.ui.imagetile.ImageTileState" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Offside.Redesign.ImageTile.CardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardTileItem_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_view_background_ripple">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tile_art_image_container"
+                style="@style/Offside.Redesign.ImageTile.ImageStyle"
+                android:layout_marginHorizontal="@dimen/margin.xsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tile_primary_Info"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/card_divider">
+
+                <ai.offside.mobile.android.component.ui.asyncimage.AsyncImage
+                    android:id="@+id/tile_art_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_decorative_card_placeholder"
+                    app:imageUrl="@{imageTile.imageUrl}"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/overlay_container"
+                    style="@style/Offside.Redesign.ImageTile.Overlay"
+                    android:alpha="@dimen/opacity.button.disabled.state"
+                    app:layout_constraintBottom_toBottomOf="@+id/tile_art_image"
+                    app:layout_constraintEnd_toEndOf="@+id/tile_art_image"
+                    app:layout_constraintStart_toStartOf="@+id/tile_art_image"
+                    app:layout_constraintTop_toTopOf="@+id/tile_art_image"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/overlay_art_image"
+                    style="@style/Offside.Redesign.ImageTile.Overlay.ImageStyle"
+                    android:layout_gravity="center"
+                    android:tint="?attr/offside_onSecondaryContainer"
+                    android:src="@drawable/ic_decorative_lock_solid"
+                    app:layout_constraintTop_toTopOf="@+id/tile_art_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/tile_art_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/overlay_art_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="overlay_art_image, overlay_container"
+                    android:visibility="@{imageTile.getOverlayVisibility()}"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tile_primary_Info"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin.xsmall"
+                android:ellipsize="end"
+                android:maxLines="@integer/tile_primary_title_max_line"
+                android:text="@{imageTile.imageTileTitle}"
+                android:textAppearance="@style/Offside.Redesign.BodyLargeTextStyle"
+                android:textColor="?attr/offside_onSurfaceVariantMedium"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tile_art_image_container"
+                app:layout_constraintTop_toTopOf="@+id/tile_art_image_container" />
+
+            <ai.offside.mobile.android.component.ui.infobox.InfoBox
+                android:id="@+id/tile_info_box"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin.xsmall"
+                android:visibility="@{imageTile.getInfoViewVisibility()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tile_primary_Info"
+                app:layout_constraintTop_toBottomOf="@+id/tile_primary_Info"
+                app:showIcon="@{true}"
+                app:state="@{InfoBoxState.INLINE}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tile_action_button"
+                style="@style/Offside.Redesign.Button.Micro.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin.xsmall"
+                android:text="@{imageTile.getActionButtonLabel()}"
+                android:visibility="@{imageTile.getButtonVisibility()}"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/card_bottom_space"
+                app:layout_constraintTop_toBottomOf="@+id/tile_primary_Info" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tile_status"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@{imageTile.getActionButtonLabel()}"
+                android:textAppearance="@style/Offside.Redesign.BodyMediumTextStyle"
+                android:textColor="?attr/offside_onSurfaceVariantLow"
+                app:layout_constraintBottom_toBottomOf="@+id/tile_caret_icon"
+                app:layout_constraintEnd_toStartOf="@+id/tile_caret_icon"
+                app:layout_constraintTop_toTopOf="@+id/tile_caret_icon" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/tile_caret_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin.xsmall"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/card_bottom_space"
+                app:layout_constraintTop_toBottomOf="@+id/tile_primary_Info"
+                app:srcCompat="@drawable/ic_actionable_caret" />
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="@{imageTile.getTileStatusVisibility()}"
+                app:constraint_referenced_ids="tile_status, tile_caret_icon" />
+
+            <Space android:id="@+id/card_bottom_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin.xsmall"
+                app:layout_constraintTop_toBottomOf="@+id/tile_art_image_container"
+                />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/card_divider"
+                style="@style/Offside.Redesign.Divider"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_marginStart="@dimen/margin.xsmall"
+                android:visibility="@{imageTile.getListActionVisibility()}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_bottom_space" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tile_list_action"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="@{imageTile.getListActionVisibility()}"
+                android:background="@color/selector_list_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_divider">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/tile_list_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin.small"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_decorative_card_solid"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tile_list_description"
+                    android:layout_width="@dimen/spacing.match_constraint"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin.small"
+                    android:gravity="start"
+                    android:importantForAccessibility="no"
+                    android:textAppearance="@style/Offside.Redesign.TitleMediumTextStyle"
+                    android:textColor="?attr/offside_onSurfaceVariantMedium"
+                    app:layout_constraintBottom_toBottomOf="@+id/tile_list_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/tile_list_right_icon"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tile_list_icon"
+                    app:layout_constraintTop_toTopOf="@+id/tile_list_icon" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/tile_list_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin.small"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_actionable_caret"
+                    app:layout_constraintBottom_toBottomOf="@+id/tile_list_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tile_list_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral/Gray -->
+    <color name="sys.color.neutral0">#000000</color>
+    <color name="sys.color.neutral10">#1B1F23</color>
+    <color name="sys.color.neutral20">#283239</color>
+    <color name="sys.color.neutral30">#333F48</color>
+    <color name="sys.color.neutral40">#515D67</color>
+    <color name="sys.color.neutral50">#6A7781</color>
+    <color name="sys.color.neutral60">#89959F</color>
+    <color name="sys.color.neutral70">#A9B1B7</color>
+    <color name="sys.color.neutral80">#C8CCD0</color>
+    <color name="sys.color.neutral90">#E4E6E7</color>
+    <color name="sys.color.neutral95">#F2F2F3</color>
+    <color name="sys.color.neutral98">#FAFBFA</color>
+    <color name="sys.color.neutral100">#FFFFFF</color>
+    <!-- Fully transparent, equivalent to 0x00000000 -->
+    <color name="sys.color.transparent">#00000000</color>
+</resources>

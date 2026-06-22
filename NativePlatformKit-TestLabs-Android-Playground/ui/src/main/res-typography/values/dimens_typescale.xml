@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These values are handed off by the Design Team. DO NOT MODIFY !!! -->
+    <!-- Specifies the Text sizes from the Design Tokens -->
+    <dimen name="type.display.large.font.size">34sp</dimen>
+    <dimen name="type.display.medium.font.size">22sp</dimen>
+    <dimen name="type.display.small.font.size">20sp</dimen>
+    <dimen name="type.headline.large.font.size">18sp</dimen>
+    <dimen name="type.headline.medium.font.size">16sp</dimen>
+    <dimen name="type.headline.small.font.size">12sp</dimen>
+    <dimen name="type.title.large.font.size">16sp</dimen>
+    <dimen name="type.title.medium.font.size">14sp</dimen>
+    <dimen name="type.title.small.font.size">12sp</dimen>
+    <dimen name="type.body.large.font.size">16sp</dimen>
+    <dimen name="type.body.medium.font.size">14sp</dimen>
+    <dimen name="type.body.small.font.size">12sp</dimen>
+    <dimen name="type.label.large.font.size">10sp</dimen>
+    <dimen name="type.label.medium.font.size">10sp</dimen>
+    <dimen name="type.label.small.font.size">10sp</dimen>
+    <dimen name="type.label.text.size.unset">0sp</dimen>
+
+    <!-- Specifies the Font Weights from the Design Tokens TBD !!!-->
+    <dimen name="type.display.large.font.weight">400</dimen>
+    <dimen name="type.display.medium.font.weight">600</dimen>
+    <dimen name="type.display.small.font.weight">700</dimen>
+    <dimen name="type.headline.large.font.weight">600</dimen>
+    <dimen name="type.headline.medium.font.weight">600</dimen>
+    <dimen name="type.headline.small.font.weight">700</dimen>
+    <dimen name="type.title.large.font.weight">500</dimen>
+    <dimen name="type.title.medium.font.weight">500</dimen>
+    <dimen name="type.title.small.font.weight">500</dimen>
+    <dimen name="type.body.large.font.weight">400</dimen>
+    <dimen name="type.body.medium.font.weight">400</dimen>
+    <dimen name="type.body.small.font.weight">400</dimen>
+    <dimen name="type.label.large.font.weight">600</dimen>
+    <dimen name="type.label.medium.font.weight">500</dimen>
+    <dimen name="type.label.small.font.weight">400</dimen>
+
+    <!-- Specifies the Line Heights from the Design Tokens TBD!!!-->
+    <dimen name="type.display.large.line.height">40sp</dimen>
+    <dimen name="type.display.medium.line.height">26sp</dimen>
+    <dimen name="type.display.small.line.height">24sp</dimen>
+    <dimen name="type.headline.large.line.height">21sp</dimen>
+    <dimen name="type.headline.medium.line.height">19sp</dimen>
+    <dimen name="type.headline.small.line.height">14sp</dimen>
+    <dimen name="type.title.large.line.height">19sp</dimen>
+    <dimen name="type.title.medium.line.height">16sp</dimen>
+    <dimen name="type.title.small.line.height">14sp</dimen>
+    <dimen name="type.body.large.line.height">19sp</dimen>
+    <dimen name="type.body.medium.line.height">16sp</dimen>
+    <dimen name="type.body.small.line.height">14sp</dimen>
+    <dimen name="type.label.large.line.height">12sp</dimen>
+    <dimen name="type.label.medium.line.height">12sp</dimen>
+    <dimen name="type.label.small.line.height">12sp</dimen>
+
+</resources>

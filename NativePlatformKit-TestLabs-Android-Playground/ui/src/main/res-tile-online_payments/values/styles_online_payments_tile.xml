@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.OnlinePayments.Title" parent="Offside.Redesign.TitleMediumTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantMedium</item>
+        <item name="android:layout_marginStart">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginTop">@dimen/margin.small</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xsmall</item>
+        <item name="android:layout_width">@dimen/spacing.unset</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.SubText" parent="Offside.Redesign.LabelSmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.SubText.Small" parent="Offside.Redesign.OnlinePayments.SubText">
+        <item name="android:layout_width">@dimen/spacing.unset</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginTop">@dimen/padding.xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/padding.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.Recurring" parent="Offside.Redesign.Icons.Actionable.Gray">
+        <item name="android:src">@drawable/ic_informative_recurring</item>
+        <item name="android:contentDescription">@string/a11y_informative_icon_recurring</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.SubText.Error" parent="Offside.Redesign.LabelMediumTextStyle">
+        <item name="android:textColor">?attr/offside_error</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.Icon.Actionable.Caret" parent="Offside.Redesign.Icons.Actionable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_actionable_caret</item>
+        <item name="android:layout_marginEnd">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginTop">@dimen/margin.small</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.Tile.Image" parent="Widget.Material3.Badge">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:layout_marginStart">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginTop">@dimen/margin.small</item>
+        <item name="android:layout_marginEnd">@dimen/spacing.unset</item>
+        <item name="android:background">@drawable/grey_circle_background</item>
+        <item name="layout_constraintWidth_percent">@dimen/size.percentage.small</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xxsmall</item>
+        <item name="infoBadgeIcon">@drawable/ic_decorative_payee</item>
+        <item name="infoBadgeType">CUSTOM</item>
+        <item name="infoBadgeWidth">CUSTOM</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.Tile.Button" parent="Offside.Redesign.Button.Micro.Blue">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginStart">@dimen/margin.xsmall</item>
+    </style>
+
+    <style name="Offside.Redesign.OnlinePayments.Tile.Alt.Button" parent="Offside.Redesign.Button.Micro.Alternate">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin.xsmall</item>
+        <item name="android:layout_marginStart">@dimen/margin.xsmall</item>
+        <item name="layout_constraintHorizontal_chainStyle">spread_inside</item>
+    </style>
+
+</resources>

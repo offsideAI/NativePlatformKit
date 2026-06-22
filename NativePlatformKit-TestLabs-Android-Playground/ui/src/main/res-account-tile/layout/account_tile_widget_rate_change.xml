@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="java.math.BigDecimal" />
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.tile.account.data.AccountTileData.AccountTileWidgetRateChange" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/investment_rate_change"
+            style="@style/Offside.Redesign.BodyMediumTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.rateDisplay}"
+            android:textColor="@{data.rateAmountState.getColorValue(context)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/change_interval"
+            style="@style/Offside.Redesign.AccountTile.BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:text="@{data.changeLabel}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/investment_rate_change"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

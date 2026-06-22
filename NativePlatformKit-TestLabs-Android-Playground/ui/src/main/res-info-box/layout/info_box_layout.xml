@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Offside.Redesign.InfoBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:importantForAccessibility="yes"
+    app:cardBackgroundColor="?offside_transparent"
+    app:strokeWidth="@dimen/spacing.unset">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/info_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/padding.large"
+        android:paddingEnd="@dimen/padding.xxlarge">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_view"
+            style="@style/Offside.Redesign.InfoBox.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_informative_information"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/top_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding.large"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            style="@style/Offside.Redesign.InfoBox.Title"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="Placeholder Text"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_view"
+            app:layout_constraintTop_toBottomOf="@id/top_space" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description"
+            style="@style/Offside.Redesign.InfoBox.Description"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="Placeholder Text"
+            app:layout_constraintBottom_toTopOf="@id/bottom_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_view"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <Space
+            android:id="@+id/bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding.large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="sys.color.blue10">#002142</color>
+    <color name="sys.color.blue20">#03315E</color>
+    <color name="sys.color.blue30">#14477B</color>
+    <color name="sys.color.blue40">#205E9D</color>
+    <color name="sys.color.blue50">#3079C0</color>
+    <color name="sys.color.blue60">#4397EA</color>
+    <color name="sys.color.blue70">#7AB5F0</color>
+    <color name="sys.color.blue80">#ADD1F5</color>
+    <color name="sys.color.blue90">#D8E8F8</color>
+    <color name="sys.color.blue95">#EAF2FB</color>
+</resources>

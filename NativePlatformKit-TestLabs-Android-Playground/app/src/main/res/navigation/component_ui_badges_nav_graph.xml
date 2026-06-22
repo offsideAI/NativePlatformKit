@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_badges_nav_graph"
+    app:startDestination="@id/testFragmentBadgesFragment">
+
+    <fragment
+        android:id="@+id/testFragmentBadgesFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.badge.TestFragmentBadgesFragment"
+        android:label="@string/debug_ui_redesign_badges_title"
+        tools:layout="@layout/fragment_test_badges">
+        <action
+            android:id="@+id/action_testFragmentBadgesFragment_to_testFragmentNotificationBadgeFragment"
+            app:destination="@id/testFragmentNotificationBadgeFragment" />
+        <action
+            android:id="@+id/action_testFragmentBadgesFragment_to_testFragmentInfoBadgeFragment"
+            app:destination="@id/testFragmentInfoBadgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragmentNotificationBadgeFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.badge.TestFragmentNotificationBadgeFragment"
+        android:label="@string/debug_ui_redesign_notification_badge_title"
+        tools:layout="@layout/fragment_test_notification_badge" />
+    <fragment
+        android:id="@+id/testFragmentInfoBadgeFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.badge.TestFragmentInfoBadgeFragment"
+        android:label="@string/debug_ui_redesign_general_badge_title"
+        tools:layout="@layout/fragment_test_info_badge" />
+</navigation>

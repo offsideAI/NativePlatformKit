@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.EcommerceTile" />
+
+    <style name="Offside.Redesign.EcommerceTile.transparent">
+    </style>
+
+    <style name="Offside.Redesign.EcommerceTile.StandardTransactionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceTile.RequestReceivedStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_feature_ecommerce_large_business_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceTile.SplitRequestStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sys.color.blue30</item>>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_person_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceTile.RequestPaidStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_feature_ecommerce_large_person_neutral</item>
+    </style>
+    <style name="Offside.Redesign.EcommerceTile.SplitRequestPaidStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:paddingStart">@dimen/padding.medium</item>
+        <item name="android:paddingEnd">@dimen/spacing.unset</item>
+        <item name="android:src">@drawable/ic_feature_ecommerce_small_business_neutral</item>
+    </style>
+</resources>

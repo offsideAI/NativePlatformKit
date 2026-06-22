@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.TransactionTile.Description" parent="Offside.Redesign.TitleSmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurface</item>
+    </style>
+
+    <style name="Offside.Redesign.TransactionTile.RunningAmount" parent="Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.TransactionTile.Category" parent="Offside.Redesign.LabelSmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.TransactionTile.Date.Label" parent="Offside.Redesign.BodySmallTextStyle">
+        <item name="android:textColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+</resources>

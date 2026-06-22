@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.component.ui.tile.PaymentActivityTileDataModel"
+            />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding.small"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/payment_activity_tile_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/payment_activity_tile_payee_name"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/payment_activity_tile_payee_name"
+            tools:srcCompat="@drawable/ic_decorative_atm_offside"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/payment_activity_tile_payee_name"
+            style="@style/Offside.Redesign.TitleLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@{model.primaryTextRow.starting}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/payment_activity_tile_image_view"
+            tools:text="Duquesne Light"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/payment_activity_tile_payment_amount"
+            style="@style/Offside.Redesign.TitleLargeTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@{model.primaryTextRow.ending}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/payment_activity_tile_action_image_view"
+            tools:text="$123.45"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/payment_activity_tile_action_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:onClick="@{v -> model.onTileClick(v, model.tileData)}"
+            app:layout_constraintBaseline_toBaselineOf="@id/payment_activity_tile_payment_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="@drawable/ic_actionable_caret"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/payment_activity_tile_payee_secondary_text"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.secondaryTextRowStartingVisibility}"
+            android:text="@{model.secondaryTextRow.starting}"
+            app:layout_constraintTop_toBottomOf="@id/payment_activity_tile_payee_name"
+            app:layout_constraintStart_toEndOf="@id/payment_activity_tile_image_view"
+            tools:text="Payee Secondary Text"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/payment_activity_tile_payment_amount_secondary_text"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.secondaryTextRowEndingVisibility}"
+            android:text="@{model.secondaryTextRow.ending}"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@id/payment_activity_tile_payment_amount"
+            app:layout_constraintEnd_toStartOf="@id/payment_activity_tile_action_image_view"
+            app:layout_constraintStart_toStartOf="@id/payment_activity_tile_payment_amount"
+            tools:text="Reminder"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/payment_activity_tile_secondary_button"
+            style="@style/Offside.Redesign.Button.Micro.Alternate"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:enabled="@{model.secondaryButton.enabled}"
+            android:visibility="@{model.secondaryButtonVisibility}"
+            android:text="@{model.secondaryButton.text}"
+            android:onClick="@{v -> model.secondaryButton.onButtonClick(v, model.tileData)}"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/payment_activity_tile_image_view"
+            app:layout_constraintTop_toBottomOf="@id/payment_activity_tile_payee_secondary_text"
+            tools:text="Mark As Resolved"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/payment_activity_tile_primary_button"
+            style="@style/Offside.Redesign.Button.Micro.Blue"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:enabled="@{model.primaryButton.enabled}"
+            android:visibility="@{model.primaryButtonVisibility}"
+            android:text="@{model.primaryButton.text}"
+            android:onClick="@{v -> model.primaryButton.onButtonClick(v, model.tileData)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/payment_activity_tile_action_image_view"
+            tools:text="Pay"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

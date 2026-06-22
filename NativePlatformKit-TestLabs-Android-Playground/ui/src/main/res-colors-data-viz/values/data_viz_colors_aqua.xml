@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.aqua90">#D0EBF6</color>
+    <color name="color.data_viz.aqua80">#9AD5EF</color>
+    <color name="color.data_viz.aqua70">#55BBE7</color>
+    <color name="color.data_viz.aqua60">#239DD1</color>
+    <color name="color.data_viz.aqua50">#0C7CAC</color>
+    <color name="color.data_viz.aqua40">#09648B</color>
+    <color name="color.data_viz.aqua30">#034A68</color>
+    <color name="color.data_viz.aqua20">#04374E</color>
+</resources>

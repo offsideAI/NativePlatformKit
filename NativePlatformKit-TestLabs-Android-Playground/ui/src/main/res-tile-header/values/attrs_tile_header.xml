@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeaderTile">
+        <attr name="sopButtonText" format="string" />
+        <attr name="sopButtonIcon" format="reference" />
+        <attr name="sopButtonVisibility" format="boolean" />
+        <attr name="titleText" format="string" />
+        <attr name="subtitleText" format="string" />
+        <attr name="badgeCount" format="integer" />
+        <attr name="titleTextLogo" format="reference" />
+        <attr name="scaleFactor" format="float" />
+    </declare-styleable>
+</resources>

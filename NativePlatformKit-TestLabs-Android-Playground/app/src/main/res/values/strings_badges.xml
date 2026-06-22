@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Badges Start-->
+    <string name="debug_ui_redesign_badges_title" translatable="false">Badges</string>
+    <string name="debug_ui_redesign_notification_badge_title" translatable="false">Notification Badge</string>
+    <string name="debug_ui_redesign_general_badge_title" translatable="false">General Badge</string>
+    <string name="debug_ui_redesign_menu_account_label" translatable="false">Accounts</string>
+    <string name="debug_ui_redesign_menu_cards_label" translatable="false">Cards</string>
+    <string name="debug_ui_redesign_menu_rewards_label" translatable="false">Rewards</string>
+    <string name="debug_ui_redesign_menu_ecommerce_label" translatable="false">Ecommerce</string>
+    <string name="debug_ui_redesign_menu_more_label" translatable="false">More</string>
+    <string name="debug_ui_redesign_badge_for_button" translatable="false">Badge in Button</string>
+    <string name="debug_ui_redesign_badge_for_segment" translatable="false">Badge in Segment Bar</string>
+    <string name="debug_ui_redesign_badge_for_image" translatable="false">Badge in Image</string>
+    <string name="debug_ui_redesign_badge_custom" translatable="false">Custom</string>
+    <!--Badges End-->
+</resources>

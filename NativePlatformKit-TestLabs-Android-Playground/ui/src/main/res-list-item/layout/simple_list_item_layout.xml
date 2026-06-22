@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.listitem.data.ListItemData.SimpleListItem" />
+
+        <variable
+            name="dividerVisibility"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selector_list_item"
+        android:importantForAccessibility="yes"
+        android:paddingStart="@dimen/padding.xlarge"
+        android:onClick="@{v->data.onClick(v)}">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label"
+            style="@style/Offside.Redesign.ListItem.Label"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding.xlarge"
+            android:text="@{data.label}"
+            app:layout_constraintBottom_toTopOf="@+id/secondary_description"
+            app:layout_constraintEnd_toStartOf="@+id/caret_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/caret_icon"
+            tools:text="Placeholder Text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/secondary_description"
+            style="@style/Offside.Redesign.ListItem.Description"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xlarge"
+            app:layout_constraintBottom_toBottomOf="@id/caret_icon"
+            app:layout_constraintEnd_toStartOf="@+id/caret_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label"
+            app:optionalText="@{data.secondaryText}"
+            tools:text="Placeholder Text"
+            tools:visibility="visible" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/caret_icon"
+            style="@style/Offside.Redesign.ListItem.Icon.CaretIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin.xsmall"
+            android:layout_marginEnd="@dimen/padding.large"
+            android:importantForAccessibility="no"
+            android:paddingVertical="@dimen/padding.small"
+            android:src="@drawable/ic_actionable_bottom_sheet_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:visibility="@{dividerVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

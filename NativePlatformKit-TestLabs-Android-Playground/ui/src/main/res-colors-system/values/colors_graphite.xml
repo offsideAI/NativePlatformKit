@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sys.color.graphite10">#07121A</color>
+    <color name="sys.color.graphite20">#2C3943</color>
+    <color name="sys.color.graphite30">#424C53</color>
+    <color name="sys.color.graphite40">#5B6770</color>
+    <color name="sys.color.graphite50">#6B767E</color>
+    <color name="sys.color.graphite60">#7C858D</color>
+    <color name="sys.color.graphite70">#ADB3B7</color>
+    <color name="sys.color.graphite80">#C8CCD0</color>
+    <color name="sys.color.graphite90">#E4E6E7</color>
+    <color name="sys.color.graphite95">#F2F2F3</color>
+</resources>

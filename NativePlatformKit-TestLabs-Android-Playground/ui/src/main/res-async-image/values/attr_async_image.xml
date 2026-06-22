@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AsyncImage">
+        <attr name="placeholderImageSrc" format="reference" />
+        <attr name="imageUrl" format="string" />
+        <attr name="contentDescription" format="string" />
+    </declare-styleable>
+</resources>

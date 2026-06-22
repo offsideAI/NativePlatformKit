@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.LinearProgressBar" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackColor">?attr/offside_surfaceContainerLowest</item>
+        <item name="indicatorColor">?attr/offside_accent</item>
+        <item name="android:background">?attr/offside_surfaceContainer</item>
+        <item name="trackThickness">@dimen/padding.medium</item>
+        <item name="trackStopIndicatorSize">@dimen/spacing.unset</item>
+        <item name="indicatorTrackGapSize">@dimen/padding.xsmall</item>
+        <item name="trackCornerRadius">@dimen/offside.redesign.shape.regular</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+</resources>

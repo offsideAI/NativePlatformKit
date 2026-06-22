@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Opacity Token usages
+Name                                                    Value
+
+opacity.0                                            0% opacity
+opacity.100                                         100% opacity (default)
+opacity.20                                          20% opacity
+• Buttons/Micro/SoP Micro
+• Buttons/Primary/Full/White Overlay
+• shadows for Container/Base tiles (both standard and elevated)
+
+opacity.70                                          70% opacity
+inactive bottom tab navigation icons & text
+opactiy.50                                          50% opacity
+all full, half, and micro primary button disabled states • all full and half secondary button disabled states
+
+-->
+<resources>
+    <item format="float" name="opacity.bottom.nav.icon.inactive" type="dimen">0.7</item>
+    <item format="float" name="opacity.bottom.nav.icon.text.inactive" type="dimen">0.7</item>
+    <item format="float" name="opacity.button.disabled.state" type="dimen">0.5</item>
+    <item format="float" name="opacity.button.overlay" type="dimen">0.2</item>
+    <item format="float" name="opacity.container.shadow" type="dimen">0.2</item>
+    <item format="float" name="opacity.tile.shadow" type="dimen">0.2</item>
+    <item format="float" name="opacity.button.overlay.disabled" type="dimen">0.1</item>
+    <item format="float" name="opacity.button.overlay.sop" type="dimen">0.15</item>
+</resources>

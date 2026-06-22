@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="list.item.small.icon.size.percentage" format="float" type="dimen">0.07</item>
+</resources>

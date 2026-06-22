@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.component.ui.tile.account.data.AccountTileData.AccountTileWidgetPricingUpdate" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/updated_date"
+            style="@style/Offside.Redesign.AccountTile.BodyText"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:text="@{data.pricingUpdateLabel}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1"
+            tools:text="Placeholder Text"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/learn_more"
+            style="@style/Offside.Redesign.AccountTile.LearnMoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:onClick="@{v-> data.learnMoreButton.onButtonClick(v)}"
+            android:text="@{data.learnMoreButton.label}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updated_date"
+            tools:text="Placeholder Text"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

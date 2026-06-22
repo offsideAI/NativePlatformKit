@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/offside_surfaceContainerLowest"
+    tools:context="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignCardTileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin.medium">
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBoxRadius="@dimen/margin.xxsmall"
+            app:cardBoxShowDividers="false"
+            app:displayState="single_line_card_tile"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:displayState="card_tile_with_button"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario1" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="card_tile_with_status"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario2" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="two_line_card_tile"
+            app:cardBoxShowDividers="false"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario3" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:displayState="card_tile_with_checkbox"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario4" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="card_tile_with_radio_button"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_Scenario7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario5" />
+
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_Scenario7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBoxShowDividers="false"
+            app:displayState="card_tile_review"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_checkbox_wrap1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario6" />
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_checkbox_wrap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.medium"
+            app:displayState="card_tile_with_checkbox_wrapping_text"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_radio_wrap2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_Scenario7" />
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_radio_wrap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="card_tile_with_radio_button_wrapping_text"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_checkbox_wrap3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_checkbox_wrap1" />
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_checkbox_wrap3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="card_tile_with_checkbox_wrapping_text"
+            app:layout_constraintBottom_toTopOf="@+id/cardTileItem_radio_wrap4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_radio_wrap2" />
+        <ai.offside.mobile.android.component.ui.cardtile.CardTile
+            android:id="@+id/cardTileItem_radio_wrap4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:displayState="card_tile_with_radio_button_wrapping_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTileItem_checkbox_wrap3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

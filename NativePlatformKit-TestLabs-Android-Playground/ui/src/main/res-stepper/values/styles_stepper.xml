@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Stepper" />
+
+    <style name="Offside.Redesign.Stepper.NumberTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/stepper_number_background</item>
+        <item name="android:textColor">?attr/offside_secondary</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Offside.Redesign.Stepper.LineView" parent="Widget.Material3.MaterialDivider">
+        <item name="android:layout_width">@dimen/stepper_line_width</item>
+        <item name="android:layout_height">@dimen/stepper_border_width</item>
+        <item name="android:background">?attr/offside_outlineVariant</item>
+    </style>
+
+    <style name="Offside.Redesign.Stepper.CompleteImageView">
+        <item name="android:layout_width">@dimen/margin.medium</item>
+        <item name="android:layout_height">@dimen/margin.medium</item>
+        <item name="android:src">@drawable/stepper_animated_check</item>
+    </style>
+
+    <style name="Offside.Redesign.Stepper.LineImageView">
+        <item name="android:layout_width">@dimen/stepper_line_width</item>
+        <item name="android:layout_height">@dimen/stepper_border_width</item>
+        <item name="android:src">@drawable/stepper_animated_line</item>
+    </style>
+
+</resources>

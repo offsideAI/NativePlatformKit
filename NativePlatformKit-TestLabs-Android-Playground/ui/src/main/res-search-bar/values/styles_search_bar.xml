@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Offside.Redesign.SearchBar">
+        <item name="backgroundTint">?attr/offside_onPrimary</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="iconGravity">top</item>
+        <item name="itemVerticalPadding">@dimen/spacing.unset</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodyLargeTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSurface</item>
+        <item name="placeholderTextAppearance">@style/Offside.Redesign.BodyLargeTextStyle</item>
+        <item name="placeholderTextColor">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.SearchBar.Elevated">
+        <item name="android:textAppearance">@style/Offside.Redesign.SearchBar.TextAppearance</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">?attr/offside_shadow</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">?attr/offside_shadow</item>
+    </style>
+
+    <style name="Offside.Redesign.SearchBar.TextAppearance">
+        <item name="android:textColorHint">?attr/offside_onSurfaceVariantLow</item>
+    </style>
+
+    <style name="Offside.Redesign.SearchBar.Standard" parent="Widget.Material3.SearchBar.Outlined">
+        <item name="strokeColor">?attr/offside_outline</item>
+        <item name="backgroundTint">?attr/offside_onPrimary</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+    </style>
+
+    <style name="Offside.Redesign.SearchBar.SearchViewStyle" parent="Widget.Material3.SearchView">
+        <!--search view customization-->
+        <item name="cursorColor">?attr/offside_outline</item>
+        <item name="backgroundTint">?attr/offside_onPrimary</item>
+        <item name="queryBackground">?attr/offside_surface</item>
+        <item name="submitBackground">?attr/offside_surface</item>
+        <item name="closeIcon">@drawable/ic_actionable_clear</item>
+        <item name="searchIcon">@drawable/ic_actionable_search</item>
+    </style>
+</resources>

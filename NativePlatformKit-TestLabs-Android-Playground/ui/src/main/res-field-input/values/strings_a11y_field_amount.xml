@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_two_line_dropdown_content_des" translatable="false">%s, %s, %s</string>
+    <string name="a11y_state_selected" translatable="false">Selected</string>
+    <string name="a11y_state_not_selected" translatable="false">Not selected</string>
+    <string name="a11y_content_description_two_str" translatable="false">%s, %s </string>
+    <string name="a11y_amount_dropdown_end_icon_content_description" translatable="false">Select payment amount</string>
+    <string name="a11y_amount_label_content_description" translatable="false">Amount</string>
+    <string name="a11y_amount_asterisk_content_description" translatable="false">asterisk</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottom_sheet_back_button"
+        style="@style/Offside.Redesign.BottomSheet.BackIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bottom_sheet_title"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bottom_sheet_title"
+        style="@style/Offside.Redesign.BottomSheet.Title"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:importantForAccessibility="yes"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_close_button"
+        app:layout_constraintStart_toEndOf="@+id/bottom_sheet_back_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bottom_sheet_sub_title"
+        style="@style/Offside.Redesign.BottomSheet.SubTitle"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_close_button"
+        app:layout_constraintStart_toEndOf="@+id/bottom_sheet_back_button"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_title"
+        tools:text="Sub Title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottom_sheet_close_button"
+        style="@style/Offside.Redesign.BottomSheet.CloseIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bottom_sheet_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bottom_sheet_title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

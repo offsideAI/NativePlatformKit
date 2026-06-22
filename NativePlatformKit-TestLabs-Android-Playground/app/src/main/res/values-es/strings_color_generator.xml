@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="color_generator_graph_label">
+        ES.Color Generator Graph
+    </string>
+    <string name="color_generator_destination_form_label">
+        ES.Color Generator Form
+    </string>
+    <string name="color_generator_destination_results_label">
+        ES.Color Generator Results
+    </string>
+    <string name="color_generator_submit">
+        ES.Submit Color Values
+    </string>
+    <string name="color_generator_results_button">
+        ES.See Results
+    </string>
+    <string name="color_generator_form_toggle_label">
+        ES.Enable manual entry
+    </string>
+    <string name="color_generator_dark_colors_switch">
+        ES.Reverse Ramp
+    </string>
+    <string name="color_generator_input_red">
+        ES.Red Value
+    </string>
+    <string name="color_generator_input_green">
+        ES.Green Value
+    </string>
+    <string name="color_generator_input_blue">
+        ES.Blue Value
+    </string>
+    <string name="color_generator_selector_family_empty">
+        ES.Select Color Family
+    </string>
+    <string name="color_generator_selector_family_selected">
+        ES.Color Family %s
+    </string>
+    <string name="color_generator_selector_color_empty">
+        ES.Select Color
+    </string>
+    <string name="color_generator_selector_color_selected">
+        ES. %s %s
+    </string>
+</resources>

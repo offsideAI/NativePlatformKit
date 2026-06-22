@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?offside_onPrimary"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_standard_bottomsheet"
+        style="@style/Offside.Redesign.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        android:layout_marginBottom="@dimen/margin.xxlarge"
+        android:text="@string/debug_ui_redesign_bottomsheet_standard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_persistent_bottomsheet"
+        style="@style/Offside.Redesign.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        android:layout_marginBottom="@dimen/margin.xxlarge"
+        android:text="@string/debug_ui_redesign_bottomsheet_persistent_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_standard_bottomsheet" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_persistent_subheader_bottomsheet"
+        style="@style/Offside.Redesign.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        android:layout_marginBottom="@dimen/margin.xxlarge"
+        android:text="@string/debug_ui_redesign_bottomsheet_persistent_sub_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persistent_bottomsheet" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_flow_bottomsheet"
+        style="@style/Offside.Redesign.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/gutter.xsmall"
+        android:layout_marginTop="@dimen/margin.medium"
+        android:layout_marginEnd="@dimen/gutter.xsmall"
+        android:layout_marginBottom="@dimen/margin.xxlarge"
+        android:text="@string/debug_ui_redesign_bottomsheet_flow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persistent_subheader_bottomsheet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

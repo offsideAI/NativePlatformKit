@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Redesign Testlabs -->
+    <string name="menu_settings" translatable="false">Settings</string>
+    <string name="debug_ui_redesign_primary_button" translatable="false"> Primary Button</string>
+    <string name="debug_ui_redesign_raised_button" translatable="false"> Raised Button</string>
+    <string name="debug_ui_redesign_unelevated_button" translatable="false"> Unelevated</string>
+    <string name="debug_ui_redesign_outlined_button" translatable="false"> Outlined Button</string>
+    <string name="debug_ui_redesign_text_button" translatable="false"> Text Button</string>
+    <string name="debug_ui_redesign_input_chip" translatable="false"> Input Chip</string>
+    <string name="debug_ui_redesign_choice_chip" translatable="false"> Choice Chip</string>
+    <string name="debug_ui_redesign_filter_chip" translatable="false"> Filter Chip</string>
+    <string name="debug_ui_redesign_checkbox" translatable="false"> Checkbox</string>
+    <string name="debug_ui_redesign_radio_button" translatable="false"> Radio Button</string>
+    <string name="debug_ui_redesign_switch" translatable="false"> Switch</string>
+    <string name="debug_ui_redesign_filled_text_box" translatable="false"> Filled Text</string>
+    <string name="debug_ui_redesign_outlined_text_box" translatable="false"> Outlined Text</string>
+    <string name="debug_ui_redesign_tab1" translatable="false"> Tab 1</string>
+    <string name="debug_ui_redesign_tab2" translatable="false"> Tab 2</string>
+    <string name="debug_ui_redesign_tab3" translatable="false"> Tab 3</string>
+    <string name="debug_ui_redesign_card" translatable="false"> Card</string>
+    <string name="debug_ui_redesign_text" translatable="false"> Text</string>
+    <string name="debug_ui_redesign_tab_buttons" translatable="false">Buttons</string>
+    <string name="debug_ui_redesign_biometric_button" translatable="false">Face ID</string>
+    <string name="debug_ui_redesign_tab_typography" translatable="false">Typography</string>
+    <string name="debug_ui_redesign_tab_components" translatable="false">Components</string>
+    <string name="debug_ui_redesign_tab_text_input" translatable="false">Text Input</string>
+    <string name="debug_ui_redesign_tab_slider" translatable="false">Slider</string>
+    <string name="debug_ui_redesign_tab_account_tile" translatable="false">Account Tile</string>
+    <string name="debug_ui_redesign_tab_online_payments_tile" translatable="false">Online Payments Tile</string>
+    <string name="debug_ui_redesign_tab_offside_payments_account_tile" translatable="false">Payments</string>
+    <string name="debug_ui_redesign_tab_deposit_activity_tile" translatable="false">Deposit Activity Tile</string>
+    <string name="debug_ui_redesign_tab_amount_input_field_label" translatable="false">Amount Input Field</string>
+    <string name="debug_ui_redesign_dollar_symbol" translatable="false">$</string>
+    <string name="debug_ui_redesign_amount_input_hint" translatable="false">Amount*</string>
+    <string name="debug_ui_redesign_amount_a11y_desc" translatable="false">Amount</string>
+    <string name="debug_ui_redesign_asterisk_a11y_desc" translatable="false">asterisk</string>
+    <string name="debug_ui_redesign_amount_input_important_info_desc" translatable="false">Important information, %s</string>
+    <string name="debug_ui_redesign_amount_dropdown_label" translatable="false">Amount</string>
+    <string name="debug_ui_redesign_amount_input_default_text" translatable="false">$0.00</string>
+    <string name="debug_ui_redesign_amount_input_subtext" translatable="false">Remaining Domestic Wire Limit: $12,500.00</string>
+    <string name="debug_ui_redesign_amount_input_helper_text" translatable="false">Secondary Information</string>
+    <string name="debug_ui_redesign_amount_input_error_text" translatable="false">Amount must be greater than $10.00</string>
+    <string name="debug_ui_redesign_amount_bottom_sheet_title" translatable="false">Payment Amount</string>
+    <string name="debug_ui_redesign_okay_button_text" translatable="false">OK</string>
+    <string name="debug_ui_redesign_dropdown_end_icon_content_description" translatable="false">Amount*</string>
+    <string name="debug_ui_redesign_clear_end_icon_content_description" translatable="false">Clear Amount</string>
+    <string name="debug_ui_redesign_close_modal_icon_content_description" translatable="false">Close</string>
+    <string name="debug_ui_redesign_tab_cards" translatable="false">BottomSheet</string>
+    <string name="debug_ui_redesign_tab_modals" translatable="false">Modals</string>
+    <string name="debug_ui_redesign_tab_calendar" translatable="false">Calendar</string>
+    <string name="debug_ui_redesign_tab_snackbars" translatable="false">Snackbars</string>
+    <string name="debug_ui_redesign_tab_list_item" translatable="false">List Item</string>
+    <string name="debug_ui_redesign_info_box" translatable="false">Info Boxes</string>
+    <string name="debug_ui_redesign_tab_misc" translatable="false">Misc. Widgets</string>
+    <string name="debug_ui_redesign_radiob1" translatable="false"> One</string>
+    <string name="debug_ui_redesign_radiob2" translatable="false"> Two</string>
+    <string name="debug_ui_redesign_radiob3" translatable="false"> Three</string>
+    <string name="debug_ui_redesign_radiob4" translatable="false"> Four</string>
+    <string name="debug_ui_redesign_enabled" translatable="false">Active</string>
+    <string name="debug_ui_redesign_disabled" translatable="false">Disabled</string>
+    <string name="debug_ui_redesign_disabled_selected" translatable="false">Selected and disabled</string>
+    <string name="debug_ui_redesign_primary_btn" translatable="false">Primary Button</string>
+    <string name="debug_ui_redesign_primary_disabled_btn" translatable="false">Primary Disabled</string>
+    <string name="debug_ui_redesign_primary_half_btn" translatable="false">Primary Half</string>
+    <string name="debug_ui_redesign_primary_overlay_btn" translatable="false">Primary Overlay</string>
+    <string name="debug_ui_redesign_primary_overlay_disabled_btn" translatable="false">Disabled Overlay Button</string>
+    <string name="debug_ui_redesign_primary_overlay_half_btn" translatable="false">Overlay Half</string>
+    <string name="debug_ui_redesign_secondary_btn" translatable="false">Secondary Button</string>
+    <string name="debug_ui_redesign_secondary_enabled_btn" translatable="false">Secondary Enabled Button</string>
+    <string name="debug_ui_redesign_secondary_half_btn" translatable="false">Secondary Half</string>
+    <string name="debug_ui_redesign_micro_buttons_label" translatable="false">Micro Buttons</string>
+    <string name="debug_ui_redesign_micro_buttons_text" translatable="false">Payment: Apr 12, 2023</string>
+    <string name="debug_ui_redesign_micro_buttons_payment_text" translatable="false">Payment</string>
+    <string name="debug_ui_redesign_micro_buttons_sop_label" translatable="false">SoP Button</string>
+    <string name="debug_ui_redesign_jumbo_buttons_label" translatable="false">Jumbo Button</string>
+    <string name="debug_ui_redesign_jumbo_buttons_label_send" translatable="false">Send</string>
+    <string name="debug_ui_redesign_jumbo_buttons_label_pay" translatable="false">Pay</string>
+    <string name="debug_ui_redesign_type_display" translatable="false">Display Text Style</string>
+    <string name="debug_ui_redesign_type_headline" translatable="false">Headline Text Style</string>
+    <string name="debug_ui_redesign_type_title" translatable="false">Title Text Style</string>
+    <string name="debug_ui_redesign_type_body" translatable="false">Body Text Style</string>
+    <string name="debug_ui_redesign_type_label" translatable="false">Label Text Style</string>
+    <string name="debug_ui_redesign_tertiary_btn" translatable="false">Tertiary Button</string>
+    <string name="debug_ui_redesign_main_activity_title" translatable="false">Test Labs</string>
+    <string name="debug_ui_redesign_library_title" translatable="false">UI Component Library</string>
+    <string name="debug_ui_redesign_typography_title" translatable="false">Typography</string>
+    <string name="debug_ui_redesign_buttons_title" translatable="false">Buttons</string>
+    <string name="debug_ui_redesign_theme_title" translatable="false">Theme</string>
+    <string name="debug_ui_redesign_ecommerce_Icon" translatable="false"> Ecommerce Icon</string>
+    <string name="debug_ui_redesign_ecommerce_tile" translatable="false"> Ecommerce Tile</string>
+    <array name="debug_ui_redesign_theme_group_list">
+        <item>Theme</item>
+        <item>Typography</item>
+        <item>Buttons</item>
+        <item>Modals</item>
+        <item>Slider</item>
+        <item>Controls</item>
+        <item>Info Boxes</item>
+        <item>Amount Input Field</item>
+        <item>Card Specific Input Field</item>
+        <item>Card Tile Component</item>
+        <item>Stepper</item>
+        <item>Review Filed Tile</item>
+        <item>WebViews</item>
+        <item>Account Tile</item>
+        <item>Online Payments Tile</item>
+        <item>Carousel</item>
+        <item>Badges</item>
+        <item>Card Worksheet</item>
+        <item>Actionable Icons</item>
+        <item>Input Fields</item>
+        <item>Container</item>
+        <item>Decorative Icons</item>
+        <item>Informative Icons</item>
+        <item>Feature Tile</item>
+        <item>List Item</item>
+        <item>Feature Based Icons</item>
+        <item>Account Transaction Tiles</item>
+        <item>List Actions</item>
+        <item>Ecommerce Icons</item>
+        <item>Ecommerce Tile</item>
+        <item>Transfer Activity Tiles</item>
+        <item>Dropdown</item>
+    </array>
+    <array name="debug_ui_redesign_modals_group_list">
+        <item>Snackbar</item>
+        <item>Modals</item>
+        <item>Calendar</item>
+        <item>Bottomsheet</item>
+        <item>Loading Dialog</item>
+        <item>OS Component</item>
+    </array>
+    <array name="debug_ui_redesign_dialog_list">
+        <item>Small Modal</item>
+        <item>Small Modal with Sub-Header</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Large with subheader</item>
+        <item>Large Modal Scrolling UI</item>
+        <item>Small with Checkbox</item>
+        <item>Medium with Checkbox</item>
+        <item>Large Checkbox - Scrolling</item>
+        <item>Primary Button Modal</item>
+        <item>Button Primary/Secondary</item>
+        <item>Button Primary/Tertiary</item>
+    </array>
+    <array name="debug_ui_redesign_account_tile_group_list">
+        <item>Account Tile</item>
+        <item>Payments</item>
+        <item>Ecommerce Wallet Tool Set</item>
+        <item>Deposits Activity Tile</item>
+    </array>
+    <array name="debug_ui_redesign_dropdown_components_list">
+        <item>Dropdown Bottomsheet</item>
+        <item>Expand/Collapse Group</item>
+    </array>
+    <string name="debug_ui_redesign_slider_title" translatable="false">Slider</string>
+    <string name="debug_ui_redesign_slider_single_left_button" translatable="false">Slider Foreground 1 Left Button</string>
+    <string name="debug_ui_redesign_slider_single_right_button" translatable="false">Slider Foreground 1 Right Button</string>
+    <string name="debug_ui_redesign_slider_two_right_button" translatable="false">Slider Foreground 2 Right Button</string>
+    <string name="debug_ui_redesign_slider_three_right_button" translatable="false">Slider Foreground 3 Right Button</string>
+    <string name="debug_ui_redesign_slider_all_button" translatable="false">Slider Foreground All Button</string>
+    <string name="debug_ui_redesign_info_box_title" translatable="false">Title</string>
+    <string name="debug_ui_redesign_info_box_simple_text" translatable="false">Simple message conveying an important piece of info to a user.</string>
+    <string name="debug_ui_redesign_info_box_inline_text" translatable="false">Your card is currently locked</string>
+    <string name="debug_ui_redesign_private_bank_theme_label" translatable="false">Private Bank Theme</string>
+    <string name="debug_ui_redesign_dark_theme_label" translatable="false">Dark Theme</string>
+    <string name="debug_ui_redesign_compound_button_label" translatable="false">Compound and Switch Button</string>
+    <string name="debug_ui_redesign_enabled_switch_label" translatable="false">Enabled</string>
+    <string name="debug_ui_redesign_edit_label" translatable="false">Edit</string>
+    <string name="debug_ui_redesign_sticky_button_label" translatable="false">Sticky Button</string>
+    <string name="debug_ui_redesign_grouped_checkboxes_label" translatable="false">Grouped Checkboxes</string>
+    <string name="debug_ui_redesign_button_icon_with_link_label" translatable="false">Button Icon with Link</string>
+    <string name="debug_ui_redesign_secondary_tertiary_button_label" translatable="false">Secondary and Tertiary Button</string>
+    <string name="debug_ui_redesign_takeover_sticky_buttons_label" translatable="false">Takeover Sticky Buttons</string>
+
+    <array name="layouts_array">
+        <item>Primary Button Layout</item>
+        <item>Primary and Secondary Buttons Horizontally stacked</item>
+        <item>Primary and Secondary Buttons Vertically stacked</item>
+        <item>Primary and Tertiary Vertically stacked</item>
+    </array>
+    <string name="debug_ui_redesign_sample_text" translatable="false"><![CDATA[<b>Please review this information carefully:</b><br></br>
+<p> Future-dated and recurring payments may be edited or deleted prior to 3:00 PM ET on the Scheduled Payment Date.</p>
+<p> Payments may be viewed on your checking account activity screen on the Scheduled Payment Date, typically by 5:00 PM ET or sooner.</p>
+<p> Payments may be viewed on your credit card or line of credit account activity screen the business day after your Scheduled Payment Date.</p>
+<p> Payments that have been processed are displayed in Recent Transfers within Funds Transfers.</p>
+<p> No payment will be processed if the Minimum Payment Due and/or Last Statement Balance on your account is less than or equal to zero ($0) on the Scheduled Payment Date.</p>
+<p> If your Last Statement Balance or Other Amount payment is greater than your Current Balance on the Scheduled Payment Date, then a reduced payment amount equal to your Current Balance will be processed.</p>
+<p> If your From (funding) account has an insufficient balance on the Scheduled Transfer Date, your payment will not be processed. Please note that if you have established Overdraft Protection from another linked account for your funding account, funds will not be transferred from the Protecting Account to cover your payment and your scheduled payment will not be processed.</p>
+<p> If you wish to make changes, please click Back or the back arrow to return to the Schedule a Transfer page. If this information is correct, please click Close to review and submit your transfer.</p>]]> Your payment may be sent electronically or by paper check. Payments that are sent by paper check may
+                                            be received and processed by the Payee earlier or later than the date you selected.
+                                            If the payment is processed by the Payee earlier than the date you selected, the
+                                            amount will be deducted from your account before the date you selected. As a result, we
+                                            recommend that you keep sufficient funds in your account to cover your payment
+                                            beginning a few business days before the date that you selected and keep such funds
+                                            available until the payment is deducted from your account. Please refer to the Online
+                                            Banking Online Payments guarantee within the Online Banking Services Agreement for additional information."</string>
+
+
+    <string name="debug_ui_redesign_snackbar_label" translatable="false">Short SnackBar</string>
+    <string name="debug_ui_redesign_snackbar_with_action_label" translatable="false">Long SnackBar with Action</string>
+    <string name="debug_ui_redesign_persistence_snackbar_label" translatable="false">Persistence SnackBar</string>
+    <array name="debug_ui_redesign_controls_list">
+        <item>Segmented Bar</item>
+        <item>Profile Settings Bar</item>
+        <item>Search Bar Standard</item>
+        <item>Search Bar Elevated</item>
+    </array>
+    <string name="debug_ui_redesign_controls_label" translatable="false">Controls</string>
+    <string name="debug_ui_redesign_segment_bar_label" translatable="false">Segment Bar</string>
+    <string name="debug_ui_redesign_profile_bar_label" translatable="false">Profile And Settings Bar</string>
+    <string name="debug_ui_redesign_first_tab_label" translatable="false">Item 1</string>
+    <string name="debug_ui_redesign_second_tab_label" translatable="false">Item 2</string>
+    <string name="debug_ui_redesign_third_tab_label" translatable="false">Item 3</string>
+    <string name="debug_ui_redesign_profile_tab_label" translatable="false">Profile</string>
+    <string name="debug_ui_redesign_security_tab_label" translatable="false">Security</string>
+    <string name="debug_ui_redesign_alerts_tab_label" translatable="false">Alerts</string>
+    <string name="debug_ui_redesign_sample_text_deposit_cash" translatable="false">Deposit Cash</string>
+    <string name="debug_ui_redesign_sample_text_withdraw_cash" translatable="false">Withdraw Cash</string>
+    <string name="debug_ui_redesign_sample_text_cash_a_check" translatable="false">Cash a check</string>
+    <string name="debug_ui_redesign_sample_text_deposit_a_check" translatable="false">Deposit a check</string>
+    <string name="debug_ui_redesign_sample_text_get_a_cashiers_check" translatable="false">Get a cashier\'s check</string>
+    <string name="debug_ui_redesign_card_specific_input_field_label" translatable="false">Card Specific Input Field</string>
+    <string name="debug_ui_redesign_button_clicked_label" translatable="false">Button Clicked</string>
+    <string name="debug_ui_redesign_button_clicked_for_accessibility_label" translatable="false">Button clicked for accessibility</string>
+    <string name="debug_ui_redesign_button_payment_content_desc" translatable="false">Payment button</string>
+    <string name="debug_ui_redesign_button_with_link_content_desc" translatable="false">Button icon with link</string>
+    <!-- Modal String resource -->
+    <string name="debug_ui_redesign_modal_header_title" translatable="false">Modal Header Title</string>
+    <string name="debug_ui_redesign_modal_supplementary" translatable="false">Optional Supplementary Text</string>
+    <string name="debug_ui_redesign_modal_sub_header_title" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</string>
+    <string-array name="debug_ui_redesign_modal_description_small">
+        <item>Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</item>
+    </string-array>
+    <string-array name="debug_ui_redesign_modal_description_medium">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</item>
+    </string-array>
+
+    <string-array name="debug_ui_redesign_modal_description_Large">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</item>
+    </string-array>
+
+    <string-array name="debug_ui_redesign_modal_description_scroll">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n</item>
+        <item>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n</item>
+        <item>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+    </string-array>
+    <string name="debug_ui_redesign_modal_description_small" translatable="false">Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="debug_ui_redesign_modal_description_medium" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="debug_ui_redesign_modal_description_Large" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="debug_ui_redesign_modal_description_scroll" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\n
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="debug_ui_redesign_modal_checkbox_label" translatable="false">I agree to the Terms and Conditions.</string>
+    <string name="debug_ui_redesign_modal_checkbox_description" translatable="false">You can access the information again visit bulum consequat condimentum velit.</string>
+    <string name="debug_ui_redesign_enter_search_placeholder_text" translatable="false">Enter search criteria</string>
+    <string name="debug_ui_redesign_search_bar_standard" translatable="false">Standard Search Bar</string>
+    <string name="debug_ui_redesign_search_bar_elevated" translatable="false">Elevated Search Bar</string>
+    <array name="debug_ui_redesign_search_bar_type_list">
+        <item>Elevated Bar</item>
+        <item>Standard Bar</item>
+    </array>
+    <array name="debug_ui_redesign_search_suggestions_list">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+    </array>
+    <string name="debug_ui_redesign_a11y_edit_box_label" translatable="false">Edit Box Search,Enter search criteria,double tap to edit</string>
+    <string name="debug_ui_redesign_a11y_edit_box_label_without_placeholder" translatable="false">Edit Box Search,Enter search criteria,double tap to edit</string>
+    <string name="debug_ui_redesign_a11y_search_box_edit" translatable="false">Editing, Search Edit Box</string>
+    <string name="debug_ui_redesign_card_tile_component" translatable="false">Card/Image Tile</string>
+    <string name="debug_ui_redesign_image_tile_title" translatable="false">Acme Business Options® Visa Signature® x1227</string>
+    <string name="debug_ui_redesign_image_tile_info" translatable="false">Your card is currently locked.</string>
+    <string name="debug_ui_redesign_image_tile_action" translatable="false">Add Card</string>
+    <string name="debug_ui_redesign_image_tile_icon_action" translatable="false">Active</string>
+    <string name="debug_ui_redesign_image_tile_list_item" translatable="false">List Item</string>
+    <string name="debug_ui_redesign_review_filed" translatable="false">Review Field/Tile</string>
+    <string name="debug_ui_redesign_stepper_title" translatable="false">Stepper</string>
+    <string name="debug_ui_redesign_carousel_title" translatable="false">Carousel</string>
+    <string name="debug_ui_redesign_stepper_back_label" translatable="false">Back</string>
+    <string name="debug_ui_redesign_stepper_next_label" translatable="false">Next</string>
+    <string name="debug_ui_redesign_stepper_submit_label" translatable="false">Submit</string>
+    <string name="debug_ui_redesign_stepper_next_step_arguments_text" translatable="false">goToNextStep</string>
+    <string name="debug_ui_redesign_stepper_fragment_result_key" translatable="false">fragmentResultKey</string>
+    <string name="debug_ui_redesign_stepper_step_one_fragment_text" translatable="false">Step 1</string>
+    <string name="debug_ui_redesign_stepper_step_two_fragment_text" translatable="false">Step 2</string>
+    <string name="debug_ui_redesign_stepper_step_three_fragment_text" translatable="false">Step 3</string>
+    <string name="debug_ui_redesign_stepper_step_four_fragment_text" translatable="false">Step 4</string>
+    <string name="debug_ui_redesign_stepper_step_five_fragment_text" translatable="false">Step 5</string>
+    <string name="debug_ui_redesign_stepper_completed_step_fragment_text" translatable="false">Steps completed</string>
+    <array name="stepper_array">
+        <item>Stepper - 5 step</item>
+        <item>Stepper - 4 step</item>
+        <item>Stepper - 3 step</item>
+    </array>
+
+    <string name="debug_ui_redesign_account_tile_header" translatable="false">Accounts</string>
+    <string name="debug_ui_redesign_account_tile_display_name" translatable="false">Acme Rewards® Visa® Signature x7722</string>
+    <string name="debug_ui_redesign_account_tile_balance" translatable="false">$000.00</string>
+    <string name="debug_ui_redesign_account_tile_balance_label" translatable="false">Balance</string>
+    <string name="debug_ui_redesign_account_type" translatable="false">Mortgage</string>
+    <string name="debug_ui_redesign_account_tile_button" translatable="false">Button</string>
+    <string name="debug_ui_redesign_account_tile_date" translatable="false">March 24, 2024</string>
+    <string name="debug_ui_redesign_account_tile_label" translatable="false">Label</string>
+    <string name="debug_ui_redesign_account_tile_investment_rate" translatable="false">+2,123.78(+6.2%)</string>
+    <string name="debug_ui_redesign_account_tile_rate_change_interval" translatable="false">Day Change</string>
+
+    <string name="debug_ui_redesign_input_fields_label" translatable="false">Input Fields</string>
+    <string name="debug_ui_redesign_input_field_hint" translatable="false">Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_filled_text" translatable="false">Filled Input Field</string>
+    <string name="debug_ui_redesign_input_field_filled_text_wrap" translatable="false">Filled Input Field that wraps</string>
+    <string name="debug_ui_redesign_input_field_filled_text_wrap_long" translatable="false">Filled Input Field that wraps long memo text in the input field with counter text limit for the input field functionality</string>
+    <string name="debug_ui_redesign_input_field_filled__with_icon_text" translatable="false">Filled Input Field With Icon</string>
+    <string name="debug_ui_redesign_input_field_required_text" translatable="false">Fields marked with an asterisk(*) are required.</string>
+    <string name="debug_ui_redesign_input_field_inactive_unfilled_hint" translatable="false">Inactive Unfilled Input Label</string>
+    <string name="debug_ui_redesign_input_field_inactive_hint" translatable="false">Inactive Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_text_wrap_hint" translatable="false">Input Field that wraps</string>
+    <string name="debug_ui_redesign_input_field_hidden_state_hint" translatable="false">Hidden State Input Field Label</string>
+    <string name="debug_ui_redesign_input_field_error_text" translatable="false">Please enter a valid name</string>
+    <string name="debug_ui_redesign_input_field_max_character_exceeds_text" translatable="false">Maximum character limit exceeds</string>
+    <string name="debug_ui_redesign_input_field_calendar_icon_content_description" translatable="false">Open calendar to select date</string>
+    <string name="debug_ui_redesign_icons_decor" translatable="false">Decorative Icons</string>
+
+    <string name="debug_ui_redesign_container_title" translatable="false">Container</string>
+    <string name="debug_ui_redesign_container_standard_text" translatable="false">Standard Container Tile</string>
+    <string name="debug_ui_redesign_container_elevated_text" translatable="false">Elevated Container Tile</string>
+
+
+    <string name="debug_ui_redesign_webviews" translatable="false">WebViews</string>
+    <array name="debug_ui_redesign_webviews_list">
+        <item>WebView 1</item>
+        <item>WebView 2</item>
+        <item>WebView 3</item>
+        <item>WebView 4</item>
+        <item>WebView 5</item>
+    </array>
+
+    <string name="debug_ui_redesign_icons_informative" translatable="false">Informative Icons</string>
+    <string name="debug_ui_redesign_icons_recurring" translatable="false">Recurring Deposit</string>
+    <string name="debug_ui_redesign_icons_warning" translatable="false">This is Warning</string>
+
+    <string name="debug_ui_redesign_progress_bar_preceding_text" translatable="false"> $1,500.00 of $2,000.00</string>
+
+    <string name="debug_ui_redesign_dropdown_set_active_text" translatable="false">Set Inactive</string>
+    <string name="debug_ui_redesign_dropdown_bottom_sheet_title" translatable="false">Select Item</string>
+
+    <string name="input_field_ui_hidden_state_pwd_content_description" translatable="false">Show password for hidden state input field</string>
+</resources>

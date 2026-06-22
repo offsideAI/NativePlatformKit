@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_card_worksheet_nav_graph"
+    app:startDestination="@id/testUIRedesignCardWorkSheetFragment">
+
+    <fragment
+        android:id="@+id/testUIRedesignCardWorkSheetFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.TestUIRedesignCardRedesignFragment"
+        android:label="@string/debug_ui_redesign_card_worksheet"
+        tools:layout="@layout/fragment_test_ui_card_worksheet_demo" />
+</navigation>

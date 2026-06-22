@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_ui_redesign_card_worksheet" translatable="false">Card Worksheet</string>
+    <string name="card_worksheet_card_name" translatable="false">Acme Business Options® Visa Platinum Signature®</string>
+    <string name="card_worksheet_card_name_no_ellipse" translatable="false">Acme Business Visa Signature®</string>
+    <string name="card_worksheet_card_number" translatable="false">x8885</string>
+    <string name="card_worksheet_supplementary" translatable="false">Supplementary</string>
+    <string name="card_worksheet_secondary" translatable="false">$6,366.00 Secondary Info</string>
+    <string name="card_ending_accessibility_format" translatable="false">Card ending %s</string>
+</resources>

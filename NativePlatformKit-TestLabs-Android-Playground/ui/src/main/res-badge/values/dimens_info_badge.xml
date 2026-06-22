@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_width_height_info_badge">60dp</dimen>
+</resources>

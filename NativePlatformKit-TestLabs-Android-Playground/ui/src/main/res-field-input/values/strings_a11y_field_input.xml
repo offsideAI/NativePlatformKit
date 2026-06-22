@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_field_clear_content_description" translatable="false">Clear %s</string>
+    <string name="input_field_char_count_content_description" translatable="false">%s, Characters entered %d of %d</string>
+    <string name="input_field_error_content_description" translatable="false">%s, Error: %s</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.AsyncImage">
+        <item name="android:src">@drawable/ic_decorative_card_placeholder</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xsmall</item>
+    </style>
+    <style name="Offside.Redesign.AsyncImage.Overlay" parent="@style/Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/offside_shadow</item>
+        <item name="cardCornerRadius">@dimen/offside.redesign.shape.xsmall</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    <style name="Offside.Redesign.AsyncImage.Error" parent="@style/Offside.Redesign.AsyncImage.Overlay">
+        <item name="cardBackgroundColor">?attr/offside_surfaceContainerLowest</item>
+    </style>
+</resources>

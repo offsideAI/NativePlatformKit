@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.yellow90">#F8E6A5</color>
+    <color name="color.data_viz.yellow80">#F5C724</color>
+    <color name="color.data_viz.yellow70">#D7AB09</color>
+    <color name="color.data_viz.yellow60">#B38C00</color>
+    <color name="color.data_viz.yellow50">#927302</color>
+    <color name="color.data_viz.yellow40">#725A03</color>
+    <color name="color.data_viz.yellow30">#544407</color>
+    <color name="color.data_viz.yellow20">#3F3203</color>
+</resources>

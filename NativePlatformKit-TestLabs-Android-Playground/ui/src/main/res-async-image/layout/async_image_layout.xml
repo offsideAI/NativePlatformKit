@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tile_art_image"
+        style="@style/Offside.Redesign.AsyncImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/overlay_view"
+        style="@style/Offside.Redesign.AsyncImage.Error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/art_image_error"
+        android:layout_width="@dimen/spacing.match_constraint"
+        android:layout_height="@dimen/spacing.match_constraint"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_decorative_load_error_solid"
+        android:tint="?attr/offside_surfaceContainerHigh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/size.ratio.xxsmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="@dimen/size.percentage.large"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/error_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="art_image_error, overlay_view"
+        tools:visibility="visible"
+        />
+
+    <include
+        android:id="@+id/image_shimmer"
+        layout="@layout/async_image_loading_shimmer"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

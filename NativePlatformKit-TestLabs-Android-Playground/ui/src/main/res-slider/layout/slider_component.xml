@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dataModel"
+            type="ai.offside.mobile.android.component.ui.slider.data.SliderComponentDataModel" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@id/slider_layout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutDescription="@xml/slider_component_motion_scene">
+
+        <include
+            android:id="@id/left_swipe_menu_button"
+            layout="@layout/slider_button"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{dataModel.leftButtonVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/main_content"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:background="@drawable/ic_view_background_ripple"
+            android:importantForAccessibility="yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="1" />
+
+        <include
+            android:id="@id/right_swipe_menu_left_button"
+            layout="@layout/slider_button"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{dataModel.thirdButtonVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage" />
+
+        <include
+            android:id="@id/right_swipe_menu_middle_button"
+            layout="@layout/slider_button"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{dataModel.secondButtonVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage" />
+
+        <include
+            android:id="@id/right_swipe_menu_right_button"
+            layout="@layout/slider_button"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="@dimen/spacing.match_constraint"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{dataModel.firstButtonVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="@dimen/slider.button.buttonWidthPercentage"/>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

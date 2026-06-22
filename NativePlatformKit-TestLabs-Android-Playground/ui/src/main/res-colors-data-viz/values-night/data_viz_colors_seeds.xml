@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="data_viz.color.seed.navy">@color/sys.color.blue40</color>
+    <color name="data_viz.color.seed.blue">@color/sys.color.blue40</color>
+    <color name="data_viz.color.seed.income">@color/sys.color.green30</color>
+</resources>

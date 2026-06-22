@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ecommerce_tile_decline_label" translatable="false">Decline</string>
+    <string name="ecommerce_tile_send_label" translatable="false">Send</string>
+    <string name="part_of_a_group_request" translatable="false">Part of Group Request</string>
+    <string name="cancel_request_label" translatable="false">Cancel Request</string>
+    <string name="cancel_payment_label" translatable="false">Cancel Payment</string>
+    <string name="ecommerce_user_label" translatable="false">Ecommerce User</string>
+    <string name="formatted_button_string" translatable="false" formatted="true">%1s %1s to %1s</string>
+    <string name="formatted_part_of_group_string" translatable="false" formatted="true">%1s for %1s from %1s, button</string>
+</resources>

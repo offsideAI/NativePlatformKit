@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_webviews_nav_graph_id"
+    app:startDestination="@id/testUIRedesignWebViewsFragment">
+
+    <fragment
+        android:id="@+id/testUIRedesignWebViewsFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.webviews.TestUIRedesignWebViewsFragment"
+        android:label="@string/debug_ui_redesign_webviews"
+        tools:layout="@layout/fragment_test_ui_redesign_main_page">
+        <action
+            android:id="@+id/action_testUIRedesignWebViewsFragment_to_testUIRedesignWebViewFragment"
+            app:destination="@id/testUIRedesignWebViewFragment" >
+        <argument
+            android:name="webViewUrl"
+            android:defaultValue="https://www.offside.com/"
+            app:argType="string"
+            app:nullable="false"
+            />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/testUIRedesignWebViewFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.webviews.TestUIRedesignWebViewFragment"
+        android:label="@string/debug_ui_redesign_webviews"
+        tools:layout="@layout/fragment_test_ui_redesign_webview" />
+
+</navigation>

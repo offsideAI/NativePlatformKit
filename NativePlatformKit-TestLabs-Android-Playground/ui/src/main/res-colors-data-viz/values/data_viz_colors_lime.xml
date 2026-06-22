@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.lime90">#D6F0B2</color>
+    <color name="color.data_viz.lime80">#AEDB70</color>
+    <color name="color.data_viz.lime70">#8EBF4A</color>
+    <color name="color.data_viz.lime60">#71A031</color>
+    <color name="color.data_viz.lime50">#57801E</color>
+    <color name="color.data_viz.lime40">#41660F</color>
+    <color name="color.data_viz.lime30">#334D0F</color>
+    <color name="color.data_viz.lime20">#233905</color>
+</resources>

@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------------------
+# Repo-root .gitignore — applies to every project in this repository
+# (NativePlatformKit-scaffold/ and NativePlatformKit-TestLabs-Android-Playground/).
+# Each project may add its own nested .gitignore on top of this.
+# ---------------------------------------------------------------------------
+
+# --- Gradle ---
+.gradle/
+build/
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# --- Android / build outputs ---
+local.properties
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+release/
+output.json
+# lint baselines/reports are generated under build/, but if emitted to module root:
+lint-baseline.xml
+
+# --- Signing / secrets (never commit) ---
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+secring.gpg
+*.gpg
+
+# --- Kotlin / KSP ---
+.kotlin/
+
+# --- IntelliJ IDEA / Android Studio ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+*.hprof
+
+# --- OS noise ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# --- Logs / crash dumps ---
+*.log
+hs_err_pid*

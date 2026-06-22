@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.component.ui.dropdown.DropdownDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_textLayout"
+            style="@style/Offside.Redesign.Dropdown.TextLayoutBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@{model.label}"
+            android:labelFor="@+id/dropdown_primary_textView"
+            android:onClick="@{(v) -> model.onClick(v)}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dropdown_primary_textView"
+                style="@style/Offside.Redesign.Dropdown.PrimaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.selectedItem.primaryText}"
+                android:importantForAccessibility="no"
+                android:onClick="@{(v)->model.onClick(v)}"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dropdown_secondary_textView"
+                style="@style/Offside.Redesign.Dropdown.SecondaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@{model.selectedItem.secondaryDescription}"
+                android:visibility="@{model.secondaryInfoVisibility, default=gone}" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dropdown_tertiary_textView"
+                style="@style/Offside.Redesign.Dropdown.TertiaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@{model.selectedItem.tertiaryDescription}"
+                android:visibility="@{model.tertiaryInfoVisibility, default=gone}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/dropdown_divider"
+            style="@style/Offside.Redesign.Dropdown.TextLayoutBase.Divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color.data_viz.ochre90">#F4D9B9</color>
+    <color name="color.data_viz.ochre80">#EDC391</color>
+    <color name="color.data_viz.ochre70">#E6AB65</color>
+    <color name="color.data_viz.ochre60">#E4993F</color>
+    <color name="color.data_viz.ochre50">#D2801E</color>
+    <color name="color.data_viz.ochre40">#B3690F</color>
+    <color name="color.data_viz.ochre30">#884F0C</color>
+    <color name="color.data_viz.ochre20">#623A09</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.CheckboxStyle" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="android:drawablePadding">@dimen/margin.large</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Offside.Redesign.CheckboxStyle.Left" >
+      <item name="android:drawableLeft">@drawable/selector_button_compound_checkbox_bg_image</item>
+    </style>
+
+    <style name="Offside.Redesign.CheckboxStyle.Right" >
+        <item name="android:drawableRight">@drawable/selector_button_compound_checkbox_bg_image</item>
+    </style>
+</resources>

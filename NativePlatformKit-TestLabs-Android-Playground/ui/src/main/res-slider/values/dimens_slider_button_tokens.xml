@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="slider.button.buttonWidthPercentage" format="float" type="dimen">0.18</item>
+    <item name="slider.button.buttonIconWidthPercentage" format="float" type="dimen">0.4</item>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Offside.Redesign.ImageTile" parent="Theme.Material3.DayNight"/>
+    <style name="Offside.Redesign.ImageTile.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">?attr/offside_surfaceContainer</item>
+        <item name="cardElevation">@dimen/offside.redesign.elevation.surface.emphasized</item>
+        <item name="shapeAppearance">@dimen/offside.redesign.shape.small</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">?attr/offside_shadow</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">?attr/offside_shadow</item>
+    </style>
+
+    <style name="Offside.Redesign.ImageTile.Overlay" parent="@style/Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/offside_shadow</item>
+        <item name="cardCornerRadius">@dimen/offside.redesign.shape.xsmall</item>
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    <style name="Offside.Redesign.ImageTile.ImageStyle">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xsmall</item>
+        <item name="layout_constraintWidth_percent">@dimen/size.percentage.large</item>
+    </style>
+    <style name="Offside.Redesign.ImageTile.Overlay.ImageStyle">
+        <item name="android:layout_width">@dimen/spacing.match_constraint</item>
+        <item name="android:layout_height">@dimen/spacing.match_constraint</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="layout_constraintDimensionRatio">@dimen/size.ratio.xxsmall</item>
+        <item name="layout_constraintWidth_percent">@dimen/size.percentage.large</item>
+    </style>
+</resources>

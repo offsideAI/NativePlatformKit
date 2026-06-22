@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Offside.Redesign.FeatureTile.MoreButton" parent="Offside.Redesign.Button.IconButton">
+        <item name="icon">@drawable/ic_actionable_dots_more</item>
+        <item name="iconTint">?attr/offside_onPrimaryContainer</item>
+        <item name="rippleColor">?attr/offside_transparent</item>
+    </style>
+</resources>

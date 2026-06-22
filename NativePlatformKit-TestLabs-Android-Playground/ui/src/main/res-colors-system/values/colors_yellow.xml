@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Yellow Warning Accent Colors -->
+    <color name="sys.color.yellow10">#2C2302</color>
+    <color name="sys.color.yellow20">#3F3203</color>
+    <color name="sys.color.yellow30">#544407</color>
+    <color name="sys.color.yellow40">#725A03</color>
+    <color name="sys.color.yellow50">#927302</color>
+    <color name="sys.color.yellow60">#B38C00</color>
+    <color name="sys.color.yellow70">#D7AB09</color>
+    <color name="sys.color.yellow80">#F5C724</color>
+    <color name="sys.color.yellow90">#F8E6A5</color>
+    <color name="sys.color.yellow95">#FAF2D6</color>
+</resources>

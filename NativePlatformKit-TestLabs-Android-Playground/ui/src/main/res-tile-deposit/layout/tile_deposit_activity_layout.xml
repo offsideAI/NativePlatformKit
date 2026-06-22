@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.component.ui.tile.deposit.DepositActivityTileDataModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/deposit_activity_tile_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/Offside.Redesign.CardTile.BoxSquareStyle.White"
+        app:cardCornerRadius="@dimen/spacing.match_constraint"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/deposit_activity_tile_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_deposit_tile_background_ripple"
+            android:onClick="@{v -> model.onTileClick(v, model.tileData)}"
+            android:paddingStart="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/padding.xsmall"
+            app:setSingleLinePadding="@{model.secondaryTextRowGone}"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/deposit_activity_tile_image_view"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:tint="?attr/offside_onSurface"
+                android:visibility="gone"
+                android:src="@drawable/ic_informative_check"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/deposit_activity_tile_product_desc"
+                style="@style/Offside.Redesign.TitleMediumTextStyle"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding.xsmall"
+                android:paddingEnd="@dimen/padding.xsmall"
+                android:paddingTop="@dimen/padding.xsmall"
+                android:text="@{model.primaryTextRow.starting}"
+                android:textColor="?attr/offside_onSurface"
+                app:layout_constraintStart_toEndOf="@id/deposit_activity_tile_image_view"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/deposit_activity_tile_amount_primary_text"
+                style="@style/Offside.Redesign.TitleMediumTextStyle"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding.xsmall"
+                android:paddingStart="@dimen/padding.xsmall"
+                android:paddingEnd="@dimen/padding.xsmall"
+                android:text="@{model.primaryTextRow.ending}"
+                android:textColor="?attr/offside_onSurface"
+                app:layout_constraintEnd_toStartOf="@id/deposit_activity_tile_action_image_view"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$123.45" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/deposit_activity_tile_action_image_view"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_actionable_caret"
+                app:layout_constraintBaseline_toBaselineOf="@id/deposit_activity_tile_amount_primary_text"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/deposit_activity_tile_product_secondary_text"
+                style="@style/Offside.Redesign.LabelSmallTextStyle"
+                android:layout_width="@dimen/spacing.match_constraint"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding.xsmall"
+                android:paddingEnd="@dimen/padding.xsmall"
+                android:paddingTop="@dimen/padding.xsmall"
+                android:text="@{model.secondaryTextRow.starting}"
+                android:textColor="?attr/offside_onSurfaceVariantLow"
+                android:visibility="@{model.secondaryTextRowStartingVisibility}"
+                app:layout_constraintStart_toStartOf="@id/deposit_activity_tile_image_view"
+                app:layout_constraintTop_toBottomOf="@id/deposit_activity_tile_product_desc"
+                tools:text="Category" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/deposit_activity_tile_deposit_secondary_text"
+                style="@style/Offside.Redesign.LabelSmallTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding.xsmall"
+                android:paddingEnd="@dimen/padding.xsmall"
+                android:paddingTop="@dimen/padding.xsmall"
+                android:text="@{model.secondaryTextRow.ending}"
+                android:textAlignment="textEnd"
+                android:textColor="?attr/offside_onSurfaceVariantLow"
+                android:visibility="@{model.secondaryTextRowEndingVisibility}"
+                app:layout_constraintEnd_toEndOf="@id/deposit_activity_tile_amount_primary_text"
+                app:layout_constraintTop_toBottomOf="@id/deposit_activity_tile_amount_primary_text"
+                tools:text="Running Amount" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

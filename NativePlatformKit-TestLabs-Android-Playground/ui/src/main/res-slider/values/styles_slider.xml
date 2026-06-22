@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Offside.Redesign.Slider.Button" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="layout_constraintWidth_percent">@dimen/slider.button.buttonWidthPercentage</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:paddingStart">@dimen/padding.xsmall</item>
+        <item name="android:paddingEnd">@dimen/padding.xsmall</item>
+        <item name="android:textAppearance">@style/Offside.Redesign.BodySmallTextStyle</item>
+        <item name="android:textColor">?attr/offside_onSecondaryVariant</item>
+        <item name="iconTint">?attr/offside_onSecondaryVariant</item>
+        <item name="iconGravity">textTop</item>
+        <item name="iconPadding">@dimen/padding.small</item>
+        <item name="cornerRadius">@dimen/spacing.unset</item>
+        <item name="android:insetTop">@dimen/spacing.unset</item>
+        <item name="android:insetBottom">@dimen/spacing.unset</item>
+        <item name="android:insetLeft">@dimen/spacing.unset</item>
+        <item name="android:insetRight">@dimen/spacing.unset</item>
+    </style>
+
+    <style name="Offside.Redesign.Slider.Button.LeftMenuButton">
+        <item name="backgroundTint">?attr/offside_onSurfaceVariantLowStatic</item>
+    </style>
+
+    <style name="Offside.Redesign.Slider.Button.RightMenuLeftButton">
+        <item name="backgroundTint">?attr/offside_primaryVariantStatic</item>
+    </style>
+
+    <style name="Offside.Redesign.Slider.Button.RightMenuMiddleButton">
+        <item name="backgroundTint">?attr/offside_primaryStatic</item>
+    </style>
+
+    <style name="Offside.Redesign.Slider.Button.RightMenuRightButton">
+        <item name="backgroundTint">?attr/offside_secondaryStatic</item>
+    </style>
+</resources>

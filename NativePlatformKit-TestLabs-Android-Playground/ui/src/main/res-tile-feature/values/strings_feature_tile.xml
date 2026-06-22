@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_notifications_content_description" translatable="false">
+        <item quantity="one">Notification</item>
+        <item quantity="other">Notifications</item>
+    </plurals>
+    <string name="feature_tile_more_menu_action">More Options</string>
+</resources>

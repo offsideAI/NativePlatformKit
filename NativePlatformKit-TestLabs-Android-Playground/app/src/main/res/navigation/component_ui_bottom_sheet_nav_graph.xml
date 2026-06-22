@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_ui_bottom_sheet_nav_graph"
+    app:startDestination="@id/testBottomSheetMainFragment">
+    <include app:graph="@navigation/component_ui_bottom_sheet_flow_nav_graph"/>
+    <fragment
+        android:id="@+id/testBottomSheetMainFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetMainFragment"
+        android:label="TestBottomSheetMainFragment">
+        <action
+            android:id="@+id/action_testBottomSheetMainFragment_to_testBottomSheetStandardFragment"
+            app:destination="@id/testBottomSheetStandardFragment" />
+        <action
+            android:id="@+id/action_testBottomSheetMainFragment_to_testBottomSheetPersistentFragment"
+            app:destination="@id/testBottomSheetPersistentFragment" />
+        <action
+            android:id="@+id/action_testBottomSheetMainFragment_to_testBottomSheetFlowFragment"
+            app:destination="@id/testBottomSheetFlowFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/testBottomSheetStandardFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetStandardFragment"
+        android:label="@string/debug_ui_redesign_bottomsheet_standard" />
+    <fragment
+        android:id="@+id/testBottomSheetPersistentFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetPeakingFragment"
+        android:label="@string/debug_ui_redesign_bottomsheet_persistent" />
+    <fragment
+        android:id="@+id/testBottomSheetFlowFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.modals.bottomsheet.TestBottomSheetFlowFragment"
+        android:label="@string/debug_ui_redesign_bottomsheet_flow" />
+
+
+</navigation>

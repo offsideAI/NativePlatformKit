@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin.small"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:padding="@dimen/sys.spacing.12">
+
+        <ImageView
+            android:id="@+id/warning_icon_image"
+            style="@style/Offside.Redesign.Icons.Informative.Warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/warning_icon_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/warning_icon_label" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/warning_icon_label"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingHorizontal="@dimen/sys.spacing.12"
+            android:text="@string/debug_ui_redesign_icons_warning"
+            android:textAppearance="@style/Offside.Redesign.DisplaySmallTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/warning_icon_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:background="?attr/offside_surface"
+            app:layout_constraintTop_toBottomOf="@+id/warning_icon_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:padding="@dimen/sys.spacing.12">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recurring_icon_label"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ui_redesign_icons_recurring"
+            android:textAppearance="@style/Offside.Redesign.DisplaySmallTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            app:layout_constraintEnd_toStartOf="@+id/recurring_icon_image"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/recurring_icon_image"
+            style="@style/Offside.Redesign.Icons.Informative.Recurring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/recurring_icon_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recurring_icon_label" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:background="?attr/offside_surface"
+            app:layout_constraintTop_toBottomOf="@+id/recurring_icon_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:padding="@dimen/sys.spacing.12">
+
+        <ImageView
+            android:id="@+id/recurring_icon_image_view"
+            style="@style/Offside.Redesign.Icons.Informative.Recurring.Focusable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/icon_label" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/icon_label"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/debug_ui_redesign_icons_recurring"
+            android:textAppearance="@style/Offside.Redesign.DisplaySmallTextStyle"
+            android:textColor="?attr/offside_onSurface"
+            app:layout_constraintEnd_toStartOf="@id/recurring_icon_image_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

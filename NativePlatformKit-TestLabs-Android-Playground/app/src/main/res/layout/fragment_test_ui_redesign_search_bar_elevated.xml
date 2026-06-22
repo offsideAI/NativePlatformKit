@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map_bg">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="@dimen/margin.xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search.bar.height"
+        android:background="?attr/offside_transparent">
+
+        <com.google.android.material.search.SearchBar
+            style="@style/Offside.Redesign.SearchBar.Elevated"
+            android:id="@+id/location_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/search_view_elevated"
+            android:hint="@string/debug_ui_redesign_enter_search_placeholder_text" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.search.SearchView
+        style="@style/Offside.Redesign.SearchBar.SearchViewStyle"
+        android:id="@+id/search_view_elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/debug_ui_redesign_enter_search_placeholder_text"
+        app:layout_anchor="@id/location_search">
+        <!-->Search suggestions/results go here (ScrollView, RecyclerView, etc.).-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?offside_surface"
+            android:id="@+id/search_suggestion_view_elevated"
+            android:orientation="vertical"/>
+    </com.google.android.material.search.SearchView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dataItem"
+            type="ai.offside.mobile.android.component.ui.compoundbuttondata.CompoundButtonData" />
+    </data>
+
+    <ai.offside.mobile.android.component.ui.a11y.RadioButtonA11y
+        android:id="@+id/radio_button"
+        style="@style/Offside.Redesign.ListItem.RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="@{dataItem.enabled}"
+        android:text="@{dataItem.getSpannableText(context)}"
+        tools:text="Radio Button Label" />
+
+</layout>

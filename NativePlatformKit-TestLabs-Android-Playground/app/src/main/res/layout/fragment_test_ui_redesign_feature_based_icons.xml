@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/padding.xlarge">
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_small_selected_split_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_large_selected_split_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_small_selected_split_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_small_person_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_large_selected_split_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_large_person_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_small_person_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_small_business_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_large_person_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_large_business_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_small_business_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/payment_send_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_large_business_icon_layout" />
+        <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/payment_request_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_send_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_badge_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_request_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_calendar_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_badge_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_money_bar_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_calendar_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_cash_mode_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_money_bar_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_spending_budgets_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_cash_mode_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_saving_rules_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_spending_budgets_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_save_now_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_saving_rules_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_saving_goals_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_save_now_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/online_payments_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_saving_goals_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/offside_advances_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/online_payments_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/offside_transfers_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offside_advances_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/external_transfers_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offside_transfers_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/domestic_wires_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/external_transfers_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/international_transfers_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/domestic_wires_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_wallet_account_tools_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/international_transfers_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/offside_payments_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_wallet_account_tools_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/ecommerce_logo_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offside_payments_icon_layout" />
+    <include
+            layout="@layout/test_feature_based_icons_decorative_layout"
+            android:id="@+id/paze_logo_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_logo_icon_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

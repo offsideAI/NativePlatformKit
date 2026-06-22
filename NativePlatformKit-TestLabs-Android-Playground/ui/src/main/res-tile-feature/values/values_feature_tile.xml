@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="feature_tile_constraint_width_percent" format="float" type="dimen">0.14</item>
+</resources>

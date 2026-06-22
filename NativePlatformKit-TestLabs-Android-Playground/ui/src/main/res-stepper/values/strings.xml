@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stepper_current_step_a11y_text" translatable="false">Step %d of %d</string>
+    <string name="stepper_completed_steps_a11y_text" translatable="false">Steps completed</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="java.math.BigDecimal" />
+
+        <variable
+            name="tileData"
+            type="ai.offside.mobile.android.component.ui.tile.account.data.AccountTileDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/account_tile_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding.xlarge"
+        android:paddingEnd="@dimen/padding.medium"
+        android:paddingTop="@dimen/padding.xxlarge"
+        android:paddingBottom="@dimen/padding.xxlarge">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/display_name"
+            style="@style/Offside.Redesign.AccountTile.DisplayName"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:text="@{tileData.displayName}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/more_menu"
+            style="@style/Offside.Redesign.AccountTile.MoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:visibility="@{tileData.moreOptionButtonVisibility}"
+            app:icon="@drawable/ic_actionable_dots_more"
+            app:iconGravity="top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/balance"
+            style="@style/Offside.Redesign.AccountTile.Balance"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding.medium"
+            android:gravity="end"
+            android:textColor="@{tileData.balanceAmountState.getColorValue(context)}"
+            app:amountText="@{tileData.balance}"
+            app:layout_constraintEnd_toStartOf="@+id/more_menu"
+            app:layout_constraintStart_toEndOf="@+id/display_name"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/balance_label"
+            style="@style/Offside.Redesign.AccountTile.BodyText.BalanceLabel"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/more_menu"
+            app:layout_constraintTop_toBottomOf="@+id/balance"
+            app:text="@{tileData.balanceLabel}"
+            />
+
+        <include
+            android:id="@+id/pricing_updates_info"
+            layout="@layout/account_tile_widget_pricing_updates"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:visibility="@{tileData.pricingUpdatesVisibility, default=gone}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display_name"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.left.width.percentage"
+            tools:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/rate_change"
+            layout="@layout/account_tile_widget_rate_change"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.medium"
+            android:layout_marginEnd="@dimen/padding.medium"
+            android:visibility="@{tileData.rateChangeVisibility, default=gone}"
+            app:layout_constraintEnd_toStartOf="@+id/more_menu"
+            app:layout_constraintTop_toBottomOf="@+id/balance_label"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.right.width.percentage"
+            tools:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/label_value_pair_first"
+            layout="@layout/account_tile_widget_label_value_pair"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.medium"
+            android:layout_marginEnd="@dimen/padding.medium"
+            android:visibility="@{tileData.labelValuePairVisibility, default=gone}"
+            app:layout_constraintEnd_toStartOf="@+id/more_menu"
+            app:layout_constraintTop_toBottomOf="@+id/rate_change"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.right.width.percentage"
+            tools:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/label_value_pair_second"
+            layout="@layout/account_tile_widget_label_value_pair"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.medium"
+            android:layout_marginEnd="@dimen/padding.medium"
+            android:visibility="@{tileData.secondLabelValuePairVisibility, default=gone}"
+            app:layout_constraintEnd_toStartOf="@+id/more_menu"
+            app:layout_constraintTop_toBottomOf="@+id/label_value_pair_first"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.right.width.percentage"
+            tools:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/button_hint"
+            style="@style/Offside.Redesign.AccountTile.BodyText"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:visibility="@{tileData.buttonHintVisibility, default=gone}"
+            app:layout_constraintBottom_toBottomOf="@+id/primary_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/primary_button"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.left.width.percentage"
+            />
+
+        <include
+            android:id="@+id/payment_due_info"
+            layout="@layout/account_tile_widget_payment_due"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:visibility="@{tileData.paymentDueVisibility, default=gone}"
+            app:layout_constraintBottom_toBottomOf="@+id/primary_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/primary_button"
+            app:layout_constraintWidth_percent="@dimen/account.tile.widget.left.width.percentage"
+            tools:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/primary_button"
+            style="@style/Offside.Redesign.AccountTile.PrimaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{tileData.primaryButtonVisibility, default=gone}"
+            app:layout_constraintEnd_toStartOf="@+id/more_menu"
+            app:layout_constraintTop_toBottomOf="@+id/label_value_pair_second"
+            tools:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alternate_button"
+            style="@style/Offside.Redesign.AccountTile.AlternateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAccessibility="no"
+            android:visibility="@{tileData.alternateButtonVisibility, default=gone}"
+            app:layout_constraintEnd_toStartOf="@+id/primary_button"
+            app:layout_constraintTop_toBottomOf="@+id/label_value_pair_second"
+            tools:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.component.ui.tile.ecommerce.data.EcommerceTileDataModel"
+            />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ecommerce_tile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding.xxlarge"
+        android:paddingEnd="@dimen/padding.medium"
+        android:paddingStart="@dimen/spacing.unset"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:importantForAccessibility="yes"
+        android:background="@drawable/ic_view_background_ripple">
+
+        <ai.offside.mobile.android.component.ui.tile.ecommerce.EcommerceBadge
+            android:id="@+id/ecommerce_tile_badge"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            app:ecommerceFontSize="@dimen/type.display.small.font.size"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ecommerce_tile_payee_name"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_payee_name"
+            style="@style/Offside.Redesign.TitleLargeTextStyle"
+            android:text="@{model.userName}"
+            android:textColor="?attr/offside_onSurface"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/padding.xsmall"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_payment_amount"
+            tools:text="Duquesne Light"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_payment_amount"
+            style="@style/Offside.Redesign.TitleLargeTextStyle"
+            android:text="@{model.paymentAmount}"
+            android:textColor="?attr/offside_onSurface"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/padding.xsmall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_action_image_view"
+            tools:text="$123.45"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ecommerce_tile_action_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:paddingVertical="@dimen/padding.xsmall"
+            android:paddingStart="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:focusable="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/ecommerce_tile_payment_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="@drawable/ic_actionable_caret"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_payment_date"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:text="@{model.paymentDate}"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_payment_status"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_payee_name"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            tools:text="Feb 24, 2023"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_payment_status"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:text="@{model.paymentStatus}"
+            android:textColor="?attr/offside_onSurfaceVariantLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_payment_date"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_payment_amount"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_action_image_view"
+            tools:text="Payment Received"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_memo_text"
+            style="@style/Offside.Redesign.BodyMediumTextStyle"
+            android:text="@{model.memo.label}"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:visibility="@{model.memoVisibility}"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_payment_date"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_action_image_view"
+            tools:text="Payee Secondary Memo Text"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ecommerce_tile_decline_button"
+            style="@style/Offside.Redesign.Button.Micro.Alternate"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@{model.declineButton.label}"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:visibility="@{model.declineButtonVisibility}"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_memo_text"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_send_button"
+            tools:text="Decline"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ecommerce_tile_send_button"
+            style="@style/Offside.Redesign.Button.Micro.Blue"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@{model.sendButton.label}"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:layout_marginEnd="@dimen/margin.xxsmall"
+            android:visibility="@{model.sendButtonVisibility}"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            app:layout_constraintStart_toEndOf="@+id/ecommerce_tile_decline_button"
+            app:layout_constraintEnd_toEndOf="@id/ecommerce_tile_action_image_view"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_memo_text"
+            tools:text="Send"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ecommerce_tile_cancel_request_button"
+            style="@style/Offside.Redesign.Button.Micro.Alternate"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:layout_marginEnd="@dimen/margin.xxsmall"
+            android:text="@{model.cancelRequestButton.label}"
+            android:visibility="@{model.cancelRequestButtonVisibility}"
+            app:layout_constraintEnd_toEndOf="@id/ecommerce_tile_action_image_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_decline_button"
+            tools:text="Cancel Request" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ecommerce_tile_decorative_clock_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:visibility="@{model.daysRemainingVisibility}"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_cancel_request_button"
+            tools:srcCompat="@drawable/ic_decorative_clock_thin"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_days_remaining_text"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:text="@{model.daysRemaining.label}"
+            android:textColor="?attr/offside_onSurfaceVariantMedium"
+            android:textStyle="italic"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:paddingStart="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:visibility="@{model.daysRemainingVisibility}"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_decorative_clock_image_view"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_action_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_tile_cancel_request_button"
+            tools:text="You have 4 days left to respond"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ecommerce_tile_decorative_group_image_view"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:paddingTop="@dimen/padding.xsmall"
+            android:visibility="@{model.groupRequestVisibility}"
+            android:focusable="false"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_decorative_clock_image_view"
+            tools:srcCompat="@drawable/ic_decorative_group_solid"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ecommerce_tile_group_request_text"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:textColor="?attr/offside_primary"
+            android:text="@{model.partOfGroupRequest.label}"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            android:paddingStart="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/spacing.unset"
+            android:visibility="@{model.groupRequestVisibility}"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_decorative_group_image_view"
+            app:layout_constraintEnd_toStartOf="@id/ecommerce_tile_action_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/ecommerce_tile_days_remaining_text"
+            tools:text="Part of group request"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/card_tile_divider"
+            style="@style/Offside.Redesign.Divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/margin.xsmall"
+            android:layout_marginBottom="@dimen/margin.xsmall"
+            app:layout_constraintTop_toBottomOf="@id/ecommerce_tile_group_request_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ecommerce_tile_badge" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

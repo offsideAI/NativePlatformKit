@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="ai.offside.mobile.android.helper.testlabs.nav.modals.data.MultiListItemData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin.small">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            style="@style/Offside.Redesign.BodyLargeTextStyle"
+            android:layout_width="@dimen/sys.spacing.00"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="@dimen/padding.medium"
+            android:text="@{data.title}"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description1"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:layout_width="@dimen/sys.spacing.00"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding.medium"
+            android:paddingEnd="@dimen/padding.medium"
+            android:paddingBottom="@dimen/padding.medium"
+            android:text="@{data.description1}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="Description1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description2"
+            style="@style/Offside.Redesign.BodySmallTextStyle"
+            android:layout_width="@dimen/sys.spacing.00"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="@dimen/padding.medium"
+            android:paddingStart="@dimen/padding.medium"
+            android:paddingTop="@dimen/padding.xsmall"
+            android:paddingEnd="@dimen/padding.medium"
+            android:text="@{data.description2}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description1"
+            tools:text="Description2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

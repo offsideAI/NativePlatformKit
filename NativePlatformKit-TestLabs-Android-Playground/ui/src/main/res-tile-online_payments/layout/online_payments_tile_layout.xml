@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="ai.offside.mobile.android.component.ui.tile.online_payments.OnlinePaymentsTileDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/online_payments_tile_container"
+        android:background="@drawable/ic_view_background_ripple"
+        android:descendantFocusability="blocksDescendants"
+        android:onClick="@{v -> model.onTileClick(model)}">
+
+        <ai.offside.mobile.android.component.ui.badges.InfoBadge
+            android:id="@+id/online_payments_tile_image"
+            style="@style/Offside.Redesign.OnlinePayments.Tile.Image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/online_payments_display_name"
+            style="@style/Offside.Redesign.OnlinePayments.Title"
+            android:text="@{model.onlinePaymentsDisplayName}"
+            app:layout_constraintEnd_toStartOf="@id/online_payments_recurring_icon"
+            app:layout_constraintStart_toEndOf="@id/online_payments_tile_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/online_payments_from_account"
+            style="@style/Offside.Redesign.OnlinePayments.SubText"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:text="@{model.onlinePaymentsFromAccount}"
+            android:visibility="@{model.fromAccountViewVisibility}"
+            app:layout_constraintEnd_toStartOf="@+id/online_payments_payment_type"
+            app:layout_constraintStart_toEndOf="@id/online_payments_tile_image"
+            app:layout_constraintTop_toBottomOf="@+id/online_payments_display_name" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/online_payments_recurring_icon"
+            style="@style/Offside.Redesign.OnlinePayments.Recurring"
+            android:layout_width="@dimen/margin.small"
+            android:layout_height="@dimen/margin.small"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:visibility="@{model.editButtonVisibility}"
+            app:layout_constraintBottom_toBottomOf="@+id/online_payments_amount"
+            app:layout_constraintEnd_toStartOf="@+id/online_payments_amount"
+            app:layout_constraintStart_toEndOf="@id/online_payments_display_name"
+            app:layout_constraintTop_toTopOf="@+id/online_payments_amount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/online_payments_amount"
+            style="@style/Offside.Redesign.OnlinePayments.Title"
+            android:gravity="end"
+            app:amountText="@{model.onlinePaymentsAmount}"
+            app:layout_constraintEnd_toStartOf="@+id/online_payments_tile_action_caret"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/online_payments_tile_action_caret"
+            style="@style/Offside.Redesign.OnlinePayments.Icon.Actionable.Caret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/online_payments_payment_type"
+            style="@style/Offside.Redesign.OnlinePayments.SubText.Small"
+            android:text="@{model.OnlinePaymentsType.type}"
+            android:visibility="@{model.onlinePaymentsTypeVisibility}"
+            app:layout_constraintEnd_toStartOf="@+id/online_payments_tile_action_caret"
+            app:layout_constraintStart_toEndOf="@id/online_payments_payment_date"
+            app:layout_constraintTop_toBottomOf="@+id/online_payments_amount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/online_payments_payment_date"
+            style="@style/Offside.Redesign.OnlinePayments.SubText"
+            android:layout_width="@dimen/spacing.unset"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin.xsmall"
+            android:layout_marginTop="@dimen/padding.xsmall"
+            android:layout_marginEnd="@dimen/padding.xsmall"
+            android:text="@{model.onlinePaymentsDueDate}"
+            app:layout_constraintEnd_toStartOf="@id/online_payments_payment_type"
+            app:layout_constraintStart_toEndOf="@id/online_payments_tile_image"
+            app:layout_constraintTop_toBottomOf="@+id/online_payments_from_account" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/online_payments_edit_button"
+            style="@style/Offside.Redesign.Button.Micro.Alternate.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.xxsmall"
+            android:text="@string/online_payments_edit_button_text"
+            android:visibility="@{model.editButtonVisibility}"
+            android:onClick="@{v -> model.onEditButtonClick(model)}"
+            app:icon="@drawable/ic_actionable_edit"
+            app:layout_constraintEnd_toStartOf="@+id/online_payments_tile_action_caret"
+            app:layout_constraintTop_toBottomOf="@+id/online_payments_amount" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/online_payments_secondary_button"
+            style="@style/Offside.Redesign.OnlinePayments.Tile.Alt.Button"
+            android:visibility="@{model.secondaryButtonVisibility}"
+            android:text="@{model.secondaryButtonText}"
+            android:onClick="@{v -> model.onSecondaryButtonClick(model)}"
+            app:layout_constraintEnd_toStartOf="@id/online_payments_primary_button"
+            app:layout_constraintStart_toEndOf="@id/online_payments_tile_image"
+            app:layout_constraintTop_toBottomOf="@id/online_payments_payment_date" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/online_payments_primary_button"
+            style="@style/Offside.Redesign.OnlinePayments.Tile.Button"
+            android:visibility="@{model.primaryButtonVisibility}"
+            android:text="@string/online_payments_primary_button_text"
+            android:onClick="@{v -> model.onPrimaryButtonClick(model)}"
+            app:layout_constraintEnd_toEndOf="@id/online_payments_tile_action_caret"
+            app:layout_constraintStart_toEndOf="@+id/online_payments_secondary_button"
+            app:layout_constraintTop_toBottomOf="@id/online_payments_payment_date" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="online_payments_edit_button, online_payments_primary_button, online_payments_secondary_button, online_payments_payment_date"/>
+
+        <Space
+            android:id="@+id/tile_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin.small"
+            app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/Offside.Redesign.Divider"
+            android:id="@+id/tile_divider"
+            android:layout_width="@dimen/spacing.match_constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tile_bottom_space" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

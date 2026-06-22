@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These values are handed off by the Design Team. DO NOT MODIFY !!! -->
+    <!-- Specifies the Padding/Margin/Gutter sizes from the Design Tokens -->
+    <!-- The following table shows the scaling factor of the margin dimensions.
+      For Margins, the base unit here is xxsmall - 8dp
+                                         xsmall  - 1.5x
+                                         small   - 2x
+                                         medium  - 2.5x
+                                         large   - 3x
+                                         xlarge  - 4x
+                                         xxlarge - 6x
+
+      For Padding , base unit is medium - 8dp
+                                 xsmall  - 0.5x
+                                 small   - 0.75x
+                                 large   - 1.5x
+                                 xlarge  - 1.75x
+                                 xxlarge - 2x
+
+    -->
+    <dimen name="sys.spacing.00">0dp</dimen>
+    <dimen name="sys.spacing.04">4dp</dimen>
+    <dimen name="sys.spacing.06">6dp</dimen>
+    <dimen name="sys.spacing.08">8dp</dimen>
+    <dimen name="sys.spacing.12">12dp</dimen>
+    <dimen name="sys.spacing.14">14dp</dimen>
+    <dimen name="sys.spacing.16">16dp</dimen>
+    <dimen name="sys.spacing.20">20dp</dimen>
+    <dimen name="sys.spacing.24">24dp</dimen>
+    <dimen name="sys.spacing.28">28dp</dimen>
+    <dimen name="sys.spacing.32">32dp</dimen>
+    <dimen name="sys.spacing.40">40dp</dimen>
+    <dimen name="sys.spacing.48">48dp</dimen>
+    <dimen name="sys.spacing.56">56dp</dimen>
+    <dimen name="sys.spacing.72">72dp</dimen>
+    <dimen name="sys.spacing.96">96dp</dimen>
+    <dimen name="sys.spacing.192">192dp</dimen>
+</resources>

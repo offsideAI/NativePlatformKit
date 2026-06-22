@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Placeholder for the standalone UI testlabs.
+  The original was a ~1965-path auto-generated sign-on-page background vector that the
+  AGP resource merger could not process (OOM). It is decorative and unused by the component
+  browser, so it is replaced with a simple solid fill. The theme attribute
+  offside_sop_background_drawable still resolves to this drawable.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1053dp"
+    android:height="2278dp"
+    android:viewportWidth="1053"
+    android:viewportHeight="2278">
+    <path android:pathData="M0,0h1053v2278H0z" android:fillColor="#14477B" />
+</vector>

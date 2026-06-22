@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ui_amount_input_field_nav_graph_id"
+    app:startDestination="@id/testUIRedesignAmountInputFieldFragment">
+    <fragment
+        android:id="@+id/testUIRedesignAmountInputFieldFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.inputfield.TestUIRedesignAmountInputFieldFragment"
+        android:label="@string/debug_ui_redesign_tab_amount_input_field_label"
+        tools:layout="@layout/fragment_test_ui_redesign_amount_input_field" >
+        <action
+            android:id="@+id/action_testUIRedesignAmountInputFieldFragment_to_amountInputFieldBottomSheetFragment"
+            app:destination="@id/amountInputFieldBottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/amountInputFieldBottomSheetFragment"
+        android:name="ai.offside.mobile.android.helper.testlabs.nav.inputfield.AmountInputFieldBottomSheetFragment"
+        android:label="fragment_test_ui_redesign_bottom_sheet_amount_input_field"
+        tools:layout="@layout/fragment_test_ui_redesign_bottom_sheet_amount_input_field" />
+
+</navigation>

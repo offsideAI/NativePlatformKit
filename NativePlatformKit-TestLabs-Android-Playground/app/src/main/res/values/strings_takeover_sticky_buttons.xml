@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="takeover_sticky_button_confirm" translatable="false">Confirm</string>
+    <string name="takeover_sticky_button_cancel" translatable="false">Cancel</string>
+</resources>
