@@ -1,0 +1,379 @@
+{
+  "runId": "20260623-012535",
+  "capturedAt": "2026-06-23T02:10:24.613904",
+  "count": 93,
+  "screens": [
+    {
+      "path": "Home",
+      "file": "auto/home.png"
+    },
+    {
+      "path": "Home › Theme",
+      "file": "auto/home__theme.png"
+    },
+    {
+      "path": "Home › Theme › PRIVATE_BANK",
+      "file": "auto/home__theme__private-bank.png"
+    },
+    {
+      "path": "Home › Theme › LIGHT",
+      "file": "auto/home__theme__light.png"
+    },
+    {
+      "path": "Home › Typography",
+      "file": "auto/home__typography.png"
+    },
+    {
+      "path": "Home › Typography › Display Text Style",
+      "file": "auto/home__typography__display-text-style.png"
+    },
+    {
+      "path": "Home › Typography › Headline Text Style",
+      "file": "auto/home__typography__headline-text-style.png"
+    },
+    {
+      "path": "Home › Typography › Title Text Style",
+      "file": "auto/home__typography__title-text-style.png"
+    },
+    {
+      "path": "Home › Typography › Body Text Style",
+      "file": "auto/home__typography__body-text-style.png"
+    },
+    {
+      "path": "Home › Typography › Label Text Style",
+      "file": "auto/home__typography__label-text-style.png"
+    },
+    {
+      "path": "Home › Buttons",
+      "file": "auto/home__buttons.png"
+    },
+    {
+      "path": "Home › Buttons › Primary Button",
+      "file": "auto/home__buttons__primary-button.png"
+    },
+    {
+      "path": "Home › Buttons › Secondary and Tertiary Button",
+      "file": "auto/home__buttons__secondary-and-tertiary-button.png"
+    },
+    {
+      "path": "Home › Buttons › Micro Buttons",
+      "file": "auto/home__buttons__micro-buttons.png"
+    },
+    {
+      "path": "Home › Buttons › Jumbo Button",
+      "file": "auto/home__buttons__jumbo-button.png"
+    },
+    {
+      "path": "Home › Buttons › Compound and Switch Button",
+      "file": "auto/home__buttons__compound-and-switch-button.png"
+    },
+    {
+      "path": "Home › Modals",
+      "file": "auto/home__modals.png"
+    },
+    {
+      "path": "Home › Modals › Snackbar",
+      "file": "auto/home__modals__snackbar.png"
+    },
+    {
+      "path": "Home › Modals › Calendar",
+      "file": "auto/home__modals__calendar.png"
+    },
+    {
+      "path": "Home › Modals › Bottomsheet",
+      "file": "auto/home__modals__bottomsheet.png"
+    },
+    {
+      "path": "Home › Modals › Loading Dialog",
+      "file": "auto/home__modals__loading-dialog.png"
+    },
+    {
+      "path": "Home › Modals › OS Component",
+      "file": "auto/home__modals__os-component.png"
+    },
+    {
+      "path": "Home › Slider",
+      "file": "auto/home__slider.png"
+    },
+    {
+      "path": "Home › Slider › Slider Foreground 1 Left Button",
+      "file": "auto/home__slider__slider-foreground-1-left-button.png"
+    },
+    {
+      "path": "Home › Slider › Slider Foreground 1 Right Button",
+      "file": "auto/home__slider__slider-foreground-1-right-button.png"
+    },
+    {
+      "path": "Home › Slider › Slider Foreground 2 Right Button",
+      "file": "auto/home__slider__slider-foreground-2-right-button.png"
+    },
+    {
+      "path": "Home › Slider › Slider Foreground 3 Right Button",
+      "file": "auto/home__slider__slider-foreground-3-right-button.png"
+    },
+    {
+      "path": "Home › Controls",
+      "file": "auto/home__controls.png"
+    },
+    {
+      "path": "Home › Controls › Segmented Bar",
+      "file": "auto/home__controls__segmented-bar.png"
+    },
+    {
+      "path": "Home › Controls › Profile Settings Bar",
+      "file": "auto/home__controls__profile-settings-bar.png"
+    },
+    {
+      "path": "Home › Controls › Search Bar Standard",
+      "file": "auto/home__controls__search-bar-standard.png"
+    },
+    {
+      "path": "Home › Controls › Search Bar Elevated",
+      "file": "auto/home__controls__search-bar-elevated.png"
+    },
+    {
+      "path": "Home › Info Boxes",
+      "file": "auto/home__info-boxes.png"
+    },
+    {
+      "path": "Home › Info Boxes › Title",
+      "file": "auto/home__info-boxes__title.png"
+    },
+    {
+      "path": "Home › Info Boxes › Important Information",
+      "file": "auto/home__info-boxes__important-information.png"
+    },
+    {
+      "path": "Home › Info Boxes › Success",
+      "file": "auto/home__info-boxes__success.png"
+    },
+    {
+      "path": "Home › Amount Input Field",
+      "file": "auto/home__amount-input-field.png"
+    },
+    {
+      "path": "Home › Amount Input Field › $0.00",
+      "file": "auto/home__amount-input-field__0-00.png"
+    },
+    {
+      "path": "Home › Amount Input Field › More information about amount",
+      "file": "auto/home__amount-input-field__more-information-about-amount.png"
+    },
+    {
+      "path": "Home › Amount Input Field › Secondary Information",
+      "file": "auto/home__amount-input-field__secondary-information.png"
+    },
+    {
+      "path": "Home › Amount Input Field › Amount*",
+      "file": "auto/home__amount-input-field__amount.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field",
+      "file": "auto/home__card-specific-input-field.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Manage Debit Card",
+      "file": "auto/home__card-specific-input-field__manage-debit-card.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Add Card",
+      "file": "auto/home__card-specific-input-field__add-card.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Business Opt…x1225",
+      "file": "auto/home__card-specific-input-field__acme-business-opt-x1225.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Business Op…x1226",
+      "file": "auto/home__card-specific-input-field__acme-business-op-x1226.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Link Status",
+      "file": "auto/home__card-specific-input-field__link-status.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Business Options® Visa Sign…x1231",
+      "file": "auto/home__card-specific-input-field__acme-business-options-visa-sign-x1231.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Available balance: $1,500.35",
+      "file": "auto/home__card-specific-input-field__available-balance-1-500-35.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Business Options® Visa Sig…x1232",
+      "file": "auto/home__card-specific-input-field__acme-business-options-visa-sig-x1232.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Available balance: $1,500.68",
+      "file": "auto/home__card-specific-input-field__available-balance-1-500-68.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Business Options® Visa Sig…x1233",
+      "file": "auto/home__card-specific-input-field__acme-business-options-visa-sig-x1233.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Available balance: $1,500.90",
+      "file": "auto/home__card-specific-input-field__available-balance-1-500-90.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Card Name",
+      "file": "auto/home__card-specific-input-field__card-name.png"
+    },
+    {
+      "path": "Home › Card Specific Input Field › Acme Visa Debit Card x1227",
+      "file": "auto/home__card-specific-input-field__acme-visa-debit-card-x1227.png"
+    },
+    {
+      "path": "Home › Card Tile Component",
+      "file": "auto/home__card-tile-component.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card/Image Tile",
+      "file": "auto/home__card-tile-component__card-image-tile.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card Tile",
+      "file": "auto/home__card-tile-component__card-tile.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card Tile With Info Text",
+      "file": "auto/home__card-tile-component__card-tile-with-info-text.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Important Information",
+      "file": "auto/home__card-tile-component__important-information.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Your card is currently locked.",
+      "file": "auto/home__card-tile-component__your-card-is-currently-locked.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card Tile With Button",
+      "file": "auto/home__card-tile-component__card-tile-with-button.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Add Card",
+      "file": "auto/home__card-tile-component__add-card.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card Tile With Link Action",
+      "file": "auto/home__card-tile-component__card-tile-with-link-action.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Active",
+      "file": "auto/home__card-tile-component__active.png"
+    },
+    {
+      "path": "Home › Card Tile Component › Card Tile With List Action",
+      "file": "auto/home__card-tile-component__card-tile-with-list-action.png"
+    },
+    {
+      "path": "Home › Stepper",
+      "file": "auto/home__stepper.png"
+    },
+    {
+      "path": "Home › Stepper › Stepper - 5 step",
+      "file": "auto/home__stepper__stepper-5-step.png"
+    },
+    {
+      "path": "Home › Stepper › Step 1 of 5",
+      "file": "auto/home__stepper__step-1-of-5.png"
+    },
+    {
+      "path": "Home › Stepper › 1",
+      "file": "auto/home__stepper__1.png"
+    },
+    {
+      "path": "Home › Stepper › 2",
+      "file": "auto/home__stepper__2.png"
+    },
+    {
+      "path": "Home › Stepper › 3",
+      "file": "auto/home__stepper__3.png"
+    },
+    {
+      "path": "Home › Stepper › 4",
+      "file": "auto/home__stepper__4.png"
+    },
+    {
+      "path": "Home › Stepper › 5",
+      "file": "auto/home__stepper__5.png"
+    },
+    {
+      "path": "Home › Review Filed Tile",
+      "file": "auto/home__review-filed-tile.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Review Field/Tile",
+      "file": "auto/home__review-filed-tile__review-field-tile.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Review Label",
+      "file": "auto/home__review-filed-tile__review-label.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Value",
+      "file": "auto/home__review-filed-tile__value.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Secondary Information",
+      "file": "auto/home__review-filed-tile__secondary-information.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Edit Review Label",
+      "file": "auto/home__review-filed-tile__edit-review-label.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › More Information about Review Label",
+      "file": "auto/home__review-filed-tile__more-information-about-review-label.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › Review Value",
+      "file": "auto/home__review-filed-tile__review-value.png"
+    },
+    {
+      "path": "Home › Review Filed Tile › This is an example of label wrapping",
+      "file": "auto/home__review-filed-tile__this-is-an-example-of-label-wrapping.png"
+    },
+    {
+      "path": "Home › WebViews",
+      "file": "auto/home__webviews.png"
+    },
+    {
+      "path": "Home › WebViews › WebView 1",
+      "file": "auto/home__webviews__webview-1.png"
+    },
+    {
+      "path": "Home › WebViews › WebView 2",
+      "file": "auto/home__webviews__webview-2.png"
+    },
+    {
+      "path": "Home › WebViews › WebView 3",
+      "file": "auto/home__webviews__webview-3.png"
+    },
+    {
+      "path": "Home › WebViews › WebView 4",
+      "file": "auto/home__webviews__webview-4.png"
+    },
+    {
+      "path": "Home › WebViews › WebView 5",
+      "file": "auto/home__webviews__webview-5.png"
+    },
+    {
+      "path": "Home › Account Tile",
+      "file": "auto/home__account-tile.png"
+    },
+    {
+      "path": "Home › Account Tile › Payments",
+      "file": "auto/home__account-tile__payments.png"
+    },
+    {
+      "path": "Home › Account Tile › Ecommerce Wallet Tool Set",
+      "file": "auto/home__account-tile__ecommerce-wallet-tool-set.png"
+    },
+    {
+      "path": "Home › Account Tile › Deposits Activity Tile",
+      "file": "auto/home__account-tile__deposits-activity-tile.png"
+    }
+  ]
+}

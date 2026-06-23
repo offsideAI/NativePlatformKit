@@ -150,3 +150,43 @@
   - Files are named by navigation path (e.g., home__buttons__primary-button.png), which may differ from the catalog ids; the auto-manifest records the exact mapping.
 
   ROADMAP (T6.2.5) and memory updated. Want me to increase the crawl depth to capture nested sub-flows too, or leave it at the section/screen level?
+
+  ---
+  ---
+
+  ⏺ Auto Capture is implemented. Here's what I added and how it works.
+
+  What you get
+
+  A new Auto Capture button in the Flow Runner toolbar (top). Click it and the harness drives the playground itself — no manual navigation — capturing a screenshot of every screen, then toggles to a Stop button so you can cancel mid-sweep.
+
+  How it works (the hard part: no deep links)
+
+  The playground has no deep links, so the harness automates the actual UI via UI Automator:
+  1. adb shell uiautomator dump → reads the on-screen view hierarchy (XML).
+  2. Finds each navigation row by its text and taps the center coordinate (the key discovery: the rows aren't clickable themselves — they're custom views — so tapping the text node's center dispatches to the clickable parent).
+  3. Captures the screen, presses Back, moves to the next.
+  4. Walks 2 levels — Home → section → screen — which matches the app's menu structure, skipping persistent chrome (title, Navigate up, Settings, Color Generator Form), with package-guard recovery if Back overshoots, and a capture cap +
+  cancellation.
+
+  Output lands in screenshots/runs/<id>/auto/<home__section__screen>.png (+ mirrored to latest/auto/), plus an auto-manifest.json listing everything captured. Matching catalog screens light up green in the tree.
+
+  Verification
+
+  I proved the exact algorithm on the real emulator before porting it to Dart — a prototype sweep navigated Home → Theme/Typography/Buttons/Modals…, into leaves (Primary Button, Micro Buttons, Snackbar, …), and saved valid screenshots (I confirmed
+  the "Primary Button" leaf renders fully). The Dart AutoCaptureService mirrors that algorithm; its XML parser is unit-tested.
+
+  - flutter analyze — clean
+  - flutter test — 33 pass (added auto_capture_service_test.dart)
+  - flutter build macos — succeeds
+
+  To use it
+
+  make run → Emulator (Boot) → Build & Install → Flow Runner → Auto Capture. Watch the status line report progress ("Section: Buttons", "Auto-capture done: N screens"). Browse results in Gallery or under screenshots/.
+
+  Honest caveats
+
+  - This extends the original guided-manual decision (D10) — both modes now exist; manual capture remains the reliable fallback (UI automation is inherently more brittle than a human).
+  - It's 2 levels deep, so deeper nested flows (e.g., individual stepper steps, bottom-sheet variants behind a leaf) are captured at the section/leaf level but not recursed into further — that matches "each screen and section." If you want it to
+  also drill into those, I can raise the depth.
+  - Files are named by navigation path (e.g., home__buttons__primary-button.png), which may differ from the catalog ids; the auto-manifest records the exact mapping.

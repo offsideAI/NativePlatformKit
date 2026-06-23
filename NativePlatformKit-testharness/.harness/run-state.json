@@ -85,7 +85,9 @@
     },
     {
       "id": "components.card-tile",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__card-tile-component__card-tile.png",
+      "capturedAt": "2026-06-23T02:03:31.978517"
     },
     {
       "id": "components.compound-buttons",
@@ -179,7 +181,9 @@
     },
     {
       "id": "controls.controls",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__controls.png",
+      "capturedAt": "2026-06-23T01:57:46.253466"
     },
     {
       "id": "controls.profile-and-settings-bar",
@@ -187,11 +191,15 @@
     },
     {
       "id": "controls.search-bar-elevated",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__controls__search-bar-elevated.png",
+      "capturedAt": "2026-06-23T01:58:19.939836"
     },
     {
       "id": "controls.search-bar-standard",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__controls__search-bar-standard.png",
+      "capturedAt": "2026-06-23T01:58:11.124201"
     },
     {
       "id": "controls.segment-bar",
@@ -215,7 +223,9 @@
     },
     {
       "id": "input-fields.amount-input-field",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__amount-input-field.png",
+      "capturedAt": "2026-06-23T01:59:19.142364"
     },
     {
       "id": "input-fields.amount-input-field-bottom-sheet",
@@ -261,11 +271,15 @@
     },
     {
       "id": "review.review-field-tile",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__review-filed-tile__review-field-tile.png",
+      "capturedAt": "2026-06-23T02:07:11.592658"
     },
     {
       "id": "stepper.stepper",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__stepper.png",
+      "capturedAt": "2026-06-23T02:05:31.336078"
     },
     {
       "id": "stepper.stepper-step-completed",
@@ -325,7 +339,9 @@
     },
     {
       "id": "tiles-account.account-tile",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__account-tile.png",
+      "capturedAt": "2026-06-23T02:09:52.729462"
     },
     {
       "id": "tiles-account.account-tile-bottom-sheet",
@@ -337,7 +353,9 @@
     },
     {
       "id": "tiles-account.ecommerce-wallet-tool-set",
-      "status": "pending"
+      "status": "captured",
+      "file": "auto/home__account-tile__ecommerce-wallet-tool-set.png",
+      "capturedAt": "2026-06-23T02:10:08.913103"
     },
     {
       "id": "tiles-account.offside-payment-account-tile",
