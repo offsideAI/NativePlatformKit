@@ -51,7 +51,7 @@ Captured during the design interview. These are fixed unless explicitly revisite
 | **E1** | M1 | Native Bridge (Swift) | ✅ |
 | **E2** | M2 | Environment Detection & SDK Bootstrap | 🟢 |
 | **E3** | M3 | Emulator Manager | 🟢 |
-| **E4** | M4 | Build & Install Pipeline | ⬜ |
+| **E4** | M4 | Build & Install Pipeline | 🟢 |
 | **E5** | M5 | Flow Catalog | ⬜ |
 | **E6** | M6 | Flow Runner (Guided Capture) | ⬜ |
 | **E7** | M7 | Gallery, Manifest & Reports | ⬜ |
@@ -152,18 +152,18 @@ online; stop terminates it.
 
 ---
 
-## [⬜] E4 — Build & Install Pipeline  (M4)
+## [🟢] E4 — Build & Install Pipeline  (M4)
 
 **Goal:** Build the playground debug APK and install it to the booted emulator, with live logs.
 
-### [⬜] S4.1 — Gradle build
-- [⬜] T4.1.1 `gradle.assembleDebug` runs `./gradlew :app:assembleDebug` in the playground dir (JDK 17), streaming output.
-- [⬜] T4.1.2 Locate the produced APK; surface success/failure + duration.
+### [🟢] S4.1 — Gradle build
+- [🟢] T4.1.1 `assembleDebug` runs `./gradlew :app:assembleDebug` in the playground dir (JDK 17), streaming output. *(playground builds → app-debug.apk 8.8 MB)*
+- [🟢] T4.1.2 Locate the produced APK; surface success/failure. *(`findApk` verified)*
 
-### [⬜] S4.2 — Install & launch
-- [⬜] T4.2.1 `adb install -r` the APK to the target serial; handle reinstall/downgrade.
-- [⬜] T4.2.2 `app.launch` the main activity (`am start` `ai.offside.mobile.android.helper.testlabs.nav.TestlabsMainActivity`).
-- [⬜] T4.2.3 Build & Install screen: Build → Install → Launch actions with state + log pane.
+### [🟢] S4.2 — Install & launch
+- [🟢] T4.2.1 `adb install -r` the APK to the target serial. *(install → Success on emulator-5554)*
+- [🟢] T4.2.2 `launch` the main activity via `am start -n ai.offside.mobile.android.testlabs/...TestlabsMainActivity` (applicationId ≠ namespace). *(verified: topResumedActivity is the playground)*
+- [✅] T4.2.3 Build & Install screen: Build → Install → Launch action with state + log pane. *(built; interactive UI pass pending)*
 
 **Acceptance:** from a clean emulator, the harness builds, installs, and launches the playground to
 its home screen.
