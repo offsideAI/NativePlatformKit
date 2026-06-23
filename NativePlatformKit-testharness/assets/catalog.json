@@ -1,0 +1,940 @@
+{
+  "appPackage": "ai.offside.mobile.android.testlabs",
+  "launchActivity": "ai.offside.mobile.android.helper.testlabs.nav.TestlabsMainActivity",
+  "categories": [
+    {
+      "id": "badges",
+      "title": "Badges",
+      "screens": [
+        {
+          "id": "badges.badges",
+          "title": "Badges",
+          "navInstructions": [
+            "From the Home grid, open the ‘Badges’ section.",
+            "Navigate to ‘Badges’."
+          ],
+          "description": "Badges demo in the Badges section.",
+          "screenshot": "badges/badges.png"
+        },
+        {
+          "id": "badges.info-badge",
+          "title": "Info Badge",
+          "navInstructions": [
+            "From the Home grid, open the ‘Badges’ section.",
+            "Navigate to ‘Info Badge’."
+          ],
+          "description": "Info Badge demo in the Badges section.",
+          "screenshot": "badges/info-badge.png"
+        },
+        {
+          "id": "badges.notification-badge",
+          "title": "Notification Badge",
+          "navInstructions": [
+            "From the Home grid, open the ‘Badges’ section.",
+            "Navigate to ‘Notification Badge’."
+          ],
+          "description": "Notification Badge demo in the Badges section.",
+          "screenshot": "badges/notification-badge.png"
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheets",
+      "title": "Bottom Sheets",
+      "screens": [
+        {
+          "id": "bottom-sheets.bottom-sheet-details",
+          "title": "Bottom Sheet Details",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet Details’."
+          ],
+          "description": "Bottom Sheet Details demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-details.png"
+        },
+        {
+          "id": "bottom-sheets.bottom-sheet-flow",
+          "title": "Bottom Sheet Flow",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet Flow’."
+          ],
+          "description": "Bottom Sheet Flow demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-flow.png"
+        },
+        {
+          "id": "bottom-sheets.bottom-sheet-list",
+          "title": "Bottom Sheet List",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet List’."
+          ],
+          "description": "Bottom Sheet List demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-list.png"
+        },
+        {
+          "id": "bottom-sheets.bottom-sheet-main",
+          "title": "Bottom Sheet Main",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet Main’."
+          ],
+          "description": "Bottom Sheet Main demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-main.png"
+        },
+        {
+          "id": "bottom-sheets.bottom-sheet-peaking",
+          "title": "Bottom Sheet Peaking",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet Peaking’."
+          ],
+          "description": "Bottom Sheet Peaking demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-peaking.png"
+        },
+        {
+          "id": "bottom-sheets.bottom-sheet-standard",
+          "title": "Bottom Sheet Standard",
+          "navInstructions": [
+            "From the Home grid, open the ‘Bottom Sheets’ section.",
+            "Navigate to ‘Bottom Sheet Standard’."
+          ],
+          "description": "Bottom Sheet Standard demo in the Bottom Sheets section.",
+          "screenshot": "bottom-sheets/bottom-sheet-standard.png"
+        }
+      ]
+    },
+    {
+      "id": "carousel",
+      "title": "Carousel",
+      "screens": [
+        {
+          "id": "carousel.carousel",
+          "title": "Carousel",
+          "navInstructions": [
+            "From the Home grid, open the ‘Carousel’ section.",
+            "Navigate to ‘Carousel’."
+          ],
+          "description": "Carousel demo in the Carousel section.",
+          "screenshot": "carousel/carousel.png"
+        }
+      ]
+    },
+    {
+      "id": "color-generator",
+      "title": "Color Generator",
+      "screens": [
+        {
+          "id": "color-generator.color-generator-form",
+          "title": "Color Generator Form",
+          "navInstructions": [
+            "From the Home grid, open the ‘Color Generator’ section.",
+            "Navigate to ‘Color Generator Form’."
+          ],
+          "description": "Color Generator Form demo in the Color Generator section.",
+          "screenshot": "color-generator/color-generator-form.png"
+        },
+        {
+          "id": "color-generator.color-generator-results",
+          "title": "Color Generator Results",
+          "navInstructions": [
+            "From the Home grid, open the ‘Color Generator’ section.",
+            "Navigate to ‘Color Generator Results’."
+          ],
+          "description": "Color Generator Results demo in the Color Generator section.",
+          "screenshot": "color-generator/color-generator-results.png"
+        }
+      ]
+    },
+    {
+      "id": "components",
+      "title": "Components",
+      "screens": [
+        {
+          "id": "components.actionable-icons",
+          "title": "Actionable Icons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Actionable Icons’."
+          ],
+          "description": "Actionable Icons demo in the Components section.",
+          "screenshot": "components/actionable-icons.png"
+        },
+        {
+          "id": "components.button-main-page",
+          "title": "Button Main Page",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Button Main Page’."
+          ],
+          "description": "Button Main Page demo in the Components section.",
+          "screenshot": "components/button-main-page.png"
+        },
+        {
+          "id": "components.buttons",
+          "title": "Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Buttons’."
+          ],
+          "description": "Buttons demo in the Components section.",
+          "screenshot": "components/buttons.png"
+        },
+        {
+          "id": "components.card",
+          "title": "Card",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Card’."
+          ],
+          "description": "Card demo in the Components section.",
+          "screenshot": "components/card.png"
+        },
+        {
+          "id": "components.card-tile",
+          "title": "Card Tile",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Card Tile’."
+          ],
+          "description": "Card Tile demo in the Components section.",
+          "screenshot": "components/card-tile.png"
+        },
+        {
+          "id": "components.compound-buttons",
+          "title": "Compound Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Compound Buttons’."
+          ],
+          "description": "Compound Buttons demo in the Components section.",
+          "screenshot": "components/compound-buttons.png"
+        },
+        {
+          "id": "components.container",
+          "title": "Container",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Container’."
+          ],
+          "description": "Container demo in the Components section.",
+          "screenshot": "components/container.png"
+        },
+        {
+          "id": "components.dropdown-main-page",
+          "title": "Dropdown Main Page",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Dropdown Main Page’."
+          ],
+          "description": "Dropdown Main Page demo in the Components section.",
+          "screenshot": "components/dropdown-main-page.png"
+        },
+        {
+          "id": "components.ecommerce-icon",
+          "title": "Ecommerce Icon",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Ecommerce Icon’."
+          ],
+          "description": "Ecommerce Icon demo in the Components section.",
+          "screenshot": "components/ecommerce-icon.png"
+        },
+        {
+          "id": "components.ecommerce-tile",
+          "title": "Ecommerce Tile",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Ecommerce Tile’."
+          ],
+          "description": "Ecommerce Tile demo in the Components section.",
+          "screenshot": "components/ecommerce-tile.png"
+        },
+        {
+          "id": "components.expand-collapse-group",
+          "title": "Expand Collapse Group",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Expand Collapse Group’."
+          ],
+          "description": "Expand Collapse Group demo in the Components section.",
+          "screenshot": "components/expand-collapse-group.png"
+        },
+        {
+          "id": "components.feature-based-icons",
+          "title": "Feature Based Icons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Feature Based Icons’."
+          ],
+          "description": "Feature Based Icons demo in the Components section.",
+          "screenshot": "components/feature-based-icons.png"
+        },
+        {
+          "id": "components.grouped-checkbox",
+          "title": "Grouped Checkbox",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Grouped Checkbox’."
+          ],
+          "description": "Grouped Checkbox demo in the Components section.",
+          "screenshot": "components/grouped-checkbox.png"
+        },
+        {
+          "id": "components.icon-link-button",
+          "title": "Icon Link Button",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Icon Link Button’."
+          ],
+          "description": "Icon Link Button demo in the Components section.",
+          "screenshot": "components/icon-link-button.png"
+        },
+        {
+          "id": "components.info-box",
+          "title": "Info Box",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Info Box’."
+          ],
+          "description": "Info Box demo in the Components section.",
+          "screenshot": "components/info-box.png"
+        },
+        {
+          "id": "components.jumbo-buttons",
+          "title": "Jumbo Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Jumbo Buttons’."
+          ],
+          "description": "Jumbo Buttons demo in the Components section.",
+          "screenshot": "components/jumbo-buttons.png"
+        },
+        {
+          "id": "components.list-actions",
+          "title": "List Actions",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘List Actions’."
+          ],
+          "description": "List Actions demo in the Components section.",
+          "screenshot": "components/list-actions.png"
+        },
+        {
+          "id": "components.main-page",
+          "title": "Main Page",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Main Page’."
+          ],
+          "description": "Main Page demo in the Components section.",
+          "screenshot": "components/main-page.png"
+        },
+        {
+          "id": "components.micro-buttons",
+          "title": "Micro Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Micro Buttons’."
+          ],
+          "description": "Micro Buttons demo in the Components section.",
+          "screenshot": "components/micro-buttons.png"
+        },
+        {
+          "id": "components.primary-buttons",
+          "title": "Primary Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Primary Buttons’."
+          ],
+          "description": "Primary Buttons demo in the Components section.",
+          "screenshot": "components/primary-buttons.png"
+        },
+        {
+          "id": "components.secondary-and-tertiary-button",
+          "title": "Secondary And Tertiary Button",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Secondary And Tertiary Button’."
+          ],
+          "description": "Secondary And Tertiary Button demo in the Components section.",
+          "screenshot": "components/secondary-and-tertiary-button.png"
+        },
+        {
+          "id": "components.slider",
+          "title": "Slider",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Slider’."
+          ],
+          "description": "Slider demo in the Components section.",
+          "screenshot": "components/slider.png"
+        },
+        {
+          "id": "components.sticky-buttons",
+          "title": "Sticky Buttons",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Sticky Buttons’."
+          ],
+          "description": "Sticky Buttons demo in the Components section.",
+          "screenshot": "components/sticky-buttons.png"
+        },
+        {
+          "id": "components.theme",
+          "title": "Theme",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Theme’."
+          ],
+          "description": "Theme demo in the Components section.",
+          "screenshot": "components/theme.png"
+        },
+        {
+          "id": "components.typography",
+          "title": "Typography",
+          "navInstructions": [
+            "From the Home grid, open the ‘Components’ section.",
+            "Navigate to ‘Typography’."
+          ],
+          "description": "Typography demo in the Components section.",
+          "screenshot": "components/typography.png"
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Controls",
+      "screens": [
+        {
+          "id": "controls.controls",
+          "title": "Controls",
+          "navInstructions": [
+            "From the Home grid, open the ‘Controls’ section.",
+            "Navigate to ‘Controls’."
+          ],
+          "description": "Controls demo in the Controls section.",
+          "screenshot": "controls/controls.png"
+        },
+        {
+          "id": "controls.profile-and-settings-bar",
+          "title": "Profile And Settings Bar",
+          "navInstructions": [
+            "From the Home grid, open the ‘Controls’ section.",
+            "Navigate to ‘Profile And Settings Bar’."
+          ],
+          "description": "Profile And Settings Bar demo in the Controls section.",
+          "screenshot": "controls/profile-and-settings-bar.png"
+        },
+        {
+          "id": "controls.search-bar-elevated",
+          "title": "Search Bar Elevated",
+          "navInstructions": [
+            "From the Home grid, open the ‘Controls’ section.",
+            "Navigate to ‘Search Bar Elevated’."
+          ],
+          "description": "Search Bar Elevated demo in the Controls section.",
+          "screenshot": "controls/search-bar-elevated.png"
+        },
+        {
+          "id": "controls.search-bar-standard",
+          "title": "Search Bar Standard",
+          "navInstructions": [
+            "From the Home grid, open the ‘Controls’ section.",
+            "Navigate to ‘Search Bar Standard’."
+          ],
+          "description": "Search Bar Standard demo in the Controls section.",
+          "screenshot": "controls/search-bar-standard.png"
+        },
+        {
+          "id": "controls.segment-bar",
+          "title": "Segment Bar",
+          "navInstructions": [
+            "From the Home grid, open the ‘Controls’ section.",
+            "Navigate to ‘Segment Bar’."
+          ],
+          "description": "Segment Bar demo in the Controls section.",
+          "screenshot": "controls/segment-bar.png"
+        }
+      ]
+    },
+    {
+      "id": "dropdown",
+      "title": "Dropdown",
+      "screens": [
+        {
+          "id": "dropdown.dropdown",
+          "title": "Dropdown",
+          "navInstructions": [
+            "From the Home grid, open the ‘Dropdown’ section.",
+            "Navigate to ‘Dropdown’."
+          ],
+          "description": "Dropdown demo in the Dropdown section.",
+          "screenshot": "dropdown/dropdown.png"
+        },
+        {
+          "id": "dropdown.dropdown-bottom-sheet",
+          "title": "Dropdown Bottom Sheet",
+          "navInstructions": [
+            "From the Home grid, open the ‘Dropdown’ section.",
+            "Navigate to ‘Dropdown Bottom Sheet’."
+          ],
+          "description": "Dropdown Bottom Sheet demo in the Dropdown section.",
+          "screenshot": "dropdown/dropdown-bottom-sheet.png"
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "title": "Icons",
+      "screens": [
+        {
+          "id": "icons.icons-decorative",
+          "title": "Icons Decorative",
+          "navInstructions": [
+            "From the Home grid, open the ‘Icons’ section.",
+            "Navigate to ‘Icons Decorative’."
+          ],
+          "description": "Icons Decorative demo in the Icons section.",
+          "screenshot": "icons/icons-decorative.png"
+        },
+        {
+          "id": "icons.icons-informative",
+          "title": "Icons Informative",
+          "navInstructions": [
+            "From the Home grid, open the ‘Icons’ section.",
+            "Navigate to ‘Icons Informative’."
+          ],
+          "description": "Icons Informative demo in the Icons section.",
+          "screenshot": "icons/icons-informative.png"
+        }
+      ]
+    },
+    {
+      "id": "input-fields",
+      "title": "Input Fields",
+      "screens": [
+        {
+          "id": "input-fields.amount-input-field",
+          "title": "Amount Input Field",
+          "navInstructions": [
+            "From the Home grid, open the ‘Input Fields’ section.",
+            "Navigate to ‘Amount Input Field’."
+          ],
+          "description": "Amount Input Field demo in the Input Fields section.",
+          "screenshot": "input-fields/amount-input-field.png"
+        },
+        {
+          "id": "input-fields.amount-input-field-bottom-sheet",
+          "title": "Amount Input Field Bottom Sheet",
+          "navInstructions": [
+            "From the Home grid, open the ‘Input Fields’ section.",
+            "Navigate to ‘Amount Input Field Bottom Sheet’."
+          ],
+          "description": "Amount Input Field Bottom Sheet demo in the Input Fields section.",
+          "screenshot": "input-fields/amount-input-field-bottom-sheet.png"
+        },
+        {
+          "id": "input-fields.input-field",
+          "title": "Input Field",
+          "navInstructions": [
+            "From the Home grid, open the ‘Input Fields’ section.",
+            "Navigate to ‘Input Field’."
+          ],
+          "description": "Input Field demo in the Input Fields section.",
+          "screenshot": "input-fields/input-field.png"
+        }
+      ]
+    },
+    {
+      "id": "list-items",
+      "title": "List Items",
+      "screens": [
+        {
+          "id": "list-items.bottom-sheet-list-item",
+          "title": "Bottom Sheet List Item",
+          "navInstructions": [
+            "From the Home grid, open the ‘List Items’ section.",
+            "Navigate to ‘Bottom Sheet List Item’."
+          ],
+          "description": "Bottom Sheet List Item demo in the List Items section.",
+          "screenshot": "list-items/bottom-sheet-list-item.png"
+        },
+        {
+          "id": "list-items.list-item",
+          "title": "List Item",
+          "navInstructions": [
+            "From the Home grid, open the ‘List Items’ section.",
+            "Navigate to ‘List Item’."
+          ],
+          "description": "List Item demo in the List Items section.",
+          "screenshot": "list-items/list-item.png"
+        }
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "Modals",
+      "screens": [
+        {
+          "id": "modals.calendar-demo",
+          "title": "Calendar Demo",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Calendar Demo’."
+          ],
+          "description": "Calendar Demo demo in the Modals section.",
+          "screenshot": "modals/calendar-demo.png"
+        },
+        {
+          "id": "modals.loading-dialog",
+          "title": "Loading Dialog",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Loading Dialog’."
+          ],
+          "description": "Loading Dialog demo in the Modals section.",
+          "screenshot": "modals/loading-dialog.png"
+        },
+        {
+          "id": "modals.modal",
+          "title": "Modal",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Modal’."
+          ],
+          "description": "Modal demo in the Modals section.",
+          "screenshot": "modals/modal.png"
+        },
+        {
+          "id": "modals.modal-main-page",
+          "title": "Modal Main Page",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Modal Main Page’."
+          ],
+          "description": "Modal Main Page demo in the Modals section.",
+          "screenshot": "modals/modal-main-page.png"
+        },
+        {
+          "id": "modals.os-component-demo",
+          "title": "Os Component Demo",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Os Component Demo’."
+          ],
+          "description": "Os Component Demo demo in the Modals section.",
+          "screenshot": "modals/os-component-demo.png"
+        },
+        {
+          "id": "modals.snack-bar-demo",
+          "title": "Snack Bar Demo",
+          "navInstructions": [
+            "From the Home grid, open the ‘Modals’ section.",
+            "Navigate to ‘Snack Bar Demo’."
+          ],
+          "description": "Snack Bar Demo demo in the Modals section.",
+          "screenshot": "modals/snack-bar-demo.png"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "screens": [
+        {
+          "id": "review.review-field-tile",
+          "title": "Review Field Tile",
+          "navInstructions": [
+            "From the Home grid, open the ‘Review’ section.",
+            "Navigate to ‘Review Field Tile’."
+          ],
+          "description": "Review Field Tile demo in the Review section.",
+          "screenshot": "review/review-field-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "stepper",
+      "title": "Stepper",
+      "screens": [
+        {
+          "id": "stepper.stepper",
+          "title": "Stepper",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper’."
+          ],
+          "description": "Stepper demo in the Stepper section.",
+          "screenshot": "stepper/stepper.png"
+        },
+        {
+          "id": "stepper.stepper-step-completed",
+          "title": "Stepper Step Completed",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step Completed’."
+          ],
+          "description": "Stepper Step Completed demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-completed.png"
+        },
+        {
+          "id": "stepper.stepper-step-five",
+          "title": "Stepper Step Five",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step Five’."
+          ],
+          "description": "Stepper Step Five demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-five.png"
+        },
+        {
+          "id": "stepper.stepper-step-four",
+          "title": "Stepper Step Four",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step Four’."
+          ],
+          "description": "Stepper Step Four demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-four.png"
+        },
+        {
+          "id": "stepper.stepper-step-one",
+          "title": "Stepper Step One",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step One’."
+          ],
+          "description": "Stepper Step One demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-one.png"
+        },
+        {
+          "id": "stepper.stepper-step-three",
+          "title": "Stepper Step Three",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step Three’."
+          ],
+          "description": "Stepper Step Three demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-three.png"
+        },
+        {
+          "id": "stepper.stepper-step-two",
+          "title": "Stepper Step Two",
+          "navInstructions": [
+            "From the Home grid, open the ‘Stepper’ section.",
+            "Navigate to ‘Stepper Step Two’."
+          ],
+          "description": "Stepper Step Two demo in the Stepper section.",
+          "screenshot": "stepper/stepper-step-two.png"
+        }
+      ]
+    },
+    {
+      "id": "takeover-buttons",
+      "title": "Takeover Buttons",
+      "screens": [
+        {
+          "id": "takeover-buttons.takeover-primary",
+          "title": "Takeover Primary",
+          "navInstructions": [
+            "From the Home grid, open the ‘Takeover Buttons’ section.",
+            "Navigate to ‘Takeover Primary’."
+          ],
+          "description": "Takeover Primary demo in the Takeover Buttons section.",
+          "screenshot": "takeover-buttons/takeover-primary.png"
+        },
+        {
+          "id": "takeover-buttons.takeover-primary-secondary-horizontal",
+          "title": "Takeover Primary Secondary Horizontal",
+          "navInstructions": [
+            "From the Home grid, open the ‘Takeover Buttons’ section.",
+            "Navigate to ‘Takeover Primary Secondary Horizontal’."
+          ],
+          "description": "Takeover Primary Secondary Horizontal demo in the Takeover Buttons section.",
+          "screenshot": "takeover-buttons/takeover-primary-secondary-horizontal.png"
+        },
+        {
+          "id": "takeover-buttons.takeover-primary-secondary-vertical",
+          "title": "Takeover Primary Secondary Vertical",
+          "navInstructions": [
+            "From the Home grid, open the ‘Takeover Buttons’ section.",
+            "Navigate to ‘Takeover Primary Secondary Vertical’."
+          ],
+          "description": "Takeover Primary Secondary Vertical demo in the Takeover Buttons section.",
+          "screenshot": "takeover-buttons/takeover-primary-secondary-vertical.png"
+        },
+        {
+          "id": "takeover-buttons.takeover-primary-tertiary",
+          "title": "Takeover Primary Tertiary",
+          "navInstructions": [
+            "From the Home grid, open the ‘Takeover Buttons’ section.",
+            "Navigate to ‘Takeover Primary Tertiary’."
+          ],
+          "description": "Takeover Primary Tertiary demo in the Takeover Buttons section.",
+          "screenshot": "takeover-buttons/takeover-primary-tertiary.png"
+        },
+        {
+          "id": "takeover-buttons.takeover-sticky-buttons-main",
+          "title": "Takeover Sticky Buttons Main",
+          "navInstructions": [
+            "From the Home grid, open the ‘Takeover Buttons’ section.",
+            "Navigate to ‘Takeover Sticky Buttons Main’."
+          ],
+          "description": "Takeover Sticky Buttons Main demo in the Takeover Buttons section.",
+          "screenshot": "takeover-buttons/takeover-sticky-buttons-main.png"
+        }
+      ]
+    },
+    {
+      "id": "tiles",
+      "title": "Tiles",
+      "screens": [
+        {
+          "id": "tiles.account-transaction-tiles",
+          "title": "Account Transaction Tiles",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles’ section.",
+            "Navigate to ‘Account Transaction Tiles’."
+          ],
+          "description": "Account Transaction Tiles demo in the Tiles section.",
+          "screenshot": "tiles/account-transaction-tiles.png"
+        },
+        {
+          "id": "tiles.feature-tile-demo",
+          "title": "Feature Tile Demo",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles’ section.",
+            "Navigate to ‘Feature Tile Demo’."
+          ],
+          "description": "Feature Tile Demo demo in the Tiles section.",
+          "screenshot": "tiles/feature-tile-demo.png"
+        },
+        {
+          "id": "tiles.image-tile-demo",
+          "title": "Image Tile Demo",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles’ section.",
+            "Navigate to ‘Image Tile Demo’."
+          ],
+          "description": "Image Tile Demo demo in the Tiles section.",
+          "screenshot": "tiles/image-tile-demo.png"
+        }
+      ]
+    },
+    {
+      "id": "tiles-account",
+      "title": "Tiles · Account",
+      "screens": [
+        {
+          "id": "tiles-account.account-tile",
+          "title": "Account Tile",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Account’ section.",
+            "Navigate to ‘Account Tile’."
+          ],
+          "description": "Account Tile demo in the Tiles · Account section.",
+          "screenshot": "tiles-account/account-tile.png"
+        },
+        {
+          "id": "tiles-account.account-tile-bottom-sheet",
+          "title": "Account Tile Bottom Sheet",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Account’ section.",
+            "Navigate to ‘Account Tile Bottom Sheet’."
+          ],
+          "description": "Account Tile Bottom Sheet demo in the Tiles · Account section.",
+          "screenshot": "tiles-account/account-tile-bottom-sheet.png"
+        },
+        {
+          "id": "tiles-account.account-tile-main-page",
+          "title": "Account Tile Main Page",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Account’ section.",
+            "Navigate to ‘Account Tile Main Page’."
+          ],
+          "description": "Account Tile Main Page demo in the Tiles · Account section.",
+          "screenshot": "tiles-account/account-tile-main-page.png"
+        },
+        {
+          "id": "tiles-account.ecommerce-wallet-tool-set",
+          "title": "Ecommerce Wallet Tool Set",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Account’ section.",
+            "Navigate to ‘Ecommerce Wallet Tool Set’."
+          ],
+          "description": "Ecommerce Wallet Tool Set demo in the Tiles · Account section.",
+          "screenshot": "tiles-account/ecommerce-wallet-tool-set.png"
+        },
+        {
+          "id": "tiles-account.offside-payment-account-tile",
+          "title": "Offside Payment Account Tile",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Account’ section.",
+            "Navigate to ‘Offside Payment Account Tile’."
+          ],
+          "description": "Offside Payment Account Tile demo in the Tiles · Account section.",
+          "screenshot": "tiles-account/offside-payment-account-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "tiles-online-payments",
+      "title": "Tiles · Online Payments",
+      "screens": [
+        {
+          "id": "tiles-online-payments.online-payments",
+          "title": "Online Payments",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Online Payments’ section.",
+            "Navigate to ‘Online Payments’."
+          ],
+          "description": "Online Payments demo in the Tiles · Online Payments section.",
+          "screenshot": "tiles-online-payments/online-payments.png"
+        }
+      ]
+    },
+    {
+      "id": "tiles-transfer",
+      "title": "Tiles · Transfer",
+      "screens": [
+        {
+          "id": "tiles-transfer.transfer-activity-tiles",
+          "title": "Transfer Activity Tiles",
+          "navInstructions": [
+            "From the Home grid, open the ‘Tiles · Transfer’ section.",
+            "Navigate to ‘Transfer Activity Tiles’."
+          ],
+          "description": "Transfer Activity Tiles demo in the Tiles · Transfer section.",
+          "screenshot": "tiles-transfer/transfer-activity-tiles.png"
+        }
+      ]
+    },
+    {
+      "id": "webviews",
+      "title": "WebViews",
+      "screens": [
+        {
+          "id": "webviews.web-view",
+          "title": "Web View",
+          "navInstructions": [
+            "From the Home grid, open the ‘WebViews’ section.",
+            "Navigate to ‘Web View’."
+          ],
+          "description": "Web View demo in the WebViews section.",
+          "screenshot": "webviews/web-view.png"
+        },
+        {
+          "id": "webviews.web-views",
+          "title": "Web Views",
+          "navInstructions": [
+            "From the Home grid, open the ‘WebViews’ section.",
+            "Navigate to ‘Web Views’."
+          ],
+          "description": "Web Views demo in the WebViews section.",
+          "screenshot": "webviews/web-views.png"
+        }
+      ]
+    }
+  ]
+}

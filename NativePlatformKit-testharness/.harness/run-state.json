@@ -1,0 +1,363 @@
+{
+  "runId": "20260623-012535",
+  "startedAt": "2026-06-23T01:25:35.917549",
+  "serial": "emulator-5554",
+  "avd": "npk_pixel_6_api34",
+  "api": 34,
+  "appVersionName": "1.0",
+  "appGitSha": "337fe7c",
+  "records": [
+    {
+      "id": "badges.badges",
+      "status": "captured",
+      "file": "badges/badges.png",
+      "capturedAt": "2026-06-23T01:25:43.478812"
+    },
+    {
+      "id": "badges.info-badge",
+      "status": "captured",
+      "file": "badges/info-badge.png",
+      "capturedAt": "2026-06-23T01:25:53.676151"
+    },
+    {
+      "id": "badges.notification-badge",
+      "status": "captured",
+      "file": "badges/notification-badge.png",
+      "capturedAt": "2026-06-23T01:26:03.272557"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-details",
+      "status": "captured",
+      "file": "bottom-sheets/bottom-sheet-details.png",
+      "capturedAt": "2026-06-23T01:26:09.866054"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-flow",
+      "status": "captured",
+      "file": "bottom-sheets/bottom-sheet-flow.png",
+      "capturedAt": "2026-06-23T01:26:25.257604"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-list",
+      "status": "pending"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-main",
+      "status": "pending"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-peaking",
+      "status": "pending"
+    },
+    {
+      "id": "bottom-sheets.bottom-sheet-standard",
+      "status": "pending"
+    },
+    {
+      "id": "carousel.carousel",
+      "status": "pending"
+    },
+    {
+      "id": "color-generator.color-generator-form",
+      "status": "pending"
+    },
+    {
+      "id": "color-generator.color-generator-results",
+      "status": "pending"
+    },
+    {
+      "id": "components.actionable-icons",
+      "status": "pending"
+    },
+    {
+      "id": "components.button-main-page",
+      "status": "pending"
+    },
+    {
+      "id": "components.buttons",
+      "status": "captured",
+      "file": "auto/home__buttons.png",
+      "capturedAt": "2026-06-23T01:54:50.031468"
+    },
+    {
+      "id": "components.card",
+      "status": "pending"
+    },
+    {
+      "id": "components.card-tile",
+      "status": "pending"
+    },
+    {
+      "id": "components.compound-buttons",
+      "status": "pending"
+    },
+    {
+      "id": "components.container",
+      "status": "pending"
+    },
+    {
+      "id": "components.dropdown-main-page",
+      "status": "pending"
+    },
+    {
+      "id": "components.ecommerce-icon",
+      "status": "pending"
+    },
+    {
+      "id": "components.ecommerce-tile",
+      "status": "pending"
+    },
+    {
+      "id": "components.expand-collapse-group",
+      "status": "pending"
+    },
+    {
+      "id": "components.feature-based-icons",
+      "status": "pending"
+    },
+    {
+      "id": "components.grouped-checkbox",
+      "status": "pending"
+    },
+    {
+      "id": "components.icon-link-button",
+      "status": "pending"
+    },
+    {
+      "id": "components.info-box",
+      "status": "pending"
+    },
+    {
+      "id": "components.jumbo-buttons",
+      "status": "pending"
+    },
+    {
+      "id": "components.list-actions",
+      "status": "pending"
+    },
+    {
+      "id": "components.main-page",
+      "status": "pending"
+    },
+    {
+      "id": "components.micro-buttons",
+      "status": "captured",
+      "file": "auto/home__buttons__micro-buttons.png",
+      "capturedAt": "2026-06-23T01:55:14.908244"
+    },
+    {
+      "id": "components.primary-buttons",
+      "status": "pending"
+    },
+    {
+      "id": "components.secondary-and-tertiary-button",
+      "status": "captured",
+      "file": "auto/home__buttons__secondary-and-tertiary-button.png",
+      "capturedAt": "2026-06-23T01:55:06.119958"
+    },
+    {
+      "id": "components.slider",
+      "status": "captured",
+      "file": "auto/home__slider.png",
+      "capturedAt": "2026-06-23T01:56:46.902083"
+    },
+    {
+      "id": "components.sticky-buttons",
+      "status": "pending"
+    },
+    {
+      "id": "components.theme",
+      "status": "captured",
+      "file": "auto/home__theme.png",
+      "capturedAt": "2026-06-23T01:53:07.447155"
+    },
+    {
+      "id": "components.typography",
+      "status": "captured",
+      "file": "auto/home__typography.png",
+      "capturedAt": "2026-06-23T01:53:38.955031"
+    },
+    {
+      "id": "controls.controls",
+      "status": "pending"
+    },
+    {
+      "id": "controls.profile-and-settings-bar",
+      "status": "pending"
+    },
+    {
+      "id": "controls.search-bar-elevated",
+      "status": "pending"
+    },
+    {
+      "id": "controls.search-bar-standard",
+      "status": "pending"
+    },
+    {
+      "id": "controls.segment-bar",
+      "status": "pending"
+    },
+    {
+      "id": "dropdown.dropdown",
+      "status": "pending"
+    },
+    {
+      "id": "dropdown.dropdown-bottom-sheet",
+      "status": "pending"
+    },
+    {
+      "id": "icons.icons-decorative",
+      "status": "pending"
+    },
+    {
+      "id": "icons.icons-informative",
+      "status": "pending"
+    },
+    {
+      "id": "input-fields.amount-input-field",
+      "status": "pending"
+    },
+    {
+      "id": "input-fields.amount-input-field-bottom-sheet",
+      "status": "pending"
+    },
+    {
+      "id": "input-fields.input-field",
+      "status": "pending"
+    },
+    {
+      "id": "list-items.bottom-sheet-list-item",
+      "status": "pending"
+    },
+    {
+      "id": "list-items.list-item",
+      "status": "pending"
+    },
+    {
+      "id": "modals.calendar-demo",
+      "status": "pending"
+    },
+    {
+      "id": "modals.loading-dialog",
+      "status": "captured",
+      "file": "auto/home__modals__loading-dialog.png",
+      "capturedAt": "2026-06-23T01:56:26.112635"
+    },
+    {
+      "id": "modals.modal",
+      "status": "pending"
+    },
+    {
+      "id": "modals.modal-main-page",
+      "status": "pending"
+    },
+    {
+      "id": "modals.os-component-demo",
+      "status": "pending"
+    },
+    {
+      "id": "modals.snack-bar-demo",
+      "status": "pending"
+    },
+    {
+      "id": "review.review-field-tile",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-completed",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-five",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-four",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-one",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-three",
+      "status": "pending"
+    },
+    {
+      "id": "stepper.stepper-step-two",
+      "status": "pending"
+    },
+    {
+      "id": "takeover-buttons.takeover-primary",
+      "status": "pending"
+    },
+    {
+      "id": "takeover-buttons.takeover-primary-secondary-horizontal",
+      "status": "pending"
+    },
+    {
+      "id": "takeover-buttons.takeover-primary-secondary-vertical",
+      "status": "pending"
+    },
+    {
+      "id": "takeover-buttons.takeover-primary-tertiary",
+      "status": "pending"
+    },
+    {
+      "id": "takeover-buttons.takeover-sticky-buttons-main",
+      "status": "pending"
+    },
+    {
+      "id": "tiles.account-transaction-tiles",
+      "status": "pending"
+    },
+    {
+      "id": "tiles.feature-tile-demo",
+      "status": "pending"
+    },
+    {
+      "id": "tiles.image-tile-demo",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-account.account-tile",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-account.account-tile-bottom-sheet",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-account.account-tile-main-page",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-account.ecommerce-wallet-tool-set",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-account.offside-payment-account-tile",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-online-payments.online-payments",
+      "status": "pending"
+    },
+    {
+      "id": "tiles-transfer.transfer-activity-tiles",
+      "status": "pending"
+    },
+    {
+      "id": "webviews.web-view",
+      "status": "pending"
+    },
+    {
+      "id": "webviews.web-views",
+      "status": "pending"
+    }
+  ]
+}
