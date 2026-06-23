@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/services.dart';
 
 import 'process_event.dart';
@@ -39,11 +41,18 @@ class MethodChannelNativeBridge implements NativeBridge {
     _events = _eventChannel
         .receiveBroadcastStream()
         .map((dynamic e) => ProcessEvent.fromMap((e as Map).cast<dynamic, dynamic>()));
+    // Keep the platform EventChannel subscription hot for the app's lifetime so the native
+    // sink is wired before any process starts (otherwise early output could be dropped).
+    _keepAlive = _events.listen((_) {});
   }
 
   final MethodChannel _method;
   final EventChannel _eventChannel;
   late final Stream<ProcessEvent> _events;
+  late final StreamSubscription<ProcessEvent> _keepAlive;
+
+  /// Releases the keep-alive subscription (call on app teardown).
+  void dispose() => _keepAlive.cancel();
 
   @override
   Stream<ProcessEvent> get events => _events;

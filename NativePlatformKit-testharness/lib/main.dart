@@ -7,6 +7,8 @@ import 'app/app_state.dart';
 import 'core/command_runner.dart';
 import 'core/native_bridge.dart';
 import 'features/console/console_view_model.dart';
+import 'features/environment/environment_service.dart';
+import 'features/environment/environment_view_model.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,9 +21,13 @@ Future<void> main() async {
       providers: [
         Provider<NativeBridge>(create: (_) => MethodChannelNativeBridge()),
         Provider<CommandRunner>(create: (c) => CommandRunner(c.read<NativeBridge>())),
+        Provider<EnvironmentService>(create: (c) => EnvironmentService(c.read<CommandRunner>())),
         ChangeNotifierProvider(create: (_) => AppState()),
         ChangeNotifierProvider(
           create: (c) => ConsoleViewModel(c.read<CommandRunner>(), c.read<NativeBridge>()),
+        ),
+        ChangeNotifierProvider(
+          create: (c) => EnvironmentViewModel(c.read<EnvironmentService>(), c.read<AppState>()),
         ),
       ],
       child: const NpkTestHarnessApp(),

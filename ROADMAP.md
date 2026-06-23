@@ -57,12 +57,11 @@ Captured during the design interview. These are fixed unless explicitly revisite
 | **E7** | M7 | Gallery, Manifest & Reports |
 | **E8** | M8 | Polish, Docs & Git Hygiene |
 
-**Status legend:** ☐ not started · ◐ in progress · ☑ done
-**ID scheme:** `E<epic>` → `S<epic>.<story>` → `T<epic>.<story>.<task>`.
+**ID scheme:** `E<epic>` → `S<epic>.<story>` → `T<epic>.<story>.<task>`. Status markers use the legend at the top of this document.
 
 ---
 
-## E0 — Project Scaffold & App Shell  (M0)  ☐
+## E0 — Project Scaffold & App Shell  (M0)  ✅
 
 **Goal:** A buildable, analyzable Flutter macOS app with the macos_ui shell, Provider wiring, theme,
 and the wizard-then-sidebar navigation containing placeholder screens for all six sections.
@@ -89,7 +88,7 @@ screens; `flutter analyze` clean.
 
 ---
 
-## E1 — Native Bridge (Swift)  (M1)  ☐
+## E1 — Native Bridge (Swift)  (M1)  ✅
 
 **Goal:** A robust Swift↔Dart bridge that can run arbitrary CLIs with live streaming output and
 cancellation, plus native file dialogs.
@@ -115,7 +114,7 @@ long `sleep`; pick a directory via native panel.
 
 ---
 
-## E2 — Environment Detection & SDK Bootstrap  (M2)  ☐
+## E2 — Environment Detection & SDK Bootstrap  (M2)  🟡
 
 **Goal:** The Environment screen detects all tooling and can install the missing Android SDK pieces
 needed to create an emulator, with live progress.
@@ -135,7 +134,7 @@ and flips to "ready" without leaving the app.
 
 ---
 
-## E3 — Emulator Manager  (M3)  ☐
+## E3 — Emulator Manager  (M3)  ⬜
 
 **Goal:** Create, boot, and stop the Pixel 6 / API 34 AVD; detect boot completion reliably.
 
@@ -153,7 +152,7 @@ online; stop terminates it.
 
 ---
 
-## E4 — Build & Install Pipeline  (M4)  ☐
+## E4 — Build & Install Pipeline  (M4)  ⬜
 
 **Goal:** Build the playground debug APK and install it to the booted emulator, with live logs.
 
@@ -171,7 +170,7 @@ its home screen.
 
 ---
 
-## E5 — Flow Catalog  (M5)  ☐
+## E5 — Flow Catalog  (M5)  ⬜
 
 **Goal:** A curated catalog of all ~78 destinations with human navigation instructions, derived from
 the app's navigation structure.
@@ -190,7 +189,7 @@ step-by-step instructions.
 
 ---
 
-## E6 — Flow Runner (Guided Capture)  (M6)  ☐
+## E6 — Flow Runner (Guided Capture)  (M6)  ⬜
 
 **Goal:** The core three-pane guided experience: step through screens, capture each, track status.
 
@@ -210,7 +209,7 @@ statuses/notes saved and resumable across app restarts.
 
 ---
 
-## E7 — Gallery, Manifest & Reports  (M7)  ☐
+## E7 — Gallery, Manifest & Reports  (M7)  ⬜
 
 **Goal:** Persist run metadata and make captured runs browsable and reportable.
 
@@ -228,7 +227,7 @@ with metadata.
 
 ---
 
-## E8 — Polish, Docs & Git Hygiene  (M8)  ☐
+## E8 — Polish, Docs & Git Hygiene  (M8)  ⬜
 
 **Goal:** Production-quality finish: reliable build, documentation, and committed outputs.
 
