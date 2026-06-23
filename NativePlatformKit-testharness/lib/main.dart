@@ -7,6 +7,8 @@ import 'app/app_state.dart';
 import 'core/command_runner.dart';
 import 'core/native_bridge.dart';
 import 'features/console/console_view_model.dart';
+import 'features/emulator/emulator_service.dart';
+import 'features/emulator/emulator_view_model.dart';
 import 'features/environment/environment_service.dart';
 import 'features/environment/environment_view_model.dart';
 
@@ -22,12 +24,16 @@ Future<void> main() async {
         Provider<NativeBridge>(create: (_) => MethodChannelNativeBridge()),
         Provider<CommandRunner>(create: (c) => CommandRunner(c.read<NativeBridge>())),
         Provider<EnvironmentService>(create: (c) => EnvironmentService(c.read<CommandRunner>())),
+        Provider<EmulatorService>(create: (c) => EmulatorService(c.read<CommandRunner>())),
         ChangeNotifierProvider(create: (_) => AppState()),
         ChangeNotifierProvider(
           create: (c) => ConsoleViewModel(c.read<CommandRunner>(), c.read<NativeBridge>()),
         ),
         ChangeNotifierProvider(
           create: (c) => EnvironmentViewModel(c.read<EnvironmentService>(), c.read<AppState>()),
+        ),
+        ChangeNotifierProvider(
+          create: (c) => EmulatorViewModel(c.read<EmulatorService>(), c.read<AppState>()),
         ),
       ],
       child: const NpkTestHarnessApp(),

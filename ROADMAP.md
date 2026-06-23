@@ -114,7 +114,7 @@ long `sleep`; pick a directory via native panel.
 
 ---
 
-## E2 — Environment Detection & SDK Bootstrap  (M2)  🟡
+## E2 — Environment Detection & SDK Bootstrap  (M2)  🟢
 
 **Goal:** The Environment screen detects all tooling and can install the missing Android SDK pieces
 needed to create an emulator, with live progress.
@@ -134,7 +134,7 @@ and flips to "ready" without leaving the app.
 
 ---
 
-## E3 — Emulator Manager  (M3)  ⬜
+## E3 — Emulator Manager  (M3)  🟢
 
 **Goal:** Create, boot, and stop the Pixel 6 / API 34 AVD; detect boot completion reliably.
 
